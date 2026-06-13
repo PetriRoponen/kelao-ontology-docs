@@ -32,43 +32,44 @@ jobs:
           wget -q \
             https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
             -O /tmp/widoco.jar
-          echo "WIDOCO ladattu: $(du -sh /tmp/widoco.jar)"
+          echo "Ladattu: $(du -sh /tmp/widoco.jar)"
 
       - name: Generate ontology documentation
         run: |
-          set -e
+          mkdir -p /tmp/widoco-output
 
-          echo "=== WIDOCO tuetut parametrit ==="
-          java -jar /tmp/widoco.jar --help 2>&1 || true
-
-          echo "=== Generoidaan dokumentaatio ==="
+          echo "=== Ajetaan WIDOCO ==="
           java -jar /tmp/widoco.jar \
             -ontFile kelao-ontology-core2.ttl \
             -outFolder /tmp/widoco-output \
             -lang en-fi \
             -rewriteAll \
             -includeAnnotationProperties \
-            -webVowl \
-            -htaccess
+            -webVowl 2>&1 | tee /tmp/widoco.log
+          EXIT_CODE=${PIPESTATUS[0]}
 
-          echo "=== Tulostetiedostot ==="
-          ls -la /tmp/widoco-output/
+          echo "=== WIDOCO exit code: $EXIT_CODE ==="
+          echo "=== Tulostetiedostot /tmp/widoco-output/ ==="
+          ls -la /tmp/widoco-output/ 2>/dev/null || echo "(tyhjä)"
+
+          if [ $EXIT_CODE -ne 0 ]; then
+            echo "WIDOCO epäonnistui. Loki yllä."
+            exit $EXIT_CODE
+          fi
 
           echo "=== Kopioidaan repoon ==="
           rm -rf resources/ sections/ webvowl/
           rm -f index.html index-en.html index-fi.html 406.html
           rm -f ontology.jsonld ontology.nt ontology.owl ontology.ttl
           cp -r /tmp/widoco-output/. .
-          ls -la
 
       - name: Commit and push updated documentation
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
-          git status
           if git diff --staged --quiet; then
-            echo "Ei muutoksia dokumentaatiossa."
+            echo "Ei muutoksia."
           else
             git commit -m "docs: regeneroi ontologiadokumentaatio [skip ci]"
             git push
