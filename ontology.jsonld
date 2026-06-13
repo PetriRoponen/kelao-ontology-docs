@@ -204,6 +204,9 @@
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@value" : "0.1.0"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.2.0-core-draft"
   } ],

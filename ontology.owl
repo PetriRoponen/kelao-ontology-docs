@@ -11,6 +11,7 @@
      xmlns:kelao="https://kela.fi/ontology/kelao#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://kela.fi/ontology/kelao">
+        <owl:versionIRI rdf:resource="https://petriroponen.github.io/kelao-ontology-docs/"/>
         <terms:abstract xml:lang="fi">Sosiaaliturvan ontologia kuvaa etuudet, etuuskriteerit, palvelut,  
         organisaatiot, lainsäädännön sekä sosiaaliturvan käsitteet.
         </terms:abstract>

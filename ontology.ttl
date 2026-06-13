@@ -7,6 +7,7 @@
 @base <https://kela.fi/ontology/kelao#> .
 
 <https://kela.fi/ontology/kelao> rdf:type owl:Ontology ;
+                                  owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/> ;
                                   <http://purl.org/dc/terms/abstract> """Sosiaaliturvan ontologia kuvaa etuudet, etuuskriteerit, palvelut,  
         organisaatiot, lainsäädännön sekä sosiaaliturvan käsitteet.
         """@fi ,

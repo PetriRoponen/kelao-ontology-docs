@@ -1,4 +1,5 @@
 <https://kela.fi/ontology/kelao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#versionIRI> <https://petriroponen.github.io/kelao-ontology-docs/> .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/abstract> "Sosiaaliturvan ontologia kuvaa etuudet, etuuskriteerit, palvelut,  \n        organisaatiot, lainsäädännön sekä sosiaaliturvan käsitteet.\n        "@fi .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/abstract> "The Social Security Ontology describes the conceptual structure of the Finnish social security system.\n\t\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services (benefit related), life situations, organisations, legislation, and concepts.\n"@en .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/contributor> <https://www.linkedin.com/in/petri-roponen-052aa772> .
