@@ -11,6 +11,7 @@
      xmlns:kelao="https://kela.fi/ontology/kelao#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://kela.fi/ontology/kelao">
+        <owl:versionIRI rdf:resource="https://petriroponen.github.io/kelao-ontology-docs/"/>
         <terms:abstract xml:lang="fi">Sosiaaliturvan ontologia kuvaa etuudet, etuuskriteerit, palvelut,  
         organisaatiot, lainsäädännön sekä sosiaaliturvan käsitteet.
         </terms:abstract>
@@ -1875,7 +1876,7 @@
     </rdf:Description>
     <rdf:Description rdf:about="https://kela.fi/ontology/kelao#Benefit">
         <rdfs:comment xml:lang="en">A social security benefit or allowance. General class — use subclasses for instances.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Sosiaaliturvan etuus, maksu tai tuki. Yleinen luokka — käytä alaluokkia instansseissa.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">Benefit</rdfs:label>
         <rdfs:label xml:lang="fi">Etuus</rdfs:label>
