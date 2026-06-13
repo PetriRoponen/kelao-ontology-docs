@@ -766,10 +766,13 @@
 <https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Etuuden oikeuden päättely edellyttää tarveharkintaa, tarveharkinnan selitys."@fi .
 <https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2000/01/rdf-schema#comment> "För att fastställa rätten till förmåner krävs en behovsprövning."@sv .
 <https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
-<https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2000/01/rdf-schema#label> "behovsbedömning"@sv .
+<https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2000/01/rdf-schema#label> "behovsprövning"@sv .
 <https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2000/01/rdf-schema#label> "means test"@en .
 <https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2000/01/rdf-schema#label> "tarveharkinta"@fi .
-<https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2004/02/skos/core#prefLabel> "behovsbedömning"@sv .
+<https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2004/02/skos/core#definition> "Etuuksien tai palvelujen myöntämisen kriteerien soveltaminen henkilön tarpeeseen."@fi .
+<https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2004/02/skos/core#definition> "Tillämpning av kriterierna för beviljande av förmåner eller service på en persons behov."@sv .
+<https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c688> .
+<https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2004/02/skos/core#prefLabel> "behovsprövning"@sv .
 <https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2004/02/skos/core#prefLabel> "means test"@en .
 <https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/2004/02/skos/core#prefLabel> "tarveharkinta"@fi .
 # 

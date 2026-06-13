@@ -2291,7 +2291,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "sv",
-    "@value" : "behovsbedömning"
+    "@value" : "behovsprövning"
   }, {
     "@language" : "en",
     "@value" : "means test"
@@ -2302,9 +2302,19 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fi",
+    "@value" : "Etuuksien tai palvelujen myöntämisen kriteerien soveltaminen henkilön tarpeeseen."
+  }, {
+    "@language" : "sv",
+    "@value" : "Tillämpning av kriterierna för beviljande av förmåner eller service på en persons behov."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c688"
+  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
-    "@value" : "behovsbedömning"
+    "@value" : "behovsprövning"
   }, {
     "@language" : "en",
     "@value" : "means test"

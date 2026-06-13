@@ -843,10 +843,13 @@ xsd:duration rdf:type rdfs:Datatype .
                         "Etuuden oikeuden päättely edellyttää tarveharkintaa, tarveharkinnan selitys."@fi ,
                         "För att fastställa rätten till förmåner krävs en behovsprövning."@sv ;
            rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-           rdfs:label "behovsbedömning"@sv ,
+           rdfs:label "behovsprövning"@sv ,
                       "means test"@en ,
                       "tarveharkinta"@fi ;
-           <http://www.w3.org/2004/02/skos/core#prefLabel> "behovsbedömning"@sv ,
+           <http://www.w3.org/2004/02/skos/core#definition> "Etuuksien tai palvelujen myöntämisen kriteerien soveltaminen henkilön tarpeeseen."@fi ,
+                                                            "Tillämpning av kriterierna för beviljande av förmåner eller service på en persons behov."@sv ;
+           <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c688> ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "behovsprövning"@sv ,
                                                            "means test"@en ,
                                                            "tarveharkinta"@fi .
 

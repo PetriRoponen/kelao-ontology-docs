@@ -1172,10 +1172,13 @@
         <rdfs:comment xml:lang="fi">Etuuden oikeuden päättely edellyttää tarveharkintaa, tarveharkinnan selitys.</rdfs:comment>
         <rdfs:comment xml:lang="sv">För att fastställa rätten till förmåner krävs en behovsprövning.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="sv">behovsbedömning</rdfs:label>
+        <rdfs:label xml:lang="sv">behovsprövning</rdfs:label>
         <rdfs:label xml:lang="en">means test</rdfs:label>
         <rdfs:label xml:lang="fi">tarveharkinta</rdfs:label>
-        <skos:prefLabel xml:lang="sv">behovsbedömning</skos:prefLabel>
+        <skos:definition xml:lang="fi">Etuuksien tai palvelujen myöntämisen kriteerien soveltaminen henkilön tarpeeseen.</skos:definition>
+        <skos:definition xml:lang="sv">Tillämpning av kriterierna för beviljande av förmåner eller service på en persons behov.</skos:definition>
+        <skos:exactMatch rdf:resource="https://iri.suomi.fi/terminology/kela/c688"/>
+        <skos:prefLabel xml:lang="sv">behovsprövning</skos:prefLabel>
         <skos:prefLabel xml:lang="en">means test</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">tarveharkinta</skos:prefLabel>
     </owl:DatatypeProperty>
