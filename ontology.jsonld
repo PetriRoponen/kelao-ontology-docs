@@ -421,7 +421,7 @@
     "@value" : "A social security benefit or allowance. General class — use subclasses for instances."
   }, {
     "@language" : "fi",
-    "@value" : "Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa."
+    "@value" : "Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa. Kelan etuudet ovat sosiaalietuuksia. Joskus käytetään myös termiä sosiaaliturvaetuus."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
@@ -448,6 +448,19 @@
   }, {
     "@language" : "fi",
     "@value" : "Tuki"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "sv",
+    "@value" : "Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg."
+  }, {
+    "@language" : "fi",
+    "@value" : "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein."
+  }, {
+    "@language" : "en",
+    "@value" : "x"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c60"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",

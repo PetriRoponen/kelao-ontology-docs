@@ -1084,7 +1084,7 @@
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#PublicService> .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2000/01/rdf-schema#comment> "A social security benefit or allowance. General class — use subclasses for instances."@en .
-<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2000/01/rdf-schema#comment> "Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa."@fi .
+<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2000/01/rdf-schema#comment> "Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa. Kelan etuudet ovat sosiaalietuuksia. Joskus käytetään myös termiä sosiaaliturvaetuus."@fi .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2000/01/rdf-schema#label> "Benefit"@en .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2000/01/rdf-schema#label> "Etuus"@fi .
@@ -1092,6 +1092,10 @@
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#altLabel> "Social benefit"@en .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#altLabel> "Sosiaalietuus"@fi .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#altLabel> "Tuki"@fi .
+<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#definition> "Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg."@sv .
+<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#definition> "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein."@fi .
+<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#definition> "x"@en .
+<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c60> .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit"@en .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Etuus"@fi .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Förmån"@sv .
