@@ -420,6 +420,9 @@
     "@language" : "en",
     "@value" : "A social security benefit or allowance. General class — use subclasses for instances."
   }, {
+    "@language" : "sv",
+    "@value" : "FPA:s förmåner är sociala förmåner. Ibland används också termen socialförsäkringsförmåner."
+  }, {
     "@language" : "fi",
     "@value" : "Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa. Kelan etuudet ovat sosiaalietuuksia. Joskus käytetään myös termiä sosiaaliturvaetuus."
   } ],
@@ -435,6 +438,9 @@
   }, {
     "@language" : "sv",
     "@value" : "Förmån"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/verotus/c66"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/vocab/cpsv#PublicService"
@@ -455,6 +461,9 @@
   }, {
     "@language" : "fi",
     "@value" : "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein."
+  }, {
+    "@language" : "fi",
+    "@value" : "Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein"
   }, {
     "@language" : "en",
     "@value" : "x"
