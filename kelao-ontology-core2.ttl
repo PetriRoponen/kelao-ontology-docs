@@ -100,9 +100,10 @@ kelao:Benefit a owl:Class ;
     skos:altLabel "Social benefit"@en, "Sosiaalietuus"@fi, "Tuki"@fi ;
     skos:exactMatch <https://iri.suomi.fi/terminology/kela/c60> ;
     rdfs:seeAlso <https://iri.suomi.fi/terminology/verotus/c66> ;
-    skos:definition "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein."@fi ,
+    skos:definition """Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.
+            Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein
+            """@fi ,
         "x"@en ,
-        "Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein"@fi ,
         "Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg."@sv ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
     rdfs:comment
@@ -167,9 +168,7 @@ kelao:LegalResourcePart a owl:Class ;
          "Osa laista riippumatta siitä, onko kyseessä luku, pykälä vai momentti."@fi, "Legal Resource Part"@en ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> .
 
-# ── LUOKAT — SKOS, ELI, PTV (ulkoiset — dokumentoidaan) ─────────
-
-# SKOS IMPORTATAAN ONTOLOGIAAN, JOTEN EI TARVITSE ITSE MÄÄRITELLÄ MITÄÄN
+# ── LUOKAT — ELI, PTV (ulkoiset — dokumentoidaan) ─────────
 
 kelao:LegalResource a owl:Class ; 
     rdfs:label "Legal Resource"@en, "Säädös"@fi, "Juridisk resurs"@sv;
@@ -327,7 +326,7 @@ kelao:reducing a owl:ObjectProperty ;
     rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c65> ;
     skos:definition "huomioon otettava etuus, joka vähentää toisen etuuden määrää"@fi, 
         "förmån som ska beaktas och som minskar beloppet av en annan förmån"@sv ;
-    rdfs:comment "Reducing benefit"@en, "Vähentävä etuus"@fi ;
+    #rdfs:comment "Reducing benefit"@en, "Vähentävä etuus"@fi ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> .
 
 kelao:noteworthy a owl:ObjectProperty ;
