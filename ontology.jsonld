@@ -323,15 +323,31 @@
     "@language" : "fi",
     "@value" : "Hakemus"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c77"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "sv",
+    "@value" : "Ansökan om förmån"
+  }, {
+    "@language" : "fi",
+    "@value" : "Etuushakemus"
+  }, {
+    "@language" : "sv",
+    "@value" : "Förmånsansökan"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
     "@value" : "An applicant's request for a benefit or service. Filing initiates processing of the case."
   }, {
     "@language" : "fi",
-    "@value" : "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn."
+    "@value" : "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."
+  }, {
+    "@language" : "fi",
+    "@value" : "asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
@@ -543,8 +559,21 @@
     "@language" : "fi",
     "@value" : "Päätös"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c78"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "sv",
+    "@value" : "beslut om förmån"
+  }, {
+    "@language" : "fi",
+    "@value" : "etuuspäätös"
+  }, {
+    "@language" : "sv",
+    "@value" : "förmånsbeslut"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1992,13 +2021,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#inhibiting",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi",
-    "@value" : "Estävä etuus"
-  }, {
-    "@language" : "en",
-    "@value" : "Inhibiting benefit"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Benefit"
   } ],
@@ -2009,15 +2031,34 @@
     "@language" : "fi",
     "@value" : "estävä etuus"
   }, {
+    "@language" : "sv",
+    "@value" : "hindrande förmån"
+  }, {
     "@language" : "en",
     "@value" : "inhibiting benefit"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Benefit"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c66"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "sv",
+    "@value" : "förmån som ska beaktas och på grund av vilken den förmånssökande inte beviljas en annan förmån"
+  }, {
+    "@language" : "fi",
+    "@value" : "huomioon otettava etuus, jonka vuoksi etuudenhakijalle ei myönnetä jotain toista etuutta"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c66"
+  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "estävä etuus"
+  }, {
+    "@language" : "sv",
+    "@value" : "hindrande förmån"
   }, {
     "@language" : "en",
     "@value" : "inhibiting benefit"
@@ -2720,6 +2761,19 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Benefit"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c65"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "sv",
+    "@value" : "förmån som ska beaktas och som minskar beloppet av en annan förmån"
+  }, {
+    "@language" : "fi",
+    "@value" : "huomioon otettava etuus, joka vähentää toisen etuuden määrää"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c65"
+  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "reducing benefit"
@@ -2892,13 +2946,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#residenceRequired",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Residence required"
-  }, {
-    "@language" : "fi",
-    "@value" : "Vaatii asumisen Suomessa"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],
@@ -2911,6 +2958,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c529"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fi",
+    "@value" : "asumisedellytys"
+  }, {
+    "@language" : "sv",
+    "@value" : "bosättningskrav"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fi",
+    "@value" : "edellytys, jonka mukaan etuudenhakijan täytyy asua ja edunjättäjän täytyi asua kuollessaan Suomessa, EU- tai Eta-maassa tai Sveitsissä, jotta etuudenhakijalla olisi oikeus etuuteen."
+  }, {
+    "@language" : "sv",
+    "@value" : "krav enligt vilket en förmånssökande ska bo i Finland, ett EU-land, ett EES-land eller Schweiz och en förmånslåtare vid sin död måste bo i något av dessa länder för att förmånssökanden ska ha rätt till en förmån"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",

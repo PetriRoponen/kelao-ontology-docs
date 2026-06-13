@@ -530,12 +530,16 @@
     <owl:ObjectProperty rdf:about="https://kela.fi/ontology/kelao#inhibiting">
         <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
-        <rdfs:comment xml:lang="fi">Estävä etuus</rdfs:comment>
-        <rdfs:comment xml:lang="en">Inhibiting benefit</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">estävä etuus</rdfs:label>
+        <rdfs:label xml:lang="sv">hindrande förmån</rdfs:label>
         <rdfs:label xml:lang="en">inhibiting benefit</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://iri.suomi.fi/terminology/kela/c66"/>
+        <skos:definition xml:lang="sv">förmån som ska beaktas och på grund av vilken den förmånssökande inte beviljas en annan förmån</skos:definition>
+        <skos:definition xml:lang="fi">huomioon otettava etuus, jonka vuoksi etuudenhakijalle ei myönnetä jotain toista etuutta</skos:definition>
+        <skos:exactMatch rdf:resource="https://iri.suomi.fi/terminology/kela/c66"/>
         <skos:prefLabel xml:lang="fi">estävä etuus</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">hindrande förmån</skos:prefLabel>
         <skos:prefLabel xml:lang="en">inhibiting benefit</skos:prefLabel>
         <relationshipAbbreviation>EST</relationshipAbbreviation>
     </owl:ObjectProperty>
@@ -692,6 +696,10 @@
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">reducing benefit</rdfs:label>
         <rdfs:label xml:lang="fi">vähentävä etuus</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://iri.suomi.fi/terminology/kela/c65"/>
+        <skos:definition xml:lang="sv">förmån som ska beaktas och som minskar beloppet av en annan förmån</skos:definition>
+        <skos:definition xml:lang="fi">huomioon otettava etuus, joka vähentää toisen etuuden määrää</skos:definition>
+        <skos:exactMatch rdf:resource="https://iri.suomi.fi/terminology/kela/c65"/>
         <skos:prefLabel xml:lang="en">reducing benefit</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">vähentävä etuus</skos:prefLabel>
         <relationshipAbbreviation>VÄH</relationshipAbbreviation>
@@ -1354,11 +1362,14 @@
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#residenceRequired">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">Residence required</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Vaatii asumisen Suomessa</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">residence required</rdfs:label>
         <rdfs:label xml:lang="fi">vaatii asumisen Suomessa</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://iri.suomi.fi/terminology/kela/c529"/>
+        <skos:altLabel xml:lang="fi">asumisedellytys</skos:altLabel>
+        <skos:altLabel xml:lang="sv">bosättningskrav</skos:altLabel>
+        <skos:definition xml:lang="fi">edellytys, jonka mukaan etuudenhakijan täytyy asua ja edunjättäjän täytyi asua kuollessaan Suomessa, EU- tai Eta-maassa tai Sveitsissä, jotta etuudenhakijalla olisi oikeus etuuteen.</skos:definition>
+        <skos:definition xml:lang="sv">krav enligt vilket en förmånssökande ska bo i Finland, ett EU-land, ett EES-land eller Schweiz och en förmånslåtare vid sin död måste bo i något av dessa länder för att förmånssökanden ska ha rätt till en förmån</skos:definition>
         <skos:prefLabel xml:lang="en">residence required</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">vaatii asumisen Suomessa</skos:prefLabel>
     </owl:DatatypeProperty>
@@ -1570,8 +1581,13 @@
         <rdfs:label xml:lang="sv">Ansökan</rdfs:label>
         <rdfs:label xml:lang="en">Application</rdfs:label>
         <rdfs:label xml:lang="fi">Hakemus</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://iri.suomi.fi/terminology/kela/c77"/>
+        <skos:altLabel xml:lang="sv">Ansökan om förmån</skos:altLabel>
+        <skos:altLabel xml:lang="fi">Etuushakemus</skos:altLabel>
+        <skos:altLabel xml:lang="sv">Förmånsansökan</skos:altLabel>
         <skos:definition xml:lang="en">An applicant&apos;s request for a benefit or service. Filing initiates processing of the case.</skos:definition>
-        <skos:definition xml:lang="fi">Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn.</skos:definition>
+        <skos:definition xml:lang="fi">Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka.</skos:definition>
+        <skos:definition xml:lang="fi">asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta.</skos:definition>
         <skos:prefLabel xml:lang="sv">Ansökan</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Application</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">Hakemus</skos:prefLabel>
@@ -1671,6 +1687,10 @@
         <rdfs:label xml:lang="sv">Beslut</rdfs:label>
         <rdfs:label xml:lang="en">Decision</rdfs:label>
         <rdfs:label xml:lang="fi">Päätös</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://iri.suomi.fi/terminology/kela/c78"/>
+        <skos:altLabel xml:lang="sv">beslut om förmån</skos:altLabel>
+        <skos:altLabel xml:lang="fi">etuuspäätös</skos:altLabel>
+        <skos:altLabel xml:lang="sv">förmånsbeslut</skos:altLabel>
         <skos:definition xml:lang="en">An authority&apos;s resolution on an application; grants or rejects the requested benefit in full or in part.</skos:definition>
         <skos:definition xml:lang="fi">Viranomaisen ratkaisu hakemukseen; myöntää tai hylkää haetun etuuden kokonaan tai osittain.</skos:definition>
         <skos:prefLabel xml:lang="sv">Beslut</skos:prefLabel>

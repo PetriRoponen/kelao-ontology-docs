@@ -320,12 +320,16 @@
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Benefit> .
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Benefit> .
-<https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#comment> "Estävä etuus"@fi .
-<https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#comment> "Inhibiting benefit"@en .
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#label> "estävä etuus"@fi .
+<https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#label> "hindrande förmån"@sv .
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#label> "inhibiting benefit"@en .
+<https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://iri.suomi.fi/terminology/kela/c66> .
+<https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2004/02/skos/core#definition> "förmån som ska beaktas och på grund av vilken den förmånssökande inte beviljas en annan förmån"@sv .
+<https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2004/02/skos/core#definition> "huomioon otettava etuus, jonka vuoksi etuudenhakijalle ei myönnetä jotain toista etuutta"@fi .
+<https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c66> .
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2004/02/skos/core#prefLabel> "estävä etuus"@fi .
+<https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2004/02/skos/core#prefLabel> "hindrande förmån"@sv .
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2004/02/skos/core#prefLabel> "inhibiting benefit"@en .
 <https://kela.fi/ontology/kelao#inhibiting> <https://kela.fi/ontology/kelao#relationshipAbbreviation> "EST" .
 # 
@@ -437,6 +441,10 @@
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#label> "reducing benefit"@en .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#label> "vähentävä etuus"@fi .
+<https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://iri.suomi.fi/terminology/kela/c65> .
+<https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2004/02/skos/core#definition> "förmån som ska beaktas och som minskar beloppet av en annan förmån"@sv .
+<https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2004/02/skos/core#definition> "huomioon otettava etuus, joka vähentää toisen etuuden määrää"@fi .
+<https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c65> .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2004/02/skos/core#prefLabel> "reducing benefit"@en .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2004/02/skos/core#prefLabel> "vähentävä etuus"@fi .
 <https://kela.fi/ontology/kelao#reducing> <https://kela.fi/ontology/kelao#relationshipAbbreviation> "VÄH" .
@@ -893,11 +901,14 @@
 # https://kela.fi/ontology/kelao#residenceRequired
 <https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
-<https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Residence required"@en .
-<https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2000/01/rdf-schema#comment> "Vaatii asumisen Suomessa"@fi .
 <https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2000/01/rdf-schema#label> "residence required"@en .
 <https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2000/01/rdf-schema#label> "vaatii asumisen Suomessa"@fi .
+<https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://iri.suomi.fi/terminology/kela/c529> .
+<https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2004/02/skos/core#altLabel> "asumisedellytys"@fi .
+<https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2004/02/skos/core#altLabel> "bosättningskrav"@sv .
+<https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2004/02/skos/core#definition> "edellytys, jonka mukaan etuudenhakijan täytyy asua ja edunjättäjän täytyi asua kuollessaan Suomessa, EU- tai Eta-maassa tai Sveitsissä, jotta etuudenhakijalla olisi oikeus etuuteen."@fi .
+<https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2004/02/skos/core#definition> "krav enligt vilket en förmånssökande ska bo i Finland, ett EU-land, ett EES-land eller Schweiz och en förmånslåtare vid sin död måste bo i något av dessa länder för att förmånssökanden ska ha rätt till en förmån"@sv .
 <https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2004/02/skos/core#prefLabel> "residence required"@en .
 <https://kela.fi/ontology/kelao#residenceRequired> <http://www.w3.org/2004/02/skos/core#prefLabel> "vaatii asumisen Suomessa"@fi .
 # 
@@ -1037,8 +1048,13 @@
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2000/01/rdf-schema#label> "Ansökan"@sv .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2000/01/rdf-schema#label> "Application"@en .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2000/01/rdf-schema#label> "Hakemus"@fi .
+<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://iri.suomi.fi/terminology/kela/c77> .
+<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#altLabel> "Ansökan om förmån"@sv .
+<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#altLabel> "Etuushakemus"@fi .
+<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#altLabel> "Förmånsansökan"@sv .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "An applicant's request for a benefit or service. Filing initiates processing of the case."@en .
-<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn."@fi .
+<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."@fi .
+<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ansökan"@sv .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#prefLabel> "Application"@en .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hakemus"@fi .
@@ -1113,6 +1129,10 @@
 <https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2000/01/rdf-schema#label> "Beslut"@sv .
 <https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2000/01/rdf-schema#label> "Decision"@en .
 <https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2000/01/rdf-schema#label> "Päätös"@fi .
+<https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://iri.suomi.fi/terminology/kela/c78> .
+<https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2004/02/skos/core#altLabel> "beslut om förmån"@sv .
+<https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2004/02/skos/core#altLabel> "etuuspäätös"@fi .
+<https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2004/02/skos/core#altLabel> "förmånsbeslut"@sv .
 <https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2004/02/skos/core#definition> "An authority's resolution on an application; grants or rejects the requested benefit in full or in part."@en .
 <https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2004/02/skos/core#definition> "Viranomaisen ratkaisu hakemukseen; myöntää tai hylkää haetun etuuden kokonaan tai osittain."@fi .
 <https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Beslut"@sv .

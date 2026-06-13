@@ -359,12 +359,16 @@ xsd:duration rdf:type rdfs:Datatype .
 :inhibiting rdf:type owl:ObjectProperty ;
             rdfs:domain :Benefit ;
             rdfs:range :Benefit ;
-            rdfs:comment "Estävä etuus"@fi ,
-                         "Inhibiting benefit"@en ;
             rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
             rdfs:label "estävä etuus"@fi ,
+                       "hindrande förmån"@sv ,
                        "inhibiting benefit"@en ;
+            rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c66> ;
+            <http://www.w3.org/2004/02/skos/core#definition> "förmån som ska beaktas och på grund av vilken den förmånssökande inte beviljas en annan förmån"@sv ,
+                                                             "huomioon otettava etuus, jonka vuoksi etuudenhakijalle ei myönnetä jotain toista etuutta"@fi ;
+            <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c66> ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "estävä etuus"@fi ,
+                                                            "hindrande förmån"@sv ,
                                                             "inhibiting benefit"@en ;
             :relationshipAbbreviation "EST" .
 
@@ -485,6 +489,10 @@ xsd:duration rdf:type rdfs:Datatype .
           rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
           rdfs:label "reducing benefit"@en ,
                      "vähentävä etuus"@fi ;
+          rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c65> ;
+          <http://www.w3.org/2004/02/skos/core#definition> "förmån som ska beaktas och som minskar beloppet av en annan förmån"@sv ,
+                                                           "huomioon otettava etuus, joka vähentää toisen etuuden määrää"@fi ;
+          <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c65> ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "reducing benefit"@en ,
                                                           "vähentävä etuus"@fi ;
           :relationshipAbbreviation "VÄH" .
@@ -981,11 +989,14 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#residenceRequired
 :residenceRequired rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:boolean ;
-                   rdfs:comment "Residence required"@en ,
-                                "Vaatii asumisen Suomessa"@fi ;
                    rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                    rdfs:label "residence required"@en ,
                               "vaatii asumisen Suomessa"@fi ;
+                   rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c529> ;
+                   <http://www.w3.org/2004/02/skos/core#altLabel> "asumisedellytys"@fi ,
+                                                                  "bosättningskrav"@sv ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "edellytys, jonka mukaan etuudenhakijan täytyy asua ja edunjättäjän täytyi asua kuollessaan Suomessa, EU- tai Eta-maassa tai Sveitsissä, jotta etuudenhakijalla olisi oikeus etuuteen."@fi ,
+                                                                    "krav enligt vilket en förmånssökande ska bo i Finland, ett EU-land, ett EES-land eller Schweiz och en förmånslåtare vid sin död måste bo i något av dessa länder för att förmånssökanden ska ha rätt till en förmån"@sv ;
                    <http://www.w3.org/2004/02/skos/core#prefLabel> "residence required"@en ,
                                                                    "vaatii asumisen Suomessa"@fi .
 
@@ -1136,8 +1147,13 @@ xsd:duration rdf:type rdfs:Datatype .
              rdfs:label "Ansökan"@sv ,
                         "Application"@en ,
                         "Hakemus"@fi ;
+             rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c77> ;
+             <http://www.w3.org/2004/02/skos/core#altLabel> "Ansökan om förmån"@sv ,
+                                                            "Etuushakemus"@fi ,
+                                                            "Förmånsansökan"@sv ;
              <http://www.w3.org/2004/02/skos/core#definition> "An applicant's request for a benefit or service. Filing initiates processing of the case."@en ,
-                                                              "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn."@fi ;
+                                                              "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."@fi ,
+                                                              "asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "Ansökan"@sv ,
                                                              "Application"@en ,
                                                              "Hakemus"@fi ;
@@ -1217,6 +1233,10 @@ xsd:duration rdf:type rdfs:Datatype .
           rdfs:label "Beslut"@sv ,
                      "Decision"@en ,
                      "Päätös"@fi ;
+          rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c78> ;
+          <http://www.w3.org/2004/02/skos/core#altLabel> "beslut om förmån"@sv ,
+                                                         "etuuspäätös"@fi ,
+                                                         "förmånsbeslut"@sv ;
           <http://www.w3.org/2004/02/skos/core#definition> "An authority's resolution on an application; grants or rejects the requested benefit in full or in part."@en ,
                                                            "Viranomaisen ratkaisu hakemukseen; myöntää tai hylkää haetun etuuden kokonaan tai osittain."@fi ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Beslut"@sv ,
