@@ -493,8 +493,11 @@ kelao:calculationBase a owl:DatatypeProperty ;
 
 kelao:meansTest a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
-    rdfs:label "means test"@en, "behovsbedömning"@sv, "tarveharkinta"@fi ;
-    skos:prefLabel "means test"@en, "behovsbedömning"@sv, "tarveharkinta"@fi ;
+    rdfs:label "means test"@en, "behovsprövning"@sv, "tarveharkinta"@fi ;
+    skos:prefLabel "means test"@en, "behovsprövning"@sv, "tarveharkinta"@fi ;
+    skos:exactMatch <https://iri.suomi.fi/terminology/kela/c688> ;
+    skos:definition "Etuuksien tai palvelujen myöntämisen kriteerien soveltaminen henkilön tarpeeseen."@fi, 
+        "Tillämpning av kriterierna för beviljande av förmåner eller service på en persons behov."@sv ;
     rdfs:comment "Determining entitlement to benefits requires a means test."@en, 
         "För att fastställa rätten till förmåner krävs en behovsprövning."@sv, 
         "Etuuden oikeuden päättely edellyttää tarveharkintaa, tarveharkinnan selitys."@fi ;
