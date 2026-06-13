@@ -19,21 +19,8 @@
 @prefix kela:   <http://kela.fi/kg/> .
 @prefix kelao:  <https://kela.fi/ontology/kelao#> .
 
-# SKOS-propertyt deklaroidaan eksplisiittisesti, koska owl:imports on kommentoitu pois.
-# Ilman tätä OWL API ei tunnista skos:altLabel jne. annotaatiopropertyksi
-# ja tulkitsee ne datatype propertyiksi → luokat näkyvät virheellisesti named individualseina.
-skos:prefLabel      a owl:AnnotationProperty .
-skos:altLabel       a owl:AnnotationProperty .
-skos:definition     a owl:AnnotationProperty .
-skos:scopeNote      a owl:AnnotationProperty .
-skos:example        a owl:AnnotationProperty .
-skos:note           a owl:AnnotationProperty .
-skos:exactMatch     a owl:AnnotationProperty .
-skos:closeMatch     a owl:AnnotationProperty .
-skos:broadMatch     a owl:AnnotationProperty .
 
 <https://kela.fi/ontology/kelao> a owl:Ontology ;
-    owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/> ;
     rdfs:label "Sosiaaliturvan ydinontologia"@fi,
                "Finnish Social Security Core Ontology"@en ;
     dct:title "Sosiaaliturvan ydinontologia"@fi,
@@ -46,7 +33,7 @@ skos:broadMatch     a owl:AnnotationProperty .
     dct:creator "Petri Roponen" ;
     dct:contributor <https://www.linkedin.com/in/petri-roponen-052aa772> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    vann:preferredNamespacePrefix "kelao" ;
+    vann:preferredNamespacePrefix "kelao" ; # 
     rdfs:comment "Ydinversio: sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."@fi ;
     vann:preferredNamespaceUri "https://kela.fi/ontology/kelao#"^^xsd:anyURI ;
     #owl:imports <http://www.w3.org/2004/02/skos/core#> ;
@@ -77,7 +64,21 @@ skos:broadMatch     a owl:AnnotationProperty .
     dct:modified "2026-06-10"^^xsd:date ;
     dct:created "2026-06-08"^^xsd:date .
 
+# ── Annotation properties ────────────────────────────────────────────
 
+# SKOS-propertyt deklaroidaan eksplisiittisesti, koska owl:imports on kommentoitu pois.
+# Ilman tätä OWL API ei tunnista skos:altLabel jne. annotaatiopropertyksi
+# ja tulkitsee ne datatype propertyiksi → luokat näkyvät virheellisesti named individualseina.
+skos:prefLabel      a owl:AnnotationProperty .
+skos:altLabel       a owl:AnnotationProperty .
+skos:definition     a owl:AnnotationProperty .
+skos:scopeNote      a owl:AnnotationProperty .
+skos:example        a owl:AnnotationProperty .
+skos:note           a owl:AnnotationProperty .
+skos:exactMatch     a owl:AnnotationProperty .
+skos:closeMatch     a owl:AnnotationProperty .
+skos:broadMatch     a owl:AnnotationProperty .
+skos:changeNote     a owl:AnnotationProperty . # ?
 
 # ── LUOKAT — Käyttäjä ────────────────────────────────────────────
 
@@ -98,7 +99,7 @@ kelao:Benefit a owl:Class ;
     skos:altLabel "Social benefit"@en, "Sosiaalietuus"@fi, "Tuki"@fi ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
     rdfs:comment
-        "Sosiaaliturvan etuus, maksu tai tuki. Yleinen luokka — käytä alaluokkia instansseissa."@fi,
+        "Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa."@fi,
         "A social security benefit or allowance. General class — use subclasses for instances."@en .
 
 kelao:StandaloneBenefit a owl:Class ;
