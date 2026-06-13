@@ -15,7 +15,7 @@
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/title> "Sosiaaliturvan ydinontologia"@fi .
 <https://kela.fi/ontology/kelao> <http://purl.org/vocab/vann/preferredNamespacePrefix> "kelao" .
 <https://kela.fi/ontology/kelao> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://kela.fi/ontology/kelao#"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#comment> "Ydinversio: sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."@fi .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#comment> "Ydinversio sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."@fi .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#label> "Finnish Social Security Core Ontology"@en .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#label> "Sosiaaliturvan ydinontologia"@fi .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/eli/ontology#> .
@@ -30,8 +30,8 @@
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://semiceu.github.io/CPSV-AP/releases/3.2.0/> .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#priorVersion> "0.1.0" .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.0-core-draft" .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Core ontology contains only core classess and properties."@en .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Ydinontologia sisältää ainoastaan ydinluokat ja ominaisuudet."@fi .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Automated document generation"@en .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Automatisoitu dokumentaation luonti .ttl-tiedostosta"@fi .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#scopeNote> "Sosiaaliturvan tietämysgraafi (KELAO) ei sisällä hakijakohtaisia tietoja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä."@fi .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#scopeNote> "The Social Security knowledge graph (KELAO) does not contain applicant-level data — personal data is processed in Kela's operational systems."@en .
 # 

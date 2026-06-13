@@ -171,7 +171,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Ydinversio: sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."
+    "@value" : "Ydinversio sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -212,10 +212,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
     "@language" : "en",
-    "@value" : "Core ontology contains only core classess and properties."
+    "@value" : "Automated document generation"
   }, {
     "@language" : "fi",
-    "@value" : "Ydinontologia sisältää ainoastaan ydinluokat ja ominaisuudet."
+    "@value" : "Automatisoitu dokumentaation luonti .ttl-tiedostosta"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",

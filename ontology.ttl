@@ -28,7 +28,7 @@
                                                                    "Sosiaaliturvan ydinontologia"@fi ;
                                   <http://purl.org/vocab/vann/preferredNamespacePrefix> "kelao" ;
                                   <http://purl.org/vocab/vann/preferredNamespaceUri> "https://kela.fi/ontology/kelao#"^^xsd:anyURI ;
-                                  rdfs:comment "Ydinversio: sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."@fi ;
+                                  rdfs:comment "Ydinversio sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."@fi ;
                                   rdfs:label "Finnish Social Security Core Ontology"@en ,
                                              "Sosiaaliturvan ydinontologia"@fi ;
                                   rdfs:seeAlso <http://data.europa.eu/eli/ontology#> ,
@@ -43,8 +43,8 @@
                                                <https://semiceu.github.io/CPSV-AP/releases/3.2.0/> ;
                                   owl:priorVersion "0.1.0" ;
                                   owl:versionInfo "0.2.0-core-draft" ;
-                                  <http://www.w3.org/2004/02/skos/core#changeNote> "Core ontology contains only core classess and properties."@en ,
-                                                                                   "Ydinontologia sisältää ainoastaan ydinluokat ja ominaisuudet."@fi ;
+                                  <http://www.w3.org/2004/02/skos/core#changeNote> "Automated document generation"@en ,
+                                                                                   "Automatisoitu dokumentaation luonti .ttl-tiedostosta"@fi ;
                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Sosiaaliturvan tietämysgraafi (KELAO) ei sisällä hakijakohtaisia tietoja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä."@fi ,
                                                                                   "The Social Security knowledge graph (KELAO) does not contain applicant-level data — personal data is processed in Kela's operational systems."@en .
 

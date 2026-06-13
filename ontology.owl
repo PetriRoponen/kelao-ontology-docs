@@ -32,7 +32,7 @@
         <terms:title xml:lang="fi">Sosiaaliturvan ydinontologia</terms:title>
         <vann:preferredNamespacePrefix>kelao</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://kela.fi/ontology/kelao#</vann:preferredNamespaceUri>
-        <rdfs:comment xml:lang="fi">Ydinversio: sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...).</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Ydinversio sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...).</rdfs:comment>
         <rdfs:label xml:lang="en">Finnish Social Security Core Ontology</rdfs:label>
         <rdfs:label xml:lang="fi">Sosiaaliturvan ydinontologia</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/ontology#"/>
@@ -47,8 +47,8 @@
         <rdfs:seeAlso rdf:resource="https://semiceu.github.io/CPSV-AP/releases/3.2.0/"/>
         <owl:priorVersion>0.1.0</owl:priorVersion>
         <owl:versionInfo>0.2.0-core-draft</owl:versionInfo>
-        <skos:changeNote xml:lang="en">Core ontology contains only core classess and properties.</skos:changeNote>
-        <skos:changeNote xml:lang="fi">Ydinontologia sisältää ainoastaan ydinluokat ja ominaisuudet.</skos:changeNote>
+        <skos:changeNote xml:lang="en">Automated document generation</skos:changeNote>
+        <skos:changeNote xml:lang="fi">Automatisoitu dokumentaation luonti .ttl-tiedostosta</skos:changeNote>
         <skos:scopeNote xml:lang="fi">Sosiaaliturvan tietämysgraafi (KELAO) ei sisällä hakijakohtaisia tietoja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">The Social Security knowledge graph (KELAO) does not contain applicant-level data — personal data is processed in Kela&apos;s operational systems.</skos:scopeNote>
     </owl:Ontology>
