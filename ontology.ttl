@@ -484,8 +484,6 @@ xsd:duration rdf:type rdfs:Datatype .
 :reducing rdf:type owl:ObjectProperty ;
           rdfs:domain :Benefit ;
           rdfs:range :Benefit ;
-          rdfs:comment "Reducing benefit"@en ,
-                       "Vähentävä etuus"@fi ;
           rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
           rdfs:label "reducing benefit"@en ,
                      "vähentävä etuus"@fi ;
@@ -1196,8 +1194,9 @@ xsd:duration rdf:type rdfs:Datatype .
                                                         "Sosiaalietuus"@fi ,
                                                         "Tuki"@fi ;
          <http://www.w3.org/2004/02/skos/core#definition> "Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg."@sv ,
-                                                          "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein."@fi ,
-                                                          "Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein"@fi ,
+                                                          """Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.
+            Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein
+            """@fi ,
                                                           "x"@en ;
          <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c60> ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit"@en ,

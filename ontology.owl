@@ -691,8 +691,6 @@
     <owl:ObjectProperty rdf:about="https://kela.fi/ontology/kelao#reducing">
         <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
-        <rdfs:comment xml:lang="en">Reducing benefit</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Vähentävä etuus</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">reducing benefit</rdfs:label>
         <rdfs:label xml:lang="fi">vähentävä etuus</rdfs:label>
@@ -1638,8 +1636,9 @@
         <skos:altLabel xml:lang="fi">Sosiaalietuus</skos:altLabel>
         <skos:altLabel xml:lang="fi">Tuki</skos:altLabel>
         <skos:definition xml:lang="sv">Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg.</skos:definition>
-        <skos:definition xml:lang="fi">Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.</skos:definition>
-        <skos:definition xml:lang="fi">Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein</skos:definition>
+        <skos:definition xml:lang="fi">Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.
+            Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein
+            </skos:definition>
         <skos:definition xml:lang="en">x</skos:definition>
         <skos:exactMatch rdf:resource="https://iri.suomi.fi/terminology/kela/c60"/>
         <skos:prefLabel xml:lang="en">Benefit</skos:prefLabel>

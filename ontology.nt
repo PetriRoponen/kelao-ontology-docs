@@ -436,8 +436,6 @@
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Benefit> .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Benefit> .
-<https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#comment> "Reducing benefit"@en .
-<https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#comment> "Vähentävä etuus"@fi .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#label> "reducing benefit"@en .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#label> "vähentävä etuus"@fi .
@@ -1095,8 +1093,7 @@
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#altLabel> "Sosiaalietuus"@fi .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#altLabel> "Tuki"@fi .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#definition> "Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg."@sv .
-<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#definition> "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein."@fi .
-<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#definition> "Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein"@fi .
+<https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#definition> "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.\n            Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein\n            "@fi .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#definition> "x"@en .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#exactMatch> <https://iri.suomi.fi/terminology/kela/c60> .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit"@en .

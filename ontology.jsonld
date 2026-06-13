@@ -460,10 +460,7 @@
     "@value" : "Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg."
   }, {
     "@language" : "fi",
-    "@value" : "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein."
-  }, {
-    "@language" : "fi",
-    "@value" : "Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein"
+    "@value" : "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.\n            Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein\n            "
   }, {
     "@language" : "en",
     "@value" : "x"
@@ -2770,13 +2767,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#reducing",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Reducing benefit"
-  }, {
-    "@language" : "fi",
-    "@value" : "Vähentävä etuus"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Benefit"
   } ],
