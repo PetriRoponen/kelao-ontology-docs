@@ -28,19 +28,15 @@ jobs:
         run: |
           wget -q \
             https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
-            -O widoco.jar
+            -O /tmp/widoco.jar
 
       - name: Generate ontology documentation
         run: |
-          # Poistetaan vanhat tiedostot ennen uudelleengenerointia
-          rm -rf resources/ sections/ webvowl/
-          rm -f index.html index-en.html index-fi.html 406.html
-          rm -f ontology.jsonld ontology.nt ontology.owl ontology.ttl
-
-          # Generoidaan uusi dokumentaatio
-          java -jar widoco.jar \
+          set -e
+          # Generoidaan dokumentaatio väliaikaiseen hakemistoon
+          java -jar /tmp/widoco.jar \
             -ontFile kelao-ontology-core2.ttl \
-            -outFolder . \
+            -outFolder /tmp/widoco-output \
             -lang en-fi \
             -rewriteAll \
             -includeAnnotationProperties \
@@ -49,11 +45,23 @@ jobs:
             -webVowl \
             -uniteSections
 
+          echo "WIDOCO valmis, listataan tulostetiedostot:"
+          ls /tmp/widoco-output/
+
+          # Poistetaan vanhat dokumentit reposta
+          rm -rf resources/ sections/ webvowl/
+          rm -f index.html index-en.html index-fi.html 406.html
+          rm -f ontology.jsonld ontology.nt ontology.owl ontology.ttl
+
+          # Kopioidaan uudet tiedostot repon juureen
+          cp -r /tmp/widoco-output/. .
+
       - name: Commit and push updated documentation
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add -A
+          git status
           if git diff --staged --quiet; then
             echo "Ei muutoksia dokumentaatiossa."
           else
