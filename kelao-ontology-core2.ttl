@@ -59,6 +59,7 @@
     skos:scopeNote "Sosiaaliturvan tietämysgraafi (KELAO) ei sisällä hakijakohtaisia tietoja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä."@fi, 
         "The Social Security knowledge graph (KELAO) does not contain applicant-level data — personal data is processed in Kela's operational systems."@en ;
     owl:versionInfo "0.2.0-core-draft" ;
+    owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/> ;
     owl:priorVersion "0.1.0" ;
     skos:changeNote "Ydinontologia sisältää ainoastaan ydinluokat ja ominaisuudet."@fi, "Core ontology contains only core classess and properties."@en ;
     dct:modified "2026-06-10"^^xsd:date ;
@@ -78,7 +79,7 @@ skos:note           a owl:AnnotationProperty .
 skos:exactMatch     a owl:AnnotationProperty .
 skos:closeMatch     a owl:AnnotationProperty .
 skos:broadMatch     a owl:AnnotationProperty .
-skos:changeNote     a owl:AnnotationProperty . # ????
+skos:changeNote     a owl:AnnotationProperty .
 
 # ── LUOKAT — Käyttäjä ────────────────────────────────────────────
 
