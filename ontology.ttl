@@ -92,6 +92,10 @@
 <http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2004/02/skos/core#broadMatch
 <http://www.w3.org/2004/02/skos/core#broadMatch> rdf:type owl:AnnotationProperty .
 
@@ -126,6 +130,11 @@
 
 ###  http://www.w3.org/2004/02/skos/core#scopeNote
 <http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+###  https://kela.fi/ontology/kelao#alternative
+:alternative rdf:type owl:AnnotationProperty ;
+             rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#altLabel> .
 
 
 ###  https://kela.fi/ontology/kelao#relationshipAbbreviation
@@ -566,10 +575,6 @@ xsd:duration rdf:type rdfs:Datatype .
 <http://schema.org/identifier> rdf:type owl:DatatypeProperty .
 
 
-###  http://www.w3.org/2004/02/skos/core#altLabel
-<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:DatatypeProperty .
-
-
 ###  https://kela.fi/ontology/kelao#abbreviation
 :abbreviation rdf:type owl:DatatypeProperty ;
               rdfs:range xsd:string ;
@@ -584,17 +589,7 @@ xsd:duration rdf:type rdfs:Datatype .
 
 ###  https://kela.fi/ontology/kelao#alternative
 :alternative rdf:type owl:DatatypeProperty ;
-             rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#altLabel> ;
-             rdfs:range xsd:string ;
-             rdfs:comment "An established acronym or alternative name for the legal resource."@en ,
-                          "Säädöksen vakiintunut lyhenne tai vaihtoehtoinen nimi."@fi ;
-             rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-             rdfs:label "lain lyhenne"@fi ,
-                        "law acronym"@en ;
-             <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.org/dc/terms/alternative> ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "lain lyhenne"@fi ,
-                                                             "law acronym"@en ;
-             <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:LegalResource-instansseilla. Kuvaa säädöksen vakiintuneen lyhenteen, esim. 'KEL' tai 'SHL'."@fi .
+             rdfs:range xsd:string .
 
 
 ###  https://kela.fi/ontology/kelao#amount
@@ -1105,7 +1100,18 @@ xsd:duration rdf:type rdfs:Datatype .
 
 ###  https://kela.fi/ontology/kelao#Appeal
 :Appeal rdf:type owl:Class ;
-        rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> .
+        rdfs:subClassOf <http://www.w3.org/ns/prov#Entity> ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "Appeal"@en ,
+                   "Muutoksenhaku"@fi ,
+                   "Ändringssökande"@sv ;
+        <http://www.w3.org/2004/02/skos/core#altLabel> "oikaisuvaatimus"@fi ,
+                                                       "valitus"@fi ;
+        <http://www.w3.org/2004/02/skos/core#definition> "An applicant's request for rectification of or appeal against a decision."@en ,
+                                                         "Hakijan päätökseen kohdistama oikaisuvaatimus tai valitus."@fi ;
+        <http://www.w3.org/2004/02/skos/core#prefLabel> "Appeal"@en ,
+                                                        "Muutoksenhaku"@fi ,
+                                                        "Ändringssökande"@sv .
 
 
 ###  https://kela.fi/ontology/kelao#Applicant
@@ -1158,13 +1164,38 @@ xsd:duration rdf:type rdfs:Datatype .
 
 ###  https://kela.fi/ontology/kelao#Benefit
 :Benefit rdf:type owl:Class ;
-         rdfs:subClassOf <http://purl.org/vocab/cpsv#PublicService> .
+         rdfs:subClassOf <http://purl.org/vocab/cpsv#PublicService> ;
+         rdfs:comment "A social security benefit or allowance. General class — use subclasses for instances."@en ,
+                      "Sosiaaliturvan etuus, maksu tai tuki. Yleinen luokka — käytä alaluokkia instansseissa."@fi ;
+         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+         rdfs:label "Benefit"@en ,
+                    "Etuus"@fi ,
+                    "Förmån"@sv ;
+         <http://www.w3.org/2004/02/skos/core#altLabel> "Social benefit"@en ,
+                                                        "Sosiaalietuus"@fi ,
+                                                        "Tuki"@fi ;
+         <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit"@en ,
+                                                         "Etuus"@fi ,
+                                                         "Förmån"@sv .
 
 
 ###  https://kela.fi/ontology/kelao#BenefitComponent
 :BenefitComponent rdf:type owl:Class ;
                   rdfs:subClassOf :Benefit ;
-                  owl:disjointWith :StandaloneBenefit .
+                  owl:disjointWith :StandaloneBenefit ;
+                  rdfs:comment "Benefit Component"@en ,
+                               "Osa suurempaa etuuskokonaisuutta."@fi ;
+                  rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+                  rdfs:label "Benefit Component"@en ,
+                             "Etuuden osa"@fi ;
+                  <http://www.w3.org/2004/02/skos/core#altLabel> "etuusosa"@fi ,
+                                                                 "sub-benefit"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "An independent and separately processed part of a benefit that can be granted only if the benefit in which the part belongs is also granted."@en ,
+                                                                   "Etuuden itsenäinen, erikseen käsiteltävä osa, joka voidaan myöntää vain, jos myös etuus, jonka osa on kyseessä, on myönnetty."@fi ;
+                  <http://www.w3.org/2004/02/skos/core#example> "Esimerkiksi opintotuessa etuuden osia ovat opintoraha, asumislisä ja opintolainan valtiontakaus; lesken- ja lapseneläkkeessä osia ovat perus- ja täydennysmäärät."@fi ,
+                                                                "For example, the study grant, housing supplement and government guarantee for student loan are parts of the financial aid for students."@en ;
+                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit Component"@en ,
+                                                                  "Etuuden osa"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#BenefitGroup
@@ -1328,65 +1359,18 @@ xsd:duration rdf:type rdfs:Datatype .
 
 
 #################################################################
-#    Individuals
-#################################################################
-
-###  https://kela.fi/ontology/kelao#Appeal
-:Appeal rdf:type owl:NamedIndividual ;
-        <http://www.w3.org/2004/02/skos/core#altLabel> "oikaisuvaatimus"@fi ,
-                                                       "valitus"@fi .
-
-
-###  https://kela.fi/ontology/kelao#Benefit
-:Benefit rdf:type owl:NamedIndividual ;
-         <http://www.w3.org/2004/02/skos/core#altLabel> "Social benefit"@en ,
-                                                        "Sosiaalietuus"@fi ,
-                                                        "Tuki"@fi .
-
-
-###  https://kela.fi/ontology/kelao#BenefitComponent
-:BenefitComponent rdf:type owl:NamedIndividual ;
-                  <http://www.w3.org/2004/02/skos/core#altLabel> "etuusosa"@fi ,
-                                                                 "sub-benefit"@en .
-
-
-#################################################################
 #    Annotations
 #################################################################
 
-:Appeal rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-        rdfs:label "Appeal"@en ,
-                   "Muutoksenhaku"@fi ,
-                   "Ändringssökande"@sv ;
-        <http://www.w3.org/2004/02/skos/core#definition> "An applicant's request for rectification of or appeal against a decision."@en ,
-                                                         "Hakijan päätökseen kohdistama oikaisuvaatimus tai valitus."@fi ;
-        <http://www.w3.org/2004/02/skos/core#prefLabel> "Appeal"@en ,
-                                                        "Muutoksenhaku"@fi ,
-                                                        "Ändringssökande"@sv .
-
-
-:Benefit rdfs:comment "A social security benefit or allowance. General class — use subclasses for instances."@en ,
-                      "Sosiaaliturvan etuus, maksu tai tuki. Yleinen luokka — käytä alaluokkia instansseissa."@fi ;
-         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-         rdfs:label "Benefit"@en ,
-                    "Etuus"@fi ,
-                    "Förmån"@sv ;
-         <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit"@en ,
-                                                         "Etuus"@fi ,
-                                                         "Förmån"@sv .
-
-
-:BenefitComponent rdfs:comment "Benefit Component"@en ,
-                               "Osa suurempaa etuuskokonaisuutta."@fi ;
-                  rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                  rdfs:label "Benefit Component"@en ,
-                             "Etuuden osa"@fi ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "An independent and separately processed part of a benefit that can be granted only if the benefit in which the part belongs is also granted."@en ,
-                                                                   "Etuuden itsenäinen, erikseen käsiteltävä osa, joka voidaan myöntää vain, jos myös etuus, jonka osa on kyseessä, on myönnetty."@fi ;
-                  <http://www.w3.org/2004/02/skos/core#example> "Esimerkiksi opintotuessa etuuden osia ovat opintoraha, asumislisä ja opintolainan valtiontakaus; lesken- ja lapseneläkkeessä osia ovat perus- ja täydennysmäärät."@fi ,
-                                                                "For example, the study grant, housing supplement and government guarantee for student loan are parts of the financial aid for students."@en ;
-                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit Component"@en ,
-                                                                  "Etuuden osa"@fi .
+:alternative rdfs:comment "An established acronym or alternative name for the legal resource."@en ,
+                          "Säädöksen vakiintunut lyhenne tai vaihtoehtoinen nimi."@fi ;
+             rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+             rdfs:label "lain lyhenne"@fi ,
+                        "law acronym"@en ;
+             <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.org/dc/terms/alternative> ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "lain lyhenne"@fi ,
+                                                             "law acronym"@en ;
+             <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:LegalResource-instansseilla. Kuvaa säädöksen vakiintuneen lyhenteen, esim. 'KEL' tai 'SHL'."@fi .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

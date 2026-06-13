@@ -4,8 +4,8 @@ This section provides details for each class and property defined by Sosiaalitur
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#LifeSituationClassification" title="https://kela.fi/ontology/kelao#LifeSituationClassification">ElämäntilanneLuokitus</a></li>
-  <li><a href="#BenefitComponent" title="https://kela.fi/ontology/kelao#BenefitComponent"> <span>Etuuden osa</span> </a></li>
-  <li><a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit"> <span>Etuus</span> </a></li>
+  <li><a href="#BenefitComponent" title="https://kela.fi/ontology/kelao#BenefitComponent">Etuuden osa</a></li>
+  <li><a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a></li>
   <li><a href="#BenefitGroup" title="https://kela.fi/ontology/kelao#BenefitGroup">Etuusryhmä</a></li>
   <li><a href="#Application" title="https://kela.fi/ontology/kelao#Application">Hakemus</a></li>
   <li><a href="#Applicant" title="https://kela.fi/ontology/kelao#Applicant">Hakija</a></li>
@@ -13,7 +13,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#User" title="https://kela.fi/ontology/kelao#User">Käyttäjä</a></li>
   <li><a href="#LegalResourcePart" title="https://kela.fi/ontology/kelao#LegalResourcePart">Lain osa</a></li>
   <li><a href="#Attachment" title="https://kela.fi/ontology/kelao#Attachment">Liite</a></li>
-  <li><a href="#Appeal" title="https://kela.fi/ontology/kelao#Appeal"> <span>Muutoksenhaku</span> </a></li>
+  <li><a href="#Appeal" title="https://kela.fi/ontology/kelao#Appeal">Muutoksenhaku</a></li>
   <li><a href="#Organisation" title="https://kela.fi/ontology/kelao#Organisation">Organisaatio</a></li>
   <li><a href="#Service" title="https://kela.fi/ontology/kelao#Service">Palvelu</a></li>
   <li><a href="#Decision" title="https://kela.fi/ontology/kelao#Decision">Päätös</a></li>
@@ -61,6 +61,31 @@ This section provides details for each class and property defined by Sosiaalitur
  <div class="entity" id="BenefitComponent">
   <h3>Etuuden osa<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#BenefitComponent</p>
+  <div class="comment">
+   <span class="markdown">Osa suurempaa etuuskokonaisuutta.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Etuuden itsenäinen, erikseen käsiteltävä osa, joka voidaan myöntää vain, jos myös etuus, jonka osa on kyseessä, on myönnetty.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl>
+   <dt>
+    Example
+   </dt>
+   <dd>
+    <pre>Esimerkiksi opintotuessa etuuden osia ovat opintoraha, asumislisä ja opintolainan valtiontakaus; lesken- ja lapseneläkkeessä osia ovat perus- ja täydennysmäärät.</pre>
+   </dd>
+   <dd>
+    <pre>For example, the study grant, housing supplement and government guarantee for student loan are parts of the financial aid for students.</pre>
+   </dd>
+  </dl>
   <dl class="description">
    <dt>
     has super-classes
@@ -86,17 +111,22 @@ This section provides details for each class and property defined by Sosiaalitur
    <dd>
     <a href="#StandaloneBenefit" title="https://kela.fi/ontology/kelao#StandaloneBenefit">Itsenäinen etuus</a> <sup class="type-c" title="class">c</sup>
    </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    <a href="#BenefitComponent">named individual</a>
-   </dd>
   </dl>
  </div>
  <div class="entity" id="Benefit">
   <h3>Etuus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Benefit</p>
+  <div class="comment">
+   <span class="markdown">Sosiaaliturvan etuus, maksu tai tuki. Yleinen luokka — käytä alaluokkia instansseissa.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
   <dl class="description">
    <dt>
     has super-classes
@@ -121,12 +151,6 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="#advancePayment" title="https://kela.fi/ontology/kelao#advancePayment">ennakkosuoritus</a> <sup class="type-op" title="object property">op</sup>, <a href="#inhibiting" title="https://kela.fi/ontology/kelao#inhibiting">estävä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#appliesFor" title="https://kela.fi/ontology/kelao#appliesFor">hakee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#applicationConcerns" title="https://kela.fi/ontology/kelao#applicationConcerns">hakemus koskee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">huomautus</a> <sup class="type-op" title="object property">op</sup>, <a href="#broaderBenefit" title="https://kela.fi/ontology/kelao#broaderBenefit">laajempi etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#minimumAmount" title="https://kela.fi/ontology/kelao#minimumAmount">minimimääräinen etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLifeSituationFor" title="https://kela.fi/ontology/kelao#isLifeSituationFor">on elämäntilanne kohteelle</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEligibleFor" title="https://kela.fi/ontology/kelao#isEligibleFor">on oikeutettu etuuteen</a> <sup class="type-op" title="object property">op</sup>, <a href="#investigate" title="https://kela.fi/ontology/kelao#investigate">selvitä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatedBenefit" title="https://kela.fi/ontology/kelao#relatedBenefit">säädös tai vaatimusprofiili koskee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#meansTestedIncome" title="https://kela.fi/ontology/kelao#meansTestedIncome">tarveharkinnan tulo</a> <sup class="type-op" title="object property">op</sup>, <a href="#reducing" title="https://kela.fi/ontology/kelao#reducing">vähentävä etuus</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    <a href="#Benefit">named individual</a>
    </dd>
   </dl>
  </div>
@@ -365,6 +389,17 @@ This section provides details for each class and property defined by Sosiaalitur
  <div class="entity" id="Appeal">
   <h3>Muutoksenhaku<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Appeal</p>
+  <div class="comment">
+   <span class="markdown">Hakijan päätökseen kohdistama oikaisuvaatimus tai valitus.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
   <dl class="description">
    <dt>
     has super-classes
@@ -377,12 +412,6 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="#appealsDecision" title="https://kela.fi/ontology/kelao#appealsDecision">kohdistuu päätökseen</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    <a href="#Appeal">named individual</a>
    </dd>
   </dl>
  </div>
@@ -1469,7 +1498,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#homepage" title="https://kela.fi/ontology/kelao#homepage">kotisivu</a></li>
   <li><a href="#processingTime" title="https://kela.fi/ontology/kelao#processingTime">käsittelyaika</a></li>
   <li><a href="#processingTimeBusinessDays" title="https://kela.fi/ontology/kelao#processingTimeBusinessDays">käsittelyaika arkipäivinä</a></li>
-  <li><a href="#alternative" title="https://kela.fi/ontology/kelao#alternative">lain lyhenne</a></li>
+  <li><a href="#alternative" title="https://kela.fi/ontology/kelao#alternative"> <span>lain lyhenne</span> </a></li>
   <li><a href="#partText" title="https://kela.fi/ontology/kelao#partText">lainosan teksti</a></li>
   <li><a href="#calculationBase" title="https://kela.fi/ontology/kelao#calculationBase">laskentaperuste</a></li>
   <li><a href="#attachmentUri" title="https://kela.fi/ontology/kelao#attachmentUri">liitteen uri</a></li>
@@ -1704,30 +1733,19 @@ This section provides details for each class and property defined by Sosiaalitur
  <div class="entity" id="alternative">
   <h3>lain lyhenne<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#alternative</p>
-  <div class="comment">
-   <span class="markdown">Säädöksen vakiintunut lyhenne tai vaihtoehtoinen nimi.</span>
-  </div>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
-   </dd>
-  </dl>
   <div class="description">
    <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#altLabel">alt Label</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
     <dt>
      has range
     </dt>
     <dd>
      <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+    <dt>
+     is also defined as
+    </dt>
+    <dd>
+     <a href="#alternative">annotation property</a>
     </dd>
    </dl>
   </div>
@@ -2457,91 +2475,11 @@ This section provides details for each class and property defined by Sosiaalitur
    </dl>
   </div>
  </div>
-</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
- <h3 id="namedindividuals" class="list">Named Individuals</h3>
- <ul class="hlist">
-  <li><a href="#BenefitComponent" title="https://kela.fi/ontology/kelao#BenefitComponent"> <span>Etuuden osa</span> </a></li>
-  <li><a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit"> <span>Etuus</span> </a></li>
-  <li><a href="#Appeal" title="https://kela.fi/ontology/kelao#Appeal"> <span>Muutoksenhaku</span> </a></li>
- </ul>
- <div class="entity" id="BenefitComponent">
-  <h3>Etuuden osa<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#BenefitComponent</p>
-  <dl class="description">
-   <dt>
-    is disjoint with
-   </dt>
-   <dd>
-    <a href="#StandaloneBenefit" title="https://kela.fi/ontology/kelao#StandaloneBenefit">Itsenäinen etuus</a> <sup class="type-c" title>c</sup>
-   </dd>
-   <dt>
-    has facts
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#altLabel">alt Label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"etuusosa"@fi</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#altLabel">alt Label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"sub-benefit"@en</span>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    <a href="#BenefitComponent">class</a>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Benefit">
-  <h3>Etuus<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Benefit</p>
-  <dl class="description">
-   <dt>
-    has facts
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#altLabel">alt Label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Social benefit"@en</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#altLabel">alt Label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Sosiaalietuus"@fi</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#altLabel">alt Label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Tuki"@fi</span>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    <a href="#Benefit">class</a>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Appeal">
-  <h3>Muutoksenhaku<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Appeal</p>
-  <dl class="description">
-   <dt>
-    has facts
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#altLabel">alt Label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"oikaisuvaatimus"@fi</span>
-   </dd>
-   <dd>
-    <a href="http://www.w3.org/2004/02/skos/core#altLabel" target="_blank" title="http://www.w3.org/2004/02/skos/core#altLabel">alt Label</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"valitus"@fi</span>
-   </dd>
-   <dt>
-    is also defined as
-   </dt>
-   <dd>
-    <a href="#Appeal">class</a>
-   </dd>
-  </dl>
- </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <div   class="entity">
 <sup class="type-c" title="Classes">c</sup>: Classes <br/>
 <sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
 <sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
-<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
 </div>
 </div>
