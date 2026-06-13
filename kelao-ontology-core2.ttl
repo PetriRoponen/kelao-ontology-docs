@@ -301,9 +301,13 @@ kelao:inhibiting a owl:ObjectProperty ;
     rdfs:domain kelao:Benefit ;
     rdfs:range kelao:Benefit ;
     kelao:relationshipAbbreviation "EST" ;
-    rdfs:label "inhibiting benefit"@en, "estävä etuus"@fi ;
-    skos:prefLabel "inhibiting benefit"@en, "estävä etuus"@fi ;
-    rdfs:comment "Inhibiting benefit"@en, "Estävä etuus"@fi ;
+    rdfs:label "inhibiting benefit"@en, "estävä etuus"@fi, "hindrande förmån"@sv ;
+    skos:prefLabel "inhibiting benefit"@en, "estävä etuus"@fi, "hindrande förmån"@sv  ;
+    skos:exactMatch <https://iri.suomi.fi/terminology/kela/c66> ;
+    rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c66> ;
+    skos:definition "huomioon otettava etuus, jonka vuoksi etuudenhakijalle ei myönnetä jotain toista etuutta"@fi, 
+        "förmån som ska beaktas och på grund av vilken den förmånssökande inte beviljas en annan förmån"@sv ;
+    #rdfs:comment "Inhibiting benefit"@en, "Estävä etuus"@fi, "hindrande förmån"@sv ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> .
 
 kelao:reducing a owl:ObjectProperty ;
@@ -312,6 +316,10 @@ kelao:reducing a owl:ObjectProperty ;
     kelao:relationshipAbbreviation "VÄH" ;
     rdfs:label "reducing benefit"@en, "vähentävä etuus"@fi ;
     skos:prefLabel "reducing benefit"@en, "vähentävä etuus"@fi ;
+    skos:exactMatch <https://iri.suomi.fi/terminology/kela/c65> ;
+    rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c65> ;
+    skos:definition "huomioon otettava etuus, joka vähentää toisen etuuden määrää"@fi, 
+        "förmån som ska beaktas och som minskar beloppet av en annan förmån"@sv ;
     rdfs:comment "Reducing benefit"@en, "Vähentävä etuus"@fi ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> .
 
@@ -351,7 +359,6 @@ kelao:advancePayment a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> .
 
 kelao:minimumAmount a owl:ObjectProperty ;
-    
     rdfs:domain kelao:Benefit ;
     rdfs:range kelao:Benefit ;
     kelao:relationshipAbbreviation "MIN" ;
@@ -359,8 +366,6 @@ kelao:minimumAmount a owl:ObjectProperty ;
     skos:prefLabel "minimum amount benefit"@en, "minimimääräinen etuus"@fi ;
     rdfs:comment "Minimum amount benefit"@en, "Minimimääräinen etuus"@fi ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> .
-
-# SKOS  -- importataan ei itse määritellä
 
 kelao:has_part a owl:ObjectProperty ;
     rdfs:domain kelao:LegalResource ;
@@ -445,8 +450,12 @@ kelao:requiresEmploymentHistory a owl:DatatypeProperty ;
 kelao:residenceRequired a owl:DatatypeProperty ;
     rdfs:range xsd:boolean ;
     rdfs:label "vaatii asumisen Suomessa"@fi, "residence required"@en ;
+    skos:altLabel "asumisedellytys"@fi, "bosättningskrav"@sv ;
+    rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c529> ;
     skos:prefLabel "vaatii asumisen Suomessa"@fi, "residence required"@en ;
-    rdfs:comment "Vaatii asumisen Suomessa"@fi, "Residence required"@en ;
+    skos:definition "edellytys, jonka mukaan etuudenhakijan täytyy asua ja edunjättäjän täytyi asua kuollessaan Suomessa, EU- tai Eta-maassa tai Sveitsissä, jotta etuudenhakijalla olisi oikeus etuuteen."@fi,
+        "krav enligt vilket en förmånssökande ska bo i Finland, ett EU-land, ett EES-land eller Schweiz och en förmånslåtare vid sin död måste bo i något av dessa länder för att förmånssökanden ska ha rätt till en förmån"@sv ;
+    #rdfs:comment "Vaatii asumisen Suomessa"@fi, "Residence required"@en ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> .
 
 kelao:abbreviation a owl:DatatypeProperty ;
@@ -702,8 +711,11 @@ kelao:Application a owl:Class ;
     rdfs:subClassOf prov:Entity ;
     rdfs:label "Hakemus"@fi, "Application"@en, "Ansökan"@sv ;
     skos:prefLabel "Hakemus"@fi, "Application"@en, "Ansökan"@sv ;
-    skos:definition "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn."@fi,
-        "An applicant's request for a benefit or service. Filing initiates processing of the case."@en ;
+    skos:altLabel "Etuushakemus"@fi, "Ansökan om förmån"@sv, "Förmånsansökan"@sv ;
+    rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c77> ;
+    skos:definition "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."@fi,
+        "An applicant's request for a benefit or service. Filing initiates processing of the case."@en ,
+        "asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi ;
     skos:scopeNote
         "Käsitteellinen luokka. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä."@fi ,
         "Conceptual class only. The KELAO knowledge graph does not contain applicant-level instances — personal data is processed in Kela's operational systems."@en ;
@@ -712,7 +724,9 @@ kelao:Application a owl:Class ;
 kelao:Decision a owl:Class ;
     rdfs:subClassOf prov:Entity ;
     rdfs:label "Päätös"@fi, "Decision"@en, "Beslut"@sv ;
+    skos:altLabel "etuuspäätös"@fi, "beslut om förmån"@sv, "förmånsbeslut"@sv ;
     skos:prefLabel "Päätös"@fi, "Decision"@en, "Beslut"@sv ;
+    rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c78> ;
     skos:definition "Viranomaisen ratkaisu hakemukseen; myöntää tai hylkää haetun etuuden kokonaan tai osittain."@fi,
         "An authority's resolution on an application; grants or rejects the requested benefit in full or in part."@en ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> .
