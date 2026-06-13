@@ -78,7 +78,7 @@ skos:note           a owl:AnnotationProperty .
 skos:exactMatch     a owl:AnnotationProperty .
 skos:closeMatch     a owl:AnnotationProperty .
 skos:broadMatch     a owl:AnnotationProperty .
-skos:changeNote     a owl:AnnotationProperty . # ?
+skos:changeNote     a owl:AnnotationProperty . # ??
 
 # ── LUOKAT — Käyttäjä ────────────────────────────────────────────
 
