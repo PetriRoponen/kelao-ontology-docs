@@ -832,10 +832,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Statute type classification (draft)"
+    "@value" : "Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."
   }, {
     "@language" : "fi",
-    "@value" : "Säädöksen tyyppi määritellään skos-luokituksessa StatuteTypeSkos. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön"
+    "@value" : "Säädöksen tyyppi määritellään skos-luokituksessa StatuteType. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"

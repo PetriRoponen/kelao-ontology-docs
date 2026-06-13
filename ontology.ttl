@@ -1331,8 +1331,8 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#StatuteType
 :StatuteType rdf:type owl:Class ;
              rdfs:subClassOf <http://www.w3.org/2004/02/skos/core#Concept> ;
-             rdfs:comment "Statute type classification (draft)"@en ,
-                          "Säädöksen tyyppi määritellään skos-luokituksessa StatuteTypeSkos. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön"@fi ;
+             rdfs:comment "Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en ,
+                          "Säädöksen tyyppi määritellään skos-luokituksessa StatuteType. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön"@fi ;
              rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
              rdfs:label "Författningstyp"@sv ,
                         "Statute Type"@en ,

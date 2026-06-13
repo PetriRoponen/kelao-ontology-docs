@@ -1813,8 +1813,8 @@
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#StatuteType">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-        <rdfs:comment xml:lang="en">Statute type classification (draft)</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Säädöksen tyyppi määritellään skos-luokituksessa StatuteTypeSkos. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön</rdfs:comment>
+        <rdfs:comment xml:lang="en">Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Säädöksen tyyppi määritellään skos-luokituksessa StatuteType. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">Författningstyp</rdfs:label>
         <rdfs:label xml:lang="en">Statute Type</rdfs:label>

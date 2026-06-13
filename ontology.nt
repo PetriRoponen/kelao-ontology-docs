@@ -1214,8 +1214,8 @@
 # https://kela.fi/ontology/kelao#StatuteType
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Statute type classification (draft)"@en .
-<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Säädöksen tyyppi määritellään skos-luokituksessa StatuteTypeSkos. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön"@fi .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Säädöksen tyyppi määritellään skos-luokituksessa StatuteType. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön"@fi .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#label> "Författningstyp"@sv .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#label> "Statute Type"@en .
