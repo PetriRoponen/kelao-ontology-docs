@@ -58,10 +58,25 @@ jobs:
           fi
 
           echo "=== Kopioidaan repoon ==="
-          rm -rf resources/ sections/ webvowl/
-          rm -f index.html index-en.html index-fi.html 406.html
+          rm -rf resources/ sections/ webvowl/ provenance/
+          rm -f index.html index-en.html index-fi.html 406.html readme.md
           rm -f ontology.jsonld ontology.nt ontology.owl ontology.ttl
           cp -r /tmp/widoco-output/. .
+
+          # Luodaan index.html joka ohjaa suomenkieliseen dokumentaatioon
+          {
+            echo '<!DOCTYPE html>'
+            echo '<html lang="fi">'
+            echo '<head>'
+            echo '  <meta charset="UTF-8">'
+            echo '  <meta http-equiv="refresh" content="0; url=index-fi.html">'
+            echo '  <title>Sosiaaliturvan ydinontologia / Finnish Social Security Core Ontology</title>'
+            echo '</head>'
+            echo '<body>'
+            echo '  <p><a href="index-fi.html">Suomeksi</a> | <a href="index-en.html">In English</a></p>'
+            echo '</body>'
+            echo '</html>'
+          } > index.html
 
       - name: Commit and push updated documentation
         run: |
