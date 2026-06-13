@@ -724,8 +724,8 @@ kelao:Application a owl:Class ;
     skos:altLabel "Etuushakemus"@fi, "Ansökan om förmån"@sv, "Förmånsansökan"@sv ;
     rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c77> ;
     skos:definition "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."@fi,
-        "An applicant's request for a benefit or service. Filing initiates processing of the case."@en ,
-        "asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi ;
+         "Asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi ,
+         "An applicant's request for a benefit or service. Filing initiates processing of the case."@en ;
     skos:scopeNote
         "Käsitteellinen luokka. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä."@fi ,
         "Conceptual class only. The KELAO knowledge graph does not contain applicant-level instances — personal data is processed in Kela's operational systems."@en ;
