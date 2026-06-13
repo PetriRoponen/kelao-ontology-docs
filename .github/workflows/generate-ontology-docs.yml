@@ -63,6 +63,10 @@ jobs:
           rm -f ontology.jsonld ontology.nt ontology.owl ontology.ttl
           cp -r /tmp/widoco-output/. .
 
+          # Täytetään introduction-osiot dct:description-arvoilla ontologiasta
+          pip install rdflib -q
+          python3 generate-intro.py
+
           # Luodaan index.html joka ohjaa suomenkieliseen dokumentaatioon
           {
             echo '<!DOCTYPE html>'
