@@ -34,7 +34,7 @@
     dct:contributor <https://www.linkedin.com/in/petri-roponen-052aa772> ;
     dct:license <https://creativecommons.org/licenses/by/4.0/> ;
     vann:preferredNamespacePrefix "kelao" ; # 
-    rdfs:comment "Ydinversio: sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."@fi ;
+    rdfs:comment "Ydinversio sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."@fi ;
     vann:preferredNamespaceUri "https://kela.fi/ontology/kelao#"^^xsd:anyURI ;
     #owl:imports <http://www.w3.org/2004/02/skos/core#> ;
     rdfs:seeAlso <http://www.w3.org/ns/shacl#> ,
@@ -61,7 +61,7 @@
     owl:versionInfo "0.2.0-core-draft" ;
     owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/> ;
     owl:priorVersion "0.1.0" ;
-    skos:changeNote "Ydinontologia sisältää ainoastaan ydinluokat ja ominaisuudet."@fi, "Core ontology contains only core classess and properties."@en ;
+    skos:changeNote "Automatisoitu dokumentaation luonti .ttl-tiedostosta"@fi, "Automated document generation"@en ;
     dct:modified "2026-06-10"^^xsd:date ;
     dct:created "2026-06-08"^^xsd:date .
 
