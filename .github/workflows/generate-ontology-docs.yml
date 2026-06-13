@@ -7,6 +7,9 @@ on:
       - "kelao-ontology-core2.ttl"
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 permissions:
   contents: write
 
@@ -29,32 +32,34 @@ jobs:
           wget -q \
             https://github.com/dgarijo/Widoco/releases/download/v1.4.25/widoco-1.4.25-jar-with-dependencies_JDK-17.jar \
             -O /tmp/widoco.jar
+          echo "WIDOCO ladattu: $(du -sh /tmp/widoco.jar)"
 
       - name: Generate ontology documentation
         run: |
           set -e
-          # Generoidaan dokumentaatio väliaikaiseen hakemistoon
+
+          echo "=== WIDOCO tuetut parametrit ==="
+          java -jar /tmp/widoco.jar --help 2>&1 || true
+
+          echo "=== Generoidaan dokumentaatio ==="
           java -jar /tmp/widoco.jar \
             -ontFile kelao-ontology-core2.ttl \
             -outFolder /tmp/widoco-output \
             -lang en-fi \
             -rewriteAll \
             -includeAnnotationProperties \
-            -noPlaceholders \
-            -htaccess \
             -webVowl \
-            -uniteSections
+            -htaccess
 
-          echo "WIDOCO valmis, listataan tulostetiedostot:"
-          ls /tmp/widoco-output/
+          echo "=== Tulostetiedostot ==="
+          ls -la /tmp/widoco-output/
 
-          # Poistetaan vanhat dokumentit reposta
+          echo "=== Kopioidaan repoon ==="
           rm -rf resources/ sections/ webvowl/
           rm -f index.html index-en.html index-fi.html 406.html
           rm -f ontology.jsonld ontology.nt ontology.owl ontology.ttl
-
-          # Kopioidaan uudet tiedostot repon juureen
           cp -r /tmp/widoco-output/. .
+          ls -la
 
       - name: Commit and push updated documentation
         run: |
