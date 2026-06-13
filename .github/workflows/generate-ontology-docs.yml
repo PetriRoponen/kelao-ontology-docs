@@ -44,7 +44,6 @@ jobs:
             -outFolder /tmp/widoco-output \
             -lang en-fi \
             -rewriteAll \
-            -includeAnnotationProperties \
             -webVowl 2>&1 | tee /tmp/widoco.log
           EXIT_CODE=${PIPESTATUS[0]}
 
