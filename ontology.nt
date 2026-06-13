@@ -1056,8 +1056,8 @@
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#altLabel> "Etuushakemus"@fi .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#altLabel> "Förmånsansökan"@sv .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "An applicant's request for a benefit or service. Filing initiates processing of the case."@en .
+<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "Asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."@fi .
-<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ansökan"@sv .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#prefLabel> "Application"@en .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hakemus"@fi .
