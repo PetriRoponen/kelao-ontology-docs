@@ -19,6 +19,18 @@
 @prefix kela:   <http://kela.fi/kg/> .
 @prefix kelao:  <https://kela.fi/ontology/kelao#> .
 
+# SKOS-propertyt deklaroidaan eksplisiittisesti, koska owl:imports on kommentoitu pois.
+# Ilman tätä OWL API ei tunnista skos:altLabel jne. annotaatiopropertyksi
+# ja tulkitsee ne datatype propertyiksi → luokat näkyvät virheellisesti named individualseina.
+skos:prefLabel      a owl:AnnotationProperty .
+skos:altLabel       a owl:AnnotationProperty .
+skos:definition     a owl:AnnotationProperty .
+skos:scopeNote      a owl:AnnotationProperty .
+skos:example        a owl:AnnotationProperty .
+skos:note           a owl:AnnotationProperty .
+skos:exactMatch     a owl:AnnotationProperty .
+skos:closeMatch     a owl:AnnotationProperty .
+skos:broadMatch     a owl:AnnotationProperty .
 
 <https://kela.fi/ontology/kelao> a owl:Ontology ;
     owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/> ;
