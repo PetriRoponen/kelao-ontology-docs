@@ -11,8 +11,8 @@
     "version" : "0.2.0-core-draft",
     "author" : [ "Petri Roponen" ],
     "description" : {
-      "fi" : "Ydinontologia Suomen sosiaaliturvan keskeisille käsitteille: hakijat, etuudet, etuuskriteerit, palvelut, organisaatiot ja säädökset.",
-      "en" : "Core Ontology for Finnish social security concepts: applicants, benefits, eligibility criteria, services, organisations and legislation."
+      "fi" : "Tämä on luonnosversio (Draft). Sisältö voi muuttua.",
+      "en" : "This is a draft version. Content is subject to change."
     },
     "labels" : {
       "fi" : "Sosiaaliturvan ydinontologia",
@@ -51,12 +51,6 @@
         "value" : "Ydinontologia sisältää ainoastaan ydinluokat ja ominaisuudet.",
         "type" : "label"
       } ],
-      "versionInfo" : [ {
-        "identifier" : "versionInfo",
-        "language" : "undefined",
-        "value" : "0.2.0-core-draft",
-        "type" : "label"
-      } ],
       "abstract" : [ {
         "identifier" : "abstract",
         "language" : "fi",
@@ -66,6 +60,12 @@
         "identifier" : "abstract",
         "language" : "en",
         "value" : "The Social Security Ontology describes the conceptual structure of the Finnish social security system.\n\t\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services (benefit related), life situations, organisations, legislation, and concepts.\n",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.2.0-core-draft",
         "type" : "label"
       } ],
       "title" : [ {
@@ -82,22 +82,22 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.org/vocab/cpsv#",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://www.w3.org/ns/prov#",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://semiceu.github.io/CPSV-AP/releases/3.2.0/",
+        "value" : "http://data.europa.eu/eli/ontology#",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://data.europa.eu/eli/ontology#",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/m8g/",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -112,12 +112,12 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://data.europa.eu/m8g/",
+        "value" : "http://www.w3.org/ns/shacl#",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://purl.org/dc/terms/",
+        "value" : "http://purl.org/vocab/cpsv#",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -127,7 +127,7 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://www.w3.org/ns/shacl#",
+        "value" : "https://semiceu.github.io/CPSV-AP/releases/3.2.0/",
         "type" : "iri"
       } ],
       "license" : [ {
@@ -178,10 +178,10 @@
     "id" : "2",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "6",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "13",
@@ -220,7 +220,7 @@
     "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
     "id" : "47",
@@ -292,13 +292,13 @@
     "id" : "96",
     "type" : "owl:Class"
   }, {
-    "id" : "26",
+    "id" : "27",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "97",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "10",
     "type" : "owl:Class"
   }, {
     "id" : "45",
@@ -322,7 +322,7 @@
     "id" : "103",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "87",
+    "id" : "88",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "16",
@@ -349,7 +349,7 @@
     "id" : "101",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "108",
+    "id" : "106",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "49",
@@ -367,7 +367,7 @@
     "id" : "130",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "116",
+    "id" : "115",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "15",
@@ -387,9 +387,9 @@
     "label" : {
       "IRI-based" : "Concept"
     },
-    "subClasses" : [ "7", "8", "9" ],
+    "subClasses" : [ "8", "9", "10" ],
     "attributes" : [ "external" ],
-    "id" : "6"
+    "id" : "7"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#LifeSituationClassification",
     "baseIri" : "https://kela.fi/ontology/kelao",
@@ -409,8 +409,8 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "ElämäntilanneLuokitus",
+        "language" : "en",
+        "value" : "Life Situation Classification",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -419,8 +419,8 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Life Situation Classification",
+        "language" : "fi",
+        "value" : "ElämäntilanneLuokitus",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -445,8 +445,8 @@
       "fi" : "Elämäntilanteilla tarkoitetaan sellaisia muutosvaiheita, joita kuvaa väliaikaisuus, erityisten palvelujen ja tiedon tarve sekä niihin kohdennetut palvelut.\n        Elämäntilanneluokitus on toteutettu muualla skos-luokituksena. Luokituksen luokat ovat käsitteitä. Luokitus on luonnos. Pohjana on käytetty\n        DVV:n elämäntapahtumaluokitusta, joka perustuu EU-luokitukseen.",
       "en" : "Life situations refer to phases of change characterized by temporary nature, the need for special services and information, and services targeted to them."
     },
-    "id" : "7",
-    "superClasses" : [ "6" ]
+    "id" : "8",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/ns/prov#Entity",
     "baseIri" : "http://www.w3.org/ns/prov",
@@ -540,11 +540,6 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Benefit",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
         "language" : "sv",
         "value" : "Förmån",
         "type" : "label"
@@ -553,16 +548,21 @@
         "language" : "fi",
         "value" : "Etuus",
         "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "Benefit",
+        "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
-        "language" : "fi",
-        "value" : "Sosiaalietuus",
+        "language" : "en",
+        "value" : "Social benefit",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
-        "language" : "en",
-        "value" : "Social benefit",
+        "language" : "fi",
+        "value" : "Sosiaalietuus",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
@@ -579,7 +579,7 @@
     },
     "subClasses" : [ "39", "40" ],
     "comment" : {
-      "fi" : "Sosiaaliturvan etuus, maksu tai tuki. Yleinen luokka — käytä alaluokkia instansseissa.",
+      "fi" : "Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa.",
       "en" : "A social security benefit or allowance. General class — use subclasses for instances."
     },
     "id" : "1",
@@ -602,28 +602,28 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Statute Type",
+        "language" : "sv",
+        "value" : "Författningstyp",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "Författningstyp",
+        "language" : "en",
+        "value" : "Statute Type",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "StatuteType",
-      "fi" : "Säädöstyyppi",
       "sv" : "Författningstyp",
+      "fi" : "Säädöstyyppi",
       "en" : "Statute Type"
     },
     "comment" : {
       "fi" : "Säädöksen tyyppi määritellään skos-luokituksessa StatuteTypeSkos. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön",
       "en" : "Statute type classification (draft)"
     },
-    "id" : "8",
-    "superClasses" : [ "6" ]
+    "id" : "9",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -717,8 +717,8 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Appeal",
+        "language" : "sv",
+        "value" : "Ändringssökande",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -727,30 +727,30 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "Ändringssökande",
-        "type" : "label"
-      } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "fi",
-        "value" : "Hakijan päätökseen kohdistama oikaisuvaatimus tai valitus.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
         "language" : "en",
-        "value" : "An applicant's request for rectification of or appeal against a decision.",
+        "value" : "Appeal",
         "type" : "label"
       } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "fi",
-        "value" : "valitus",
+        "value" : "oikaisuvaatimus",
         "type" : "label"
       }, {
         "identifier" : "altLabel",
         "language" : "fi",
-        "value" : "oikaisuvaatimus",
+        "value" : "valitus",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An applicant's request for rectification of or appeal against a decision.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fi",
+        "value" : "Hakijan päätökseen kohdistama oikaisuvaatimus tai valitus.",
         "type" : "label"
       } ]
     },
@@ -770,12 +770,12 @@
       "exactMatch" : [ {
         "identifier" : "exactMatch",
         "language" : "undefined",
-        "value" : "http://schema.org/Organization",
+        "value" : "http://iri.suomi.fi/model/suomiptv2/Organization",
         "type" : "iri"
       }, {
         "identifier" : "exactMatch",
         "language" : "undefined",
-        "value" : "http://iri.suomi.fi/model/suomiptv2/Organization",
+        "value" : "http://schema.org/Organization",
         "type" : "iri"
       } ],
       "isDefinedBy" : [ {
@@ -925,27 +925,27 @@
     "baseIri" : "https://kela.fi/ontology/kelao",
     "instances" : 0,
     "annotations" : {
-      "exactMatch" : [ {
-        "identifier" : "exactMatch",
-        "language" : "undefined",
-        "value" : "http://schema.org/Legislation",
-        "type" : "iri"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "https://kela.fi/ontology/kelao",
         "type" : "iri"
       } ],
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://schema.org/Legislation",
+        "type" : "iri"
+      } ],
       "definition" : [ {
-        "identifier" : "definition",
-        "language" : "fi",
-        "value" : "Tekstikokonaisuus, joka sisältää julkisen vallan antamia yleisesti noudatettaviksi tarkoitettuja säännöksiä.",
-        "type" : "label"
-      }, {
         "identifier" : "definition",
         "language" : "en",
         "value" : "Text containing provisions issued by public authorities that are to be observed generally.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "fi",
+        "value" : "Tekstikokonaisuus, joka sisältää julkisen vallan antamia yleisesti noudatettaviksi tarkoitettuja säännöksiä.",
         "type" : "label"
       } ],
       "example" : [ {
@@ -985,13 +985,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Standalone Benefit",
+        "language" : "fi",
+        "value" : "Itsenäinen etuus",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "Itsenäinen etuus",
+        "language" : "en",
+        "value" : "Standalone Benefit",
         "type" : "label"
       } ]
     },
@@ -1025,7 +1025,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "26",
+    "id" : "27",
     "label" : {
       "IRI-based" : "date"
     }
@@ -1076,8 +1076,8 @@
     },
     "label" : {
       "IRI-based" : "Attachment",
-      "fi" : "Liite",
       "sv" : "Bilaga",
+      "fi" : "Liite",
       "en" : "Attachment"
     },
     "comment" : {
@@ -1118,8 +1118,8 @@
       "fi" : "Kelan etuusryhmitys",
       "en" : "Benefit group"
     },
-    "id" : "9",
-    "superClasses" : [ "6" ]
+    "id" : "10",
+    "superClasses" : [ "7" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -1151,13 +1151,13 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "Palvelu",
+        "language" : "sv",
+        "value" : "Tjänst",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "Tjänst",
+        "language" : "fi",
+        "value" : "Palvelu",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1180,8 +1180,8 @@
     },
     "label" : {
       "IRI-based" : "Service",
-      "fi" : "Palvelu",
       "sv" : "Tjänst",
+      "fi" : "Palvelu",
       "en" : "Service"
     },
     "comment" : {
@@ -1228,7 +1228,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
+    "id" : "88",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1245,8 +1245,8 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Application",
+        "language" : "fi",
+        "value" : "Hakemus",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -1255,8 +1255,8 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "Hakemus",
+        "language" : "en",
+        "value" : "Application",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1272,20 +1272,20 @@
       } ],
       "scopeNote" : [ {
         "identifier" : "scopeNote",
-        "language" : "fi",
-        "value" : "Käsitteellinen luokka. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä.",
+        "language" : "en",
+        "value" : "Conceptual class only. The KELAO knowledge graph does not contain applicant-level instances — personal data is processed in Kela's operational systems.",
         "type" : "label"
       }, {
         "identifier" : "scopeNote",
-        "language" : "en",
-        "value" : "Conceptual class only. The KELAO knowledge graph does not contain applicant-level instances — personal data is processed in Kela's operational systems.",
+        "language" : "fi",
+        "value" : "Käsitteellinen luokka. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä.",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "Application",
-      "sv" : "Ansökan",
       "fi" : "Hakemus",
+      "sv" : "Ansökan",
       "en" : "Application"
     },
     "id" : "16",
@@ -1303,13 +1303,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Applicant",
+        "language" : "fi",
+        "value" : "Hakija",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "Hakija",
+        "language" : "en",
+        "value" : "Applicant",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -1337,8 +1337,8 @@
     },
     "label" : {
       "IRI-based" : "Applicant",
-      "fi" : "Hakija",
       "sv" : "Sökande",
+      "fi" : "Hakija",
       "en" : "Applicant"
     },
     "id" : "30",
@@ -1366,8 +1366,8 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "Lain osa",
+        "language" : "en",
+        "value" : "Legal Resource Part",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -1376,8 +1376,8 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "Legal Resource Part",
+        "language" : "fi",
+        "value" : "Lain osa",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -1395,8 +1395,8 @@
     },
     "label" : {
       "IRI-based" : "LegalResourcePart",
-      "fi" : "Lain osa",
       "sv" : "Lagdel",
+      "fi" : "Lain osa",
       "en" : "Legal Resource Part"
     },
     "comment" : {
@@ -1437,17 +1437,6 @@
         "value" : "Etuuden osa",
         "type" : "label"
       } ],
-      "definition" : [ {
-        "identifier" : "definition",
-        "language" : "fi",
-        "value" : "Etuuden itsenäinen, erikseen käsiteltävä osa, joka voidaan myöntää vain, jos myös etuus, jonka osa on kyseessä, on myönnetty.",
-        "type" : "label"
-      }, {
-        "identifier" : "definition",
-        "language" : "en",
-        "value" : "An independent and separately processed part of a benefit that can be granted only if the benefit in which the part belongs is also granted.",
-        "type" : "label"
-      } ],
       "altLabel" : [ {
         "identifier" : "altLabel",
         "language" : "en",
@@ -1457,6 +1446,17 @@
         "identifier" : "altLabel",
         "language" : "fi",
         "value" : "etuusosa",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "fi",
+        "value" : "Etuuden itsenäinen, erikseen käsiteltävä osa, joka voidaan myöntää vain, jos myös etuus, jonka osa on kyseessä, on myönnetty.",
+        "type" : "label"
+      }, {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An independent and separately processed part of a benefit that can be granted only if the benefit in which the part belongs is also granted.",
         "type" : "label"
       } ],
       "example" : [ {
@@ -1499,7 +1499,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "108",
+    "id" : "106",
     "label" : {
       "IRI-based" : "date"
     }
@@ -1541,7 +1541,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "116",
+    "id" : "115",
     "label" : {
       "IRI-based" : "string"
     }
@@ -1558,6 +1558,11 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
+        "language" : "sv",
+        "value" : "Beslut",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
         "language" : "en",
         "value" : "Decision",
         "type" : "label"
@@ -1566,21 +1571,16 @@
         "language" : "fi",
         "value" : "Päätös",
         "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "Beslut",
-        "type" : "label"
       } ],
       "definition" : [ {
         "identifier" : "definition",
-        "language" : "en",
-        "value" : "An authority's resolution on an application; grants or rejects the requested benefit in full or in part.",
+        "language" : "fi",
+        "value" : "Viranomaisen ratkaisu hakemukseen; myöntää tai hylkää haetun etuuden kokonaan tai osittain.",
         "type" : "label"
       }, {
         "identifier" : "definition",
-        "language" : "fi",
-        "value" : "Viranomaisen ratkaisu hakemukseen; myöntää tai hylkää haetun etuuden kokonaan tai osittain.",
+        "language" : "en",
+        "value" : "An authority's resolution on an application; grants or rejects the requested benefit in full or in part.",
         "type" : "label"
       } ]
     },
@@ -1600,7 +1600,7 @@
     "id" : "3",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "10",
+    "id" : "6",
     "type" : "owl:objectProperty"
   }, {
     "id" : "11",
@@ -1616,10 +1616,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "25",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "27",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "29",
     "type" : "owl:objectProperty"
@@ -1703,10 +1703,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "86",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "88",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "89",
     "type" : "owl:datatypeProperty"
@@ -1727,10 +1727,10 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "105",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "107",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "109",
     "type" : "owl:datatypeProperty"
@@ -1747,7 +1747,7 @@
     "id" : "114",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "115",
+    "id" : "116",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "117",
@@ -1771,7 +1771,7 @@
     "id" : "124",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "106",
+    "id" : "108",
     "type" : "owl:objectProperty"
   }, {
     "id" : "125",
@@ -1829,10 +1829,10 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "145",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "146",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "147",
     "type" : "owl:objectProperty"
@@ -1877,13 +1877,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "benefit to be noted",
+        "language" : "fi",
+        "value" : "huomautus",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "huomautus",
+        "language" : "en",
+        "value" : "benefit to be noted",
         "type" : "label"
       } ],
       "relationshipAbbreviation" : [ {
@@ -1949,7 +1949,7 @@
   }, {
     "iri" : "https://kela.fi/ontology/kelao#hasConcept",
     "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "6",
+    "range" : "7",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -1959,13 +1959,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "on käsite",
+        "language" : "en",
+        "value" : "has concept",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "has concept",
+        "language" : "fi",
+        "value" : "on käsite",
         "type" : "label"
       } ]
     },
@@ -1980,7 +1980,7 @@
       "en" : "Has concept"
     },
     "attributes" : [ "object" ],
-    "id" : "10"
+    "id" : "6"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#residenceRequired",
     "baseIri" : "https://kela.fi/ontology/kelao",
@@ -1994,13 +1994,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "residence required",
+        "language" : "fi",
+        "value" : "vaatii asumisen Suomessa",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "vaatii asumisen Suomessa",
+        "language" : "en",
+        "value" : "residence required",
         "type" : "label"
       } ]
     },
@@ -2077,13 +2077,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "date of document",
+        "language" : "fi",
+        "value" : "säädöksen päiväys",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "säädöksen päiväys",
+        "language" : "en",
+        "value" : "date of document",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -2117,9 +2117,44 @@
     "attributes" : [ "external", "object" ],
     "id" : "23"
   }, {
+    "iri" : "https://kela.fi/ontology/kelao#isLifeSituationFor",
+    "baseIri" : "https://kela.fi/ontology/kelao",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://kela.fi/ontology/kelao",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "fi",
+        "value" : "on elämäntilanne kohteelle",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "is life situation for",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "isLifeSituationFor",
+      "fi" : "on elämäntilanne kohteelle",
+      "en" : "is life situation for"
+    },
+    "domain" : "8",
+    "comment" : {
+      "fi" : "On elämäntilanne kohteelle",
+      "en" : "Is life situation for"
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
     "iri" : "https://kela.fi/ontology/kelao#versionDate",
     "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "26",
+    "range" : "27",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -2135,13 +2170,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "versiointipäivä",
+        "language" : "en",
+        "value" : "version date",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "version date",
+        "language" : "fi",
+        "value" : "versiointipäivä",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -2162,42 +2197,7 @@
       "en" : "The point-in-time at which the provided description of the legislation is valid."
     },
     "attributes" : [ "datatype" ],
-    "id" : "25"
-  }, {
-    "iri" : "https://kela.fi/ontology/kelao#isLifeSituationFor",
-    "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://kela.fi/ontology/kelao",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "is life situation for",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "on elämäntilanne kohteelle",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "isLifeSituationFor",
-      "fi" : "on elämäntilanne kohteelle",
-      "en" : "is life situation for"
-    },
-    "domain" : "7",
-    "comment" : {
-      "fi" : "On elämäntilanne kohteelle",
-      "en" : "Is life situation for"
-    },
-    "attributes" : [ "object" ],
-    "id" : "27"
+    "id" : "26"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#hasApplication",
     "baseIri" : "https://kela.fi/ontology/kelao",
@@ -2211,13 +2211,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "jätti hakemuksen",
+        "language" : "en",
+        "value" : "has application",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "has application",
+        "language" : "fi",
+        "value" : "jätti hakemuksen",
         "type" : "label"
       } ]
     },
@@ -2246,13 +2246,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "säädös tai vaatimusprofiili koskee etuutta",
+        "language" : "en",
+        "value" : "has related benefit",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "has related benefit",
+        "language" : "fi",
+        "value" : "säädös tai vaatimusprofiili koskee etuutta",
         "type" : "label"
       } ]
     },
@@ -2281,8 +2281,8 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "financing",
+        "language" : "sv",
+        "value" : "financsieringen",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -2291,21 +2291,21 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "financsieringen",
+        "language" : "en",
+        "value" : "financing",
         "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "financing",
-      "fi" : "rahoitus",
       "sv" : "financsieringen",
+      "fi" : "rahoitus",
       "en" : "financing"
     },
     "domain" : "4",
     "comment" : {
-      "sv" : "Hur finansieringen är organiserad",
       "fi" : "Kuinka rahoitus on järjestetty",
+      "sv" : "Hur finansieringen är organiserad",
       "en" : "How the financing is organized"
     },
     "attributes" : [ "datatype" ],
@@ -2323,13 +2323,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "minimimääräinen etuus",
+        "language" : "en",
+        "value" : "minimum amount benefit",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "minimum amount benefit",
+        "language" : "fi",
+        "value" : "minimimääräinen etuus",
         "type" : "label"
       } ],
       "relationshipAbbreviation" : [ {
@@ -2356,22 +2356,22 @@
     "baseIri" : "https://kela.fi/ontology/kelao",
     "range" : "45",
     "annotations" : {
-      "exactMatch" : [ {
-        "identifier" : "exactMatch",
-        "language" : "undefined",
-        "value" : "http://schema.org/endDate",
-        "type" : "iri"
-      } ],
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
         "language" : "undefined",
         "value" : "https://kela.fi/ontology/kelao",
         "type" : "iri"
       } ],
+      "exactMatch" : [ {
+        "identifier" : "exactMatch",
+        "language" : "undefined",
+        "value" : "http://schema.org/endDate",
+        "type" : "iri"
+      } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "valid to",
+        "language" : "fi",
+        "value" : "voimassa asti",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -2380,8 +2380,8 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "voimassa asti",
+        "language" : "en",
+        "value" : "valid to",
         "type" : "label"
       } ]
     },
@@ -2393,8 +2393,8 @@
     },
     "domain" : "4",
     "comment" : {
-      "fi" : "Etuuden voimassaolon loppu",
       "sv" : "Förmånen gäller till och med datumet",
+      "fi" : "Etuuden voimassaolon loppu",
       "en" : "End date of benefit validity"
     },
     "attributes" : [ "datatype" ],
@@ -2412,13 +2412,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "inhibiting benefit",
+        "language" : "fi",
+        "value" : "estävä etuus",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "estävä etuus",
+        "language" : "en",
+        "value" : "inhibiting benefit",
         "type" : "label"
       } ],
       "relationshipAbbreviation" : [ {
@@ -2500,13 +2500,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "local identifier",
+        "language" : "fi",
+        "value" : "paikallinen tunniste",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "paikallinen tunniste",
+        "language" : "en",
+        "value" : "local identifier",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -2547,6 +2547,11 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
+        "language" : "fi",
+        "value" : "verotettava",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
         "language" : "sv",
         "value" : "beskattningsbar",
         "type" : "label"
@@ -2554,11 +2559,6 @@
         "identifier" : "prefLabel",
         "language" : "en",
         "value" : "taxable",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "verotettava",
         "type" : "label"
       } ]
     },
@@ -2596,27 +2596,27 @@
     "baseIri" : "https://kela.fi/ontology/kelao",
     "range" : "55",
     "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://kela.fi/ontology/kelao",
-        "type" : "iri"
-      } ],
       "exactMatch" : [ {
         "identifier" : "exactMatch",
         "language" : "undefined",
         "value" : "http://iri.suomi.fi/model/suomiptv2/homePage",
         "type" : "iri"
       } ],
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://kela.fi/ontology/kelao",
+        "type" : "iri"
+      } ],
       "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "kotisivu",
-        "type" : "label"
-      }, {
         "identifier" : "prefLabel",
         "language" : "en",
         "value" : "homepage",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "fi",
+        "value" : "kotisivu",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -2674,8 +2674,8 @@
     },
     "domain" : "4",
     "comment" : {
-      "fi" : "Alaikäraja",
       "sv" : "Åldersgräns",
+      "fi" : "Alaikäraja",
       "en" : "Minimum age limit"
     },
     "attributes" : [ "datatype" ],
@@ -2693,13 +2693,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "has legal reference",
+        "language" : "fi",
+        "value" : "on lakiviittaus",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "on lakiviittaus",
+        "language" : "en",
+        "value" : "has legal reference",
         "type" : "label"
       } ]
     },
@@ -2797,8 +2797,8 @@
     "attributes" : [ "anonymous", "object" ],
     "id" : "72"
   }, {
-    "range" : "6",
-    "domain" : "9",
+    "range" : "7",
+    "domain" : "10",
     "attributes" : [ "anonymous", "object" ],
     "id" : "73"
   }, {
@@ -2825,13 +2825,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "lain lyhenne",
+        "language" : "en",
+        "value" : "law acronym",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "law acronym",
+        "language" : "fi",
+        "value" : "lain lyhenne",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -2900,8 +2900,8 @@
     "attributes" : [ "datatype" ],
     "id" : "80"
   }, {
-    "range" : "6",
-    "domain" : "8",
+    "range" : "7",
+    "domain" : "9",
     "attributes" : [ "anonymous", "object" ],
     "id" : "81"
   }, {
@@ -2917,8 +2917,8 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "processing time",
+        "language" : "fi",
+        "value" : "käsittelyaika",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -2927,8 +2927,8 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "käsittelyaika",
+        "language" : "en",
+        "value" : "processing time",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -2952,8 +2952,8 @@
     "attributes" : [ "datatype" ],
     "id" : "82"
   }, {
-    "range" : "6",
-    "domain" : "7",
+    "range" : "7",
+    "domain" : "8",
     "attributes" : [ "anonymous", "object" ],
     "id" : "83"
   }, {
@@ -2969,13 +2969,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "hakee etuutta",
+        "language" : "en",
+        "value" : "applies for",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "applies for",
+        "language" : "fi",
+        "value" : "hakee etuutta",
         "type" : "label"
       } ]
     },
@@ -2992,9 +2992,50 @@
     "attributes" : [ "object" ],
     "id" : "84"
   }, {
+    "iri" : "https://kela.fi/ontology/kelao#reducing",
+    "baseIri" : "https://kela.fi/ontology/kelao",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://kela.fi/ontology/kelao",
+        "type" : "iri"
+      } ],
+      "prefLabel" : [ {
+        "identifier" : "prefLabel",
+        "language" : "en",
+        "value" : "reducing benefit",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "fi",
+        "value" : "vähentävä etuus",
+        "type" : "label"
+      } ],
+      "relationshipAbbreviation" : [ {
+        "identifier" : "relationshipAbbreviation",
+        "language" : "undefined",
+        "value" : "VÄH",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reducing",
+      "fi" : "vähentävä etuus",
+      "en" : "reducing benefit"
+    },
+    "domain" : "1",
+    "comment" : {
+      "fi" : "Vähentävä etuus",
+      "en" : "Reducing benefit"
+    },
+    "attributes" : [ "object" ],
+    "id" : "86"
+  }, {
     "iri" : "https://kela.fi/ontology/kelao#uuid",
     "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "87",
+    "range" : "88",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3025,48 +3066,7 @@
       "en" : "Universally unique identifier used for benefits and attachments."
     },
     "attributes" : [ "datatype" ],
-    "id" : "86"
-  }, {
-    "iri" : "https://kela.fi/ontology/kelao#reducing",
-    "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "1",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://kela.fi/ontology/kelao",
-        "type" : "iri"
-      } ],
-      "prefLabel" : [ {
-        "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "vähentävä etuus",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "reducing benefit",
-        "type" : "label"
-      } ],
-      "relationshipAbbreviation" : [ {
-        "identifier" : "relationshipAbbreviation",
-        "language" : "undefined",
-        "value" : "VÄH",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "reducing",
-      "fi" : "vähentävä etuus",
-      "en" : "reducing benefit"
-    },
-    "domain" : "1",
-    "comment" : {
-      "fi" : "Vähentävä etuus",
-      "en" : "Reducing benefit"
-    },
-    "attributes" : [ "object" ],
-    "id" : "88"
+    "id" : "87"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#purpose",
     "baseIri" : "https://kela.fi/ontology/kelao",
@@ -3080,13 +3080,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "tarkoitus",
+        "language" : "en",
+        "value" : "purpose",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "purpose",
+        "language" : "fi",
+        "value" : "tarkoitus",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -3097,14 +3097,14 @@
     },
     "label" : {
       "IRI-based" : "purpose",
-      "sv" : "syftet med förmånen",
       "fi" : "tarkoitus",
+      "sv" : "syftet med förmånen",
       "en" : "purpose"
     },
     "domain" : "4",
     "comment" : {
-      "sv" : "Syftet med förmånen",
       "fi" : "Etuuden tarkoitus",
+      "sv" : "Syftet med förmånen",
       "en" : "The purpose of the benefit"
     },
     "attributes" : [ "datatype" ],
@@ -3163,13 +3163,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "ennakkosuoritus",
+        "language" : "en",
+        "value" : "advance payment",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "advance payment",
+        "language" : "fi",
+        "value" : "ennakkosuoritus",
         "type" : "label"
       } ],
       "relationshipAbbreviation" : [ {
@@ -3204,13 +3204,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "amount",
+        "language" : "fi",
+        "value" : "määrä",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "määrä",
+        "language" : "en",
+        "value" : "amount",
         "type" : "label"
       } ]
     },
@@ -3239,13 +3239,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "index linked",
+        "language" : "fi",
+        "value" : "indeksisidonnainen",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "indeksisidonnainen",
+        "language" : "en",
+        "value" : "index linked",
         "type" : "label"
       } ],
       "definition" : [ {
@@ -3275,12 +3275,12 @@
       "exactMatch" : [ {
         "identifier" : "exactMatch",
         "language" : "undefined",
-        "value" : "http://schema.org/identifier",
+        "value" : "http://data.europa.eu/eli/ontology#eli",
         "type" : "iri"
       }, {
         "identifier" : "exactMatch",
         "language" : "undefined",
-        "value" : "http://data.europa.eu/eli/ontology#eli",
+        "value" : "http://schema.org/identifier",
         "type" : "iri"
       } ],
       "isDefinedBy" : [ {
@@ -3320,20 +3320,9 @@
     "attributes" : [ "datatype" ],
     "id" : "104"
   }, {
-    "iri" : "http://schema.org/hasPart",
-    "baseIri" : "http://schema.org",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "hasPart"
-    },
-    "domain" : "4",
-    "subproperty" : [ "106" ],
-    "attributes" : [ "external", "object" ],
-    "id" : "105"
-  }, {
     "iri" : "https://kela.fi/ontology/kelao#appealDate",
     "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "108",
+    "range" : "106",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3343,13 +3332,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "appeal date",
+        "language" : "fi",
+        "value" : "muutoksenhaun päivä",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "muutoksenhaun päivä",
+        "language" : "en",
+        "value" : "appeal date",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -3370,6 +3359,17 @@
       "en" : "Date the appeal was filed."
     },
     "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://schema.org/hasPart",
+    "baseIri" : "http://schema.org",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "4",
+    "subproperty" : [ "108" ],
+    "attributes" : [ "external", "object" ],
     "id" : "107"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#attachmentUri",
@@ -3425,13 +3425,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "has provider",
+        "language" : "fi",
+        "value" : "vastuuorganisaatio",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "vastuuorganisaatio",
+        "language" : "en",
+        "value" : "has provider",
         "type" : "label"
       } ]
     },
@@ -3449,9 +3449,9 @@
     "id" : "111"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#relatedToLifeSituation",
-    "inverse" : "27",
+    "inverse" : "25",
     "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "7",
+    "range" : "8",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3461,13 +3461,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "related to life situation",
+        "language" : "fi",
+        "value" : "liittyy elämäntilanteeseen",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "liittyy elämäntilanteeseen",
+        "language" : "en",
+        "value" : "related to life situation",
         "type" : "label"
       } ]
     },
@@ -3486,7 +3486,7 @@
   }, {
     "iri" : "https://kela.fi/ontology/kelao#hasBenefitGroup",
     "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "9",
+    "range" : "10",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3519,19 +3519,9 @@
     "attributes" : [ "object" ],
     "id" : "113"
   }, {
-    "iri" : "http://schema.org/identifier",
-    "baseIri" : "http://schema.org",
-    "range" : "99",
-    "label" : {
-      "IRI-based" : "identifier"
-    },
-    "domain" : "4",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "114"
-  }, {
     "iri" : "https://kela.fi/ontology/kelao#abbreviation",
     "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "116",
+    "range" : "115",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -3541,13 +3531,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "lyhenne",
+        "language" : "en",
+        "value" : "abbreviation",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "abbreviation",
+        "language" : "fi",
+        "value" : "lyhenne",
         "type" : "label"
       } ]
     },
@@ -3562,7 +3552,17 @@
       "en" : "Internal abbreviation used by Kela for the benefit."
     },
     "attributes" : [ "datatype" ],
-    "id" : "115"
+    "id" : "114"
+  }, {
+    "iri" : "http://schema.org/identifier",
+    "baseIri" : "http://schema.org",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "identifier"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "116"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#hasBenefitPart",
     "inverse" : "118",
@@ -3612,13 +3612,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "etuuteen liittyvä palvelu",
+        "language" : "en",
+        "value" : "related service",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "related service",
+        "language" : "fi",
+        "value" : "etuuteen liittyvä palvelu",
         "type" : "label"
       } ]
     },
@@ -3683,7 +3683,7 @@
       "IRI-based" : "has_part"
     },
     "domain" : "4",
-    "subproperty" : [ "106" ],
+    "subproperty" : [ "108" ],
     "attributes" : [ "external", "object" ],
     "id" : "121"
   }, {
@@ -3699,13 +3699,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "osan tunniste",
+        "language" : "en",
+        "value" : "part identifier",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "part identifier",
+        "language" : "fi",
+        "value" : "osan tunniste",
         "type" : "label"
       } ]
     },
@@ -3734,13 +3734,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "broader benefit",
+        "language" : "fi",
+        "value" : "laajempi etuus",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "laajempi etuus",
+        "language" : "en",
+        "value" : "broader benefit",
         "type" : "label"
       } ]
     },
@@ -3779,6 +3779,11 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
+        "language" : "fi",
+        "value" : "on osa säädöstä",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
         "language" : "sv",
         "value" : "är del av",
         "type" : "label"
@@ -3787,27 +3792,22 @@
         "language" : "en",
         "value" : "has part",
         "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "on osa säädöstä",
-        "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "has_part",
-      "fi" : "on osa säädöstä",
       "sv" : "är del av",
+      "fi" : "on osa säädöstä",
       "en" : "has part"
     },
-    "superproperty" : [ "105", "121" ],
+    "superproperty" : [ "107", "121" ],
     "domain" : "33",
     "comment" : {
       "fi" : "Lain tai muun säädöksen osa esim. pykälä.",
       "en" : "Statute has part"
     },
     "attributes" : [ "object" ],
-    "id" : "106"
+    "id" : "108"
   }, {
     "iri" : "http://data.europa.eu/eli/ontology#id_local",
     "baseIri" : "http://data.europa.eu/eli/ontology",
@@ -3831,13 +3831,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "appeals decision",
+        "language" : "fi",
+        "value" : "kohdistuu päätökseen",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "kohdistuu päätökseen",
+        "language" : "en",
+        "value" : "appeals decision",
         "type" : "label"
       } ]
     },
@@ -3871,13 +3871,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "is part of benefit",
+        "language" : "fi",
+        "value" : "on osa etuutta",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "on osa etuutta",
+        "language" : "en",
+        "value" : "is part of benefit",
         "type" : "label"
       } ]
     },
@@ -4047,13 +4047,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "is attachment in OmaKela",
+        "language" : "fi",
+        "value" : "onko liite OmaKelassa",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "onko liite OmaKelassa",
+        "language" : "en",
+        "value" : "is attachment in OmaKela",
         "type" : "label"
       } ],
       "scopeNote" : [ {
@@ -4078,7 +4078,7 @@
   }, {
     "iri" : "https://kela.fi/ontology/kelao#type_document",
     "baseIri" : "https://kela.fi/ontology/kelao",
-    "range" : "8",
+    "range" : "9",
     "annotations" : {
       "isDefinedBy" : [ {
         "identifier" : "isDefinedBy",
@@ -4088,8 +4088,8 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "säädöksen tyyppi",
+        "language" : "sv",
+        "value" : "type",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -4098,8 +4098,8 @@
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "type",
+        "language" : "fi",
+        "value" : "säädöksen tyyppi",
         "type" : "label"
       } ]
     },
@@ -4130,6 +4130,11 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
+        "language" : "sv",
+        "value" : "mottagande enhet",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
         "language" : "en",
         "value" : "recipient unit",
         "type" : "label"
@@ -4138,17 +4143,12 @@
         "language" : "fi",
         "value" : "saajayksikkö",
         "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "mottagande enhet",
-        "type" : "label"
       } ]
     },
     "label" : {
       "IRI-based" : "recipientUnit",
-      "sv" : "mottagande enhet",
       "fi" : "saajayksikkö",
+      "sv" : "mottagande enhet",
       "en" : "recipient unit"
     },
     "domain" : "4",
@@ -4172,13 +4172,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "järjestysnumero",
+        "language" : "en",
+        "value" : "part order",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "part order",
+        "language" : "fi",
+        "value" : "järjestysnumero",
         "type" : "label"
       } ]
     },
@@ -4199,16 +4199,6 @@
     "domain" : "40",
     "attributes" : [ "anonymous", "object" ],
     "id" : "144"
-  }, {
-    "iri" : "http://data.europa.eu/eli/ontology#date_document",
-    "baseIri" : "http://data.europa.eu/eli/ontology",
-    "range" : "85",
-    "label" : {
-      "IRI-based" : "date_document"
-    },
-    "domain" : "4",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "145"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#hasAttachment",
     "baseIri" : "https://kela.fi/ontology/kelao",
@@ -4243,6 +4233,16 @@
       "en" : "An attachment belonging to the application."
     },
     "attributes" : [ "object" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://data.europa.eu/eli/ontology#date_document",
+    "baseIri" : "http://data.europa.eu/eli/ontology",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "date_document"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
     "id" : "146"
   }, {
     "iri" : "https://kela.fi/ontology/kelao#isEligibleFor",
@@ -4257,13 +4257,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "is eligible for",
+        "language" : "fi",
+        "value" : "on oikeutettu etuuteen",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "on oikeutettu etuuteen",
+        "language" : "en",
+        "value" : "is eligible for",
         "type" : "label"
       } ]
     },
@@ -4292,13 +4292,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "osan tyyppi",
+        "language" : "en",
+        "value" : "part type",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "part type",
+        "language" : "fi",
+        "value" : "osan tyyppi",
         "type" : "label"
       } ],
       "example" : [ {
@@ -4338,13 +4338,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "has decision",
+        "language" : "fi",
+        "value" : "hakemuksen päätös",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "hakemuksen päätös",
+        "language" : "en",
+        "value" : "has decision",
         "type" : "label"
       } ]
     },
@@ -4372,16 +4372,6 @@
     "attributes" : [ "external", "object" ],
     "id" : "141"
   }, {
-    "iri" : "http://data.europa.eu/eli/ontology#version_date",
-    "baseIri" : "http://data.europa.eu/eli/ontology",
-    "range" : "79",
-    "label" : {
-      "IRI-based" : "version_date"
-    },
-    "domain" : "4",
-    "attributes" : [ "external", "datatype" ],
-    "id" : "150"
-  }, {
     "iri" : "https://kela.fi/ontology/kelao#validFrom",
     "baseIri" : "https://kela.fi/ontology/kelao",
     "range" : "103",
@@ -4400,11 +4390,6 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "början av giltighet",
-        "type" : "label"
-      }, {
-        "identifier" : "prefLabel",
         "language" : "en",
         "value" : "valid from",
         "type" : "label"
@@ -4412,6 +4397,11 @@
         "identifier" : "prefLabel",
         "language" : "fi",
         "value" : "voimassa alkaen",
+        "type" : "label"
+      }, {
+        "identifier" : "prefLabel",
+        "language" : "sv",
+        "value" : "början av giltighet",
         "type" : "label"
       } ]
     },
@@ -4423,11 +4413,21 @@
     },
     "domain" : "4",
     "comment" : {
-      "sv" : "Början av giltighet",
       "fi" : "Etuuden voimassaolon alku, milloin Kela tai muu organisaatio alkoi sitä maksamaan.",
+      "sv" : "Början av giltighet",
       "en" : "Start date of benefit validity"
     },
     "attributes" : [ "datatype" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://data.europa.eu/eli/ontology#version_date",
+    "baseIri" : "http://data.europa.eu/eli/ontology",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "version_date"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
     "id" : "151"
   }, {
     "iri" : "http://schema.org/amount",
@@ -4487,13 +4487,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "sv",
-        "value" : "åldersgräns",
+        "language" : "fi",
+        "value" : "yläikäraja",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "yläikäraja",
+        "language" : "sv",
+        "value" : "åldersgräns",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
@@ -4504,14 +4504,14 @@
     },
     "label" : {
       "IRI-based" : "maximumAge",
-      "fi" : "yläikäraja",
       "sv" : "åldersgräns",
+      "fi" : "yläikäraja",
       "en" : "maximum age"
     },
     "domain" : "4",
     "comment" : {
-      "sv" : "Åldersgräns",
       "fi" : "Yläikäraja",
+      "sv" : "Åldersgräns",
       "en" : "Maximum age limit"
     },
     "attributes" : [ "datatype" ],
@@ -4529,13 +4529,13 @@
       } ],
       "prefLabel" : [ {
         "identifier" : "prefLabel",
-        "language" : "fi",
-        "value" : "hakemus koskee etuutta",
+        "language" : "en",
+        "value" : "application concerns",
         "type" : "label"
       }, {
         "identifier" : "prefLabel",
-        "language" : "en",
-        "value" : "application concerns",
+        "language" : "fi",
+        "value" : "hakemus koskee etuutta",
         "type" : "label"
       } ]
     },

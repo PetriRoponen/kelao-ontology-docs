@@ -204,9 +204,6 @@
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@value" : "0.1.0"
   } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
-  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.2.0-core-draft"
   } ],
@@ -405,7 +402,7 @@
     "@value" : "A social security benefit or allowance. General class — use subclasses for instances."
   }, {
     "@language" : "fi",
-    "@value" : "Sosiaaliturvan etuus, maksu tai tuki. Yleinen luokka — käytä alaluokkia instansseissa."
+    "@value" : "Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"

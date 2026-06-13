@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<https://petriroponen.github.io/kelao-ontology-docs/> a prov:Entity;
+<..\index-fi.html> a prov:Entity;
 	 dc:title "Sosiaaliturvan ydinontologia";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://www.linkedin.com/in/petri-roponen-052aa772>;
