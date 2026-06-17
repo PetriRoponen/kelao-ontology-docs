@@ -1152,7 +1152,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
       rdfs:label "uuid"@en ,
                  "uuid"@fi ;
       skos:prefLabel "uuid"@en ,
-                                                      "uuid"@fi .
+         "uuid"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#validFrom
@@ -1167,8 +1167,8 @@ schema:identifier rdf:type owl:DatatypeProperty .
                       "voimassa alkaen"@fi ;
            skos:exactMatch schema:startDate ;
            skos:prefLabel "början av giltighet"@sv ,
-                                 "valid from"@en ,
-                                 "voimassa alkaen"@fi .
+                "valid from"@en ,
+                "voimassa alkaen"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#validTo
@@ -1183,8 +1183,8 @@ schema:identifier rdf:type owl:DatatypeProperty .
                     "voimassa asti"@fi ;
          skos:exactMatch schema:endDate ;
          skos:prefLabel "tills giltigt"@sv ,
-                               "valid to"@en ,
-                               "voimassa asti"@fi .
+                "valid to"@en ,
+                "voimassa asti"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#versionDate
@@ -1204,15 +1204,15 @@ schema:identifier rdf:type owl:DatatypeProperty .
 
 ###  https://kela.fi/ontology/kelao#additionalInformation
 :additionalInformation rdf:type owl:DatatypeProperty ;
-                       rdfs:range xsd:anyURI ;
-                       rdfs:comment "The URI of the data product where more information is available."@en ,
-                                    "Tietotuotteen verkko-osoite (URI), josta saa lisätietoja."@fi ;
-                       rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                       rdfs:label "additional information"@en ,
-                                  "lisätietoja"@fi ;
-                       skos:prefLabel "additional information"@en ,
-                                             "lisätietoja"@fi ;
-                       skos:scopeNote "Käytetään kelao:DataProduct-instansseilla."@fi .
+                rdfs:range xsd:anyURI ;
+                rdfs:comment "The URI of the data product where more information is available."@en ,
+                        "Tietotuotteen verkko-osoite (URI), josta saa lisätietoja."@fi ;
+                rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+                rdfs:label "additional information"@en ,
+                        "lisätietoja"@fi ;
+                skos:prefLabel "additional information"@en ,
+                         "lisätietoja"@fi ;
+                skos:scopeNote "Käytetään kelao:DataProduct-instansseilla."@fi .
 
 
 ###  https://kela.fi/ontology/kelao#areaCode
@@ -1251,7 +1251,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                rdfs:label "data product id"@en ,
                           "tietotuotteen tunniste"@fi ;
                skos:prefLabel "data product id"@en ,
-                                     "tietotuotteen tunniste"@fi ;
+                        "tietotuotteen tunniste"@fi ;
                skos:scopeNote "Käytetään kelao:DataProduct-instansseilla."@fi .
 
 
@@ -1264,7 +1264,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                      rdfs:label "data product keywords"@en ,
                                 "tietotuotteen asiasanat"@fi ;
                      skos:prefLabel "data product keywords"@en ,
-                                           "tietotuotteen asiasanat"@fi ;
+                                "tietotuotteen asiasanat"@fi ;
                      skos:scopeNote "Käytetään kelao:DataProduct-instansseilla. Lähdeontologiassa nimellä dataProductKeyWords."@fi .
 
 
@@ -1277,7 +1277,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                  rdfs:label "data product type"@en ,
                             "tietotuotteen tyyppi"@fi ;
                  skos:prefLabel "data product type"@en ,
-                                       "tietotuotteen tyyppi"@fi ;
+                        "tietotuotteen tyyppi"@fi ;
                  skos:scopeNote "Käytetään kelao:DataProduct-instansseilla."@fi .
 
 
@@ -1288,9 +1288,9 @@ schema:identifier rdf:type owl:DatatypeProperty .
                                  "Työllisyysalueen koodi."@fi ;
                     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                     rdfs:label "employment area code"@en ,
-                               "työllisyysalueen koodi"@fi ;
+                        "työllisyysalueen koodi"@fi ;
                     skos:prefLabel "employment area code"@en ,
-                                          "työllisyysalueen koodi"@fi ;
+                        "työllisyysalueen koodi"@fi ;
                     skos:scopeNote "Käytetään kelao:Location-instansseilla (tyypillisesti kunnalla)."@fi .
 
 
@@ -1314,9 +1314,9 @@ schema:identifier rdf:type owl:DatatypeProperty .
                          "Tiedostomuoto."@fi ;
             rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
             rdfs:label "file format"@en ,
-                       "tiedostomuoto"@fi ;
+                "tiedostomuoto"@fi ;
             skos:prefLabel "file format"@en ,
-                                  "tiedostomuoto"@fi ;
+                "tiedostomuoto"@fi ;
             skos:scopeNote "Käytetään kelao:DataProduct-instansseilla."@fi .
 
 
@@ -1343,7 +1343,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                      "leveysaste"@fi ;
           skos:exactMatch geo:lat ;
           skos:prefLabel "latitude"@en ,
-                                "leveysaste"@fi ;
+                        "leveysaste"@fi ;
           skos:scopeNote "Käytetään kelao:Location-instansseilla. Linkitetty WGS84-sanastoon (geo:lat)."@fi .
 
 
@@ -1370,7 +1370,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                   rdfs:label "municipality code"@en ,
                              "kuntakoodi"@fi ;
                   skos:prefLabel "municipality code"@en ,
-                                        "kuntakoodi"@fi ;
+                                "kuntakoodi"@fi ;
                   skos:scopeNote "Käytetään kelao:Municipality-instansseilla."@fi .
 
 
@@ -1383,7 +1383,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                    rdfs:label "municipality group"@en ,
                               "kuntaryhmä"@fi ;
                    skos:prefLabel "municipality group"@en ,
-                                         "kuntaryhmä"@fi ;
+                                "kuntaryhmä"@fi ;
                    skos:scopeNote "Käytetään kelao:Municipality-instansseilla. Lähdeontologiassa nimellä kuntaryhma."@fi .
 
 
@@ -1409,7 +1409,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
             rdfs:label "post office"@en ,
                        "postitoimipaikka"@fi ;
             skos:prefLabel "post office"@en ,
-                                  "postitoimipaikka"@fi ;
+                        "postitoimipaikka"@fi ;
             skos:scopeNote "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."@fi .
 
 
@@ -1423,34 +1423,10 @@ schema:identifier rdf:type owl:DatatypeProperty .
                        "postinumero"@fi ;
             skos:exactMatch schema:postalCode ;
             skos:prefLabel "postal code"@en ,
-                                  "postinumero"@fi ;
+                        "postinumero"@fi ;
             skos:scopeNote "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."@fi .
 
 
-###  https://kela.fi/ontology/kelao#premisesAdministrator
-:premisesAdministrator rdf:type owl:DatatypeProperty ;
-                       rdfs:range xsd:string ;
-                       rdfs:comment "Premises administrator: Kela or another party."@en ,
-                                    "Tilan ylläpitäjä: Kela vai muu."@fi ;
-                       rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                       rdfs:label "premises administrator"@en ,
-                                  "ylläpitäjä"@fi ;
-                       skos:prefLabel "premises administrator"@en ,
-                                             "ylläpitäjä"@fi ;
-                       skos:scopeNote "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä yllapitaja."@fi .
-
-
-###  https://kela.fi/ontology/kelao#premisesOwnership
-:premisesOwnership rdf:type owl:DatatypeProperty ;
-                   rdfs:range xsd:string ;
-                   rdfs:comment "Ownership of the premises, or whether they are rented."@en ,
-                                "Tilan omistus tai onko tila vuokralla."@fi ;
-                   rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                   rdfs:label "premises ownership"@en ,
-                              "tilan omistus"@fi ;
-                   skos:prefLabel "premises ownership"@en ,
-                                         "tilan omistus"@fi ;
-                   skos:scopeNote "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä tilan_omistus."@fi .
 
 
 ###  https://kela.fi/ontology/kelao#reportCollection
@@ -1475,7 +1451,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                   rdfs:label "responsible party"@en ,
                              "vastuutaho"@fi ;
                   skos:prefLabel "responsible party"@en ,
-                                        "vastuutaho"@fi ;
+                                "vastuutaho"@fi ;
                   skos:scopeNote "Käytetään kelao:DataProduct-instansseilla."@fi .
 
 
@@ -1514,7 +1490,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                  rdfs:label "service unit type"@en ,
                             "palveluyksikön tyyppi"@fi ;
                  skos:prefLabel "service unit type"@en ,
-                                       "palveluyksikön tyyppi"@fi ;
+                                "palveluyksikön tyyppi"@fi ;
                  skos:scopeNote "Käytetään kelao:ServiceUnit-instansseilla."@fi .
 
 
@@ -1541,7 +1517,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                             rdfs:label "wellbeing service county code"@en ,
                                        "hyvinvointialueen koodi"@fi ;
                             skos:prefLabel "wellbeing service county code"@en ,
-                                                  "hyvinvointialueen koodi"@fi ;
+                                        "hyvinvointialueen koodi"@fi ;
                             skos:scopeNote "Käytetään kelao:WellbeingServiceCounty-instansseilla (tai kunnalla viittaustietona)."@fi .
 
 
@@ -1554,7 +1530,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
                             rdfs:label "wellbeing service county name"@en ,
                                        "hyvinvointialueen nimi"@fi ;
                             skos:prefLabel "wellbeing service county name"@en ,
-                                                  "hyvinvointialueen nimi"@fi ;
+                                                "hyvinvointialueen nimi"@fi ;
                             skos:scopeNote "Käytetään kelao:WellbeingServiceCounty-instansseilla."@fi .
 
 
@@ -1611,7 +1587,7 @@ prov:Entity rdf:type owl:Class .
                    "Muutoksenhaku"@fi ,
                    "Ändringssökande"@sv ;
         skos:altLabel "oikaisuvaatimus"@fi ,
-                                                       "valitus"@fi ;
+                        "valitus"@fi ;
         skos:definition "An applicant's request for rectification of or appeal against a decision."@en ,
                                "Hakijan päätökseen kohdistama oikaisuvaatimus tai valitus."@fi ;
         skos:prefLabel "Appeal"@en ,
