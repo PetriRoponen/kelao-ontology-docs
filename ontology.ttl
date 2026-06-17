@@ -1252,32 +1252,6 @@ xsd:duration rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."@fi .
 
 
-###  https://kela.fi/ontology/kelao#premisesAdministrator
-:premisesAdministrator rdf:type owl:DatatypeProperty ;
-                       rdfs:range xsd:string ;
-                       rdfs:comment "Premises administrator: Kela or another party."@en ,
-                                    "Tilan ylläpitäjä: Kela vai muu."@fi ;
-                       rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                       rdfs:label "premises administrator"@en ,
-                                  "ylläpitäjä"@fi ;
-                       <http://www.w3.org/2004/02/skos/core#prefLabel> "premises administrator"@en ,
-                                                                       "ylläpitäjä"@fi ;
-                       <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä yllapitaja."@fi .
-
-
-###  https://kela.fi/ontology/kelao#premisesOwnership
-:premisesOwnership rdf:type owl:DatatypeProperty ;
-                   rdfs:range xsd:string ;
-                   rdfs:comment "Ownership of the premises, or whether they are rented."@en ,
-                                "Tilan omistus tai onko tila vuokralla."@fi ;
-                   rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                   rdfs:label "premises ownership"@en ,
-                              "tilan omistus"@fi ;
-                   <http://www.w3.org/2004/02/skos/core#prefLabel> "premises ownership"@en ,
-                                                                   "tilan omistus"@fi ;
-                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä tilan_omistus."@fi .
-
-
 ###  https://kela.fi/ontology/kelao#processingTime
 :processingTime rdf:type owl:DatatypeProperty ;
                 rdfs:range xsd:duration ;

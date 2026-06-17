@@ -1702,40 +1702,6 @@
     
 
 
-    <!-- https://kela.fi/ontology/kelao#premisesAdministrator -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#premisesAdministrator">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Premises administrator: Kela or another party.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Tilan ylläpitäjä: Kela vai muu.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">premises administrator</rdfs:label>
-        <rdfs:label xml:lang="fi">ylläpitäjä</rdfs:label>
-        <skos:prefLabel xml:lang="en">premises administrator</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">ylläpitäjä</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä yllapitaja.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#premisesOwnership -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#premisesOwnership">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Ownership of the premises, or whether they are rented.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Tilan omistus tai onko tila vuokralla.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">premises ownership</rdfs:label>
-        <rdfs:label xml:lang="fi">tilan omistus</rdfs:label>
-        <skos:prefLabel xml:lang="en">premises ownership</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">tilan omistus</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä tilan_omistus.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#processingTime -->
 
 

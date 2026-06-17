@@ -1143,30 +1143,6 @@
 <https://kela.fi/ontology/kelao#postalCode> <http://www.w3.org/2004/02/skos/core#prefLabel> "postinumero"@fi .
 <https://kela.fi/ontology/kelao#postalCode> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."@fi .
 # 
-# https://kela.fi/ontology/kelao#premisesAdministrator
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2000/01/rdf-schema#comment> "Premises administrator: Kela or another party."@en .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2000/01/rdf-schema#comment> "Tilan ylläpitäjä: Kela vai muu."@fi .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2000/01/rdf-schema#label> "premises administrator"@en .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2000/01/rdf-schema#label> "ylläpitäjä"@fi .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2004/02/skos/core#prefLabel> "premises administrator"@en .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2004/02/skos/core#prefLabel> "ylläpitäjä"@fi .
-<https://kela.fi/ontology/kelao#premisesAdministrator> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä yllapitaja."@fi .
-# 
-# https://kela.fi/ontology/kelao#premisesOwnership
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2000/01/rdf-schema#comment> "Ownership of the premises, or whether they are rented."@en .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2000/01/rdf-schema#comment> "Tilan omistus tai onko tila vuokralla."@fi .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2000/01/rdf-schema#label> "premises ownership"@en .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2000/01/rdf-schema#label> "tilan omistus"@fi .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2004/02/skos/core#prefLabel> "premises ownership"@en .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2004/02/skos/core#prefLabel> "tilan omistus"@fi .
-<https://kela.fi/ontology/kelao#premisesOwnership> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä tilan_omistus."@fi .
-# 
 # https://kela.fi/ontology/kelao#processingTime
 <https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
