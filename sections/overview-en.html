@@ -27,6 +27,12 @@ This ontology has the following classes and properties.</span>
       <a href="#BenefitGroup" title="https://kela.fi/ontology/kelao#BenefitGroup">Benefit Group</a>
    </li>
    <li>
+      <a href="#Country" title="https://kela.fi/ontology/kelao#Country">Country</a>
+   </li>
+   <li>
+      <a href="#DataProduct" title="https://kela.fi/ontology/kelao#DataProduct">Data Product</a>
+   </li>
+   <li>
       <a href="#Decision" title="https://kela.fi/ontology/kelao#Decision">Decision</a>
    </li>
    <li>
@@ -41,10 +47,25 @@ This ontology has the following classes and properties.</span>
          title="https://kela.fi/ontology/kelao#LifeSituationClassification">Life Situation Classification</a>
    </li>
    <li>
+      <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Location</a>
+   </li>
+   <li>
+      <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Municipality</a>
+   </li>
+   <li>
       <a href="#Organisation" title="https://kela.fi/ontology/kelao#Organisation">Organization</a>
    </li>
    <li>
+      <a href="#Region" title="https://kela.fi/ontology/kelao#Region">Region</a>
+   </li>
+   <li>
       <a href="#Service" title="https://kela.fi/ontology/kelao#Service">Service</a>
+   </li>
+   <li>
+      <a href="#ServiceChannel" title="https://kela.fi/ontology/kelao#ServiceChannel">Service Channel</a>
+   </li>
+   <li>
+      <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Service Unit</a>
    </li>
    <li>
       <a href="#StandaloneBenefit"
@@ -55,6 +76,10 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#User" title="https://kela.fi/ontology/kelao#User">User</a>
+   </li>
+   <li>
+      <a href="#WellbeingServiceCounty"
+         title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Wellbeing Service County</a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -73,6 +98,10 @@ This ontology has the following classes and properties.</span>
       <a href="#appliesFor" title="https://kela.fi/ontology/kelao#appliesFor">applies for</a>
    </li>
    <li>
+      <a href="#belongsToWellbeingServiceCounty"
+         title="https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty">belongs to wellbeing service county</a>
+   </li>
+   <li>
       <a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">benefit to be noted</a>
    </li>
    <li>
@@ -80,6 +109,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#broaderBenefit" title="https://kela.fi/ontology/kelao#broaderBenefit">broader benefit</a>
+   </li>
+   <li>
+      <a href="#dataProductOwner" title="https://kela.fi/ontology/kelao#dataProductOwner">data product owner</a>
    </li>
    <li>
       <a href="#hasApplication" title="https://kela.fi/ontology/kelao#hasApplication">has application</a>
@@ -92,6 +124,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasBenefitPart" title="https://kela.fi/ontology/kelao#hasBenefitPart">has benefit part</a>
+   </li>
+   <li>
+      <a href="#hasServiceChannel" title="https://kela.fi/ontology/kelao#hasServiceChannel">has channel</a>
    </li>
    <li>
       <a href="#hasConcept" title="https://kela.fi/ontology/kelao#hasConcept">has concept</a>
@@ -112,6 +147,9 @@ This ontology has the following classes and properties.</span>
       <a href="#relatedBenefit" title="https://kela.fi/ontology/kelao#relatedBenefit">has related benefit</a>
    </li>
    <li>
+      <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">has service unit</a>
+   </li>
+   <li>
       <a href="#inhibiting" title="https://kela.fi/ontology/kelao#inhibiting">inhibiting benefit</a>
    </li>
    <li>
@@ -122,16 +160,24 @@ This ontology has the following classes and properties.</span>
          title="https://kela.fi/ontology/kelao#isLifeSituationFor">is life situation for</a>
    </li>
    <li>
+      <a href="#hasGeographicArea" title="https://kela.fi/ontology/kelao#hasGeographicArea">is located in</a>
+   </li>
+   <li>
       <a href="#isPartOfBenefit" title="https://kela.fi/ontology/kelao#isPartOfBenefit">is part of benefit</a>
    </li>
    <li>
-      <a href="#meansTestedIncome" title="https://kela.fi/ontology/kelao#meansTestedIncome">means-tested income</a>
+      <a href="#meansTestedIncome"
+         title="https://kela.fi/ontology/kelao#meansTestedIncome">means-tested income</a>
    </li>
    <li>
       <a href="#minimumAmount" title="https://kela.fi/ontology/kelao#minimumAmount">minimum amount benefit</a>
    </li>
    <li>
       <a href="#reducing" title="https://kela.fi/ontology/kelao#reducing">reducing benefit</a>
+   </li>
+   <li>
+      <a href="#referenceToBenefit"
+         title="https://kela.fi/ontology/kelao#referenceToBenefit">reference to benefit</a>
    </li>
    <li>
       <a href="#relatedService" title="https://kela.fi/ontology/kelao#relatedService">related service</a>
@@ -141,6 +187,14 @@ This ontology has the following classes and properties.</span>
          title="https://kela.fi/ontology/kelao#relatedToLifeSituation">related to life situation</a>
    </li>
    <li>
+      <a href="#residesInMunicipality"
+         title="https://kela.fi/ontology/kelao#residesInMunicipality">resides in municipality</a>
+   </li>
+   <li>
+      <a href="#serviceUnitOrganization"
+         title="https://kela.fi/ontology/kelao#serviceUnitOrganization">service unit organisation</a>
+   </li>
+   <li>
       <a href="#type_document" title="https://kela.fi/ontology/kelao#type_document">type of document</a>
    </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
@@ -148,6 +202,10 @@ This ontology has the following classes and properties.</span>
     class="hlist">
    <li>
       <a href="#abbreviation" title="https://kela.fi/ontology/kelao#abbreviation">abbreviation</a>
+   </li>
+   <li>
+      <a href="#additionalInformation"
+         title="https://kela.fi/ontology/kelao#additionalInformation">additional information</a>
    </li>
    <li>
       <a href="#amount" title="https://kela.fi/ontology/kelao#amount">amount</a>
@@ -160,6 +218,12 @@ This ontology has the following classes and properties.</span>
          title="https://kela.fi/ontology/kelao#applicationStatus">application status</a>
    </li>
    <li>
+      <a href="#areaCode" title="https://kela.fi/ontology/kelao#areaCode">area code</a>
+   </li>
+   <li>
+      <a href="#areaType" title="https://kela.fi/ontology/kelao#areaType">area type</a>
+   </li>
+   <li>
       <a href="#attachmentUri" title="https://kela.fi/ontology/kelao#attachmentUri">attachment uri</a>
    </li>
    <li>
@@ -167,6 +231,16 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#currentVersion" title="https://kela.fi/ontology/kelao#currentVersion">current version uri</a>
+   </li>
+   <li>
+      <a href="#dataProductId" title="https://kela.fi/ontology/kelao#dataProductId">data product id</a>
+   </li>
+   <li>
+      <a href="#dataProductKeywords"
+         title="https://kela.fi/ontology/kelao#dataProductKeywords">data product keywords</a>
+   </li>
+   <li>
+      <a href="#dataProductType" title="https://kela.fi/ontology/kelao#dataProductType">data product type</a>
    </li>
    <li>
       <a href="#date_document" title="https://kela.fi/ontology/kelao#date_document">date of document</a>
@@ -178,10 +252,24 @@ This ontology has the following classes and properties.</span>
       <a href="#decisionOutcome" title="https://kela.fi/ontology/kelao#decisionOutcome">decision outcome</a>
    </li>
    <li>
+      <a href="#employmentAreaCode"
+         title="https://kela.fi/ontology/kelao#employmentAreaCode">employment area code</a>
+   </li>
+   <li>
+      <a href="#employmentAreaName"
+         title="https://kela.fi/ontology/kelao#employmentAreaName">employment area name</a>
+   </li>
+   <li>
+      <a href="#fileFormat" title="https://kela.fi/ontology/kelao#fileFormat">file format</a>
+   </li>
+   <li>
       <a href="#filingDate" title="https://kela.fi/ontology/kelao#filingDate">filing date</a>
    </li>
    <li>
       <a href="#financing" title="https://kela.fi/ontology/kelao#financing">financing</a>
+   </li>
+   <li>
+      <a href="#geonamesId" title="https://kela.fi/ontology/kelao#geonamesId">geonames id</a>
    </li>
    <li>
       <a href="#homepage" title="https://kela.fi/ontology/kelao#homepage">homepage</a>
@@ -197,12 +285,13 @@ This ontology has the following classes and properties.</span>
          title="https://kela.fi/ontology/kelao#attachmentInOmaKela">is attachment in OmaKela</a>
    </li>
    <li>
-      <a href="#alternative" title="https://kela.fi/ontology/kelao#alternative">
-         <span>law acronym</span>
-      </a>
+      <a href="#latitude" title="https://kela.fi/ontology/kelao#latitude">latitude</a>
    </li>
    <li>
       <a href="#id_local" title="https://kela.fi/ontology/kelao#id_local">local identifier</a>
+   </li>
+   <li>
+      <a href="#longitude" title="https://kela.fi/ontology/kelao#longitude">longitude</a>
    </li>
    <li>
       <a href="#maximumAge" title="https://kela.fi/ontology/kelao#maximumAge">maximum age</a>
@@ -212,6 +301,16 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#minimumAge" title="https://kela.fi/ontology/kelao#minimumAge">minimum age</a>
+   </li>
+   <li>
+      <a href="#municipalityCode" title="https://kela.fi/ontology/kelao#municipalityCode">municipality code</a>
+   </li>
+   <li>
+      <a href="#municipalityGroup"
+         title="https://kela.fi/ontology/kelao#municipalityGroup">municipality group</a>
+   </li>
+   <li>
+      <a href="#officeNumber" title="https://kela.fi/ontology/kelao#officeNumber">office number</a>
    </li>
    <li>
       <a href="#partIdentifier" title="https://kela.fi/ontology/kelao#partIdentifier">part identifier</a>
@@ -224,6 +323,20 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#partType" title="https://kela.fi/ontology/kelao#partType">part type</a>
+   </li>
+   <li>
+      <a href="#postOffice" title="https://kela.fi/ontology/kelao#postOffice">post office</a>
+   </li>
+   <li>
+      <a href="#postalCode" title="https://kela.fi/ontology/kelao#postalCode">postal code</a>
+   </li>
+   <li>
+      <a href="#premisesAdministrator"
+         title="https://kela.fi/ontology/kelao#premisesAdministrator">premises administrator</a>
+   </li>
+   <li>
+      <a href="#premisesOwnership"
+         title="https://kela.fi/ontology/kelao#premisesOwnership">premises ownership</a>
    </li>
    <li>
       <a href="#processingTime" title="https://kela.fi/ontology/kelao#processingTime">processing time</a>
@@ -239,12 +352,30 @@ This ontology has the following classes and properties.</span>
       <a href="#recipientUnit" title="https://kela.fi/ontology/kelao#recipientUnit">recipient unit</a>
    </li>
    <li>
+      <a href="#reportCollection" title="https://kela.fi/ontology/kelao#reportCollection">report collection</a>
+   </li>
+   <li>
       <a href="#requiresEmploymentHistory"
          title="https://kela.fi/ontology/kelao#requiresEmploymentHistory">requires employment history</a>
    </li>
    <li>
       <a href="#residenceRequired"
          title="https://kela.fi/ontology/kelao#residenceRequired">residence required</a>
+   </li>
+   <li>
+      <a href="#responsibleParty" title="https://kela.fi/ontology/kelao#responsibleParty">responsible party</a>
+   </li>
+   <li>
+      <a href="#serviceChannelId" title="https://kela.fi/ontology/kelao#serviceChannelId">service channel id</a>
+   </li>
+   <li>
+      <a href="#serviceHours" title="https://kela.fi/ontology/kelao#serviceHours">service hours</a>
+   </li>
+   <li>
+      <a href="#serviceUnitType" title="https://kela.fi/ontology/kelao#serviceUnitType">service unit type</a>
+   </li>
+   <li>
+      <a href="#streetAddress" title="https://kela.fi/ontology/kelao#streetAddress">street address</a>
    </li>
    <li>
       <a href="#taxable" title="https://kela.fi/ontology/kelao#taxable">taxable</a>
@@ -260,5 +391,16 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#versionDate" title="https://kela.fi/ontology/kelao#versionDate">version date</a>
+   </li>
+   <li>
+      <a href="#wellbeingServiceCountyCode"
+         title="https://kela.fi/ontology/kelao#wellbeingServiceCountyCode">wellbeing service county code</a>
+   </li>
+   <li>
+      <a href="#wellbeingServiceCountyName"
+         title="https://kela.fi/ontology/kelao#wellbeingServiceCountyName">wellbeing service county name</a>
+   </li>
+   <li>
+      <a href="#wikidataId" title="https://kela.fi/ontology/kelao#wikidataId">wikidata id</a>
    </li>
 </ul><iframe src="webvowl/index.html"></iframe> 

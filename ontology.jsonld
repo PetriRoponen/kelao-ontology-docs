@@ -120,10 +120,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "fi",
-    "@value" : "Sosiaaliturvan ontologia kuvaa etuudet, etuuskriteerit, palvelut,  \n        organisaatiot, lainsäädännön sekä sosiaaliturvan käsitteet.\n        "
+    "@value" : "Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  \n        organisaatiot, maantieteelliset alueet, palvelukanavat, tietotuotteet, lainsäädännön sekä sosiaaliturvan käsitteet.\n        "
   }, {
     "@language" : "en",
-    "@value" : "The Social Security Ontology describes the conceptual structure of the Finnish social security system.\n\t\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services (benefit related), life situations, organisations, legislation, and concepts.\n"
+    "@value" : "The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.\n\t\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services (benefit related), life situations, organisations, legislation, and concepts.\n"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@id" : "https://www.linkedin.com/in/petri-roponen-052aa772"
@@ -153,7 +153,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-10"
+    "@value" : "2026-06-17"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -191,6 +191,10 @@
   }, {
     "@id" : "http://purl.org/vocab/cpsv#"
   }, {
+    "@id" : "http://schema.org/"
+  }, {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
+  }, {
     "@id" : "http://www.w3.org/ns/locn#"
   }, {
     "@id" : "http://www.w3.org/ns/org#"
@@ -202,15 +206,18 @@
     "@id" : "https://semiceu.github.io/CPSV-AP/releases/3.2.0/"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@value" : "0.1.0"
+    "@value" : "0.2.0-core-draft"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.2.0-core-draft"
+    "@value" : "0.3.0-core-draft"
   } ],
   "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@language" : "fi",
+    "@value" : "0.3.0: lisätty maantieteelliset alueet (Location, Municipality, WellbeingServiceCounty, Region, Country), palvelukanava (ServiceChannel) ja palveluyksikkö (ServiceUnit) sekä tietotuote (DataProduct) relaatioineen ja ominaisuuksineen."
+  }, {
     "@language" : "en",
     "@value" : "Automated document generation"
   }, {
@@ -563,6 +570,93 @@
     "@value" : "Etuusryhmä"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A country / state. Used e.g. to express residence requirements and cross-border situations."
+  }, {
+    "@language" : "fi",
+    "@value" : "Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  }, {
+    "@language" : "sv",
+    "@value" : "Stat"
+  }, {
+    "@language" : "fi",
+    "@value" : "Valtio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://schema.org/Country"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Country"
+  }, {
+    "@language" : "sv",
+    "@value" : "Stat"
+  }, {
+    "@language" : "fi",
+    "@value" : "Valtio"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Lähdeontologiassa kuvattu suoraan schema:Country-luokkana; ydinmallissa määritelty omana luokkana ja linkitetty skos:exactMatch-suhteella."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#DataProduct",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A managed and governed collection of data with a purpose, value, ownership and life-cycle that meets consumer needs, e.g. a report or other benefit-related data product."
+  }, {
+    "@language" : "fi",
+    "@value" : "Hallittu ja omistettu tietokokonaisuus, jolla on tarkoitus, arvo ja elinkaari ja joka vastaa tiedon hyödyntäjän tarpeisiin. Esimerkiksi raportti tai muu etuuteen liittyvä tietotuote."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Data Product"
+  }, {
+    "@language" : "sv",
+    "@value" : "Informationsprodukt"
+  }, {
+    "@language" : "fi",
+    "@value" : "Tietotuote"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A data product is a product that facilitates an end goal through the use of data."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tietotuote on tuote, joka helpottaa lopputavoitteen saavuttamista datan avulla."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Data Product"
+  }, {
+    "@language" : "sv",
+    "@value" : "Informationsprodukt"
+  }, {
+    "@language" : "fi",
+    "@value" : "Tietotuote"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Itsenäinen luokka. Mahdollinen linkitys ulkoiseen data product -sanastoon (esim. DPROD) jätetty myöhempään harmonisointiin."
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#Decision",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -748,6 +842,100 @@
     "@value" : "Life Situation Classification"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A geographic area used e.g. to describe a place of residence, a service operating area, or the location of a service unit. Superclass for municipalities, wellbeing service counties, regions and countries."
+  }, {
+    "@language" : "fi",
+    "@value" : "Maantieteellinen alue, jota voidaan käyttää esim. asuinpaikan, palvelun toiminta-alueen tai palveluyksikön sijainnin kuvaamiseen. Yliluokka kunnille, hyvinvointialueille, maakunnille ja valtioille."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  }, {
+    "@language" : "sv",
+    "@value" : "Plats"
+  }, {
+    "@language" : "fi",
+    "@value" : "Sijainti"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Geographic Area"
+  }, {
+    "@language" : "fi",
+    "@value" : "Maantieteellinen alue"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://www.w3.org/ns/locn#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "Any geographic area, irrespective of size or administrative level."
+  }, {
+    "@language" : "fi",
+    "@value" : "Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  }, {
+    "@language" : "sv",
+    "@value" : "Plats"
+  }, {
+    "@language" : "fi",
+    "@value" : "Sijainti"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Vastaa lähdeontologian kelao:GeographicArea-luokkaa; ydinmallissa nimi on harmonisoitu Location-muotoon ja linkitetty W3C Location Core -sanastoon (locn:Location)."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#Municipality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."
+  }, {
+    "@language" : "fi",
+    "@value" : "Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "sv",
+    "@value" : "Kommun"
+  }, {
+    "@language" : "fi",
+    "@value" : "Kunta"
+  }, {
+    "@language" : "en",
+    "@value" : "Municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "sv",
+    "@value" : "Kommun"
+  }, {
+    "@language" : "fi",
+    "@value" : "Kunta"
+  }, {
+    "@language" : "en",
+    "@value" : "Municipality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Suomen kunnat, Suomi.fi URI:t."
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#Organisation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -799,6 +987,42 @@
     "@value" : "KELAO-kontekstissa vastaa PTV:n Organization-käsitettä ja \n         schema.org/Organization-käsitettä. Käytetään kuvaamaan kaikkia \n         toimijaorganisaatioita sektorirajat ylittäen (julkinen, yksityinen, \n         kolmas sektori). EU Core Public Organisation on tämän erikoistapaus."
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#Region",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A region (maakunta): an areal unit of regional development and planning composed of municipalities."
+  }, {
+    "@language" : "fi",
+    "@value" : "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "sv",
+    "@value" : "Landskap"
+  }, {
+    "@language" : "fi",
+    "@value" : "Maakunta"
+  }, {
+    "@language" : "en",
+    "@value" : "Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "sv",
+    "@value" : "Landskap"
+  }, {
+    "@language" : "fi",
+    "@value" : "Maakunta"
+  }, {
+    "@language" : "en",
+    "@value" : "Region"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#Service",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -845,8 +1069,112 @@
     "@value" : "Tjänst"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "In the core model a service is linked to a benefit (kelao:relatedService) and is accessible through service channels (kelao:hasServiceChannel). Service channels (kelao:ServiceChannel) and service units (kelao:ServiceUnit) are part of the core model; broader PTV metadata (e.g. funding type, service classification, target groups) remains outside it."
+  }, {
     "@language" : "fi",
-    "@value" : "Ydinmallissa palvelu liitetään etuuteen esim. hakemus- tai neuvontapalveluna (kelao:relatedService). Palvelukanavat ja PTV-metatieto ovat ydinmallin ulkopuolella."
+    "@value" : "Ydinmallissa palvelu liitetään etuuteen (kelao:relatedService) ja se on käytettävissä palvelukanavien kautta (kelao:hasServiceChannel). Palvelukanava (kelao:ServiceChannel) ja palveluyksikkö (kelao:ServiceUnit) kuuluvat ydinmalliin; laajempi PTV-metatieto (esim. rahoitustyyppi, palveluluokitus, kohderyhmät) jää edelleen ydinmallin ulkopuolelle."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#ServiceChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A service channel: the way a customer accesses a service, e.g. e-service, web page, printable form, telephone service or a physical service point. A single service may have several alternative or sequential channels."
+  }, {
+    "@language" : "fi",
+    "@value" : "Palvelu- tai asiointikanava: tapa, jolla asiakas saa palvelun käyttöönsä. Kanava voi olla esimerkiksi verkkoasiointi, verkkosivu, tulostettava lomake, puhelinasiointi tai fyysinen palvelupaikka. Yhdellä palvelulla voi olla useita vaihtoehtoisia tai peräkkäisiä kanavia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "Palvelukanava"
+  }, {
+    "@language" : "en",
+    "@value" : "Service Channel"
+  }, {
+    "@language" : "sv",
+    "@value" : "Servicekanal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://iri.suomi.fi/model/suomiptv2/ServiceChannel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fi",
+    "@value" : "Tapa, jolla asiakas saa palvelun käyttöönsä."
+  }, {
+    "@language" : "en",
+    "@value" : "The way in which a customer accesses a service."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "Palvelukanava"
+  }, {
+    "@language" : "en",
+    "@value" : "Service Channel"
+  }, {
+    "@language" : "sv",
+    "@value" : "Servicekanal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Linkitetty PTV:n ServiceChannel-käsitteeseen vain skos:closeMatch-suhteella, koska ptv: on epävakaa nimiavaruus."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#ServiceUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A service unit (service point) with a physical location. Service unit data has been combined from Kela's internal sources and PTV service-channel data (entity matching)."
+  }, {
+    "@language" : "fi",
+    "@value" : "Palveluyksikkö eli palvelupiste, jolla on fyysinen sijainti. Palveluyksiköiden tiedot on yhdistetty Kelan sisäisistä lähteistä ja PTV:n palvelukanavatiedoista (entity matching)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "Palveluyksikkö"
+  }, {
+    "@language" : "en",
+    "@value" : "Service Unit"
+  }, {
+    "@language" : "sv",
+    "@value" : "Serviceenhet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#ServiceChannel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fi",
+    "@value" : "Palvelupiste"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://iri.suomi.fi/model/suomiptv2/ServiceChannel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A physically located service point at which a service is provided."
+  }, {
+    "@language" : "fi",
+    "@value" : "Fyysisesti sijaitseva palvelupiste, jossa palvelua tarjotaan."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "Palveluyksikkö"
+  }, {
+    "@language" : "en",
+    "@value" : "Service Unit"
+  }, {
+    "@language" : "sv",
+    "@value" : "Serviceenhet"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Palvelupiste on palvelukanavan erikoistapaus, siksi rdfs:subClassOf kelao:ServiceChannel."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#StandaloneBenefit",
@@ -955,6 +1283,42 @@
     "@value" : "User"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#WellbeingServiceCounty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."
+  }, {
+    "@language" : "fi",
+    "@value" : "Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "Hyvinvointialue"
+  }, {
+    "@language" : "sv",
+    "@value" : "Välfärdsområde"
+  }, {
+    "@language" : "en",
+    "@value" : "Wellbeing Service County"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "Hyvinvointialue"
+  }, {
+    "@language" : "sv",
+    "@value" : "Välfärdsområde"
+  }, {
+    "@language" : "en",
+    "@value" : "Wellbeing Service County"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#abbreviation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -983,6 +1347,40 @@
   }, {
     "@language" : "fi",
     "@value" : "lyhenne"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#additionalInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The URI of the data product where more information is available."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tietotuotteen verkko-osoite (URI), josta saa lisätietoja."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "additional information"
+  }, {
+    "@language" : "fi",
+    "@value" : "lisätietoja"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "additional information"
+  }, {
+    "@language" : "fi",
+    "@value" : "lisätietoja"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:DataProduct-instansseilla."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#advancePayment",
@@ -1261,6 +1659,74 @@
     "@value" : "hakee etuutta"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#areaCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Official area code (e.g. municipality number or wellbeing service county identifier)."
+  }, {
+    "@language" : "fi",
+    "@value" : "Virallinen aluekoodi (esim. kuntanumero tai hyvinvointialueen tunnus)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "aluekoodi"
+  }, {
+    "@language" : "en",
+    "@value" : "area code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "aluekoodi"
+  }, {
+    "@language" : "en",
+    "@value" : "area code"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Location-instansseilla (ja sen alaluokilla)."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#areaType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Alueen tyyppi."
+  }, {
+    "@language" : "en",
+    "@value" : "Area type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "alueen tyyppi"
+  }, {
+    "@language" : "en",
+    "@value" : "area type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "alueen tyyppi"
+  }, {
+    "@language" : "en",
+    "@value" : "area type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Location-instansseilla. Lähdeontologiassa nimellä alueTyyppi."
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#attachmentInOmaKela",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1327,6 +1793,39 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
     "@value" : "Käytetään kelao:Attachment-instansseilla (xsd:anyURI)."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Belongs to wellbeing service county"
+  }, {
+    "@language" : "fi",
+    "@value" : "Kunta kuuluu tähän hyvinvointialueeseen."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to wellbeing service county"
+  }, {
+    "@language" : "fi",
+    "@value" : "kuuluu hyvinvointialueeseen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#WellbeingServiceCounty"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "belongs to wellbeing service county"
+  }, {
+    "@language" : "fi",
+    "@value" : "kuuluu hyvinvointialueeseen"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#broaderBenefit",
@@ -1424,6 +1923,141 @@
   }, {
     "@language" : "en",
     "@value" : "current version uri"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#dataProductId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Identifier of a report or other data product, e.g. WIT100a."
+  }, {
+    "@language" : "fi",
+    "@value" : "Raportin tai muun tietotuotteen tunniste, esim. WIT100a."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "data product id"
+  }, {
+    "@language" : "fi",
+    "@value" : "tietotuotteen tunniste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "data product id"
+  }, {
+    "@language" : "fi",
+    "@value" : "tietotuotteen tunniste"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:DataProduct-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#dataProductKeywords",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Keywords of the data product."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tietotuotteen asia- tai avainsanat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "data product keywords"
+  }, {
+    "@language" : "fi",
+    "@value" : "tietotuotteen asiasanat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "data product keywords"
+  }, {
+    "@language" : "fi",
+    "@value" : "tietotuotteen asiasanat"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:DataProduct-instansseilla. Lähdeontologiassa nimellä dataProductKeyWords."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#dataProductOwner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Data product owner"
+  }, {
+    "@language" : "fi",
+    "@value" : "Tietotuotteen vastuuorganisaatio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#DataProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "data product owner"
+  }, {
+    "@language" : "fi",
+    "@value" : "tietotuotteen vastuuorganisaatio"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Organisation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "data product owner"
+  }, {
+    "@language" : "fi",
+    "@value" : "tietotuotteen vastuuorganisaatio"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#dataProductType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Tietotuotteen tyyppi."
+  }, {
+    "@language" : "en",
+    "@value" : "Type of data product."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "data product type"
+  }, {
+    "@language" : "fi",
+    "@value" : "tietotuotteen tyyppi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "data product type"
+  }, {
+    "@language" : "fi",
+    "@value" : "tietotuotteen tyyppi"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:DataProduct-instansseilla."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#date_document",
@@ -1534,6 +2168,108 @@
     "@value" : "Käytetään kelao:Decision-instansseilla. Esim. 'myönnetty', 'hylätty', 'osittain myönnetty'."
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#employmentAreaCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Employment area code."
+  }, {
+    "@language" : "fi",
+    "@value" : "Työllisyysalueen koodi."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "employment area code"
+  }, {
+    "@language" : "fi",
+    "@value" : "työllisyysalueen koodi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "employment area code"
+  }, {
+    "@language" : "fi",
+    "@value" : "työllisyysalueen koodi"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Location-instansseilla (tyypillisesti kunnalla)."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#employmentAreaName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Employment area name."
+  }, {
+    "@language" : "fi",
+    "@value" : "Työllisyysalueen nimi."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "employment area name"
+  }, {
+    "@language" : "fi",
+    "@value" : "työllisyysalueen nimi"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "employment area name"
+  }, {
+    "@language" : "fi",
+    "@value" : "työllisyysalueen nimi"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Location-instansseilla (tyypillisesti kunnalla)."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#fileFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "File format."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tiedostomuoto."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "file format"
+  }, {
+    "@language" : "fi",
+    "@value" : "tiedostomuoto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "file format"
+  }, {
+    "@language" : "fi",
+    "@value" : "tiedostomuoto"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:DataProduct-instansseilla."
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#filingDate",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1605,6 +2341,40 @@
   }, {
     "@language" : "fi",
     "@value" : "rahoitus"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#geonamesId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Maantieteellisen alueen GeoNames-tunniste."
+  }, {
+    "@language" : "en",
+    "@value" : "Unique identifier in the GeoNames database."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "geonames id"
+  }, {
+    "@language" : "fi",
+    "@value" : "geonames-tunniste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "geonames id"
+  }, {
+    "@language" : "fi",
+    "@value" : "geonames-tunniste"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Location-instansseilla."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#hasApplication",
@@ -1808,6 +2578,39 @@
     "@value" : "has decision"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#hasGeographicArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is located in"
+  }, {
+    "@language" : "fi",
+    "@value" : "Palveluyksikkö sijaitsee tällä maantieteellisellä alueella."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#ServiceUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is located in"
+  }, {
+    "@language" : "fi",
+    "@value" : "sijaitsee alueella"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "is located in"
+  }, {
+    "@language" : "fi",
+    "@value" : "sijaitsee alueella"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#hasProvider",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1839,6 +2642,75 @@
   }, {
     "@language" : "fi",
     "@value" : "vastuuorganisaatio"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#hasServiceChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A service has service channels. Services are accessible through service channels."
+  }, {
+    "@language" : "fi",
+    "@value" : "Palvelulla on palvelukanava. Palvelu on käytettävissä palvelukanavien kautta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has channel"
+  }, {
+    "@language" : "fi",
+    "@value" : "kanava"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#ServiceChannel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://iri.suomi.fi/model/suomiptv2/hasServiceChannel"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has channel"
+  }, {
+    "@language" : "fi",
+    "@value" : "kanava"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#hasServiceUnit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Has service unit"
+  }, {
+    "@language" : "fi",
+    "@value" : "Organisaatiolla on palveluyksikkö."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has service unit"
+  }, {
+    "@language" : "fi",
+    "@value" : "on palveluyksikkö"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#ServiceUnit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has service unit"
+  }, {
+    "@language" : "fi",
+    "@value" : "on palveluyksikkö"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#has_part",
@@ -2221,6 +3093,43 @@
     "@value" : "on osa etuutta"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#latitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Latitude."
+  }, {
+    "@language" : "fi",
+    "@value" : "Leveysaste."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "latitude"
+  }, {
+    "@language" : "fi",
+    "@value" : "leveysaste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "latitude"
+  }, {
+    "@language" : "fi",
+    "@value" : "leveysaste"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Location-instansseilla. Linkitetty WGS84-sanastoon (geo:lat)."
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#legalReference",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2252,6 +3161,43 @@
   }, {
     "@language" : "fi",
     "@value" : "on lakiviittaus"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#longitude",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Longitude."
+  }, {
+    "@language" : "fi",
+    "@value" : "Pituusaste."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "longitude"
+  }, {
+    "@language" : "fi",
+    "@value" : "pituusaste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "longitude"
+  }, {
+    "@language" : "fi",
+    "@value" : "pituusaste"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Location-instansseilla. Linkitetty WGS84-sanastoon (geo:long)."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#maximumAge",
@@ -2450,6 +3396,74 @@
     "@value" : "MIN"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#municipalityCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Kunnan kolminumeroinen koodi."
+  }, {
+    "@language" : "en",
+    "@value" : "Municipality code."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "kuntakoodi"
+  }, {
+    "@language" : "en",
+    "@value" : "municipality code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "kuntakoodi"
+  }, {
+    "@language" : "en",
+    "@value" : "municipality code"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Municipality-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#municipalityGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Kela's municipality group for general housing allowance: I, II, III or IV."
+  }, {
+    "@language" : "fi",
+    "@value" : "Yleisen asumistuen kuntaryhmäluokitus: I, II, III tai IV."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "kuntaryhmä"
+  }, {
+    "@language" : "en",
+    "@value" : "municipality group"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "kuntaryhmä"
+  }, {
+    "@language" : "en",
+    "@value" : "municipality group"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Municipality-instansseilla. Lähdeontologiassa nimellä kuntaryhma."
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#noteworthy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2484,6 +3498,40 @@
   } ],
   "https://kela.fi/ontology/kelao#relationshipAbbreviation" : [ {
     "@value" : "HUO"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#officeNumber",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Office number."
+  }, {
+    "@language" : "fi",
+    "@value" : "Toimiston numero."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "office number"
+  }, {
+    "@language" : "fi",
+    "@value" : "toimiston numero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "office number"
+  }, {
+    "@language" : "fi",
+    "@value" : "toimiston numero"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä toimisto_nro."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#partIdentifier",
@@ -2611,6 +3659,145 @@
   }, {
     "@language" : "en",
     "@value" : "part type"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#postOffice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Post office; searched by postal code."
+  }, {
+    "@language" : "fi",
+    "@value" : "Postitoimipaikka. Haetaan postinumeron perusteella."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "post office"
+  }, {
+    "@language" : "fi",
+    "@value" : "postitoimipaikka"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "post office"
+  }, {
+    "@language" : "fi",
+    "@value" : "postitoimipaikka"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#postalCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Postal code."
+  }, {
+    "@language" : "fi",
+    "@value" : "Postinumero."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "postal code"
+  }, {
+    "@language" : "fi",
+    "@value" : "postinumero"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://schema.org/postalCode"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "postal code"
+  }, {
+    "@language" : "fi",
+    "@value" : "postinumero"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#premisesAdministrator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Premises administrator: Kela or another party."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tilan ylläpitäjä: Kela vai muu."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "premises administrator"
+  }, {
+    "@language" : "fi",
+    "@value" : "ylläpitäjä"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "premises administrator"
+  }, {
+    "@language" : "fi",
+    "@value" : "ylläpitäjä"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä yllapitaja."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#premisesOwnership",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ownership of the premises, or whether they are rented."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tilan omistus tai onko tila vuokralla."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "premises ownership"
+  }, {
+    "@language" : "fi",
+    "@value" : "tilan omistus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "premises ownership"
+  }, {
+    "@language" : "fi",
+    "@value" : "tilan omistus"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä tilan_omistus."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#processingTime",
@@ -2807,6 +3994,39 @@
     "@value" : "VÄH"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#referenceToBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Etuus, johon tietotuote (esim. raportti) liittyy."
+  }, {
+    "@language" : "en",
+    "@value" : "Reference to benefit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#DataProduct"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "etuus johon raportti kuuluu"
+  }, {
+    "@language" : "en",
+    "@value" : "reference to benefit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Benefit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "etuus johon raportti kuuluu"
+  }, {
+    "@language" : "en",
+    "@value" : "reference to benefit"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#relatedBenefit",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2936,6 +4156,40 @@
     "@value" : "Relationship abbreviation"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#reportCollection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Raporttikokonaisuus, johon raportti sisältyy."
+  }, {
+    "@language" : "en",
+    "@value" : "Report collection the report is included in."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "raporttikokonaisuus"
+  }, {
+    "@language" : "en",
+    "@value" : "report collection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "raporttikokonaisuus"
+  }, {
+    "@language" : "en",
+    "@value" : "report collection"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:DataProduct-instansseilla."
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#requiresEmploymentHistory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3004,6 +4258,252 @@
   }, {
     "@language" : "fi",
     "@value" : "vaatii asumisen Suomessa"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#residesInMunicipality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Hakijan tai ruokakunnan asuinkunta."
+  }, {
+    "@language" : "en",
+    "@value" : "Resides in municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Applicant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "asuu kunnassa"
+  }, {
+    "@language" : "en",
+    "@value" : "resides in municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Municipality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "asuu kunnassa"
+  }, {
+    "@language" : "en",
+    "@value" : "resides in municipality"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#responsibleParty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A responsible party more specific than an organisation, e.g. a group or team."
+  }, {
+    "@language" : "fi",
+    "@value" : "Organisaatiota tarkempi vastuutaho, esim. ryhmä tai tiimi."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "responsible party"
+  }, {
+    "@language" : "fi",
+    "@value" : "vastuutaho"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "responsible party"
+  }, {
+    "@language" : "fi",
+    "@value" : "vastuutaho"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:DataProduct-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#serviceChannelId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa."
+  }, {
+    "@language" : "en",
+    "@value" : "Unique identifier of the service channel in PTV."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "palvelukanavan tunniste"
+  }, {
+    "@language" : "en",
+    "@value" : "service channel id"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "palvelukanavan tunniste"
+  }, {
+    "@language" : "en",
+    "@value" : "service channel id"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceChannel-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#serviceHours",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Palvelun aukioloajat."
+  }, {
+    "@language" : "en",
+    "@value" : "Service opening hours."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "palvelun aukioloajat"
+  }, {
+    "@language" : "en",
+    "@value" : "service hours"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "palvelun aukioloajat"
+  }, {
+    "@language" : "en",
+    "@value" : "service hours"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceUnit-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#serviceUnitOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Palveluyksikön vastuuorganisaatio."
+  }, {
+    "@language" : "en",
+    "@value" : "Service unit has organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#ServiceUnit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "palveluyksikön organisaatio"
+  }, {
+    "@language" : "en",
+    "@value" : "service unit organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Organisation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#hasServiceUnit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "palveluyksikön organisaatio"
+  }, {
+    "@language" : "en",
+    "@value" : "service unit organisation"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#serviceUnitType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Palveluyksikön tyyppi."
+  }, {
+    "@language" : "en",
+    "@value" : "Type of service unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "palveluyksikön tyyppi"
+  }, {
+    "@language" : "en",
+    "@value" : "service unit type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "palveluyksikön tyyppi"
+  }, {
+    "@language" : "en",
+    "@value" : "service unit type"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceUnit-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#streetAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Katuosoite. Palveluyksiköissä ei ole erikseen käyntiosoitetta."
+  }, {
+    "@language" : "en",
+    "@value" : "Street address. Service units do not have a separate visiting address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "katuosoite"
+  }, {
+    "@language" : "en",
+    "@value" : "street address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
+    "@id" : "http://schema.org/streetAddress"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "katuosoite"
+  }, {
+    "@language" : "en",
+    "@value" : "street address"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:ServiceUnit-instansseilla."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#taxable",
@@ -3248,5 +4748,107 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
     "@value" : "Käytetään kelao:LegalResource-instansseilla. Kuvaa hetken, jolloin säädöksen kyseinen versio on voimassa."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#wellbeingServiceCountyCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Hyvinvointialueen koodi."
+  }, {
+    "@language" : "en",
+    "@value" : "Wellbeing service county code."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "hyvinvointialueen koodi"
+  }, {
+    "@language" : "en",
+    "@value" : "wellbeing service county code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "hyvinvointialueen koodi"
+  }, {
+    "@language" : "en",
+    "@value" : "wellbeing service county code"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:WellbeingServiceCounty-instansseilla (tai kunnalla viittaustietona)."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#wellbeingServiceCountyName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Hyvinvointialueen nimi."
+  }, {
+    "@language" : "en",
+    "@value" : "Wellbeing service county name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "hyvinvointialueen nimi"
+  }, {
+    "@language" : "en",
+    "@value" : "wellbeing service county name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "hyvinvointialueen nimi"
+  }, {
+    "@language" : "en",
+    "@value" : "wellbeing service county name"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:WellbeingServiceCounty-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#wikidataId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Maantieteellisen alueen Wikidata-tunniste."
+  }, {
+    "@language" : "en",
+    "@value" : "Unique identifier in Wikidata."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "wikidata id"
+  }, {
+    "@language" : "fi",
+    "@value" : "wikidata-tunniste"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "wikidata id"
+  }, {
+    "@language" : "fi",
+    "@value" : "wikidata-tunniste"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Käytetään kelao:Location-instansseilla. Lähdeontologiassa nimellä wikiDataId."
   } ]
 } ]
