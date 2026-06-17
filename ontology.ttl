@@ -12,8 +12,8 @@
         organisaatiot, maantieteelliset alueet, palvelukanavat, tietotuotteet, lainsäädännön sekä sosiaaliturvan käsitteet.
         """@fi ,
                                                                       """The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.
-		It is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:
-        benefits, eligibility criteria, services (benefit related), life situations, organisations, legislation, and concepts.
+	It is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:
+        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.
 """@en ;
                                   <http://purl.org/dc/terms/contributor> <https://www.linkedin.com/in/petri-roponen-052aa772> ;
                                   <http://purl.org/dc/terms/created> "2026-06-08"^^xsd:date ;
@@ -1800,14 +1800,17 @@ xsd:duration rdf:type rdfs:Datatype .
                      "Plats"@sv ,
                      "Sijainti"@fi ;
           <http://www.w3.org/2004/02/skos/core#altLabel> "Geographic Area"@en ,
-                                                         "Maantieteellinen alue"@fi ;
+                                                         "Maantieteellinen alue"@fi ,
+                                                         "Place"@en ;
           <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/ns/locn#Location> ;
-          <http://www.w3.org/2004/02/skos/core#definition> "Any geographic area, irrespective of size or administrative level."@en ,
-                                                           "Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta."@fi ;
+          <http://www.w3.org/2004/02/skos/core#definition> "A spatial region or named place"@en ,
+                                                           "Any geographic area, irrespective of size or administrative level."@en ,
+                                                           "Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta."@fi ,
+                                                           "Union of all the geo classes"@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Location"@en ,
                                                           "Plats"@sv ,
                                                           "Sijainti"@fi ;
-          <http://www.w3.org/2004/02/skos/core#scopeNote> "Vastaa lähdeontologian kelao:GeographicArea-luokkaa; ydinmallissa nimi on harmonisoitu Location-muotoon ja linkitetty W3C Location Core -sanastoon (locn:Location)."@fi .
+          <http://www.w3.org/2004/02/skos/core#scopeNote> "Ydinmallissa nimi on harmonisoitu Location-muotoon ja linkitetty W3C Location Core -sanastoon (locn:Location)."@fi .
 
 
 ###  https://kela.fi/ontology/kelao#Municipality

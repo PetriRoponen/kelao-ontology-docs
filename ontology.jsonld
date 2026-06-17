@@ -123,7 +123,7 @@
     "@value" : "Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  \n        organisaatiot, maantieteelliset alueet, palvelukanavat, tietotuotteet, lainsäädännön sekä sosiaaliturvan käsitteet.\n        "
   }, {
     "@language" : "en",
-    "@value" : "The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.\n\t\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services (benefit related), life situations, organisations, legislation, and concepts.\n"
+    "@value" : "The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.\n\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.\n"
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@id" : "https://www.linkedin.com/in/petri-roponen-052aa772"
@@ -870,16 +870,25 @@
   }, {
     "@language" : "fi",
     "@value" : "Maantieteellinen alue"
+  }, {
+    "@language" : "en",
+    "@value" : "Place"
   } ],
   "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
     "@id" : "http://www.w3.org/ns/locn#Location"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
+    "@value" : "A spatial region or named place"
+  }, {
+    "@language" : "en",
     "@value" : "Any geographic area, irrespective of size or administrative level."
   }, {
     "@language" : "fi",
     "@value" : "Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta."
+  }, {
+    "@language" : "en",
+    "@value" : "Union of all the geo classes"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -893,7 +902,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
-    "@value" : "Vastaa lähdeontologian kelao:GeographicArea-luokkaa; ydinmallissa nimi on harmonisoitu Location-muotoon ja linkitetty W3C Location Core -sanastoon (locn:Location)."
+    "@value" : "Ydinmallissa nimi on harmonisoitu Location-muotoon ja linkitetty W3C Location Core -sanastoon (locn:Location)."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Municipality",

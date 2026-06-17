@@ -16,8 +16,8 @@
         organisaatiot, maantieteelliset alueet, palvelukanavat, tietotuotteet, lainsäädännön sekä sosiaaliturvan käsitteet.
         </terms:abstract>
         <terms:abstract xml:lang="en">The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.
-		It is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:
-        benefits, eligibility criteria, services (benefit related), life situations, organisations, legislation, and concepts.
+	It is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:
+        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.
 </terms:abstract>
         <terms:contributor rdf:resource="https://www.linkedin.com/in/petri-roponen-052aa772"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-08</terms:created>
@@ -2414,13 +2414,16 @@
         <rdfs:label xml:lang="fi">Sijainti</rdfs:label>
         <skos:altLabel xml:lang="en">Geographic Area</skos:altLabel>
         <skos:altLabel xml:lang="fi">Maantieteellinen alue</skos:altLabel>
+        <skos:altLabel xml:lang="en">Place</skos:altLabel>
         <skos:closeMatch rdf:resource="http://www.w3.org/ns/locn#Location"/>
+        <skos:definition xml:lang="en">A spatial region or named place</skos:definition>
         <skos:definition xml:lang="en">Any geographic area, irrespective of size or administrative level.</skos:definition>
         <skos:definition xml:lang="fi">Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta.</skos:definition>
+        <skos:definition xml:lang="en">Union of all the geo classes</skos:definition>
         <skos:prefLabel xml:lang="en">Location</skos:prefLabel>
         <skos:prefLabel xml:lang="sv">Plats</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">Sijainti</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Vastaa lähdeontologian kelao:GeographicArea-luokkaa; ydinmallissa nimi on harmonisoitu Location-muotoon ja linkitetty W3C Location Core -sanastoon (locn:Location).</skos:scopeNote>
+        <skos:scopeNote xml:lang="fi">Ydinmallissa nimi on harmonisoitu Location-muotoon ja linkitetty W3C Location Core -sanastoon (locn:Location).</skos:scopeNote>
     </owl:Class>
     
 
