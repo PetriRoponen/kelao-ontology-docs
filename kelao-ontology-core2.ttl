@@ -60,7 +60,7 @@
         owl:versionInfo "0.3.0-core-draft" ;
         skos:changeNote "Automated document generation"@en ,
                          "Automatisoitu dokumentaation luonti .ttl-tiedostosta"@fi ,
-                         "0.3.0: lisätty maantieteelliset alueet (Location, Municipality, WellbeingServiceCounty, Region, Country), palvelukanava (ServiceChannel) ja palveluyksikkö (ServiceUnit) sekä tietotuote (DataProduct) relaatioineen ja ominaisuuksineen."@fi ;
+                         "0.3.0: lisätty maantieteelliset alueet (Location, Municipality, WellbeingServiceCounty, Region, Country), palvelukanava (ServiceChannel) ja palvelupiste (ServiceUnit) sekä tietotuote (DataProduct) relaatioineen ja ominaisuuksineen."@fi ;
         skos:scopeNote "Sosiaaliturvan tietämysgraafi (KELAO) ei sisällä hakijakohtaisia tietoja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä."@fi ,
                         "The Social Security knowledge graph (KELAO) does not contain applicant-level data — personal data is processed in Kela's operational systems."@en .
 
@@ -592,7 +592,7 @@ schema:legislationType rdf:type owl:ObjectProperty .
                   rdfs:label "data product owner"@en ,
                              "tietotuotteen vastuuorganisaatio"@fi ;
                   skos:prefLabel "data product owner"@en ,
-                                        "tietotuotteen vastuuorganisaatio"@fi .
+                               "tietotuotteen vastuuorganisaatio"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#hasGeographicArea
@@ -600,12 +600,12 @@ schema:legislationType rdf:type owl:ObjectProperty .
                    rdfs:domain :ServiceUnit ;
                    rdfs:range :Location ;
                    rdfs:comment "Is located in"@en ,
-                                "Palveluyksikkö sijaitsee tällä maantieteellisellä alueella."@fi ;
+                                "Palvelupiste sijaitsee tällä maantieteellisellä alueella."@fi ;
                    rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                    rdfs:label "is located in"@en ,
                               "sijaitsee alueella"@fi ;
                    skos:prefLabel "is located in"@en ,
-                                         "sijaitsee alueella"@fi .
+                                sijaitsee alueella"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#hasServiceChannel
@@ -628,12 +628,12 @@ schema:legislationType rdf:type owl:ObjectProperty .
                 rdfs:domain :Organisation ;
                 rdfs:range :ServiceUnit ;
                 rdfs:comment "Has service unit"@en ,
-                             "Organisaatiolla on palveluyksikkö."@fi ;
+                             "Organisaatiolla on palvelupiste."@fi ;
                 rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                 rdfs:label "has service unit"@en ,
-                           "on palveluyksikkö"@fi ;
+                           "on palvelupiste"@fi ;
                 skos:prefLabel "has service unit"@en ,
-                                      "on palveluyksikkö"@fi .
+                                      "on palvelupiste"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#referenceToBenefit
@@ -668,12 +668,12 @@ schema:legislationType rdf:type owl:ObjectProperty .
                          owl:inverseOf :hasServiceUnit ;
                          rdfs:domain :ServiceUnit ;
                          rdfs:range :Organisation ;
-                         rdfs:comment "Palveluyksikön vastuuorganisaatio."@fi ,
+                         rdfs:comment "Palvelupisteen vastuuorganisaatio."@fi ,
                                       "Service unit has organisation"@en ;
                          rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                         rdfs:label "palveluyksikön organisaatio"@fi ,
+                         rdfs:label "palvelupisteen organisaatio"@fi ,
                                     "service unit organisation"@en ;
-                         skos:prefLabel "palveluyksikön organisaatio"@fi ,
+                         skos:prefLabel "palvelupisteen organisaatio"@fi ,
                                                "service unit organisation"@en .
 
 
@@ -1485,12 +1485,12 @@ schema:identifier rdf:type owl:DatatypeProperty .
 :serviceUnitType rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:string ;
                  rdfs:comment "Type of service unit."@en ,
-                              "Palveluyksikön tyyppi."@fi ;
+                              "Palvelupisteen tyyppi."@fi ;
                  rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                  rdfs:label "service unit type"@en ,
-                            "palveluyksikön tyyppi"@fi ;
+                            "palvelupisteen tyyppi"@fi ;
                  skos:prefLabel "service unit type"@en ,
-                                "palveluyksikön tyyppi"@fi ;
+                                "palvelupisteen tyyppi"@fi ;
                  skos:scopeNote "Käytetään kelao:ServiceUnit-instansseilla."@fi .
 
 
@@ -1498,7 +1498,7 @@ schema:identifier rdf:type owl:DatatypeProperty .
 :streetAddress rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:string ;
                rdfs:comment "Street address. Service units do not have a separate visiting address."@en ,
-                            "Katuosoite. Palveluyksiköissä ei ole erikseen käyntiosoitetta."@fi ;
+                            "Katuosoite. Palvelupisteissä ei ole erikseen käyntiosoitetta."@fi ;
                rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                rdfs:label "street address"@en ,
                           "katuosoite"@fi ;
@@ -1812,7 +1812,7 @@ prov:Entity rdf:type owl:Class .
          skos:prefLabel "Palvelu"@fi ,
                                "Service"@en ,
                                "Tjänst"@sv ;
-         skos:scopeNote "Ydinmallissa palvelu liitetään etuuteen (kelao:relatedService) ja se on käytettävissä palvelukanavien kautta (kelao:hasServiceChannel). Palvelukanava (kelao:ServiceChannel) ja palveluyksikkö (kelao:ServiceUnit) kuuluvat ydinmalliin; laajempi PTV-metatieto (esim. rahoitustyyppi, palveluluokitus, kohderyhmät) jää edelleen ydinmallin ulkopuolelle."@fi ,
+         skos:scopeNote "Ydinmallissa palvelu liitetään etuuteen (kelao:relatedService) ja se on käytettävissä palvelukanavien kautta (kelao:hasServiceChannel). Palvelukanava (kelao:ServiceChannel) ja palvelupiste (kelao:ServiceUnit) kuuluvat ydinmalliin; laajempi PTV-metatieto (esim. rahoitustyyppi, palveluluokitus, kohderyhmät) jää edelleen ydinmallin ulkopuolelle."@fi ,
                                "In the core model a service is linked to a benefit (kelao:relatedService) and is accessible through service channels (kelao:hasServiceChannel). Service channels (kelao:ServiceChannel) and service units (kelao:ServiceUnit) are part of the core model; broader PTV metadata (e.g. funding type, service classification, target groups) remains outside it."@en .
 
 
@@ -1893,7 +1893,7 @@ prov:Entity rdf:type owl:Class .
 :Location rdf:type owl:Class ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:comment "A geographic area used e.g. to describe a place of residence, a service operating area, or the location of a service unit. Superclass for municipalities, wellbeing service counties, regions and countries."@en ,
-                "Maantieteellinen alue, jota voidaan käyttää esim. asuinpaikan, palvelun toiminta-alueen tai palveluyksikön sijainnin kuvaamiseen. Yliluokka kunnille, hyvinvointialueille, maakunnille ja valtioille."@fi ;
+                "Maantieteellinen alue, jota voidaan käyttää esim. asuinpaikan, palvelun toiminta-alueen tai palvelupisteen sijainnin kuvaamiseen. Yliluokka kunnille, hyvinvointialueille, maakunnille ja valtioille."@fi ;
         rdfs:label "Location"@en ,
                 "Plats"@sv ,
                 "Sijainti"@fi ;
@@ -1960,17 +1960,20 @@ prov:Entity rdf:type owl:Class .
              rdfs:subClassOf :ServiceChannel ;
              rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
              rdfs:comment "A service unit (service point) with a physical location. Service unit data has been combined from Kela's internal sources and PTV service-channel data (entity matching)."@en ,
-                "Palveluyksikkö eli palvelupiste, jolla on fyysinen sijainti. Palveluyksiköiden tiedot on yhdistetty Kelan sisäisistä lähteistä ja PTV:n palvelukanavatiedoista (entity matching)."@fi ;
-             rdfs:label "Palveluyksikkö"@fi ,
+                """Palvelupisteet voivat olla sekä yksityisten että julkishallinnon toimijoiden ylläpitämiä. Vrt. asiointipiste.
+Joissain palvelupisteissä on asiakastietokoneita, joilla asiakkaat voivat asioida myös itsenäisesti.
+Kelan palvelupisteissä tarjotaan Kelan palveluja, ja niissä työskentelee Kelan palveluasiantuntijoita. Kelan palvelupiste voi sijaita myös muualla kuin Kelan omissa tiloissa.
+Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty Kelan sisäisestä lähteestä ja PTV:n palvelukanavatiedoista (entity matching)."""@fi ;
+             rdfs:label "Palvelupiste"@fi ,
                         "Service Unit"@en ,
-                        "Serviceenhet"@sv ;
+                        "Serviceställe"@sv ;
              skos:altLabel "Palvelupiste"@fi ;
              skos:closeMatch ptv:ServiceChannel ;
              skos:definition "A physically located service point at which a service is provided."@en ,
-                        "Fyysisesti sijaitseva palvelupiste, jossa palvelua tarjotaan."@fi ;
-             skos:prefLabel "Palveluyksikkö"@fi ,
+                        "Toimipiste, jota ylläpitää pääsääntöisesti yksi toimija ja jossa voi saada kyseisen toimijan tai muiden toimijoiden tarjoamia palveluja."@fi ;
+             skos:prefLabel "Palvelupiste"@fi ,
                         "Service Unit"@en ,
-                        "Serviceenhet"@sv ;
+                        "Serviceställe"@sv ;
              skos:scopeNote "Palvelupiste on palvelukanavan erikoistapaus, siksi rdfs:subClassOf kelao:ServiceChannel."@fi .
 
 
