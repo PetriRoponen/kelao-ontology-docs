@@ -45,7 +45,7 @@
                                                <https://semiceu.github.io/CPSV-AP/releases/3.2.0/> ;
                                   owl:priorVersion "0.2.0-core-draft" ;
                                   owl:versionInfo "0.3.0-core-draft" ;
-                                  <http://www.w3.org/2004/02/skos/core#changeNote> "0.3.0: lisätty maantieteelliset alueet (Location, Municipality, WellbeingServiceCounty, Region, Country), palvelukanava (ServiceChannel) ja palveluyksikkö (ServiceUnit) sekä tietotuote (DataProduct) relaatioineen ja ominaisuuksineen."@fi ,
+                                  <http://www.w3.org/2004/02/skos/core#changeNote> "0.3.0: lisätty maantieteelliset alueet (Location, Municipality, WellbeingServiceCounty, Region, Country), palvelukanava (ServiceChannel) ja palvelupiste (ServiceUnit) sekä tietotuote (DataProduct) relaatioineen ja ominaisuuksineen."@fi ,
                                                                                    "Automated document generation"@en ,
                                                                                    "Automatisoitu dokumentaation luonti .ttl-tiedostosta"@fi ;
                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Sosiaaliturvan tietämysgraafi (KELAO) ei sisällä hakijakohtaisia tietoja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä."@fi ,
@@ -360,7 +360,7 @@ xsd:duration rdf:type rdfs:Datatype .
                    rdfs:domain :ServiceUnit ;
                    rdfs:range :Location ;
                    rdfs:comment "Is located in"@en ,
-                                "Palveluyksikkö sijaitsee tällä maantieteellisellä alueella."@fi ;
+                                "Palvelupiste sijaitsee tällä maantieteellisellä alueella."@fi ;
                    rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                    rdfs:label "is located in"@en ,
                               "sijaitsee alueella"@fi ;
@@ -400,12 +400,12 @@ xsd:duration rdf:type rdfs:Datatype .
                 rdfs:domain :Organisation ;
                 rdfs:range :ServiceUnit ;
                 rdfs:comment "Has service unit"@en ,
-                             "Organisaatiolla on palveluyksikkö."@fi ;
+                             "Organisaatiolla on palvelupiste."@fi ;
                 rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                 rdfs:label "has service unit"@en ,
-                           "on palveluyksikkö"@fi ;
+                           "on palvelupiste"@fi ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has service unit"@en ,
-                                                                "on palveluyksikkö"@fi .
+                                                                "on palvelupiste"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#has_part
@@ -638,12 +638,12 @@ xsd:duration rdf:type rdfs:Datatype .
                          owl:inverseOf :hasServiceUnit ;
                          rdfs:domain :ServiceUnit ;
                          rdfs:range :Organisation ;
-                         rdfs:comment "Palveluyksikön vastuuorganisaatio."@fi ,
+                         rdfs:comment "Palvelupisteen vastuuorganisaatio."@fi ,
                                       "Service unit has organisation"@en ;
                          rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                         rdfs:label "palveluyksikön organisaatio"@fi ,
+                         rdfs:label "palvelupisteen organisaatio"@fi ,
                                     "service unit organisation"@en ;
-                         <http://www.w3.org/2004/02/skos/core#prefLabel> "palveluyksikön organisaatio"@fi ,
+                         <http://www.w3.org/2004/02/skos/core#prefLabel> "palvelupisteen organisaatio"@fi ,
                                                                          "service unit organisation"@en .
 
 
@@ -1392,12 +1392,12 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#serviceUnitType
 :serviceUnitType rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:string ;
-                 rdfs:comment "Palveluyksikön tyyppi."@fi ,
+                 rdfs:comment "Palvelupisteen tyyppi."@fi ,
                               "Type of service unit."@en ;
                  rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                 rdfs:label "palveluyksikön tyyppi"@fi ,
+                 rdfs:label "palvelupisteen tyyppi"@fi ,
                             "service unit type"@en ;
-                 <http://www.w3.org/2004/02/skos/core#prefLabel> "palveluyksikön tyyppi"@fi ,
+                 <http://www.w3.org/2004/02/skos/core#prefLabel> "palvelupisteen tyyppi"@fi ,
                                                                  "service unit type"@en ;
                  <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceUnit-instansseilla."@fi .
 
@@ -1405,7 +1405,7 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#streetAddress
 :streetAddress rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:string ;
-               rdfs:comment "Katuosoite. Palveluyksiköissä ei ole erikseen käyntiosoitetta."@fi ,
+               rdfs:comment "Katuosoite. Palvelupisteissä ei ole erikseen käyntiosoitetta."@fi ,
                             "Street address. Service units do not have a separate visiting address."@en ;
                rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                rdfs:label "katuosoite"@fi ,
@@ -1794,7 +1794,7 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#Location
 :Location rdf:type owl:Class ;
           rdfs:comment "A geographic area used e.g. to describe a place of residence, a service operating area, or the location of a service unit. Superclass for municipalities, wellbeing service counties, regions and countries."@en ,
-                       "Maantieteellinen alue, jota voidaan käyttää esim. asuinpaikan, palvelun toiminta-alueen tai palveluyksikön sijainnin kuvaamiseen. Yliluokka kunnille, hyvinvointialueille, maakunnille ja valtioille."@fi ;
+                       "Maantieteellinen alue, jota voidaan käyttää esim. asuinpaikan, palvelun toiminta-alueen tai palvelupisteen sijainnin kuvaamiseen. Yliluokka kunnille, hyvinvointialueille, maakunnille ja valtioille."@fi ;
           rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
           rdfs:label "Location"@en ,
                      "Plats"@sv ,
@@ -1845,7 +1845,7 @@ xsd:duration rdf:type rdfs:Datatype .
                                                               "Organisation"@sv ,
                                                               "Organization"@en ;
               <http://www.w3.org/2004/02/skos/core#scopeNote> """KELAO-kontekstissa vastaa PTV:n Organization-käsitettä ja 
-         schema.org/Organization-käsitettä. Käytetään kuvaamaan kaikkia 
+        schema.org/Organization-käsitettä. Käytetään kuvaamaan kaikkia 
          toimijaorganisaatioita sektorirajat ylittäen (julkinen, yksityinen, 
          kolmas sektori). EU Core Public Organisation on tämän erikoistapaus."""@fi .
 
@@ -1880,7 +1880,7 @@ xsd:duration rdf:type rdfs:Datatype .
                                                          "Service"@en ,
                                                          "Tjänst"@sv ;
          <http://www.w3.org/2004/02/skos/core#scopeNote> "In the core model a service is linked to a benefit (kelao:relatedService) and is accessible through service channels (kelao:hasServiceChannel). Service channels (kelao:ServiceChannel) and service units (kelao:ServiceUnit) are part of the core model; broader PTV metadata (e.g. funding type, service classification, target groups) remains outside it."@en ,
-                                                         "Ydinmallissa palvelu liitetään etuuteen (kelao:relatedService) ja se on käytettävissä palvelukanavien kautta (kelao:hasServiceChannel). Palvelukanava (kelao:ServiceChannel) ja palveluyksikkö (kelao:ServiceUnit) kuuluvat ydinmalliin; laajempi PTV-metatieto (esim. rahoitustyyppi, palveluluokitus, kohderyhmät) jää edelleen ydinmallin ulkopuolelle."@fi .
+                                                         "Ydinmallissa palvelu liitetään etuuteen (kelao:relatedService) ja se on käytettävissä palvelukanavien kautta (kelao:hasServiceChannel). Palvelukanava (kelao:ServiceChannel) ja palvelupiste (kelao:ServiceUnit) kuuluvat ydinmalliin; laajempi PTV-metatieto (esim. rahoitustyyppi, palveluluokitus, kohderyhmät) jää edelleen ydinmallin ulkopuolelle."@fi .
 
 
 ###  https://kela.fi/ontology/kelao#ServiceChannel
@@ -1904,18 +1904,21 @@ xsd:duration rdf:type rdfs:Datatype .
 :ServiceUnit rdf:type owl:Class ;
              rdfs:subClassOf :ServiceChannel ;
              rdfs:comment "A service unit (service point) with a physical location. Service unit data has been combined from Kela's internal sources and PTV service-channel data (entity matching)."@en ,
-                          "Palveluyksikkö eli palvelupiste, jolla on fyysinen sijainti. Palveluyksiköiden tiedot on yhdistetty Kelan sisäisistä lähteistä ja PTV:n palvelukanavatiedoista (entity matching)."@fi ;
+                          """Palvelupisteet voivat olla sekä yksityisten että julkishallinnon toimijoiden ylläpitämiä. Vrt. asiointipiste.
+Joissain palvelupisteissä on asiakastietokoneita, joilla asiakkaat voivat asioida myös itsenäisesti.
+Kelan palvelupisteissä tarjotaan Kelan palveluja, ja niissä työskentelee Kelan palveluasiantuntijoita. Kelan palvelupiste voi sijaita myös muualla kuin Kelan omissa tiloissa.
+Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty Kelan sisäisestä lähteestä ja PTV:n palvelukanavatiedoista (entity matching)."""@fi ;
              rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-             rdfs:label "Palveluyksikkö"@fi ,
+             rdfs:label "Palvelupiste"@fi ,
                         "Service Unit"@en ,
-                        "Serviceenhet"@sv ;
+                        "Serviceställe"@sv ;
              <http://www.w3.org/2004/02/skos/core#altLabel> "Palvelupiste"@fi ;
              <http://www.w3.org/2004/02/skos/core#closeMatch> <http://iri.suomi.fi/model/suomiptv2/ServiceChannel> ;
              <http://www.w3.org/2004/02/skos/core#definition> "A physically located service point at which a service is provided."@en ,
-                                                              "Fyysisesti sijaitseva palvelupiste, jossa palvelua tarjotaan."@fi ;
-             <http://www.w3.org/2004/02/skos/core#prefLabel> "Palveluyksikkö"@fi ,
+                                                              "Toimipiste, jota ylläpitää pääsääntöisesti yksi toimija ja jossa voi saada kyseisen toimijan tai muiden toimijoiden tarjoamia palveluja."@fi ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Palvelupiste"@fi ,
                                                              "Service Unit"@en ,
-                                                             "Serviceenhet"@sv ;
+                                                             "Serviceställe"@sv ;
              <http://www.w3.org/2004/02/skos/core#scopeNote> "Palvelupiste on palvelukanavan erikoistapaus, siksi rdfs:subClassOf kelao:ServiceChannel."@fi .
 
 

@@ -20,7 +20,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#Organisation" title="https://kela.fi/ontology/kelao#Organisation">Organisaatio</a></li>
   <li><a href="#Service" title="https://kela.fi/ontology/kelao#Service">Palvelu</a></li>
   <li><a href="#ServiceChannel" title="https://kela.fi/ontology/kelao#ServiceChannel">Palvelukanava</a></li>
-  <li><a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palveluyksikkö</a></li>
+  <li><a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palvelupiste</a></li>
   <li><a href="#Decision" title="https://kela.fi/ontology/kelao#Decision">Päätös</a></li>
   <li><a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a></li>
   <li><a href="#LegalResource" title="https://kela.fi/ontology/kelao#LegalResource">Säädös</a></li>
@@ -538,13 +538,13 @@ This section provides details for each class and property defined by Sosiaalitur
     is in domain of
    </dt>
    <dd>
-    <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palveluyksikkö</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palvelupiste</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palveluyksikön organisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#dataProductOwner" title="https://kela.fi/ontology/kelao#dataProductOwner">tietotuotteen vastuuorganisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasProvider" title="https://kela.fi/ontology/kelao#hasProvider">vastuuorganisaatio</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palvelupisteen organisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#dataProductOwner" title="https://kela.fi/ontology/kelao#dataProductOwner">tietotuotteen vastuuorganisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasProvider" title="https://kela.fi/ontology/kelao#hasProvider">vastuuorganisaatio</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -608,7 +608,7 @@ This section provides details for each class and property defined by Sosiaalitur
     has sub-classes
    </dt>
    <dd>
-    <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palveluyksikkö</a> <sup class="type-c" title="class">c</sup>
+    <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palvelupiste</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in range of
@@ -619,13 +619,13 @@ This section provides details for each class and property defined by Sosiaalitur
   </dl>
  </div>
  <div class="entity" id="ServiceUnit">
-  <h3>Palveluyksikkö<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>Palvelupiste<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#ServiceUnit</p>
   <div class="comment">
-   <span class="markdown">Palveluyksikkö eli palvelupiste, jolla on fyysinen sijainti. Palveluyksiköiden tiedot on yhdistetty Kelan sisäisistä lähteistä ja PTV:n palvelukanavatiedoista (entity matching).</span>
+   <span class="markdown">Palvelupisteet voivat olla sekä yksityisten että julkishallinnon toimijoiden ylläpitämiä. Vrt. asiointipiste. Joissain palvelupisteissä on asiakastietokoneita, joilla asiakkaat voivat asioida myös itsenäisesti. Kelan palvelupisteissä tarjotaan Kelan palveluja, ja niissä työskentelee Kelan palveluasiantuntijoita. Kelan palvelupiste voi sijaita myös muualla kuin Kelan omissa tiloissa. Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty Kelan sisäisestä lähteestä ja PTV:n palvelukanavatiedoista (entity matching).</span>
   </div>
   <div class="comment">
-   <span class="markdown">Fyysisesti sijaitseva palvelupiste, jossa palvelua tarjotaan.</span>
+   <span class="markdown">Toimipiste, jota ylläpitää pääsääntöisesti yksi toimija ja jossa voi saada kyseisen toimijan tai muiden toimijoiden tarjoamia palveluja.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -646,13 +646,13 @@ This section provides details for each class and property defined by Sosiaalitur
     is in domain of
    </dt>
    <dd>
-    <a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palveluyksikön organisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasGeographicArea" title="https://kela.fi/ontology/kelao#hasGeographicArea">sijaitsee alueella</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palvelupisteen organisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasGeographicArea" title="https://kela.fi/ontology/kelao#hasGeographicArea">sijaitsee alueella</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palveluyksikkö</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palvelupiste</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -689,7 +689,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Sijainti<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Location</p>
   <div class="comment">
-   <span class="markdown">Maantieteellinen alue, jota voidaan käyttää esim. asuinpaikan, palvelun toiminta-alueen tai palveluyksikön sijainnin kuvaamiseen. Yliluokka kunnille, hyvinvointialueille, maakunnille ja valtioille.</span>
+   <span class="markdown">Maantieteellinen alue, jota voidaan käyttää esim. asuinpaikan, palvelun toiminta-alueen tai palvelupisteen sijainnin kuvaamiseen. Yliluokka kunnille, hyvinvointialueille, maakunnille ja valtioille.</span>
   </div>
   <div class="comment">
    <span class="markdown">Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta.</span>
@@ -872,8 +872,8 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#isEligibleFor" title="https://kela.fi/ontology/kelao#isEligibleFor">on oikeutettu etuuteen</a></li>
   <li><a href="#isPartOfBenefit" title="https://kela.fi/ontology/kelao#isPartOfBenefit">on osa etuutta</a></li>
   <li><a href="#has_part" title="https://kela.fi/ontology/kelao#has_part">on osa säädöstä</a></li>
-  <li><a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palveluyksikkö</a></li>
-  <li><a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palveluyksikön organisaatio</a></li>
+  <li><a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palvelupiste</a></li>
+  <li><a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palvelupisteen organisaatio</a></li>
   <li><a href="#investigate" title="https://kela.fi/ontology/kelao#investigate">selvitä etuus</a></li>
   <li><a href="#hasGeographicArea" title="https://kela.fi/ontology/kelao#hasGeographicArea">sijaitsee alueella</a></li>
   <li><a href="#type_document" title="https://kela.fi/ontology/kelao#type_document">säädöksen tyyppi</a></li>
@@ -1689,10 +1689,10 @@ This section provides details for each class and property defined by Sosiaalitur
   </div>
  </div>
  <div class="entity" id="hasServiceUnit">
-  <h3>on palveluyksikkö<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>on palvelupiste<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasServiceUnit</p>
   <div class="comment">
-   <span class="markdown">Organisaatiolla on palveluyksikkö.</span>
+   <span class="markdown">Organisaatiolla on palvelupiste.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -1714,22 +1714,22 @@ This section provides details for each class and property defined by Sosiaalitur
      has range
     </dt>
     <dd>
-     <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palveluyksikkö</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palvelupiste</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
-     <a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palveluyksikön organisaatio</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palvelupisteen organisaatio</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="serviceUnitOrganization">
-  <h3>palveluyksikön organisaatio<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>palvelupisteen organisaatio<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#serviceUnitOrganization</p>
   <div class="comment">
-   <span class="markdown">Palveluyksikön vastuuorganisaatio.</span>
+   <span class="markdown">Palvelupisteen vastuuorganisaatio.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -1745,7 +1745,7 @@ This section provides details for each class and property defined by Sosiaalitur
      has domain
     </dt>
     <dd>
-     <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palveluyksikkö</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palvelupiste</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1757,7 +1757,7 @@ This section provides details for each class and property defined by Sosiaalitur
      is inverse of
     </dt>
     <dd>
-     <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palveluyksikkö</a> <sup class="type-op" title="object property">op</sup>
+     <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palvelupiste</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1797,7 +1797,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>sijaitsee alueella<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasGeographicArea</p>
   <div class="comment">
-   <span class="markdown">Palveluyksikkö sijaitsee tällä maantieteellisellä alueella.</span>
+   <span class="markdown">Palvelupiste sijaitsee tällä maantieteellisellä alueella.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -1813,7 +1813,7 @@ This section provides details for each class and property defined by Sosiaalitur
      has domain
     </dt>
     <dd>
-     <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palveluyksikkö</a> <sup class="type-c" title="class">c</sup>
+     <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palvelupiste</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -2049,7 +2049,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#id_local" title="https://kela.fi/ontology/kelao#id_local">paikallinen tunniste</a></li>
   <li><a href="#serviceChannelId" title="https://kela.fi/ontology/kelao#serviceChannelId">palvelukanavan tunniste</a></li>
   <li><a href="#serviceHours" title="https://kela.fi/ontology/kelao#serviceHours">palvelun aukioloajat</a></li>
-  <li><a href="#serviceUnitType" title="https://kela.fi/ontology/kelao#serviceUnitType">palveluyksikön tyyppi</a></li>
+  <li><a href="#serviceUnitType" title="https://kela.fi/ontology/kelao#serviceUnitType">palvelupisteen tyyppi</a></li>
   <li><a href="#longitude" title="https://kela.fi/ontology/kelao#longitude">pituusaste</a></li>
   <li><a href="#postalCode" title="https://kela.fi/ontology/kelao#postalCode">postinumero</a></li>
   <li><a href="#postOffice" title="https://kela.fi/ontology/kelao#postOffice">postitoimipaikka</a></li>
@@ -2339,7 +2339,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>katuosoite<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#streetAddress</p>
   <div class="comment">
-   <span class="markdown">Katuosoite. Palveluyksiköissä ei ole erikseen käyntiosoitetta.</span>
+   <span class="markdown">Katuosoite. Palvelupisteissä ei ole erikseen käyntiosoitetta.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -2862,10 +2862,10 @@ This section provides details for each class and property defined by Sosiaalitur
   </div>
  </div>
  <div class="entity" id="serviceUnitType">
-  <h3>palveluyksikön tyyppi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <h3>palvelupisteen tyyppi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#serviceUnitType</p>
   <div class="comment">
-   <span class="markdown">Palveluyksikön tyyppi.</span>
+   <span class="markdown">Palvelupisteen tyyppi.</span>
   </div>
   <dl class="definedBy">
    <dt>
