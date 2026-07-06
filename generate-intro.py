@@ -3,7 +3,7 @@ from rdflib import Graph, URIRef, Literal
 from rdflib.namespace import DCTERMS
 
 g = Graph()
-g.parse("kelao-ontology-core2.ttl", format="turtle")
+g.parse("kelao-ontology-core4.ttl", format="turtle")
 ont = URIRef("https://kela.fi/ontology/kelao")
 
 fi = [str(o) for _, _, o in g.triples((ont, DCTERMS.description, None))

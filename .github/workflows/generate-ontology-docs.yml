@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "kelao-ontology-core2.ttl"
+      - "kelao-ontology-core4.ttl"
   workflow_dispatch:
 
 env:
@@ -40,7 +40,7 @@ jobs:
 
           echo "=== Ajetaan WIDOCO ==="
           java -jar /tmp/widoco.jar \
-            -ontFile kelao-ontology-core2.ttl \
+            -ontFile kelao-ontology-core4.ttl \
             -outFolder /tmp/widoco-output \
             -lang en-fi \
             -rewriteAll \
@@ -60,6 +60,7 @@ jobs:
           rm -rf resources/ sections/ webvowl/ provenance/
           rm -f index.html index-en.html index-fi.html 406.html readme.md
           rm -f ontology.jsonld ontology.nt ontology.owl ontology.ttl
+          rm -f kelao-ontology-core2.ttl
           cp -r /tmp/widoco-output/. .
 
           # Täytetään introduction-osiot dct:description-arvoilla ontologiasta
