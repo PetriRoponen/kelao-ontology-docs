@@ -3,9 +3,12 @@ This section provides details for each class and property defined by Sosiaalitur
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
-  <li><a href="#LifeSituationClassification" title="https://kela.fi/ontology/kelao#LifeSituationClassification">ElämäntilanneLuokitus</a></li>
+  <li><a href="#Customer" title="https://kela.fi/ontology/kelao#Customer">Asiakas</a></li>
+  <li><a href="#LifeSituation" title="https://kela.fi/ontology/kelao#LifeSituation">Elämäntilanne</a></li>
   <li><a href="#BenefitComponent" title="https://kela.fi/ontology/kelao#BenefitComponent">Etuuden osa</a></li>
+  <li><a href="#Beneficiary" title="https://kela.fi/ontology/kelao#Beneficiary">Etuuden saaja</a></li>
   <li><a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a></li>
+  <li><a href="#EligibilityCriterion" title="https://kela.fi/ontology/kelao#EligibilityCriterion">Etuuskriteeri</a></li>
   <li><a href="#BenefitGroup" title="https://kela.fi/ontology/kelao#BenefitGroup">Etuusryhmä</a></li>
   <li><a href="#Application" title="https://kela.fi/ontology/kelao#Application">Hakemus</a></li>
   <li><a href="#Applicant" title="https://kela.fi/ontology/kelao#Applicant">Hakija</a></li>
@@ -16,7 +19,9 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#LegalResourcePart" title="https://kela.fi/ontology/kelao#LegalResourcePart">Lain osa</a></li>
   <li><a href="#Attachment" title="https://kela.fi/ontology/kelao#Attachment">Liite</a></li>
   <li><a href="#Region" title="https://kela.fi/ontology/kelao#Region">Maakunta</a></li>
+  <li><a href="#Payment" title="https://kela.fi/ontology/kelao#Payment">Maksu</a></li>
   <li><a href="#Appeal" title="https://kela.fi/ontology/kelao#Appeal">Muutoksenhaku</a></li>
+  <li><a href="#AppealBody" title="https://kela.fi/ontology/kelao#AppealBody">Muutoksenhakuelin</a></li>
   <li><a href="#Organisation" title="https://kela.fi/ontology/kelao#Organisation">Organisaatio</a></li>
   <li><a href="#Service" title="https://kela.fi/ontology/kelao#Service">Palvelu</a></li>
   <li><a href="#ServiceChannel" title="https://kela.fi/ontology/kelao#ServiceChannel">Palvelukanava</a></li>
@@ -25,14 +30,55 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a></li>
   <li><a href="#LegalResource" title="https://kela.fi/ontology/kelao#LegalResource">Säädös</a></li>
   <li><a href="#StatuteType" title="https://kela.fi/ontology/kelao#StatuteType">Säädöstyyppi</a></li>
+  <li><a href="#Recovery" title="https://kela.fi/ontology/kelao#Recovery">Takaisinperintä</a></li>
   <li><a href="#DataProduct" title="https://kela.fi/ontology/kelao#DataProduct">Tietotuote</a></li>
+  <li><a href="#Income" title="https://kela.fi/ontology/kelao#Income">Tulo</a></li>
+  <li><a href="#EmploymentArea" title="https://kela.fi/ontology/kelao#EmploymentArea">Työllisyysalue</a></li>
   <li><a href="#Country" title="https://kela.fi/ontology/kelao#Country">Valtio</a></li>
  </ul>
- <div class="entity" id="LifeSituationClassification">
-  <h3>ElämäntilanneLuokitus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#LifeSituationClassification</p>
+ <div class="entity" id="Customer">
+  <h3>Asiakas<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Customer</p>
   <div class="comment">
-   <span class="markdown">Elämäntilanteilla tarkoitetaan sellaisia muutosvaiheita, joita kuvaa väliaikaisuus, erityisten palvelujen ja tiedon tarve sekä niihin kohdennetut palvelut. Elämäntilanneluokitus on toteutettu muualla skos-luokituksena. Luokituksen luokat ovat käsitteitä. Luokitus on luonnos. Pohjana on käytetty DVV:n elämäntapahtumaluokitusta, joka perustuu EU-luokitukseen.</span>
+   <span class="markdown">Asiakas: henkilö tai taho, jolla on asiakkuus sosiaaliturvan toimeenpanijaan. Asiakas on pysyvä identiteetti, johon tilannekohtaiset roolit (hakija, käyttäjä, etuuden saaja) kiinnittyvät roolisuhteen kautta.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Henkilö tai yhteisö, joka saa tai jolla on mahdollisuus saada arvoa Kelan tarjoamasta palvelusta.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">asiakkaan rooli</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">asiakkaan roolina</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="LifeSituation">
+  <h3>Elämäntilanne<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#LifeSituation</p>
+  <div class="comment">
+   <span class="markdown">Elämäntilanne on kansalaisen elämän muutosvaihe tai tilanne, johon liittyy julkisten palvelujen ja etuuksien tarve. Yksittäiset elämäntilanteet muodostavat elämäntilanneluokituksen (skos:ConceptScheme). Luokitus on luonnos; pohjana on käytetty DVV:n elämäntapahtumaluokitusta, joka perustuu EU-luokitukseen.</span>
   </div>
   <div class="comment">
    <span class="markdown">Elämäntilanteilla tarkoitetaan sellaisia muutosvaiheita, joita kuvaa väliaikaisuus, erityisten palvelujen ja tiedon tarve sekä niihin kohdennetut palvelut.</span>
@@ -121,6 +167,44 @@ This section provides details for each class and property defined by Sosiaalitur
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Beneficiary">
+  <h3>Etuuden saaja<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Beneficiary</p>
+  <div class="comment">
+   <span class="markdown">Etuuden saaja. Erotetaan hakijasta: esim. lapsilisän hakija on huoltaja, ja maksun saaja voi olla eri henkilö tai taho (esim. kunta tai vuokranantaja).</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Toimija, joka saa etuutta. Saaja erotetaan hakijasta ja maksun saajasta, jotka voivat olla eri tahoja.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">asiakkaan roolina</a> <sup class="type-op" title="object property">op</sup>, <a href="#receivesBenefit" title="https://kela.fi/ontology/kelao#receivesBenefit">saa etuutta</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">asiakkaan rooli</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Benefit">
   <h3>Etuus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Benefit</p>
@@ -155,13 +239,51 @@ This section provides details for each class and property defined by Sosiaalitur
     is in domain of
    </dt>
    <dd>
-    <a href="#advancePayment" title="https://kela.fi/ontology/kelao#advancePayment">ennakkosuoritus</a> <sup class="type-op" title="object property">op</sup>, <a href="#inhibiting" title="https://kela.fi/ontology/kelao#inhibiting">estävä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBenefitGroup" title="https://kela.fi/ontology/kelao#hasBenefitGroup">etuusryhmä</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatedService" title="https://kela.fi/ontology/kelao#relatedService">etuuteen liittyvä palvelu</a> <sup class="type-op" title="object property">op</sup>, <a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">huomautus</a> <sup class="type-op" title="object property">op</sup>, <a href="#broaderBenefit" title="https://kela.fi/ontology/kelao#broaderBenefit">laajempi etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatedToLifeSituation" title="https://kela.fi/ontology/kelao#relatedToLifeSituation">liittyy elämäntilanteeseen</a> <sup class="type-op" title="object property">op</sup>, <a href="#minimumAmount" title="https://kela.fi/ontology/kelao#minimumAmount">minimimääräinen etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConcept" title="https://kela.fi/ontology/kelao#hasConcept">on käsite</a> <sup class="type-op" title="object property">op</sup>, <a href="#legalReference" title="https://kela.fi/ontology/kelao#legalReference">on lakiviittaus</a> <sup class="type-op" title="object property">op</sup>, <a href="#investigate" title="https://kela.fi/ontology/kelao#investigate">selvitä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#meansTestedIncome" title="https://kela.fi/ontology/kelao#meansTestedIncome">tarveharkinnan tulo</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasProvider" title="https://kela.fi/ontology/kelao#hasProvider">vastuuorganisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#reducing" title="https://kela.fi/ontology/kelao#reducing">vähentävä etuus</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#advancePayment" title="https://kela.fi/ontology/kelao#advancePayment">ennakkosuoritus</a> <sup class="type-op" title="object property">op</sup>, <a href="#inhibiting" title="https://kela.fi/ontology/kelao#inhibiting">estävä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasBenefitGroup" title="https://kela.fi/ontology/kelao#hasBenefitGroup">etuusryhmä</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatedService" title="https://kela.fi/ontology/kelao#relatedService">etuuteen liittyvä palvelu</a> <sup class="type-op" title="object property">op</sup>, <a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">huomautus</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEligibilityCriterion" title="https://kela.fi/ontology/kelao#hasEligibilityCriterion">kriteerinä</a> <sup class="type-op" title="object property">op</sup>, <a href="#broaderBenefit" title="https://kela.fi/ontology/kelao#broaderBenefit">laajempi etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatedToLifeSituation" title="https://kela.fi/ontology/kelao#relatedToLifeSituation">liittyy elämäntilanteeseen</a> <sup class="type-op" title="object property">op</sup>, <a href="#minimumAmount" title="https://kela.fi/ontology/kelao#minimumAmount">minimimääräinen etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConcept" title="https://kela.fi/ontology/kelao#hasConcept">on käsite</a> <sup class="type-op" title="object property">op</sup>, <a href="#legalReference" title="https://kela.fi/ontology/kelao#legalReference">on lakiviittaus</a> <sup class="type-op" title="object property">op</sup>, <a href="#investigate" title="https://kela.fi/ontology/kelao#investigate">selvitä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#meansTestedIncome" title="https://kela.fi/ontology/kelao#meansTestedIncome">tarveharkinnan tulo</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasProvider" title="https://kela.fi/ontology/kelao#hasProvider">vastuuorganisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#reducing" title="https://kela.fi/ontology/kelao#reducing">vähentävä etuus</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#advancePayment" title="https://kela.fi/ontology/kelao#advancePayment">ennakkosuoritus</a> <sup class="type-op" title="object property">op</sup>, <a href="#inhibiting" title="https://kela.fi/ontology/kelao#inhibiting">estävä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#referenceToBenefit" title="https://kela.fi/ontology/kelao#referenceToBenefit">etuus johon raportti kuuluu</a> <sup class="type-op" title="object property">op</sup>, <a href="#appliesFor" title="https://kela.fi/ontology/kelao#appliesFor">hakee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#applicationConcerns" title="https://kela.fi/ontology/kelao#applicationConcerns">hakemus koskee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">huomautus</a> <sup class="type-op" title="object property">op</sup>, <a href="#broaderBenefit" title="https://kela.fi/ontology/kelao#broaderBenefit">laajempi etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#minimumAmount" title="https://kela.fi/ontology/kelao#minimumAmount">minimimääräinen etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLifeSituationFor" title="https://kela.fi/ontology/kelao#isLifeSituationFor">on elämäntilanne kohteelle</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEligibleFor" title="https://kela.fi/ontology/kelao#isEligibleFor">on oikeutettu etuuteen</a> <sup class="type-op" title="object property">op</sup>, <a href="#investigate" title="https://kela.fi/ontology/kelao#investigate">selvitä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatedBenefit" title="https://kela.fi/ontology/kelao#relatedBenefit">säädös tai vaatimusprofiili koskee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#meansTestedIncome" title="https://kela.fi/ontology/kelao#meansTestedIncome">tarveharkinnan tulo</a> <sup class="type-op" title="object property">op</sup>, <a href="#reducing" title="https://kela.fi/ontology/kelao#reducing">vähentävä etuus</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#advancePayment" title="https://kela.fi/ontology/kelao#advancePayment">ennakkosuoritus</a> <sup class="type-op" title="object property">op</sup>, <a href="#inhibiting" title="https://kela.fi/ontology/kelao#inhibiting">estävä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#paymentOf" title="https://kela.fi/ontology/kelao#paymentOf">etuuden maksu</a> <sup class="type-op" title="object property">op</sup>, <a href="#referenceToBenefit" title="https://kela.fi/ontology/kelao#referenceToBenefit">etuus johon raportti kuuluu</a> <sup class="type-op" title="object property">op</sup>, <a href="#appliesFor" title="https://kela.fi/ontology/kelao#appliesFor">hakee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#applicationConcerns" title="https://kela.fi/ontology/kelao#applicationConcerns">hakemus koskee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">huomautus</a> <sup class="type-op" title="object property">op</sup>, <a href="#incomeConsideredIn" title="https://kela.fi/ontology/kelao#incomeConsideredIn">huomioidaan etuudessa</a> <sup class="type-op" title="object property">op</sup>, <a href="#broaderBenefit" title="https://kela.fi/ontology/kelao#broaderBenefit">laajempi etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#minimumAmount" title="https://kela.fi/ontology/kelao#minimumAmount">minimimääräinen etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#isLifeSituationFor" title="https://kela.fi/ontology/kelao#isLifeSituationFor">on elämäntilanne kohteelle</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCriterionFor" title="https://kela.fi/ontology/kelao#isCriterionFor">on kriteeri etuudelle</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEligibleFor" title="https://kela.fi/ontology/kelao#isEligibleFor">on oikeutettu etuuteen</a> <sup class="type-op" title="object property">op</sup>, <a href="#receivesBenefit" title="https://kela.fi/ontology/kelao#receivesBenefit">saa etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#investigate" title="https://kela.fi/ontology/kelao#investigate">selvitä etuus</a> <sup class="type-op" title="object property">op</sup>, <a href="#relatedBenefit" title="https://kela.fi/ontology/kelao#relatedBenefit">säädös tai vaatimusprofiili koskee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#meansTestedIncome" title="https://kela.fi/ontology/kelao#meansTestedIncome">tarveharkinnan tulo</a> <sup class="type-op" title="object property">op</sup>, <a href="#reducing" title="https://kela.fi/ontology/kelao#reducing">vähentävä etuus</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EligibilityCriterion">
+  <h3>Etuuskriteeri<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#EligibilityCriterion</p>
+  <div class="comment">
+   <span class="markdown">Etuuskriteeri: yksittäinen ehto, jonka täyttyminen vaikuttaa oikeuteen saada etuus (esim. ikäraja, asumisedellytys, tuloraja, työssäoloehto). Reifioituna luokkana kriteeri voi kantaa oman lakiperustansa ja parametrinsa.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Yksittäinen ehto, jonka täyttyminen vaikuttaa oikeuteen saada etuus, esimerkiksi ikäraja, asumisedellytys, tuloraja tai työssäoloehto.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#criterionLegalBasis" title="https://kela.fi/ontology/kelao#criterionLegalBasis">kriteerin oikeusperusta</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCriterionFor" title="https://kela.fi/ontology/kelao#isCriterionFor">on kriteeri etuudelle</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasEligibilityCriterion" title="https://kela.fi/ontology/kelao#hasEligibilityCriterion">kriteerinä</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -170,6 +292,9 @@ This section provides details for each class and property defined by Sosiaalitur
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#BenefitGroup</p>
   <div class="comment">
    <span class="markdown">Kelan etuusryhmitys</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Kelan etuuksien ryhmittelyssä käytettävä luokka, joka kokoaa toisiinsa liittyvät etuudet yhteen ryhmään.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -254,13 +379,22 @@ This section provides details for each class and property defined by Sosiaalitur
     is in domain of
    </dt>
    <dd>
-    <a href="#residesInMunicipality" title="https://kela.fi/ontology/kelao#residesInMunicipality">asuu kunnassa</a> <sup class="type-op" title="object property">op</sup>, <a href="#appliesFor" title="https://kela.fi/ontology/kelao#appliesFor">hakee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasApplication" title="https://kela.fi/ontology/kelao#hasApplication">jätti hakemuksen</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">asiakkaan roolina</a> <sup class="type-op" title="object property">op</sup>, <a href="#residesInMunicipality" title="https://kela.fi/ontology/kelao#residesInMunicipality">asuu kunnassa</a> <sup class="type-op" title="object property">op</sup>, <a href="#appliesFor" title="https://kela.fi/ontology/kelao#appliesFor">hakee etuutta</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasApplication" title="https://kela.fi/ontology/kelao#hasApplication">jätti hakemuksen</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">asiakkaan rooli</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="WellbeingServiceCounty">
   <h3>Hyvinvointialue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#WellbeingServiceCounty</p>
+  <div class="comment">
+   <span class="markdown">Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue.</span>
+  </div>
   <div class="comment">
    <span class="markdown">Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue.</span>
   </div>
@@ -285,6 +419,12 @@ This section provides details for each class and property defined by Sosiaalitur
    <dd>
     <a href="#belongsToWellbeingServiceCounty" title="https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty">kuuluu hyvinvointialueeseen</a> <sup class="type-op" title="object property">op</sup>
    </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Country" title="https://kela.fi/ontology/kelao#Country">Valtio</a> <sup class="type-c" title="class">c</sup>, <a href="#EmploymentArea" title="https://kela.fi/ontology/kelao#EmploymentArea">Työllisyysalue</a> <sup class="type-c" title="class">c</sup>, <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a> <sup class="type-c" title="class">c</sup>, <a href="#Region" title="https://kela.fi/ontology/kelao#Region">Maakunta</a> <sup class="type-c" title="class">c</sup>
+   </dd>
   </dl>
  </div>
  <div class="entity" id="StandaloneBenefit">
@@ -292,6 +432,9 @@ This section provides details for each class and property defined by Sosiaalitur
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#StandaloneBenefit</p>
   <div class="comment">
    <span class="markdown">Kokonainen, itsenäinen etuus.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Kokonainen, itsenäinen etuus, joka voidaan myöntää sellaisenaan ja joka voi koostua osaetuuksista (etuuden osista).</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -334,6 +477,9 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -353,13 +499,19 @@ This section provides details for each class and property defined by Sosiaalitur
     is in domain of
    </dt>
    <dd>
-    <a href="#belongsToWellbeingServiceCounty" title="https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty">kuuluu hyvinvointialueeseen</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#belongsToWellbeingServiceCounty" title="https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty">kuuluu hyvinvointialueeseen</a> <sup class="type-op" title="object property">op</sup>, <a href="#belongsToRegion" title="https://kela.fi/ontology/kelao#belongsToRegion">kuuluu maakuntaan</a> <sup class="type-op" title="object property">op</sup>, <a href="#belongsToEmploymentArea" title="https://kela.fi/ontology/kelao#belongsToEmploymentArea">kuuluu työllisyysalueeseen</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
     <a href="#residesInMunicipality" title="https://kela.fi/ontology/kelao#residesInMunicipality">asuu kunnassa</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Country" title="https://kela.fi/ontology/kelao#Country">Valtio</a> <sup class="type-c" title="class">c</sup>, <a href="#EmploymentArea" title="https://kela.fi/ontology/kelao#EmploymentArea">Työllisyysalue</a> <sup class="type-c" title="class">c</sup>, <a href="#Region" title="https://kela.fi/ontology/kelao#Region">Maakunta</a> <sup class="type-c" title="class">c</sup>, <a href="#WellbeingServiceCounty" title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Hyvinvointialue</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -391,7 +543,13 @@ This section provides details for each class and property defined by Sosiaalitur
     is in domain of
    </dt>
    <dd>
-    <a href="#isEligibleFor" title="https://kela.fi/ontology/kelao#isEligibleFor">on oikeutettu etuuteen</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">asiakkaan roolina</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEligibleFor" title="https://kela.fi/ontology/kelao#isEligibleFor">on oikeutettu etuuteen</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">asiakkaan rooli</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -467,6 +625,9 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -481,6 +642,56 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#belongsToRegion" title="https://kela.fi/ontology/kelao#belongsToRegion">kuuluu maakuntaan</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Country" title="https://kela.fi/ontology/kelao#Country">Valtio</a> <sup class="type-c" title="class">c</sup>, <a href="#EmploymentArea" title="https://kela.fi/ontology/kelao#EmploymentArea">Työllisyysalue</a> <sup class="type-c" title="class">c</sup>, <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a> <sup class="type-c" title="class">c</sup>, <a href="#WellbeingServiceCounty" title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Hyvinvointialue</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Payment">
+  <h3>Maksu<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Payment</p>
+  <div class="comment">
+   <span class="markdown">Maksu tai maksuerä: ratkaisun perusteella maksettu etuussuoritus. Kytkee ratkaisun, etuuden ja saajan rahavirtaan.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Ratkaisun perusteella maksettu etuussuoritus tai sen maksuerä, joka kytkee ratkaisun, etuuden ja saajan rahavirtaan.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#paymentOf" title="https://kela.fi/ontology/kelao#paymentOf">etuuden maksu</a> <sup class="type-op" title="object property">op</sup>, <a href="#paymentRecipient" title="https://kela.fi/ontology/kelao#paymentRecipient">maksun saajana</a> <sup class="type-op" title="object property">op</sup>, <a href="#paymentBasedOnDecision" title="https://kela.fi/ontology/kelao#paymentBasedOnDecision">perustuu ratkaisuun</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#recoveryConcerns" title="https://kela.fi/ontology/kelao#recoveryConcerns">kohdistuu maksuun</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -509,7 +720,39 @@ This section provides details for each class and property defined by Sosiaalitur
     is in domain of
    </dt>
    <dd>
-    <a href="#appealsDecision" title="https://kela.fi/ontology/kelao#appealsDecision">kohdistuu päätökseen</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#appealsDecision" title="https://kela.fi/ontology/kelao#appealsDecision">kohdistuu päätökseen</a> <sup class="type-op" title="object property">op</sup>, <a href="#appealHandledBy" title="https://kela.fi/ontology/kelao#appealHandledBy">käsittelevä muutoksenhakuelin</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="AppealBody">
+  <h3>Muutoksenhakuelin<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#AppealBody</p>
+  <div class="comment">
+   <span class="markdown">Muutoksenhakuelin: valitusasioita käsittelevä toimielin, esim. sosiaaliturva-asioiden muutoksenhakulautakunta (SAMU) tai vakuutusoikeus.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Valitus- ja oikaisuvaatimusasioita käsittelevä toimielin, esimerkiksi sosiaaliturva-asioiden muutoksenhakulautakunta tai vakuutusoikeus.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Organisation" title="https://kela.fi/ontology/kelao#Organisation">Organisaatio</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#appealHandledBy" title="https://kela.fi/ontology/kelao#appealHandledBy">käsittelevä muutoksenhakuelin</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -518,6 +761,9 @@ This section provides details for each class and property defined by Sosiaalitur
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Organisation</p>
   <div class="comment">
    <span class="markdown">Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -535,10 +781,16 @@ This section provides details for each class and property defined by Sosiaalitur
     <a href="http://www.w3.org/ns/org#Organization" target="_blank" title="http://www.w3.org/ns/org#Organization">Organization</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#AppealBody" title="https://kela.fi/ontology/kelao#AppealBody">Muutoksenhakuelin</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palvelupiste</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palvelupiste</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="https://kela.fi/ontology/kelao#hasLocation">sijaitsee alueella</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -646,7 +898,7 @@ This section provides details for each class and property defined by Sosiaalitur
     is in domain of
    </dt>
    <dd>
-    <a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palvelupisteen organisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasGeographicArea" title="https://kela.fi/ontology/kelao#hasGeographicArea">sijaitsee alueella</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palvelupisteen organisaatio</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="https://kela.fi/ontology/kelao#hasLocation">sijaitsee alueella</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -681,7 +933,7 @@ This section provides details for each class and property defined by Sosiaalitur
     is in range of
    </dt>
    <dd>
-    <a href="#hasDecision" title="https://kela.fi/ontology/kelao#hasDecision">hakemuksen päätös</a> <sup class="type-op" title="object property">op</sup>, <a href="#appealsDecision" title="https://kela.fi/ontology/kelao#appealsDecision">kohdistuu päätökseen</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasDecision" title="https://kela.fi/ontology/kelao#hasDecision">hakemuksen päätös</a> <sup class="type-op" title="object property">op</sup>, <a href="#appealsDecision" title="https://kela.fi/ontology/kelao#appealsDecision">kohdistuu päätökseen</a> <sup class="type-op" title="object property">op</sup>, <a href="#paymentBasedOnDecision" title="https://kela.fi/ontology/kelao#paymentBasedOnDecision">perustuu ratkaisuun</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -707,13 +959,19 @@ This section provides details for each class and property defined by Sosiaalitur
     has sub-classes
    </dt>
    <dd>
-    <a href="#WellbeingServiceCounty" title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Hyvinvointialue</a> <sup class="type-c" title="class">c</sup>, <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a> <sup class="type-c" title="class">c</sup>, <a href="#Region" title="https://kela.fi/ontology/kelao#Region">Maakunta</a> <sup class="type-c" title="class">c</sup>, <a href="#Country" title="https://kela.fi/ontology/kelao#Country">Valtio</a> <sup class="type-c" title="class">c</sup>
+    <a href="#WellbeingServiceCounty" title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Hyvinvointialue</a> <sup class="type-c" title="class">c</sup>, <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a> <sup class="type-c" title="class">c</sup>, <a href="#Region" title="https://kela.fi/ontology/kelao#Region">Maakunta</a> <sup class="type-c" title="class">c</sup>, <a href="#EmploymentArea" title="https://kela.fi/ontology/kelao#EmploymentArea">Työllisyysalue</a> <sup class="type-c" title="class">c</sup>, <a href="#Country" title="https://kela.fi/ontology/kelao#Country">Valtio</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#belongsToCountry" title="https://kela.fi/ontology/kelao#belongsToCountry">kuuluu valtioon</a> <sup class="type-op" title="object property">op</sup>, <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a> <sup class="type-op" title="object property">op</sup>, <a href="#containsArea" title="https://kela.fi/ontology/kelao#containsArea">sisältää alueen</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasGeographicArea" title="https://kela.fi/ontology/kelao#hasGeographicArea">sijaitsee alueella</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasLocation" title="https://kela.fi/ontology/kelao#hasLocation">sijaitsee alueella</a> <sup class="type-op" title="object property">op</sup>, <a href="#containsArea" title="https://kela.fi/ontology/kelao#containsArea">sisältää alueen</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -762,7 +1020,7 @@ This section provides details for each class and property defined by Sosiaalitur
     is in range of
    </dt>
    <dd>
-    <a href="#legalReference" title="https://kela.fi/ontology/kelao#legalReference">on lakiviittaus</a> <sup class="type-op" title="object property">op</sup>, <a href="#has_part" title="https://kela.fi/ontology/kelao#has_part">on osa säädöstä</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#criterionLegalBasis" title="https://kela.fi/ontology/kelao#criterionLegalBasis">kriteerin oikeusperusta</a> <sup class="type-op" title="object property">op</sup>, <a href="#legalReference" title="https://kela.fi/ontology/kelao#legalReference">on lakiviittaus</a> <sup class="type-op" title="object property">op</sup>, <a href="#has_part" title="https://kela.fi/ontology/kelao#has_part">on osa säädöstä</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -771,6 +1029,9 @@ This section provides details for each class and property defined by Sosiaalitur
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#StatuteType</p>
   <div class="comment">
    <span class="markdown">Säädöksen tyyppi määritellään skos-luokituksessa StatuteType. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Säädöksen tyyppi sen antajan ja oikeudellisen aseman mukaan, esimerkiksi laki, asetus tai EU-asetus. Tyypit määritellään erillisessä SKOS-luokituksessa.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -792,6 +1053,38 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="#type_document" title="https://kela.fi/ontology/kelao#type_document">säädöksen tyyppi</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Recovery">
+  <h3>Takaisinperintä<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Recovery</p>
+  <div class="comment">
+   <span class="markdown">Takaisinperintä: liikaa tai perusteetta maksetun etuuden perintä takaisin saajalta.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Liikaa tai perusteetta maksetun etuuden periminen takaisin saajalta.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#recoveryConcerns" title="https://kela.fi/ontology/kelao#recoveryConcerns">kohdistuu maksuun</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -821,11 +1114,52 @@ This section provides details for each class and property defined by Sosiaalitur
    </dd>
   </dl>
  </div>
- <div class="entity" id="Country">
-  <h3>Valtio<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Country</p>
+ <div class="entity" id="Income">
+  <h3>Tulo<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Income</p>
   <div class="comment">
-   <span class="markdown">Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen.</span>
+   <span class="markdown">Tulo: henkilön tai saajayksikön tuloerä (esim. palkka, yrittäjätulo, pääomatulo, etuustulo), joka voidaan ottaa huomioon etuuden tulovähenteisyydessä tai tarveharkinnassa.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Henkilön tai saajayksikön tuloerä, esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo, joka voidaan ottaa huomioon etuuden tulovähenteisyydessä tai tarveharkinnassa.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="http://www.w3.org/ns/prov#Entity" target="_blank" title="http://www.w3.org/ns/prov#Entity">Entity</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#incomeConsideredIn" title="https://kela.fi/ontology/kelao#incomeConsideredIn">huomioidaan etuudessa</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#hasIncome" title="https://kela.fi/ontology/kelao#hasIncome">tulona</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EmploymentArea">
+  <h3>Työllisyysalue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#EmploymentArea</p>
+  <div class="comment">
+   <span class="markdown">Työllisyysalue: kuntien muodostama työvoimapalveluiden järjestämisvastuualue (TE-palvelut 2025 -uudistus).</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Kuntien muodostama, julkisten työvoimapalveluiden järjestämisestä vastaava lakisääteinen alue (TE-palvelut 2025 -uudistus).</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -842,15 +1176,68 @@ This section provides details for each class and property defined by Sosiaalitur
    <dd>
     <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
    </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#belongsToEmploymentArea" title="https://kela.fi/ontology/kelao#belongsToEmploymentArea">kuuluu työllisyysalueeseen</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Country" title="https://kela.fi/ontology/kelao#Country">Valtio</a> <sup class="type-c" title="class">c</sup>, <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a> <sup class="type-c" title="class">c</sup>, <a href="#Region" title="https://kela.fi/ontology/kelao#Region">Maakunta</a> <sup class="type-c" title="class">c</sup>, <a href="#WellbeingServiceCounty" title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Hyvinvointialue</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Country">
+  <h3>Valtio<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Country</p>
+  <div class="comment">
+   <span class="markdown">Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Valtio. Käytetään esimerkiksi asumisedellytyksen ja rajat ylittävien tilanteiden kuvaamiseen.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#belongsToCountry" title="https://kela.fi/ontology/kelao#belongsToCountry">kuuluu valtioon</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#EmploymentArea" title="https://kela.fi/ontology/kelao#EmploymentArea">Työllisyysalue</a> <sup class="type-c" title="class">c</sup>, <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a> <sup class="type-c" title="class">c</sup>, <a href="#Region" title="https://kela.fi/ontology/kelao#Region">Maakunta</a> <sup class="type-c" title="class">c</sup>, <a href="#WellbeingServiceCounty" title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Hyvinvointialue</a> <sup class="type-c" title="class">c</sup>
+   </dd>
   </dl>
  </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
+  <li><a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">asiakkaan rooli</a></li>
+  <li><a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">asiakkaan roolina</a></li>
   <li><a href="#residesInMunicipality" title="https://kela.fi/ontology/kelao#residesInMunicipality">asuu kunnassa</a></li>
   <li><a href="#advancePayment" title="https://kela.fi/ontology/kelao#advancePayment">ennakkosuoritus</a></li>
   <li><a href="#inhibiting" title="https://kela.fi/ontology/kelao#inhibiting">estävä etuus</a></li>
   <li><a href="#hasBenefitPart" title="https://kela.fi/ontology/kelao#hasBenefitPart">etuudella on osa</a></li>
+  <li><a href="#paymentOf" title="https://kela.fi/ontology/kelao#paymentOf">etuuden maksu</a></li>
   <li><a href="#referenceToBenefit" title="https://kela.fi/ontology/kelao#referenceToBenefit">etuus johon raportti kuuluu</a></li>
   <li><a href="#hasBenefitGroup" title="https://kela.fi/ontology/kelao#hasBenefitGroup">etuusryhmä</a></li>
   <li><a href="#relatedService" title="https://kela.fi/ontology/kelao#relatedService">etuuteen liittyvä palvelu</a></li>
@@ -859,30 +1246,120 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#hasDecision" title="https://kela.fi/ontology/kelao#hasDecision">hakemuksen päätös</a></li>
   <li><a href="#applicationConcerns" title="https://kela.fi/ontology/kelao#applicationConcerns">hakemus koskee etuutta</a></li>
   <li><a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">huomautus</a></li>
+  <li><a href="#incomeConsideredIn" title="https://kela.fi/ontology/kelao#incomeConsideredIn">huomioidaan etuudessa</a></li>
   <li><a href="#hasApplication" title="https://kela.fi/ontology/kelao#hasApplication">jätti hakemuksen</a></li>
   <li><a href="#hasServiceChannel" title="https://kela.fi/ontology/kelao#hasServiceChannel">kanava</a></li>
+  <li><a href="#recoveryConcerns" title="https://kela.fi/ontology/kelao#recoveryConcerns">kohdistuu maksuun</a></li>
   <li><a href="#appealsDecision" title="https://kela.fi/ontology/kelao#appealsDecision">kohdistuu päätökseen</a></li>
+  <li><a href="#criterionLegalBasis" title="https://kela.fi/ontology/kelao#criterionLegalBasis">kriteerin oikeusperusta</a></li>
+  <li><a href="#hasEligibilityCriterion" title="https://kela.fi/ontology/kelao#hasEligibilityCriterion">kriteerinä</a></li>
   <li><a href="#belongsToWellbeingServiceCounty" title="https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty">kuuluu hyvinvointialueeseen</a></li>
+  <li><a href="#belongsToRegion" title="https://kela.fi/ontology/kelao#belongsToRegion">kuuluu maakuntaan</a></li>
+  <li><a href="#belongsToEmploymentArea" title="https://kela.fi/ontology/kelao#belongsToEmploymentArea">kuuluu työllisyysalueeseen</a></li>
+  <li><a href="#belongsToCountry" title="https://kela.fi/ontology/kelao#belongsToCountry">kuuluu valtioon</a></li>
+  <li><a href="#appealHandledBy" title="https://kela.fi/ontology/kelao#appealHandledBy">käsittelevä muutoksenhakuelin</a></li>
   <li><a href="#broaderBenefit" title="https://kela.fi/ontology/kelao#broaderBenefit">laajempi etuus</a></li>
   <li><a href="#relatedToLifeSituation" title="https://kela.fi/ontology/kelao#relatedToLifeSituation">liittyy elämäntilanteeseen</a></li>
+  <li><a href="#paymentRecipient" title="https://kela.fi/ontology/kelao#paymentRecipient">maksun saajana</a></li>
   <li><a href="#minimumAmount" title="https://kela.fi/ontology/kelao#minimumAmount">minimimääräinen etuus</a></li>
   <li><a href="#isLifeSituationFor" title="https://kela.fi/ontology/kelao#isLifeSituationFor">on elämäntilanne kohteelle</a></li>
+  <li><a href="#isCriterionFor" title="https://kela.fi/ontology/kelao#isCriterionFor">on kriteeri etuudelle</a></li>
   <li><a href="#hasConcept" title="https://kela.fi/ontology/kelao#hasConcept">on käsite</a></li>
   <li><a href="#legalReference" title="https://kela.fi/ontology/kelao#legalReference">on lakiviittaus</a></li>
   <li><a href="#isEligibleFor" title="https://kela.fi/ontology/kelao#isEligibleFor">on oikeutettu etuuteen</a></li>
+  <li><a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a></li>
   <li><a href="#isPartOfBenefit" title="https://kela.fi/ontology/kelao#isPartOfBenefit">on osa etuutta</a></li>
   <li><a href="#has_part" title="https://kela.fi/ontology/kelao#has_part">on osa säädöstä</a></li>
   <li><a href="#hasServiceUnit" title="https://kela.fi/ontology/kelao#hasServiceUnit">on palvelupiste</a></li>
   <li><a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">palvelupisteen organisaatio</a></li>
+  <li><a href="#paymentBasedOnDecision" title="https://kela.fi/ontology/kelao#paymentBasedOnDecision">perustuu ratkaisuun</a></li>
+  <li><a href="#receivesBenefit" title="https://kela.fi/ontology/kelao#receivesBenefit">saa etuutta</a></li>
   <li><a href="#investigate" title="https://kela.fi/ontology/kelao#investigate">selvitä etuus</a></li>
-  <li><a href="#hasGeographicArea" title="https://kela.fi/ontology/kelao#hasGeographicArea">sijaitsee alueella</a></li>
+  <li><a href="#hasLocation" title="https://kela.fi/ontology/kelao#hasLocation">sijaitsee alueella</a></li>
+  <li><a href="#containsArea" title="https://kela.fi/ontology/kelao#containsArea">sisältää alueen</a></li>
   <li><a href="#type_document" title="https://kela.fi/ontology/kelao#type_document">säädöksen tyyppi</a></li>
   <li><a href="#relatedBenefit" title="https://kela.fi/ontology/kelao#relatedBenefit">säädös tai vaatimusprofiili koskee etuutta</a></li>
   <li><a href="#meansTestedIncome" title="https://kela.fi/ontology/kelao#meansTestedIncome">tarveharkinnan tulo</a></li>
   <li><a href="#dataProductOwner" title="https://kela.fi/ontology/kelao#dataProductOwner">tietotuotteen vastuuorganisaatio</a></li>
+  <li><a href="#hasIncome" title="https://kela.fi/ontology/kelao#hasIncome">tulona</a></li>
   <li><a href="#hasProvider" title="https://kela.fi/ontology/kelao#hasProvider">vastuuorganisaatio</a></li>
   <li><a href="#reducing" title="https://kela.fi/ontology/kelao#reducing">vähentävä etuus</a></li>
  </ul>
+ <div class="entity" id="hasCustomerRole">
+  <h3>asiakkaan rooli<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasCustomerRole</p>
+  <div class="comment">
+   <span class="markdown">Asiakkaalla on tämä rooli (hakija, käyttäjä tai etuuden saaja). Sama asiakas voi olla useassa roolissa samanaikaisesti tai eri yhteyksissä.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Customer" title="https://kela.fi/ontology/kelao#Customer">Asiakas</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Applicant" title="https://kela.fi/ontology/kelao#Applicant">Hakija</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Beneficiary" title="https://kela.fi/ontology/kelao#Beneficiary">Etuuden saaja</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#User" title="https://kela.fi/ontology/kelao#User">Käyttäjä</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">asiakkaan roolina</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="roleOfCustomer">
+  <h3>asiakkaan roolina<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#roleOfCustomer</p>
+  <div class="comment">
+   <span class="markdown">Rooli (hakija, käyttäjä tai etuuden saaja) kuuluu tälle asiakkaalle. Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> functional</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Applicant" title="https://kela.fi/ontology/kelao#Applicant">Hakija</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Beneficiary" title="https://kela.fi/ontology/kelao#Beneficiary">Etuuden saaja</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#User" title="https://kela.fi/ontology/kelao#User">Käyttäjä</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Customer" title="https://kela.fi/ontology/kelao#Customer">Asiakas</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">asiakkaan rooli</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="residesInMunicipality">
   <h3>asuu kunnassa<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#residesInMunicipality</p>
@@ -1009,6 +1486,37 @@ This section provides details for each class and property defined by Sosiaalitur
     </dt>
     <dd>
      <a href="#isPartOfBenefit" title="https://kela.fi/ontology/kelao#isPartOfBenefit">on osa etuutta</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="paymentOf">
+  <h3>etuuden maksu<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#paymentOf</p>
+  <div class="comment">
+   <span class="markdown">Maksu on tämän etuuden suoritus.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Payment" title="https://kela.fi/ontology/kelao#Payment">Maksu</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1261,6 +1769,37 @@ This section provides details for each class and property defined by Sosiaalitur
    </dl>
   </div>
  </div>
+ <div class="entity" id="incomeConsideredIn">
+  <h3>huomioidaan etuudessa<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#incomeConsideredIn</p>
+  <div class="comment">
+   <span class="markdown">Tuloerä otetaan huomioon tämän etuuden tulovähenteisyydessä tai tarveharkinnassa.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Income" title="https://kela.fi/ontology/kelao#Income">Tulo</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="hasApplication">
   <h3>jätti hakemuksen<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasApplication</p>
@@ -1323,6 +1862,37 @@ This section provides details for each class and property defined by Sosiaalitur
    </dl>
   </div>
  </div>
+ <div class="entity" id="recoveryConcerns">
+  <h3>kohdistuu maksuun<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#recoveryConcerns</p>
+  <div class="comment">
+   <span class="markdown">Takaisinperintä kohdistuu tähän maksuun.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Recovery" title="https://kela.fi/ontology/kelao#Recovery">Takaisinperintä</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Payment" title="https://kela.fi/ontology/kelao#Payment">Maksu</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="appealsDecision">
   <h3>kohdistuu päätökseen<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#appealsDecision</p>
@@ -1354,6 +1924,74 @@ This section provides details for each class and property defined by Sosiaalitur
    </dl>
   </div>
  </div>
+ <div class="entity" id="criterionLegalBasis">
+  <h3>kriteerin oikeusperusta<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#criterionLegalBasis</p>
+  <div class="comment">
+   <span class="markdown">Kriteerin oikeusperusta: viittaus säädökseen tai sen osaan (ELI-URI, pykälätaso).</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#EligibilityCriterion" title="https://kela.fi/ontology/kelao#EligibilityCriterion">Etuuskriteeri</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#LegalResource" title="https://kela.fi/ontology/kelao#LegalResource">Säädös</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasEligibilityCriterion">
+  <h3>kriteerinä<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasEligibilityCriterion</p>
+  <div class="comment">
+   <span class="markdown">Etuudella on tämä kelpoisuuskriteeri.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#EligibilityCriterion" title="https://kela.fi/ontology/kelao#EligibilityCriterion">Etuuskriteeri</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isCriterionFor" title="https://kela.fi/ontology/kelao#isCriterionFor">on kriteeri etuudelle</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="belongsToWellbeingServiceCounty">
   <h3>kuuluu hyvinvointialueeseen<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty</p>
@@ -1371,6 +2009,12 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="description">
    <dl>
     <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
      has domain
     </dt>
     <dd>
@@ -1381,6 +2025,148 @@ This section provides details for each class and property defined by Sosiaalitur
     </dt>
     <dd>
      <a href="#WellbeingServiceCounty" title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Hyvinvointialue</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="belongsToRegion">
+  <h3>kuuluu maakuntaan<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#belongsToRegion</p>
+  <div class="comment">
+   <span class="markdown">Kunta kuuluu tähän maakuntaan. Rinnakkainen hierarkia hyvinvointialueeseen kuulumisen kanssa: kunta kuuluu sekä maakuntaan että hyvinvointialueeseen.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Region" title="https://kela.fi/ontology/kelao#Region">Maakunta</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="belongsToEmploymentArea">
+  <h3>kuuluu työllisyysalueeseen<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#belongsToEmploymentArea</p>
+  <div class="comment">
+   <span class="markdown">Kunta kuuluu tähän työllisyysalueeseen. Ei pakollinen: esim. Ahvenanmaan kunnilla ei ole työllisyysaluetta.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#EmploymentArea" title="https://kela.fi/ontology/kelao#EmploymentArea">Työllisyysalue</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="belongsToCountry">
+  <h3>kuuluu valtioon<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#belongsToCountry</p>
+  <div class="comment">
+   <span class="markdown">Alue kuuluu tähän valtioon. Käytetään maakunnille, hyvinvointialueille, työllisyysalueille ja tarvittaessa suoraan kunnille.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has super-properties
+    </dt>
+    <dd>
+     <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Country" title="https://kela.fi/ontology/kelao#Country">Valtio</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="appealHandledBy">
+  <h3>käsittelevä muutoksenhakuelin<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#appealHandledBy</p>
+  <div class="comment">
+   <span class="markdown">Valituksen käsittelee tämä muutoksenhakuelin.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Appeal" title="https://kela.fi/ontology/kelao#Appeal">Muutoksenhaku</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#AppealBody" title="https://kela.fi/ontology/kelao#AppealBody">Muutoksenhakuelin</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1442,13 +2228,44 @@ This section provides details for each class and property defined by Sosiaalitur
      has range
     </dt>
     <dd>
-     <a href="#LifeSituationClassification" title="https://kela.fi/ontology/kelao#LifeSituationClassification">ElämäntilanneLuokitus</a> <sup class="type-c" title="class">c</sup>
+     <a href="#LifeSituation" title="https://kela.fi/ontology/kelao#LifeSituation">Elämäntilanne</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      is inverse of
     </dt>
     <dd>
      <a href="#isLifeSituationFor" title="https://kela.fi/ontology/kelao#isLifeSituationFor">on elämäntilanne kohteelle</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="paymentRecipient">
+  <h3>maksun saajana<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#paymentRecipient</p>
+  <div class="comment">
+   <span class="markdown">Maksun saaja. Voi olla muu kuin hakija (esim. vuokranantaja tai kunta).</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Payment" title="https://kela.fi/ontology/kelao#Payment">Maksu</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -1504,7 +2321,7 @@ This section provides details for each class and property defined by Sosiaalitur
      has domain
     </dt>
     <dd>
-     <a href="#LifeSituationClassification" title="https://kela.fi/ontology/kelao#LifeSituationClassification">ElämäntilanneLuokitus</a> <sup class="type-c" title="class">c</sup>
+     <a href="#LifeSituation" title="https://kela.fi/ontology/kelao#LifeSituation">Elämäntilanne</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1517,6 +2334,43 @@ This section provides details for each class and property defined by Sosiaalitur
     </dt>
     <dd>
      <a href="#relatedToLifeSituation" title="https://kela.fi/ontology/kelao#relatedToLifeSituation">liittyy elämäntilanteeseen</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isCriterionFor">
+  <h3>on kriteeri etuudelle<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#isCriterionFor</p>
+  <div class="comment">
+   <span class="markdown">Kriteeri koskee tätä etuutta.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#EligibilityCriterion" title="https://kela.fi/ontology/kelao#EligibilityCriterion">Etuuskriteeri</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasEligibilityCriterion" title="https://kela.fi/ontology/kelao#hasEligibilityCriterion">kriteerinä</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1610,6 +2464,50 @@ This section provides details for each class and property defined by Sosiaalitur
     </dt>
     <dd>
      <a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isPartOfArea">
+  <h3>on osa aluetta<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#isPartOfArea</p>
+  <div class="comment">
+   <span class="markdown">Alue on osa toista maantieteellistä aluetta. Transitiivinen yleisominaisuus, jonka aliominaisuuksia hallinnolliset kuulumissuhteet (kunta-hyvinvointialue, kunta-maakunta, alue-valtio) ovat.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> transitive</p>
+   <dl>
+    <dt>
+     has sub-properties
+    </dt>
+    <dd>
+     <a href="#belongsToWellbeingServiceCounty" title="https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty">kuuluu hyvinvointialueeseen</a> <sup class="type-op" title="object property">op</sup>, <a href="#belongsToRegion" title="https://kela.fi/ontology/kelao#belongsToRegion">kuuluu maakuntaan</a> <sup class="type-op" title="object property">op</sup>, <a href="#belongsToEmploymentArea" title="https://kela.fi/ontology/kelao#belongsToEmploymentArea">kuuluu työllisyysalueeseen</a> <sup class="type-op" title="object property">op</sup>, <a href="#belongsToCountry" title="https://kela.fi/ontology/kelao#belongsToCountry">kuuluu valtioon</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#containsArea" title="https://kela.fi/ontology/kelao#containsArea">sisältää alueen</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1762,6 +2660,68 @@ This section provides details for each class and property defined by Sosiaalitur
    </dl>
   </div>
  </div>
+ <div class="entity" id="paymentBasedOnDecision">
+  <h3>perustuu ratkaisuun<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#paymentBasedOnDecision</p>
+  <div class="comment">
+   <span class="markdown">Maksu perustuu tähän ratkaisuun.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Payment" title="https://kela.fi/ontology/kelao#Payment">Maksu</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Decision" title="https://kela.fi/ontology/kelao#Decision">Päätös</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="receivesBenefit">
+  <h3>saa etuutta<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#receivesBenefit</p>
+  <div class="comment">
+   <span class="markdown">Saaja saa tätä etuutta.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Beneficiary" title="https://kela.fi/ontology/kelao#Beneficiary">Etuuden saaja</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="investigate">
   <h3>selvitä etuus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#investigate</p>
@@ -1793,9 +2753,9 @@ This section provides details for each class and property defined by Sosiaalitur
    </dl>
   </div>
  </div>
- <div class="entity" id="hasGeographicArea">
+ <div class="entity" id="hasLocation">
   <h3>sijaitsee alueella<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasGeographicArea</p>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasLocation</p>
   <div class="comment">
    <span class="markdown">Palvelupiste sijaitsee tällä maantieteellisellä alueella.</span>
   </div>
@@ -1813,13 +2773,57 @@ This section provides details for each class and property defined by Sosiaalitur
      has domain
     </dt>
     <dd>
-     <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palvelupiste</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Organisation" title="https://kela.fi/ontology/kelao#Organisation">Organisaatio</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palvelupiste</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
      <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has sub-property chains
+    </dt>
+    <dd>
+     <a href="#hasLocation" title="https://kela.fi/ontology/kelao#hasLocation">sijaitsee alueella</a> <sup class="type-op" title="object property">op</sup> <span class="logic">o</span> <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="containsArea">
+  <h3>sisältää alueen<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#containsArea</p>
+  <div class="comment">
+   <span class="markdown">Alue sisältää toisen maantieteellisen alueen. Käänteisominaisuus ominaisuudelle 'on osa aluetta'.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <p><strong>has characteristics: </strong> transitive</p>
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -1950,6 +2954,37 @@ This section provides details for each class and property defined by Sosiaalitur
     </dt>
     <dd>
      <a href="#Organisation" title="https://kela.fi/ontology/kelao#Organisation">Organisaatio</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIncome">
+  <h3>tulona<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasIncome</p>
+  <div class="comment">
+   <span class="markdown">Henkilöllä on tämä tuloerä.</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Income" title="https://kela.fi/ontology/kelao#Income">Tulo</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -2689,7 +3724,7 @@ This section provides details for each class and property defined by Sosiaalitur
      has range
     </dt>
     <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
     </dd>
    </dl>
   </div>

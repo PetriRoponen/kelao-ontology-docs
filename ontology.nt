@@ -1,5 +1,5 @@
 <https://kela.fi/ontology/kelao> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#versionIRI> <https://petriroponen.github.io/kelao-ontology-docs/> .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#versionIRI> <https://kela.fi/ontology/kelao/0.4.1> .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/abstract> "Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  \n        organisaatiot, maantieteelliset alueet, palvelukanavat, tietotuotteet, lainsäädännön sekä sosiaaliturvan käsitteet.\n        "@fi .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/abstract> "The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.\n\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.\n"@en .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/contributor> <https://www.linkedin.com/in/petri-roponen-052aa772> .
@@ -10,7 +10,7 @@
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/description> "Tämä on luonnosversio (Draft). Sisältö voi muuttua."@fi .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/description> "Ydinontologia Suomen sosiaaliturvan keskeisille käsitteille: hakijat, etuudet, etuuskriteerit, palvelut, organisaatiot ja säädökset."@fi .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/modified> "2026-06-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/modified> "2026-07-03"^^<http://www.w3.org/2001/XMLSchema#date> .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/title> "Finnish Social Security Core Ontology"@en .
 <https://kela.fi/ontology/kelao> <http://purl.org/dc/terms/title> "Sosiaaliturvan ydinontologia"@fi .
 <https://kela.fi/ontology/kelao> <http://purl.org/vocab/vann/preferredNamespacePrefix> "kelao" .
@@ -29,12 +29,13 @@
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/org#> .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#> .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/shacl#> .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://petriroponen.github.io/kelao-ontology-docs/> .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://semiceu.github.io/CPSV-AP/releases/3.2.0/> .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#priorVersion> "0.2.0-core-draft" .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#versionInfo> "0.3.0-core-draft" .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "0.3.0: lisätty maantieteelliset alueet (Location, Municipality, WellbeingServiceCounty, Region, Country), palvelukanava (ServiceChannel) ja palvelupiste (ServiceUnit) sekä tietotuote (DataProduct) relaatioineen ja ominaisuuksineen."@fi .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Automated document generation"@en .
-<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Automatisoitu dokumentaation luonti .ttl-tiedostosta"@fi .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#priorVersion> <https://kela.fi/ontology/kelao/0.4.0> .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2002/07/owl#versionInfo> "0.4.1-core-draft" .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Versio 0.4.0 (2026-07-03):\n(1) Aluehierarkia: lisätty transitiivinen yleisominaisuus 'on osa aluetta' (isPartOfArea)\nkäänteisominaisuuksineen (containsArea) sekä sen aliominaisuudet kuuluu maakuntaan\n(belongsToRegion), kuuluu valtioon (belongsToCountry) ja kuuluu työllisyysalueeseen\n(belongsToEmploymentArea). Olemassa oleva kuuluu hyvinvointialueeseen\n(belongsToWellbeingServiceCounty) kytketty saman hierarkian aliominaisuudeksi.\nLisätty luokka Työllisyysalue (EmploymentArea). Lisätty ominaisuusketju\nhasLocation o isPartOfArea -> hasLocation, jolloin sijainti periytyy\naluehierarkiassa ylöspäin. hasLocation-ominaisuuden domain laajennettu\nkattamaan palvelupisteen lisäksi organisaation (unioni).\n(2) Sosiaaliturvan ydinkäsitteet: lisätty luokat Etuuskriteeri (EligibilityCriterion)\noikeusperustaviittauksineen, Asiakas (Customer) roolisuhteineen (roleOfCustomer,\nhasCustomerRole; hakija, käyttäjä ja saaja asiakkaan rooleina), Etuuden saaja\n(Beneficiary), Maksu (Payment), Takaisinperintä (Recovery), Muutoksenhakuelin\n(AppealBody) ja Tulo (Income) ominaisuuksineen.\n"@fi .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Versio 0.4.1 (2026-07-05):\nKorjauksia. (1) Määrittelemättömät yläluokat kelao:Agent ja kelao:Entity\nkorvattu prov:Agent- ja prov:Entity-luokilla luokissa Customer, Beneficiary,\nEligibilityCriterion, Income, Payment ja Recovery sekä ominaisuuksien\nhasIncome (domain) ja paymentRecipient (range) osalta; luokkahierarkia on\nnyt yhtenäinen. (2) Poistettu ominaisuuden kelao:alternative päällekkäinen\nowl:DatatypeProperty-deklaraatio (säilytetty owl:AnnotationProperty).\n(3) Erotettu minimumAge- ja maximumAge-ominaisuuksien ruotsinkieliset\nmerkinnät (nedre/övre åldersgräns). (4) Ominaisuuden kelao:amount range\nmuutettu xsd:string -> xsd:decimal. (5) Lisätty owl:AllDisjointClasses\n-aksioomat aluetyypeille ja asiakasrooleille. (6) Versiointimetatiedot\nkorjattu (versionIRI, priorVersion IRI-muotoon). (7) Lisätty\nskos:ConceptScheme-kytkentä luokille BenefitGroup, StatuteType ja\nLifeSituation (owl:hasValue skos:inScheme) todellisiin luokitusdatan\nkaavioihin. (8) Luokka LifeSituationClassification nimetty uudelleen\nLifeSituationiksi: käsite on yksittäinen elämäntilanne, ja luokitus on\nskos:ConceptScheme. Ominaisuuksien isLifeSituationFor (domain) ja\nrelatedToLifeSituation (range) viittaukset päivitetty."@fi .
+<https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#changeNote> "Version 0.4.0 (2026-07-03):\n(1) Geographic hierarchy: added the transitive generic property isPartOfArea\nwith inverse containsArea, and its subproperties belongsToRegion,\nbelongsToCountry and belongsToEmploymentArea. The existing property\nbelongsToWellbeingServiceCounty was linked into the same hierarchy as a\nsubproperty. Added class EmploymentArea. Added the property chain\nhasLocation o isPartOfArea -> hasLocation, so that location propagates\nupwards through the area hierarchy. The domain of hasLocation was widened\nto cover both service units and organisations (union).\n(2) Social security core concepts: added classes EligibilityCriterion\n(with legal-basis reference), Customer with role relations (roleOfCustomer,\nhasCustomerRole; applicant, user and beneficiary as customer roles),\nBeneficiary, Payment, Recovery, AppealBody and Income, with their properties.\n"@en .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#scopeNote> "Sosiaaliturvan tietämysgraafi (KELAO) ei sisällä hakijakohtaisia tietoja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä."@fi .
 <https://kela.fi/ontology/kelao> <http://www.w3.org/2004/02/skos/core#scopeNote> "The Social Security knowledge graph (KELAO) does not contain applicant-level data — personal data is processed in Kela's operational systems."@en .
 # 
@@ -108,8 +109,16 @@
 # 
 # https://kela.fi/ontology/kelao#alternative
 <https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#comment> "An established acronym or alternative name for the legal resource."@en .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#comment> "Säädöksen vakiintunut lyhenne tai vaihtoehtoinen nimi."@fi .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#label> "lain lyhenne"@fi .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#label> "law acronym"@en .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.org/dc/terms/alternative> .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2004/02/skos/core#prefLabel> "lain lyhenne"@fi .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2004/02/skos/core#prefLabel> "law acronym"@en .
+<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:LegalResource-instansseilla. Kuvaa säädöksen vakiintuneen lyhenteen, esim. 'KEL' tai 'SHL'."@fi .
 <https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2004/02/skos/core#altLabel> .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 # 
 # https://kela.fi/ontology/kelao#relationshipAbbreviation
 <https://kela.fi/ontology/kelao#relationshipAbbreviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -157,6 +166,9 @@
 # http://schema.org/legislationType
 <http://schema.org/legislationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
 # https://kela.fi/ontology/kelao#advancePayment
 <https://kela.fi/ontology/kelao#advancePayment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#advancePayment> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Benefit> .
@@ -169,6 +181,18 @@
 <https://kela.fi/ontology/kelao#advancePayment> <http://www.w3.org/2004/02/skos/core#prefLabel> "advance payment"@en .
 <https://kela.fi/ontology/kelao#advancePayment> <http://www.w3.org/2004/02/skos/core#prefLabel> "ennakkosuoritus"@fi .
 <https://kela.fi/ontology/kelao#advancePayment> <https://kela.fi/ontology/kelao#relationshipAbbreviation> "ENN" .
+# 
+# https://kela.fi/ontology/kelao#appealHandledBy
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Appeal> .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#AppealBody> .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The appeal is handled by this appeal body."@en .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Valituksen käsittelee tämä muutoksenhakuelin."@fi .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2000/01/rdf-schema#label> "appeal handled by"@en .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2000/01/rdf-schema#label> "käsittelevä muutoksenhakuelin"@fi .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "appeal handled by"@en .
+<https://kela.fi/ontology/kelao#appealHandledBy> <http://www.w3.org/2004/02/skos/core#prefLabel> "käsittelevä muutoksenhakuelin"@fi .
 # 
 # https://kela.fi/ontology/kelao#appealsDecision
 <https://kela.fi/ontology/kelao#appealsDecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -206,8 +230,48 @@
 <https://kela.fi/ontology/kelao#appliesFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "applies for"@en .
 <https://kela.fi/ontology/kelao#appliesFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "hakee etuutta"@fi .
 # 
+# https://kela.fi/ontology/kelao#belongsToCountry
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://kela.fi/ontology/kelao#isPartOfArea> .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Location> .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Country> .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Alue kuuluu tähän valtioon. Käytetään maakunnille, hyvinvointialueille, työllisyysalueille ja tarvittaessa suoraan kunnille."@fi .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "The area belongs to this country. Used for regions, wellbeing service counties, employment areas and, where needed, directly for municipalities."@en .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to country"@en .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2000/01/rdf-schema#label> "kuuluu valtioon"@fi .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to country"@en .
+<https://kela.fi/ontology/kelao#belongsToCountry> <http://www.w3.org/2004/02/skos/core#prefLabel> "kuuluu valtioon"@fi .
+# 
+# https://kela.fi/ontology/kelao#belongsToEmploymentArea
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://kela.fi/ontology/kelao#isPartOfArea> .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Municipality> .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#EmploymentArea> .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Kunta kuuluu tähän työllisyysalueeseen. Ei pakollinen: esim. Ahvenanmaan kunnilla ei ole työllisyysaluetta."@fi .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2000/01/rdf-schema#comment> "The municipality belongs to this employment area. Optional: e.g. municipalities in Åland have no employment area."@en .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to employment area"@en .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2000/01/rdf-schema#label> "kuuluu työllisyysalueeseen"@fi .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to employment area"@en .
+<https://kela.fi/ontology/kelao#belongsToEmploymentArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "kuuluu työllisyysalueeseen"@fi .
+# 
+# https://kela.fi/ontology/kelao#belongsToRegion
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://kela.fi/ontology/kelao#isPartOfArea> .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Municipality> .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Region> .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "Kunta kuuluu tähän maakuntaan. Rinnakkainen hierarkia hyvinvointialueeseen kuulumisen kanssa: kunta kuuluu sekä maakuntaan että hyvinvointialueeseen."@fi .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#comment> "The municipality belongs to this region (maakunta). Parallel to wellbeing service county membership; the two hierarchies are independent."@en .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to region"@en .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#label> "kuuluu maakuntaan"@fi .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to region"@en .
+<https://kela.fi/ontology/kelao#belongsToRegion> <http://www.w3.org/2004/02/skos/core#prefLabel> "kuuluu maakuntaan"@fi .
+# 
 # https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty
 <https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://kela.fi/ontology/kelao#isPartOfArea> .
 <https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Municipality> .
 <https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#WellbeingServiceCounty> .
 <https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#comment> "Belongs to wellbeing service county"@en .
@@ -229,6 +293,32 @@
 <https://kela.fi/ontology/kelao#broaderBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "laajempi etuus"@fi .
 <https://kela.fi/ontology/kelao#broaderBenefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "broader benefit"@en .
 <https://kela.fi/ontology/kelao#broaderBenefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "laajempi etuus"@fi .
+# 
+# https://kela.fi/ontology/kelao#containsArea
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Location> .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Location> .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographic area contains another geographic area. Inverse of 'is part of area'."@en .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Alue sisältää toisen maantieteellisen alueen. Käänteisominaisuus ominaisuudelle 'on osa aluetta'."@fi .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2000/01/rdf-schema#label> "contains area"@en .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2000/01/rdf-schema#label> "sisältää alueen"@fi .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://schema.org/containsPlace> .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "contains area"@en .
+<https://kela.fi/ontology/kelao#containsArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "sisältää alueen"@fi .
+# 
+# https://kela.fi/ontology/kelao#criterionLegalBasis
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#EligibilityCriterion> .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#LegalResource> .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2000/01/rdf-schema#comment> "Kriteerin oikeusperusta: viittaus säädökseen tai sen osaan (ELI-URI, pykälätaso)."@fi .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2000/01/rdf-schema#comment> "Legal basis of the criterion: reference to a legal resource or its subdivision (ELI URI, section level)."@en .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2000/01/rdf-schema#label> "criterion legal basis"@en .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2000/01/rdf-schema#label> "kriteerin oikeusperusta"@fi .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2004/02/skos/core#prefLabel> "criterion legal basis"@en .
+<https://kela.fi/ontology/kelao#criterionLegalBasis> <http://www.w3.org/2004/02/skos/core#prefLabel> "kriteerin oikeusperusta"@fi .
 # 
 # https://kela.fi/ontology/kelao#dataProductOwner
 <https://kela.fi/ontology/kelao#dataProductOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -303,6 +393,30 @@
 <https://kela.fi/ontology/kelao#hasConcept> <http://www.w3.org/2004/02/skos/core#prefLabel> "has concept"@en .
 <https://kela.fi/ontology/kelao#hasConcept> <http://www.w3.org/2004/02/skos/core#prefLabel> "on käsite"@fi .
 # 
+# https://kela.fi/ontology/kelao#hasCustomerRole
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2002/07/owl#inverseOf> <https://kela.fi/ontology/kelao#roleOfCustomer> .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Customer> .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#User> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Beneficiary> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Applicant> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#comment> "Asiakkaalla on tämä rooli (hakija, käyttäjä tai etuuden saaja). Sama asiakas voi olla useassa roolissa samanaikaisesti tai eri yhteyksissä."@fi .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#comment> "The customer has this role (applicant, user or beneficiary). The same customer may hold several roles simultaneously or in different contexts."@en .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#label> "asiakkaan rooli"@fi .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#label> "has customer role"@en .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2004/02/skos/core#prefLabel> "asiakkaan rooli"@fi .
+<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2004/02/skos/core#prefLabel> "has customer role"@en .
+# 
 # https://kela.fi/ontology/kelao#hasDecision
 <https://kela.fi/ontology/kelao#hasDecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#hasDecision> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Application> .
@@ -315,17 +429,56 @@
 <https://kela.fi/ontology/kelao#hasDecision> <http://www.w3.org/2004/02/skos/core#prefLabel> "hakemuksen päätös"@fi .
 <https://kela.fi/ontology/kelao#hasDecision> <http://www.w3.org/2004/02/skos/core#prefLabel> "has decision"@en .
 # 
-# https://kela.fi/ontology/kelao#hasGeographicArea
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#ServiceUnit> .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Location> .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Is located in"@en .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Palvelupiste sijaitsee tällä maantieteellisellä alueella."@fi .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2000/01/rdf-schema#label> "is located in"@en .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2000/01/rdf-schema#label> "sijaitsee alueella"@fi .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "is located in"@en .
-<https://kela.fi/ontology/kelao#hasGeographicArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "sijaitsee alueella"@fi .
+# https://kela.fi/ontology/kelao#hasEligibilityCriterion
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Benefit> .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#EligibilityCriterion> .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "Etuudella on tämä kelpoisuuskriteeri."@fi .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "The benefit has this eligibility criterion."@en .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "has eligibility criterion"@en .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "kriteerinä"@fi .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2004/02/skos/core#prefLabel> "has eligibility criterion"@en .
+<https://kela.fi/ontology/kelao#hasEligibilityCriterion> <http://www.w3.org/2004/02/skos/core#prefLabel> "kriteerinä"@fi .
+# 
+# https://kela.fi/ontology/kelao#hasIncome
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Agent> .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Income> .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2000/01/rdf-schema#comment> "Henkilöllä on tämä tuloerä."@fi .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2000/01/rdf-schema#comment> "The agent has this income item."@en .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2000/01/rdf-schema#label> "has income"@en .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2000/01/rdf-schema#label> "tulona"@fi .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2004/02/skos/core#prefLabel> "has income"@en .
+<https://kela.fi/ontology/kelao#hasIncome> <http://www.w3.org/2004/02/skos/core#prefLabel> "tulona"@fi .
+# 
+# https://kela.fi/ontology/kelao#hasLocation
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#unionOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#ServiceUnit> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Organisation> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Location> .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2002/07/owl#propertyChainAxiom> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#isPartOfArea> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#hasLocation> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Is located in"@en .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2000/01/rdf-schema#comment> "Palvelupiste sijaitsee tällä maantieteellisellä alueella."@fi .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "is located in"@en .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2000/01/rdf-schema#label> "sijaitsee alueella"@fi .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2004/02/skos/core#prefLabel> "is located in"@en .
+<https://kela.fi/ontology/kelao#hasLocation> <http://www.w3.org/2004/02/skos/core#prefLabel> "sijaitsee alueella"@fi .
 # 
 # https://kela.fi/ontology/kelao#hasProvider
 <https://kela.fi/ontology/kelao#hasProvider> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -380,6 +533,18 @@
 <https://kela.fi/ontology/kelao#has_part> <http://www.w3.org/2004/02/skos/core#prefLabel> "on osa säädöstä"@fi .
 <https://kela.fi/ontology/kelao#has_part> <http://www.w3.org/2004/02/skos/core#prefLabel> "är del av"@sv .
 # 
+# https://kela.fi/ontology/kelao#incomeConsideredIn
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Income> .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Benefit> .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The income item is taken into account in the means testing of this benefit."@en .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Tuloerä otetaan huomioon tämän etuuden tulovähenteisyydessä tai tarveharkinnassa."@fi .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2000/01/rdf-schema#label> "huomioidaan etuudessa"@fi .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2000/01/rdf-schema#label> "income considered in"@en .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2004/02/skos/core#prefLabel> "huomioidaan etuudessa"@fi .
+<https://kela.fi/ontology/kelao#incomeConsideredIn> <http://www.w3.org/2004/02/skos/core#prefLabel> "income considered in"@en .
+# 
 # https://kela.fi/ontology/kelao#inhibiting
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#inhibiting> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Benefit> .
@@ -410,6 +575,19 @@
 <https://kela.fi/ontology/kelao#investigate> <http://www.w3.org/2004/02/skos/core#prefLabel> "selvitä etuus"@fi .
 <https://kela.fi/ontology/kelao#investigate> <https://kela.fi/ontology/kelao#relationshipAbbreviation> "SEL" .
 # 
+# https://kela.fi/ontology/kelao#isCriterionFor
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2002/07/owl#inverseOf> <https://kela.fi/ontology/kelao#hasEligibilityCriterion> .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#EligibilityCriterion> .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Benefit> .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Kriteeri koskee tätä etuutta."@fi .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2000/01/rdf-schema#comment> "The criterion applies to this benefit."@en .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2000/01/rdf-schema#label> "is criterion for"@en .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2000/01/rdf-schema#label> "on kriteeri etuudelle"@fi .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "is criterion for"@en .
+<https://kela.fi/ontology/kelao#isCriterionFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "on kriteeri etuudelle"@fi .
+# 
 # https://kela.fi/ontology/kelao#isEligibleFor
 <https://kela.fi/ontology/kelao#isEligibleFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#isEligibleFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#User> .
@@ -424,7 +602,7 @@
 # 
 # https://kela.fi/ontology/kelao#isLifeSituationFor
 <https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#LifeSituationClassification> .
+<https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#LifeSituation> .
 <https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Benefit> .
 <https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Is life situation for"@en .
 <https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/2000/01/rdf-schema#comment> "On elämäntilanne kohteelle"@fi .
@@ -433,6 +611,22 @@
 <https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/2000/01/rdf-schema#label> "on elämäntilanne kohteelle"@fi .
 <https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "is life situation for"@en .
 <https://kela.fi/ontology/kelao#isLifeSituationFor> <http://www.w3.org/2004/02/skos/core#prefLabel> "on elämäntilanne kohteelle"@fi .
+# 
+# https://kela.fi/ontology/kelao#isPartOfArea
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2002/07/owl#inverseOf> <https://kela.fi/ontology/kelao#containsArea> .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Location> .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Location> .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographic area is part of another geographic area. Transitive generic property; specific administrative containment relations are its subproperties."@en .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Alue on osa toista maantieteellistä aluetta. Transitiivinen yleisominaisuus, jonka aliominaisuuksia hallinnolliset kuulumissuhteet (kunta-hyvinvointialue, kunta-maakunta, alue-valtio) ovat."@fi .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2000/01/rdf-schema#label> "is part of area"@en .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2000/01/rdf-schema#label> "on osa aluetta"@fi .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://schema.org/containedInPlace> .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.geonames.org/ontology#parentFeature> .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "is part of area"@en .
+<https://kela.fi/ontology/kelao#isPartOfArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "on osa aluetta"@fi .
 # 
 # https://kela.fi/ontology/kelao#isPartOfBenefit
 <https://kela.fi/ontology/kelao#isPartOfBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -496,6 +690,66 @@
 <https://kela.fi/ontology/kelao#noteworthy> <http://www.w3.org/2004/02/skos/core#prefLabel> "huomautus"@fi .
 <https://kela.fi/ontology/kelao#noteworthy> <https://kela.fi/ontology/kelao#relationshipAbbreviation> "HUO" .
 # 
+# https://kela.fi/ontology/kelao#paymentBasedOnDecision
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Payment> .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Decision> .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2000/01/rdf-schema#comment> "Maksu perustuu tähän ratkaisuun."@fi .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2000/01/rdf-schema#comment> "The payment is based on this decision."@en .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2000/01/rdf-schema#label> "payment based on decision"@en .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2000/01/rdf-schema#label> "perustuu ratkaisuun"@fi .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2004/02/skos/core#prefLabel> "payment based on decision"@en .
+<https://kela.fi/ontology/kelao#paymentBasedOnDecision> <http://www.w3.org/2004/02/skos/core#prefLabel> "perustuu ratkaisuun"@fi .
+# 
+# https://kela.fi/ontology/kelao#paymentOf
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Payment> .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Benefit> .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Maksu on tämän etuuden suoritus."@fi .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2000/01/rdf-schema#comment> "The payment is a disbursement of this benefit."@en .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2000/01/rdf-schema#label> "etuuden maksu"@fi .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2000/01/rdf-schema#label> "payment of"@en .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2004/02/skos/core#prefLabel> "etuuden maksu"@fi .
+<https://kela.fi/ontology/kelao#paymentOf> <http://www.w3.org/2004/02/skos/core#prefLabel> "payment of"@en .
+# 
+# https://kela.fi/ontology/kelao#paymentRecipient
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Payment> .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Agent> .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2000/01/rdf-schema#comment> "Maksun saaja. Voi olla muu kuin hakija (esim. vuokranantaja tai kunta)."@fi .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2000/01/rdf-schema#comment> "Recipient of the payment. May differ from the applicant (e.g. landlord or municipality)."@en .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2000/01/rdf-schema#label> "maksun saajana"@fi .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2000/01/rdf-schema#label> "payment recipient"@en .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2004/02/skos/core#prefLabel> "maksun saajana"@fi .
+<https://kela.fi/ontology/kelao#paymentRecipient> <http://www.w3.org/2004/02/skos/core#prefLabel> "payment recipient"@en .
+# 
+# https://kela.fi/ontology/kelao#receivesBenefit
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Beneficiary> .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Benefit> .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2000/01/rdf-schema#comment> "Saaja saa tätä etuutta."@fi .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2000/01/rdf-schema#comment> "The beneficiary receives this benefit."@en .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "receives benefit"@en .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "saa etuutta"@fi .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "receives benefit"@en .
+<https://kela.fi/ontology/kelao#receivesBenefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "saa etuutta"@fi .
+# 
+# https://kela.fi/ontology/kelao#recoveryConcerns
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Recovery> .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Payment> .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2000/01/rdf-schema#comment> "Takaisinperintä kohdistuu tähän maksuun."@fi .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2000/01/rdf-schema#comment> "The recovery concerns this payment."@en .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2000/01/rdf-schema#label> "kohdistuu maksuun"@fi .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2000/01/rdf-schema#label> "recovery concerns"@en .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2004/02/skos/core#prefLabel> "kohdistuu maksuun"@fi .
+<https://kela.fi/ontology/kelao#recoveryConcerns> <http://www.w3.org/2004/02/skos/core#prefLabel> "recovery concerns"@en .
+# 
 # https://kela.fi/ontology/kelao#reducing
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#reducing> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Benefit> .
@@ -551,7 +805,7 @@
 <https://kela.fi/ontology/kelao#relatedToLifeSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#relatedToLifeSituation> <http://www.w3.org/2002/07/owl#inverseOf> <https://kela.fi/ontology/kelao#isLifeSituationFor> .
 <https://kela.fi/ontology/kelao#relatedToLifeSituation> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Benefit> .
-<https://kela.fi/ontology/kelao#relatedToLifeSituation> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#LifeSituationClassification> .
+<https://kela.fi/ontology/kelao#relatedToLifeSituation> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#LifeSituation> .
 <https://kela.fi/ontology/kelao#relatedToLifeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Liittyy elämäntilanteeseen"@fi .
 <https://kela.fi/ontology/kelao#relatedToLifeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Related to life situation"@en .
 <https://kela.fi/ontology/kelao#relatedToLifeSituation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
@@ -572,6 +826,30 @@
 <https://kela.fi/ontology/kelao#residesInMunicipality> <http://www.w3.org/2004/02/skos/core#prefLabel> "asuu kunnassa"@fi .
 <https://kela.fi/ontology/kelao#residesInMunicipality> <http://www.w3.org/2004/02/skos/core#prefLabel> "resides in municipality"@en .
 <https://kela.fi/ontology/kelao#residesInMunicipality> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja."@fi .
+# 
+# https://kela.fi/ontology/kelao#roleOfCustomer
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#User> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Beneficiary> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Applicant> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Customer> .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#comment> "Rooli (hakija, käyttäjä tai etuuden saaja) kuuluu tälle asiakkaalle. Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen."@fi .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#comment> "The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer."@en .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#label> "asiakkaan roolina"@fi .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#label> "role of customer"@en .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2004/02/skos/core#prefLabel> "asiakkaan roolina"@fi .
+<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2004/02/skos/core#prefLabel> "role of customer"@en .
 # 
 # https://kela.fi/ontology/kelao#serviceUnitOrganization
 <https://kela.fi/ontology/kelao#serviceUnitOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -652,13 +930,10 @@
 <https://kela.fi/ontology/kelao#additionalInformation> <http://www.w3.org/2004/02/skos/core#prefLabel> "lisätietoja"@fi .
 <https://kela.fi/ontology/kelao#additionalInformation> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:DataProduct-instansseilla."@fi .
 # 
-# https://kela.fi/ontology/kelao#alternative
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-# 
 # https://kela.fi/ontology/kelao#amount
 <https://kela.fi/ontology/kelao#amount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#amount> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/amount> .
-<https://kela.fi/ontology/kelao#amount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://kela.fi/ontology/kelao#amount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
 <https://kela.fi/ontology/kelao#amount> <http://www.w3.org/2000/01/rdf-schema#comment> "Rahallinen määrä."@fi .
 <https://kela.fi/ontology/kelao#amount> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of money."@en .
 <https://kela.fi/ontology/kelao#amount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
@@ -996,14 +1271,14 @@
 <https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum age limit"@en .
 <https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Yläikäraja"@fi .
-<https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Åldersgräns"@sv .
+<https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Övre åldersgräns"@sv .
 <https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#label> "maximum age"@en .
 <https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#label> "yläikäraja"@fi .
-<https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#label> "åldersgräns"@sv .
+<https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2000/01/rdf-schema#label> "övre åldersgräns"@sv .
 <https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2004/02/skos/core#prefLabel> "maximum age"@en .
 <https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2004/02/skos/core#prefLabel> "yläikäraja"@fi .
-<https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2004/02/skos/core#prefLabel> "åldersgräns"@sv .
+<https://kela.fi/ontology/kelao#maximumAge> <http://www.w3.org/2004/02/skos/core#prefLabel> "övre åldersgräns"@sv .
 # 
 # https://kela.fi/ontology/kelao#meansTest
 <https://kela.fi/ontology/kelao#meansTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1027,14 +1302,14 @@
 <https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
 <https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Alaikäraja"@fi .
 <https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Minimum age limit"@en .
-<https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Åldersgräns"@sv .
+<https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Nedre åldersgräns"@sv .
 <https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#label> "alaikäraja"@fi .
 <https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#label> "minimum age"@en .
-<https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#label> "åldersgräns"@sv .
+<https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2000/01/rdf-schema#label> "nedre åldersgräns"@sv .
 <https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2004/02/skos/core#prefLabel> "alaikäraja"@fi .
 <https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2004/02/skos/core#prefLabel> "minimum age"@en .
-<https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2004/02/skos/core#prefLabel> "åldersgräns"@sv .
+<https://kela.fi/ontology/kelao#minimumAge> <http://www.w3.org/2004/02/skos/core#prefLabel> "nedre åldersgräns"@sv .
 # 
 # https://kela.fi/ontology/kelao#municipalityCode
 <https://kela.fi/ontology/kelao#municipalityCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -1423,6 +1698,9 @@
 # http://www.w3.org/2004/02/skos/core#Concept
 <http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
 # http://www.w3.org/ns/org#Organization
 <http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
@@ -1446,6 +1724,21 @@
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Appeal"@en .
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Muutoksenhaku"@fi .
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ändringssökande"@sv .
+# 
+# https://kela.fi/ontology/kelao#AppealBody
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kela.fi/ontology/kelao#Organisation> .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Appeal body: an organisation handling appeals, e.g. the Social Security Appeal Board (SAMU) or the Insurance Court."@en .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Muutoksenhakuelin: valitusasioita käsittelevä toimielin, esim. sosiaaliturva-asioiden muutoksenhakulautakunta (SAMU) tai vakuutusoikeus."@fi .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2000/01/rdf-schema#label> "Appeal body"@en .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2000/01/rdf-schema#label> "Besvärsinstans"@sv .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2000/01/rdf-schema#label> "Muutoksenhakuelin"@fi .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2004/02/skos/core#definition> "A body that handles appeals and requests for rectification, e.g. the Social Security Appeal Board or the Insurance Court."@en .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2004/02/skos/core#definition> "Valitus- ja oikaisuvaatimusasioita käsittelevä toimielin, esimerkiksi sosiaaliturva-asioiden muutoksenhakulautakunta tai vakuutusoikeus."@fi .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2004/02/skos/core#prefLabel> "Appeal body"@en .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2004/02/skos/core#prefLabel> "Besvärsinstans"@sv .
+<https://kela.fi/ontology/kelao#AppealBody> <http://www.w3.org/2004/02/skos/core#prefLabel> "Muutoksenhakuelin"@fi .
 # 
 # https://kela.fi/ontology/kelao#Applicant
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1497,6 +1790,21 @@
 <https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Liite"@fi .
 <https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#scopeNote> "Liitettä tarvitaan joskus hakemuksen liitteeksi; pakollisuus on hakemus- tai etuuskohtaista (kuvataan SHACLissa, ei luokkatasolla)."@fi .
 # 
+# https://kela.fi/ontology/kelao#Beneficiary
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2000/01/rdf-schema#comment> "Beneficiary: recipient of a benefit. Distinguished from the applicant: e.g. child benefit is applied for by a guardian, and the payment recipient may be a different party."@en .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2000/01/rdf-schema#comment> "Etuuden saaja. Erotetaan hakijasta: esim. lapsilisän hakija on huoltaja, ja maksun saaja voi olla eri henkilö tai taho (esim. kunta tai vuokranantaja)."@fi .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2000/01/rdf-schema#label> "Beneficiary"@en .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2000/01/rdf-schema#label> "Etuuden saaja"@fi .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2000/01/rdf-schema#label> "Förmånstagare"@sv .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2004/02/skos/core#definition> "An agent who receives a benefit. The beneficiary is distinguished from the applicant and from the payment recipient, which may be different parties."@en .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2004/02/skos/core#definition> "Toimija, joka saa etuutta. Saaja erotetaan hakijasta ja maksun saajasta, jotka voivat olla eri tahoja."@fi .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2004/02/skos/core#prefLabel> "Beneficiary"@en .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2004/02/skos/core#prefLabel> "Etuuden saaja"@fi .
+<https://kela.fi/ontology/kelao#Beneficiary> <http://www.w3.org/2004/02/skos/core#prefLabel> "Förmånstagare"@sv .
+# 
 # https://kela.fi/ontology/kelao#Benefit
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#Benefit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#PublicService> .
@@ -1540,11 +1848,18 @@
 # https://kela.fi/ontology/kelao#BenefitGroup
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/EtuusryhmaScheme> .
+<http://kela.fi/kg/EtuusryhmaScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Benefit group"@en .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Kelan etuusryhmitys"@fi .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Benefit Group"@en .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#label> "Etuusryhmä"@fi .
+<https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2004/02/skos/core#definition> "A category used to group related Kela benefits together."@en .
+<https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2004/02/skos/core#definition> "Kelan etuuksien ryhmittelyssä käytettävä luokka, joka kokoaa toisiinsa liittyvät etuudet yhteen ryhmään."@fi .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit Group"@en .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "Etuusryhmä"@fi .
 # 
@@ -1557,11 +1872,29 @@
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Stat"@sv .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Valtio"@fi .
+<https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2004/02/skos/core#definition> "A country or state, used e.g. to express residence requirements and cross-border situations."@en .
+<https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2004/02/skos/core#definition> "Valtio. Käytetään esimerkiksi asumisedellytyksen ja rajat ylittävien tilanteiden kuvaamiseen."@fi .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/Country> .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Country"@en .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stat"@sv .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2004/02/skos/core#prefLabel> "Valtio"@fi .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2004/02/skos/core#scopeNote> "Lähdeontologiassa kuvattu suoraan schema:Country-luokkana; ydinmallissa määritelty omana luokkana ja linkitetty skos:exactMatch-suhteella."@fi .
+# 
+# https://kela.fi/ontology/kelao#Customer
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2000/01/rdf-schema#comment> "Asiakas: henkilö tai taho, jolla on asiakkuus sosiaaliturvan toimeenpanijaan. Asiakas on pysyvä identiteetti, johon tilannekohtaiset roolit (hakija, käyttäjä, etuuden saaja) kiinnittyvät roolisuhteen kautta."@fi .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2000/01/rdf-schema#comment> "Customer: a person or party having a customer relationship with the social security administrator. The customer is the persistent identity to which contextual roles (applicant, user, beneficiary) are attached via the role-of-customer relation."@en .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2000/01/rdf-schema#label> "Asiakas"@fi .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2000/01/rdf-schema#label> "Customer"@en .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2000/01/rdf-schema#label> "Kund"@sv .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2004/02/skos/core#definition> "A person or community that receives, or has the possibility to receive, value from a service provided by Kela."@en .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2004/02/skos/core#definition> "Henkilö tai yhteisö, joka saa tai jolla on mahdollisuus saada arvoa Kelan tarjoamasta palvelusta."@fi .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asiakas"@fi .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2004/02/skos/core#prefLabel> "Customer"@en .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kund"@sv .
+<https://kela.fi/ontology/kelao#Customer> <http://www.w3.org/2004/02/skos/core#scopeNote> "Asiakkaat voivat olla ulkoisia tai sisäisiä. Asiakkaat voivat olla henkilöasiakkaita tai yhteisöasiakkaita. \n                Kelan asiakas saa joko suoraan tai välillisesti Kelan tarjoamaa palvelua, kuten esimerkiksi Kelan etuutta tai Kelan tuottamaa tietopalvelua. Yleiskielessä asiakkaalla tarkoitetaan toimijaa, joka hankkii tai saa palveluja tai hankkii tuotteita. \n                Tällainen toimija voi olla henkilö, henkilöryhmä tai organisaatio. Eepoksessa käytetään termiä \"customer\" puhuttaessa Kelan henkilöasiakkaista.\n                "@fi .
 # 
 # https://kela.fi/ontology/kelao#DataProduct
 <https://kela.fi/ontology/kelao#DataProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1595,6 +1928,50 @@
 <https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Decision"@en .
 <https://kela.fi/ontology/kelao#Decision> <http://www.w3.org/2004/02/skos/core#prefLabel> "Päätös"@fi .
 # 
+# https://kela.fi/ontology/kelao#EligibilityCriterion
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "Eligibility criterion: an individual condition affecting entitlement to a benefit (e.g. age limit, residence requirement, income limit, employment condition). Reified so that each criterion can carry its own legal basis and parameters."@en .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "Etuuskriteeri: yksittäinen ehto, jonka täyttyminen vaikuttaa oikeuteen saada etuus (esim. ikäraja, asumisedellytys, tuloraja, työssäoloehto). Reifioituna luokkana kriteeri voi kantaa oman lakiperustansa ja parametrinsa."@fi .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "Eligibility criterion"@en .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "Etuuskriteeri"@fi .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.europa.eu/m8g/Criterion> .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2004/02/skos/core#definition> "An individual condition affecting entitlement to a benefit, e.g. an age limit, residence requirement, income limit or employment condition."@en .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2004/02/skos/core#definition> "Yksittäinen ehto, jonka täyttyminen vaikuttaa oikeuteen saada etuus, esimerkiksi ikäraja, asumisedellytys, tuloraja tai työssäoloehto."@fi .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2004/02/skos/core#prefLabel> "Eligibility criterion"@en .
+<https://kela.fi/ontology/kelao#EligibilityCriterion> <http://www.w3.org/2004/02/skos/core#prefLabel> "Etuuskriteeri"@fi .
+# 
+# https://kela.fi/ontology/kelao#EmploymentArea
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kela.fi/ontology/kelao#Location> .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Employment area: a statutory area formed by municipalities responsible for organising public employment services (Finnish TE services reform 2025)."@en .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Työllisyysalue: kuntien muodostama työvoimapalveluiden järjestämisvastuualue (TE-palvelut 2025 -uudistus)."@fi .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2000/01/rdf-schema#label> "Employment area"@en .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2000/01/rdf-schema#label> "Sysselsättningsområde"@sv .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2000/01/rdf-schema#label> "Työllisyysalue"@fi .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2004/02/skos/core#definition> "A statutory area formed by municipalities responsible for organising public employment services (Finnish TE services reform 2025)."@en .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2004/02/skos/core#definition> "Kuntien muodostama, julkisten työvoimapalveluiden järjestämisestä vastaava lakisääteinen alue (TE-palvelut 2025 -uudistus)."@fi .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "Employment area"@en .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sysselsättningsområde"@sv .
+<https://kela.fi/ontology/kelao#EmploymentArea> <http://www.w3.org/2004/02/skos/core#prefLabel> "Työllisyysalue"@fi .
+# 
+# https://kela.fi/ontology/kelao#Income
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#comment> "Income: an income item of a person or recipient unit (e.g. wage, self-employment income, capital income, benefit income) that may be taken into account in means testing."@en .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#comment> "Tulo: henkilön tai saajayksikön tuloerä (esim. palkka, yrittäjätulo, pääomatulo, etuustulo), joka voidaan ottaa huomioon etuuden tulovähenteisyydessä tai tarveharkinnassa."@fi .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#label> "Income"@en .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#label> "Inkomst"@sv .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#label> "Tulo"@fi .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2004/02/skos/core#definition> "An income item of a person or recipient unit — e.g. wage, self-employment income, capital income or benefit income — that may be taken into account in a benefit's income or means testing."@en .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2004/02/skos/core#definition> "Henkilön tai saajayksikön tuloerä, esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo, joka voidaan ottaa huomioon etuuden tulovähenteisyydessä tai tarveharkinnassa."@fi .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2004/02/skos/core#prefLabel> "Income"@en .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inkomst"@sv .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tulo"@fi .
+# 
 # https://kela.fi/ontology/kelao#LegalResource
 <https://kela.fi/ontology/kelao#LegalResource> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#LegalResource> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/eli/ontology#LegalResource> .
@@ -1609,6 +1986,9 @@
 <https://kela.fi/ontology/kelao#LegalResource> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/Legislation> .
 <https://kela.fi/ontology/kelao#LegalResource> <http://www.w3.org/2004/02/skos/core#example> "Examples of statutes are acts and decrees as well as legal provisions issued by authorities."@en .
 <https://kela.fi/ontology/kelao#LegalResource> <http://www.w3.org/2004/02/skos/core#example> "Säädöksiä ovat esimerkiksi lait ja asetukset sekä viranomaisten antamat oikeussäännöt."@fi .
+<https://kela.fi/ontology/kelao#LegalResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Juridisk resurs"@sv .
+<https://kela.fi/ontology/kelao#LegalResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Resource"@en .
+<https://kela.fi/ontology/kelao#LegalResource> <http://www.w3.org/2004/02/skos/core#prefLabel> "Säädös"@fi .
 # 
 # https://kela.fi/ontology/kelao#LegalResourcePart
 <https://kela.fi/ontology/kelao#LegalResourcePart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1626,21 +2006,25 @@
 <https://kela.fi/ontology/kelao#LegalResourcePart> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lain osa"@fi .
 <https://kela.fi/ontology/kelao#LegalResourcePart> <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal Resource Part"@en .
 # 
-# https://kela.fi/ontology/kelao#LifeSituationClassification
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "Elämäntilanteilla tarkoitetaan sellaisia muutosvaiheita, joita kuvaa väliaikaisuus, erityisten palvelujen ja tiedon tarve sekä niihin kohdennetut palvelut.\n        Elämäntilanneluokitus on toteutettu muualla skos-luokituksena. Luokituksen luokat ovat käsitteitä. Luokitus on luonnos. Pohjana on käytetty\n        DVV:n elämäntapahtumaluokitusta, joka perustuu EU-luokitukseen."@fi .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2000/01/rdf-schema#comment> "Life situations refer to phases of change characterized by temporary nature, the need for special services and information, and services targeted to them."@en .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2000/01/rdf-schema#label> "ElämäntilanneLuokitus"@fi .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2000/01/rdf-schema#label> "Klassificering av livssituationer"@sv .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2000/01/rdf-schema#label> "Life Situation Classification"@en .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://iri.suomi.fi/model/suomiptv2/LifeEventClassification> .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2004/02/skos/core#definition> "Elämäntilanteilla tarkoitetaan sellaisia muutosvaiheita, joita kuvaa väliaikaisuus, erityisten palvelujen ja tiedon tarve sekä niihin kohdennetut palvelut."@fi .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2004/02/skos/core#definition> "Life situations refer to phases of change characterized by temporary nature, the need for special services and information, and services targeted to them."@en .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2004/02/skos/core#prefLabel> "ElämäntilanneLuokitus"@fi .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2004/02/skos/core#prefLabel> "Klassificering av livssituationer"@sv .
-<https://kela.fi/ontology/kelao#LifeSituationClassification> <http://www.w3.org/2004/02/skos/core#prefLabel> "Life Situation Classification"@en .
+# https://kela.fi/ontology/kelao#LifeSituation
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/ElamantilanneluokitusScheme> .
+<http://kela.fi/kg/ElamantilanneluokitusScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "A life situation is a phase of change or circumstance in a citizen's life associated with a need for public services and benefits. Individual life situations form the life-situation classification (a skos:ConceptScheme)."@en .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Elämäntilanne on kansalaisen elämän muutosvaihe tai tilanne, johon liittyy julkisten palvelujen ja etuuksien tarve. Yksittäiset elämäntilanteet muodostavat elämäntilanneluokituksen (skos:ConceptScheme). Luokitus on luonnos; pohjana on käytetty\n        DVV:n elämäntapahtumaluokitusta, joka perustuu EU-luokitukseen."@fi .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Elämäntilanne"@fi .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Life Situation"@en .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Livssituation"@sv .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2004/02/skos/core#definition> "Elämäntilanteilla tarkoitetaan sellaisia muutosvaiheita, joita kuvaa väliaikaisuus, erityisten palvelujen ja tiedon tarve sekä niihin kohdennetut palvelut."@fi .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2004/02/skos/core#definition> "Life situations refer to phases of change characterized by temporary nature, the need for special services and information, and services targeted to them."@en .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Elämäntilanne"@fi .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Life Situation"@en .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Livssituation"@sv .
 # 
 # https://kela.fi/ontology/kelao#Location
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1654,10 +2038,8 @@
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#altLabel> "Maantieteellinen alue"@fi .
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#altLabel> "Place"@en .
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.w3.org/ns/locn#Location> .
-<https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#definition> "A spatial region or named place"@en .
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#definition> "Any geographic area, irrespective of size or administrative level."@en .
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#definition> "Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta."@fi .
-<https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#definition> "Union of all the geo classes"@en .
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#prefLabel> "Location"@en .
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plats"@sv .
 <https://kela.fi/ontology/kelao#Location> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sijainti"@fi .
@@ -1672,6 +2054,8 @@
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Kommun"@sv .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Kunta"@fi .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Municipality"@en .
+<https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2004/02/skos/core#definition> "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."@en .
+<https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2004/02/skos/core#definition> "Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla."@fi .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kommun"@sv .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kunta"@fi .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2004/02/skos/core#prefLabel> "Municipality"@en .
@@ -1688,12 +2072,45 @@
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organization"@en .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#broadMatch> <http://data.europa.eu/m8g/PublicOrganisation> .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://xmlns.com/foaf/0.1/Organization> .
+<https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#definition> "An actor that is an association of individuals with a common goal and a purposeful structure."@en .
+<https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#definition> "Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne."@fi .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://iri.suomi.fi/model/suomiptv2/Organization> .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/Organization> .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisaatio"@fi .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organisation"@sv .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organization"@en .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2004/02/skos/core#scopeNote> "KELAO-kontekstissa vastaa PTV:n Organization-käsitettä ja \n        schema.org/Organization-käsitettä. Käytetään kuvaamaan kaikkia \n         toimijaorganisaatioita sektorirajat ylittäen (julkinen, yksityinen, \n         kolmas sektori). EU Core Public Organisation on tämän erikoistapaus."@fi .
+# 
+# https://kela.fi/ontology/kelao#Payment
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2000/01/rdf-schema#comment> "Maksu tai maksuerä: ratkaisun perusteella maksettu etuussuoritus. Kytkee ratkaisun, etuuden ja saajan rahavirtaan."@fi .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2000/01/rdf-schema#comment> "Payment or instalment: a benefit disbursement made on the basis of a decision. Links the decision, benefit and recipient to the money flow."@en .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2000/01/rdf-schema#label> "Betalning"@sv .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2000/01/rdf-schema#label> "Maksu"@fi .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2000/01/rdf-schema#label> "Payment"@en .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#definition> "A benefit disbursement, or an instalment of one, made on the basis of a decision, linking the decision, benefit and recipient to the money flow."@en .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#definition> "Ratkaisun perusteella maksettu etuussuoritus tai sen maksuerä, joka kytkee ratkaisun, etuuden ja saajan rahavirtaan."@fi .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Betalning"@sv .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maksu"@fi .
+<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Payment"@en .
+# 
+# https://kela.fi/ontology/kelao#Recovery
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2000/01/rdf-schema#comment> "Recovery: reclaiming a benefit paid in excess or without grounds from the recipient."@en .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2000/01/rdf-schema#comment> "Takaisinperintä: liikaa tai perusteetta maksetun etuuden perintä takaisin saajalta."@fi .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2000/01/rdf-schema#label> "Recovery"@en .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2000/01/rdf-schema#label> "Takaisinperintä"@fi .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2000/01/rdf-schema#label> "Återkrav"@sv .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2004/02/skos/core#altLabel> "Claim for recovery"@en .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2004/02/skos/core#definition> "Liikaa tai perusteetta maksetun etuuden periminen takaisin saajalta."@fi .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2004/02/skos/core#definition> "The reclaiming from the recipient of a benefit that was paid in excess or without grounds."@en .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2004/02/skos/core#prefLabel> "Recovery"@en .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2004/02/skos/core#prefLabel> "Takaisinperintä"@fi .
+<https://kela.fi/ontology/kelao#Recovery> <http://www.w3.org/2004/02/skos/core#prefLabel> "Återkrav"@sv .
 # 
 # https://kela.fi/ontology/kelao#Region
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1704,6 +2121,8 @@
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Landskap"@sv .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Maakunta"@fi .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2004/02/skos/core#definition> "A region (maakunta): an areal unit of regional development and planning composed of municipalities."@en .
+<https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2004/02/skos/core#definition> "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."@fi .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2004/02/skos/core#prefLabel> "Landskap"@sv .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maakunta"@fi .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2004/02/skos/core#prefLabel> "Region"@en .
@@ -1751,7 +2170,7 @@
 <https://kela.fi/ontology/kelao#ServiceUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Palvelupiste"@fi .
 <https://kela.fi/ontology/kelao#ServiceUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Service Unit"@en .
 <https://kela.fi/ontology/kelao#ServiceUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Serviceställe"@sv .
-<https://kela.fi/ontology/kelao#ServiceUnit> <http://www.w3.org/2004/02/skos/core#altLabel> "Palvelupiste"@fi .
+<https://kela.fi/ontology/kelao#ServiceUnit> <http://www.w3.org/2004/02/skos/core#altLabel> "Palveluyksikkö"@fi .
 <https://kela.fi/ontology/kelao#ServiceUnit> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://iri.suomi.fi/model/suomiptv2/ServiceChannel> .
 <https://kela.fi/ontology/kelao#ServiceUnit> <http://www.w3.org/2004/02/skos/core#definition> "A physically located service point at which a service is provided."@en .
 <https://kela.fi/ontology/kelao#ServiceUnit> <http://www.w3.org/2004/02/skos/core#definition> "Toimipiste, jota ylläpitää pääsääntöisesti yksi toimija ja jossa voi saada kyseisen toimijan tai muiden toimijoiden tarjoamia palveluja."@fi .
@@ -1767,18 +2186,27 @@
 <https://kela.fi/ontology/kelao#StandaloneBenefit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#StandaloneBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "Itsenäinen etuus"@fi .
 <https://kela.fi/ontology/kelao#StandaloneBenefit> <http://www.w3.org/2000/01/rdf-schema#label> "Standalone Benefit"@en .
+<https://kela.fi/ontology/kelao#StandaloneBenefit> <http://www.w3.org/2004/02/skos/core#definition> "A complete, self-standing benefit that can be granted on its own and may consist of benefit components."@en .
+<https://kela.fi/ontology/kelao#StandaloneBenefit> <http://www.w3.org/2004/02/skos/core#definition> "Kokonainen, itsenäinen etuus, joka voidaan myöntää sellaisenaan ja joka voi koostua osaetuuksista (etuuden osista)."@fi .
 <https://kela.fi/ontology/kelao#StandaloneBenefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Itsenäinen etuus"@fi .
 <https://kela.fi/ontology/kelao#StandaloneBenefit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Standalone Benefit"@en .
 # 
 # https://kela.fi/ontology/kelao#StatuteType
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/saadostyyppi-luokitus> .
+<http://kela.fi/kg/saadostyyppi-luokitus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Säädöksen tyyppi määritellään skos-luokituksessa StatuteType. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön"@fi .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#label> "Författningstyp"@sv .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#label> "Statute Type"@en .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#label> "Säädöstyyppi"@fi .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2004/02/skos/core#definition> "Säädöksen tyyppi sen antajan ja oikeudellisen aseman mukaan, esimerkiksi laki, asetus tai EU-asetus. Tyypit määritellään erillisessä SKOS-luokituksessa."@fi .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2004/02/skos/core#definition> "The type of a statute according to its issuer and legal status, e.g. an act, a decree or an EU regulation. The types are defined in a separate SKOS classification."@en .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Författningstyp"@sv .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Statute Type"@en .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2004/02/skos/core#prefLabel> "Säädöstyyppi"@fi .
@@ -1807,6 +2235,8 @@
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#label> "Hyvinvointialue"@fi .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#label> "Välfärdsområde"@sv .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#label> "Wellbeing Service County"@en .
+<https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2004/02/skos/core#definition> "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."@en .
+<https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2004/02/skos/core#definition> "Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue."@fi .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hyvinvointialue"@fi .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Välfärdsområde"@sv .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2004/02/skos/core#prefLabel> "Wellbeing Service County"@en .
@@ -1815,19 +2245,44 @@
 # 
 # #################################################################
 # #
-# #    Annotations
+# #    Individuals
 # #
 # #################################################################
 # 
 # 
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#comment> "An established acronym or alternative name for the legal resource."@en .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#comment> "Säädöksen vakiintunut lyhenne tai vaihtoehtoinen nimi."@fi .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#label> "lain lyhenne"@fi .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2000/01/rdf-schema#label> "law acronym"@en .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://purl.org/dc/terms/alternative> .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2004/02/skos/core#prefLabel> "lain lyhenne"@fi .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2004/02/skos/core#prefLabel> "law acronym"@en .
-<https://kela.fi/ontology/kelao#alternative> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:LegalResource-instansseilla. Kuvaa säädöksen vakiintuneen lyhenteen, esim. 'KEL' tai 'SHL'."@fi .
+# http://kela.fi/kg/ElamantilanneluokitusScheme
+# 
+# http://kela.fi/kg/EtuusryhmaScheme
+# 
+# http://kela.fi/kg/saadostyyppi-luokitus
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#WellbeingServiceCounty> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Region> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Municipality> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#EmploymentArea> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Country> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#comment> "Hallinnolliset aluetyypit ovat toisensa poissulkevia."@fi .
+_:genid17 <http://www.w3.org/2000/01/rdf-schema#comment> "The administrative area types are mutually disjoint."@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

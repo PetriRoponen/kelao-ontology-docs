@@ -1,4 +1,88 @@
 [ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://kela.fi/ontology/kelao#Applicant"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#Beneficiary"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#User"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://kela.fi/ontology/kelao#Applicant"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#Beneficiary"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#User"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://kela.fi/kg/EtuusryhmaScheme"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://kela.fi/kg/ElamantilanneluokitusScheme"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://kela.fi/kg/saadostyyppi-luokitus"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Hallinnolliset aluetyypit ovat toisensa poissulkevia."
+  }, {
+    "@language" : "en",
+    "@value" : "The administrative area types are mutually disjoint."
+  } ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "https://kela.fi/ontology/kelao#Country"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#EmploymentArea"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#Municipality"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#Region"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#WellbeingServiceCounty"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://kela.fi/ontology/kelao#Organisation"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#ServiceUnit"
+    } ]
+  } ]
+}, {
   "@id" : "http://data.europa.eu/eli/ontology#LegalResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -16,6 +100,15 @@
 }, {
   "@id" : "http://data.europa.eu/eli/ontology#version_date",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://kela.fi/kg/ElamantilanneluokitusScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://kela.fi/kg/EtuusryhmaScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://kela.fi/kg/saadostyyppi-luokitus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -77,6 +170,9 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://www.w3.org/2004/02/skos/core#altLabel",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -97,6 +193,9 @@
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#example",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#note",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -153,7 +252,7 @@
   } ],
   "http://purl.org/dc/terms/modified" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
-    "@value" : "2026-06-17"
+    "@value" : "2026-07-03"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -203,26 +302,28 @@
   }, {
     "@id" : "http://www.w3.org/ns/shacl#"
   }, {
+    "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
+  }, {
     "@id" : "https://semiceu.github.io/CPSV-AP/releases/3.2.0/"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@value" : "0.2.0-core-draft"
+    "@id" : "https://kela.fi/ontology/kelao/0.4.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
+    "@id" : "https://kela.fi/ontology/kelao/0.4.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.3.0-core-draft"
+    "@value" : "0.4.1-core-draft"
   } ],
   "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
     "@language" : "fi",
-    "@value" : "0.3.0: lisätty maantieteelliset alueet (Location, Municipality, WellbeingServiceCounty, Region, Country), palvelukanava (ServiceChannel) ja palvelupiste (ServiceUnit) sekä tietotuote (DataProduct) relaatioineen ja ominaisuuksineen."
-  }, {
-    "@language" : "en",
-    "@value" : "Automated document generation"
+    "@value" : "Versio 0.4.0 (2026-07-03):\n(1) Aluehierarkia: lisätty transitiivinen yleisominaisuus 'on osa aluetta' (isPartOfArea)\nkäänteisominaisuuksineen (containsArea) sekä sen aliominaisuudet kuuluu maakuntaan\n(belongsToRegion), kuuluu valtioon (belongsToCountry) ja kuuluu työllisyysalueeseen\n(belongsToEmploymentArea). Olemassa oleva kuuluu hyvinvointialueeseen\n(belongsToWellbeingServiceCounty) kytketty saman hierarkian aliominaisuudeksi.\nLisätty luokka Työllisyysalue (EmploymentArea). Lisätty ominaisuusketju\nhasLocation o isPartOfArea -> hasLocation, jolloin sijainti periytyy\naluehierarkiassa ylöspäin. hasLocation-ominaisuuden domain laajennettu\nkattamaan palvelupisteen lisäksi organisaation (unioni).\n(2) Sosiaaliturvan ydinkäsitteet: lisätty luokat Etuuskriteeri (EligibilityCriterion)\noikeusperustaviittauksineen, Asiakas (Customer) roolisuhteineen (roleOfCustomer,\nhasCustomerRole; hakija, käyttäjä ja saaja asiakkaan rooleina), Etuuden saaja\n(Beneficiary), Maksu (Payment), Takaisinperintä (Recovery), Muutoksenhakuelin\n(AppealBody) ja Tulo (Income) ominaisuuksineen.\n"
   }, {
     "@language" : "fi",
-    "@value" : "Automatisoitu dokumentaation luonti .ttl-tiedostosta"
+    "@value" : "Versio 0.4.1 (2026-07-05):\nKorjauksia. (1) Määrittelemättömät yläluokat kelao:Agent ja kelao:Entity\nkorvattu prov:Agent- ja prov:Entity-luokilla luokissa Customer, Beneficiary,\nEligibilityCriterion, Income, Payment ja Recovery sekä ominaisuuksien\nhasIncome (domain) ja paymentRecipient (range) osalta; luokkahierarkia on\nnyt yhtenäinen. (2) Poistettu ominaisuuden kelao:alternative päällekkäinen\nowl:DatatypeProperty-deklaraatio (säilytetty owl:AnnotationProperty).\n(3) Erotettu minimumAge- ja maximumAge-ominaisuuksien ruotsinkieliset\nmerkinnät (nedre/övre åldersgräns). (4) Ominaisuuden kelao:amount range\nmuutettu xsd:string -> xsd:decimal. (5) Lisätty owl:AllDisjointClasses\n-aksioomat aluetyypeille ja asiakasrooleille. (6) Versiointimetatiedot\nkorjattu (versionIRI, priorVersion IRI-muotoon). (7) Lisätty\nskos:ConceptScheme-kytkentä luokille BenefitGroup, StatuteType ja\nLifeSituation (owl:hasValue skos:inScheme) todellisiin luokitusdatan\nkaavioihin. (8) Luokka LifeSituationClassification nimetty uudelleen\nLifeSituationiksi: käsite on yksittäinen elämäntilanne, ja luokitus on\nskos:ConceptScheme. Ominaisuuksien isLifeSituationFor (domain) ja\nrelatedToLifeSituation (range) viittaukset päivitetty."
+  }, {
+    "@language" : "en",
+    "@value" : "Version 0.4.0 (2026-07-03):\n(1) Geographic hierarchy: added the transitive generic property isPartOfArea\nwith inverse containsArea, and its subproperties belongsToRegion,\nbelongsToCountry and belongsToEmploymentArea. The existing property\nbelongsToWellbeingServiceCounty was linked into the same hierarchy as a\nsubproperty. Added class EmploymentArea. Added the property chain\nhasLocation o isPartOfArea -> hasLocation, so that location propagates\nupwards through the area hierarchy. The domain of hasLocation was widened\nto cover both service units and organisations (union).\n(2) Social security core concepts: added classes EligibilityCriterion\n(with legal-basis reference), Customer with role relations (roleOfCustomer,\nhasCustomerRole; applicant, user and beneficiary as customer roles),\nBeneficiary, Payment, Recovery, AppealBody and Income, with their properties.\n"
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
@@ -273,6 +374,49 @@
   }, {
     "@language" : "sv",
     "@value" : "Ändringssökande"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#AppealBody",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Appeal body: an organisation handling appeals, e.g. the Social Security Appeal Board (SAMU) or the Insurance Court."
+  }, {
+    "@language" : "fi",
+    "@value" : "Muutoksenhakuelin: valitusasioita käsittelevä toimielin, esim. sosiaaliturva-asioiden muutoksenhakulautakunta (SAMU) tai vakuutusoikeus."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Appeal body"
+  }, {
+    "@language" : "sv",
+    "@value" : "Besvärsinstans"
+  }, {
+    "@language" : "fi",
+    "@value" : "Muutoksenhakuelin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Organisation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A body that handles appeals and requests for rectification, e.g. the Social Security Appeal Board or the Insurance Court."
+  }, {
+    "@language" : "fi",
+    "@value" : "Valitus- ja oikaisuvaatimusasioita käsittelevä toimielin, esimerkiksi sosiaaliturva-asioiden muutoksenhakulautakunta tai vakuutusoikeus."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Appeal body"
+  }, {
+    "@language" : "sv",
+    "@value" : "Besvärsinstans"
+  }, {
+    "@language" : "fi",
+    "@value" : "Muutoksenhakuelin"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Applicant",
@@ -421,6 +565,49 @@
     "@value" : "Liitettä tarvitaan joskus hakemuksen liitteeksi; pakollisuus on hakemus- tai etuuskohtaista (kuvataan SHACLissa, ei luokkatasolla)."
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#Beneficiary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Beneficiary: recipient of a benefit. Distinguished from the applicant: e.g. child benefit is applied for by a guardian, and the payment recipient may be a different party."
+  }, {
+    "@language" : "fi",
+    "@value" : "Etuuden saaja. Erotetaan hakijasta: esim. lapsilisän hakija on huoltaja, ja maksun saaja voi olla eri henkilö tai taho (esim. kunta tai vuokranantaja)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Beneficiary"
+  }, {
+    "@language" : "fi",
+    "@value" : "Etuuden saaja"
+  }, {
+    "@language" : "sv",
+    "@value" : "Förmånstagare"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An agent who receives a benefit. The beneficiary is distinguished from the applicant and from the payment recipient, which may be different parties."
+  }, {
+    "@language" : "fi",
+    "@value" : "Toimija, joka saa etuutta. Saaja erotetaan hakijasta ja maksun saajasta, jotka voivat olla eri tahoja."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Beneficiary"
+  }, {
+    "@language" : "fi",
+    "@value" : "Etuuden saaja"
+  }, {
+    "@language" : "sv",
+    "@value" : "Förmånstagare"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#Benefit",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -561,6 +748,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A category used to group related Kela benefits together."
+  }, {
+    "@language" : "fi",
+    "@value" : "Kelan etuuksien ryhmittelyssä käytettävä luokka, joka kokoaa toisiinsa liittyvät etuudet yhteen ryhmään."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -595,6 +791,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Location"
   } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A country or state, used e.g. to express residence requirements and cross-border situations."
+  }, {
+    "@language" : "fi",
+    "@value" : "Valtio. Käytetään esimerkiksi asumisedellytyksen ja rajat ylittävien tilanteiden kuvaamiseen."
+  } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://schema.org/Country"
   } ],
@@ -611,6 +814,53 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
     "@value" : "Lähdeontologiassa kuvattu suoraan schema:Country-luokkana; ydinmallissa määritelty omana luokkana ja linkitetty skos:exactMatch-suhteella."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#Customer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Asiakas: henkilö tai taho, jolla on asiakkuus sosiaaliturvan toimeenpanijaan. Asiakas on pysyvä identiteetti, johon tilannekohtaiset roolit (hakija, käyttäjä, etuuden saaja) kiinnittyvät roolisuhteen kautta."
+  }, {
+    "@language" : "en",
+    "@value" : "Customer: a person or party having a customer relationship with the social security administrator. The customer is the persistent identity to which contextual roles (applicant, user, beneficiary) are attached via the role-of-customer relation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "Asiakas"
+  }, {
+    "@language" : "en",
+    "@value" : "Customer"
+  }, {
+    "@language" : "sv",
+    "@value" : "Kund"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A person or community that receives, or has the possibility to receive, value from a service provided by Kela."
+  }, {
+    "@language" : "fi",
+    "@value" : "Henkilö tai yhteisö, joka saa tai jolla on mahdollisuus saada arvoa Kelan tarjoamasta palvelusta."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "Asiakas"
+  }, {
+    "@language" : "en",
+    "@value" : "Customer"
+  }, {
+    "@language" : "sv",
+    "@value" : "Kund"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "fi",
+    "@value" : "Asiakkaat voivat olla ulkoisia tai sisäisiä. Asiakkaat voivat olla henkilöasiakkaita tai yhteisöasiakkaita. \n                Kelan asiakas saa joko suoraan tai välillisesti Kelan tarjoamaa palvelua, kuten esimerkiksi Kelan etuutta tai Kelan tuottamaa tietopalvelua. Yleiskielessä asiakkaalla tarkoitetaan toimijaa, joka hankkii tai saa palveluja tai hankkii tuotteita. \n                Tällainen toimija voi olla henkilö, henkilöryhmä tai organisaatio. Eepoksessa käytetään termiä \"customer\" puhuttaessa Kelan henkilöasiakkaista.\n                "
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#DataProduct",
@@ -706,6 +956,132 @@
     "@value" : "Päätös"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#EligibilityCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Eligibility criterion: an individual condition affecting entitlement to a benefit (e.g. age limit, residence requirement, income limit, employment condition). Reified so that each criterion can carry its own legal basis and parameters."
+  }, {
+    "@language" : "fi",
+    "@value" : "Etuuskriteeri: yksittäinen ehto, jonka täyttyminen vaikuttaa oikeuteen saada etuus (esim. ikäraja, asumisedellytys, tuloraja, työssäoloehto). Reifioituna luokkana kriteeri voi kantaa oman lakiperustansa ja parametrinsa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Eligibility criterion"
+  }, {
+    "@language" : "fi",
+    "@value" : "Etuuskriteeri"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://data.europa.eu/m8g/Criterion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An individual condition affecting entitlement to a benefit, e.g. an age limit, residence requirement, income limit or employment condition."
+  }, {
+    "@language" : "fi",
+    "@value" : "Yksittäinen ehto, jonka täyttyminen vaikuttaa oikeuteen saada etuus, esimerkiksi ikäraja, asumisedellytys, tuloraja tai työssäoloehto."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Eligibility criterion"
+  }, {
+    "@language" : "fi",
+    "@value" : "Etuuskriteeri"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#EmploymentArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Employment area: a statutory area formed by municipalities responsible for organising public employment services (Finnish TE services reform 2025)."
+  }, {
+    "@language" : "fi",
+    "@value" : "Työllisyysalue: kuntien muodostama työvoimapalveluiden järjestämisvastuualue (TE-palvelut 2025 -uudistus)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Employment area"
+  }, {
+    "@language" : "sv",
+    "@value" : "Sysselsättningsområde"
+  }, {
+    "@language" : "fi",
+    "@value" : "Työllisyysalue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A statutory area formed by municipalities responsible for organising public employment services (Finnish TE services reform 2025)."
+  }, {
+    "@language" : "fi",
+    "@value" : "Kuntien muodostama, julkisten työvoimapalveluiden järjestämisestä vastaava lakisääteinen alue (TE-palvelut 2025 -uudistus)."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Employment area"
+  }, {
+    "@language" : "sv",
+    "@value" : "Sysselsättningsområde"
+  }, {
+    "@language" : "fi",
+    "@value" : "Työllisyysalue"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#Income",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Income: an income item of a person or recipient unit (e.g. wage, self-employment income, capital income, benefit income) that may be taken into account in means testing."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tulo: henkilön tai saajayksikön tuloerä (esim. palkka, yrittäjätulo, pääomatulo, etuustulo), joka voidaan ottaa huomioon etuuden tulovähenteisyydessä tai tarveharkinnassa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Income"
+  }, {
+    "@language" : "sv",
+    "@value" : "Inkomst"
+  }, {
+    "@language" : "fi",
+    "@value" : "Tulo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An income item of a person or recipient unit — e.g. wage, self-employment income, capital income or benefit income — that may be taken into account in a benefit's income or means testing."
+  }, {
+    "@language" : "fi",
+    "@value" : "Henkilön tai saajayksikön tuloerä, esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo, joka voidaan ottaa huomioon etuuden tulovähenteisyydessä tai tarveharkinnassa."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Income"
+  }, {
+    "@language" : "sv",
+    "@value" : "Inkomst"
+  }, {
+    "@language" : "fi",
+    "@value" : "Tulo"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#LegalResource",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -747,6 +1123,16 @@
   }, {
     "@language" : "fi",
     "@value" : "Säädöksiä ovat esimerkiksi lait ja asetukset sekä viranomaisten antamat oikeussäännöt."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "sv",
+    "@value" : "Juridisk resurs"
+  }, {
+    "@language" : "en",
+    "@value" : "Legal Resource"
+  }, {
+    "@language" : "fi",
+    "@value" : "Säädös"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#LegalResourcePart",
@@ -796,33 +1182,32 @@
     "@value" : "Legal Resource Part"
   } ]
 }, {
-  "@id" : "https://kela.fi/ontology/kelao#LifeSituationClassification",
+  "@id" : "https://kela.fi/ontology/kelao#LifeSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi",
-    "@value" : "Elämäntilanteilla tarkoitetaan sellaisia muutosvaiheita, joita kuvaa väliaikaisuus, erityisten palvelujen ja tiedon tarve sekä niihin kohdennetut palvelut.\n        Elämäntilanneluokitus on toteutettu muualla skos-luokituksena. Luokituksen luokat ovat käsitteitä. Luokitus on luonnos. Pohjana on käytetty\n        DVV:n elämäntapahtumaluokitusta, joka perustuu EU-luokitukseen."
-  }, {
     "@language" : "en",
-    "@value" : "Life situations refer to phases of change characterized by temporary nature, the need for special services and information, and services targeted to them."
+    "@value" : "A life situation is a phase of change or circumstance in a citizen's life associated with a need for public services and benefits. Individual life situations form the life-situation classification (a skos:ConceptScheme)."
+  }, {
+    "@language" : "fi",
+    "@value" : "Elämäntilanne on kansalaisen elämän muutosvaihe tai tilanne, johon liittyy julkisten palvelujen ja etuuksien tarve. Yksittäiset elämäntilanteet muodostavat elämäntilanneluokituksen (skos:ConceptScheme). Luokitus on luonnos; pohjana on käytetty\n        DVV:n elämäntapahtumaluokitusta, joka perustuu EU-luokitukseen."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "fi",
-    "@value" : "ElämäntilanneLuokitus"
-  }, {
-    "@language" : "sv",
-    "@value" : "Klassificering av livssituationer"
+    "@value" : "Elämäntilanne"
   }, {
     "@language" : "en",
-    "@value" : "Life Situation Classification"
+    "@value" : "Life Situation"
+  }, {
+    "@language" : "sv",
+    "@value" : "Livssituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
-    "@id" : "http://iri.suomi.fi/model/suomiptv2/LifeEventClassification"
+  }, {
+    "@id" : "_:genid15"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "fi",
@@ -833,13 +1218,13 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
-    "@value" : "ElämäntilanneLuokitus"
-  }, {
-    "@language" : "sv",
-    "@value" : "Klassificering av livssituationer"
+    "@value" : "Elämäntilanne"
   }, {
     "@language" : "en",
-    "@value" : "Life Situation Classification"
+    "@value" : "Life Situation"
+  }, {
+    "@language" : "sv",
+    "@value" : "Livssituation"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Location",
@@ -879,16 +1264,10 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
-    "@value" : "A spatial region or named place"
-  }, {
-    "@language" : "en",
     "@value" : "Any geographic area, irrespective of size or administrative level."
   }, {
     "@language" : "fi",
     "@value" : "Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta."
-  }, {
-    "@language" : "en",
-    "@value" : "Union of all the geo classes"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -929,6 +1308,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."
+  }, {
+    "@language" : "fi",
+    "@value" : "Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
@@ -976,6 +1362,13 @@
   "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Organization"
   } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An actor that is an association of individuals with a common goal and a purposeful structure."
+  }, {
+    "@language" : "fi",
+    "@value" : "Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne."
+  } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://iri.suomi.fi/model/suomiptv2/Organization"
   }, {
@@ -994,6 +1387,96 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
     "@value" : "KELAO-kontekstissa vastaa PTV:n Organization-käsitettä ja \n        schema.org/Organization-käsitettä. Käytetään kuvaamaan kaikkia \n         toimijaorganisaatioita sektorirajat ylittäen (julkinen, yksityinen, \n         kolmas sektori). EU Core Public Organisation on tämän erikoistapaus."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#Payment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Maksu tai maksuerä: ratkaisun perusteella maksettu etuussuoritus. Kytkee ratkaisun, etuuden ja saajan rahavirtaan."
+  }, {
+    "@language" : "en",
+    "@value" : "Payment or instalment: a benefit disbursement made on the basis of a decision. Links the decision, benefit and recipient to the money flow."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "sv",
+    "@value" : "Betalning"
+  }, {
+    "@language" : "fi",
+    "@value" : "Maksu"
+  }, {
+    "@language" : "en",
+    "@value" : "Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A benefit disbursement, or an instalment of one, made on the basis of a decision, linking the decision, benefit and recipient to the money flow."
+  }, {
+    "@language" : "fi",
+    "@value" : "Ratkaisun perusteella maksettu etuussuoritus tai sen maksuerä, joka kytkee ratkaisun, etuuden ja saajan rahavirtaan."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "sv",
+    "@value" : "Betalning"
+  }, {
+    "@language" : "fi",
+    "@value" : "Maksu"
+  }, {
+    "@language" : "en",
+    "@value" : "Payment"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#Recovery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Recovery: reclaiming a benefit paid in excess or without grounds from the recipient."
+  }, {
+    "@language" : "fi",
+    "@value" : "Takaisinperintä: liikaa tai perusteetta maksetun etuuden perintä takaisin saajalta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recovery"
+  }, {
+    "@language" : "fi",
+    "@value" : "Takaisinperintä"
+  }, {
+    "@language" : "sv",
+    "@value" : "Återkrav"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Entity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Claim for recovery"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fi",
+    "@value" : "Liikaa tai perusteetta maksetun etuuden periminen takaisin saajalta."
+  }, {
+    "@language" : "en",
+    "@value" : "The reclaiming from the recipient of a benefit that was paid in excess or without grounds."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "Recovery"
+  }, {
+    "@language" : "fi",
+    "@value" : "Takaisinperintä"
+  }, {
+    "@language" : "sv",
+    "@value" : "Återkrav"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Region",
@@ -1020,6 +1503,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A region (maakunta): an areal unit of regional development and planning composed of municipalities."
+  }, {
+    "@language" : "fi",
+    "@value" : "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
@@ -1159,7 +1649,7 @@
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@language" : "fi",
-    "@value" : "Palvelupiste"
+    "@value" : "Palveluyksikkö"
   } ],
   "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
     "@id" : "http://iri.suomi.fi/model/suomiptv2/ServiceChannel"
@@ -1205,6 +1695,13 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Benefit"
   } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A complete, self-standing benefit that can be granted on its own and may consist of benefit components."
+  }, {
+    "@language" : "fi",
+    "@value" : "Kokonainen, itsenäinen etuus, joka voidaan myöntää sellaisenaan ja joka voi koostua osaetuuksista (etuuden osista)."
+  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "Itsenäinen etuus"
@@ -1237,6 +1734,15 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  }, {
+    "@id" : "_:genid16"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "fi",
+    "@value" : "Säädöksen tyyppi sen antajan ja oikeudellisen aseman mukaan, esimerkiksi laki, asetus tai EU-asetus. Tyypit määritellään erillisessä SKOS-luokituksessa."
+  }, {
+    "@language" : "en",
+    "@value" : "The type of a statute according to its issuer and legal status, e.g. an act, a decree or an EU regulation. The types are defined in a separate SKOS classification."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
@@ -1316,6 +1822,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."
+  }, {
+    "@language" : "fi",
+    "@value" : "Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -1429,7 +1942,7 @@
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#alternative",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "An established acronym or alternative name for the legal resource."
@@ -1446,9 +1959,6 @@
   }, {
     "@language" : "en",
     "@value" : "law acronym"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#altLabel"
@@ -1488,7 +1998,7 @@
     "@value" : "määrä"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://schema.org/amount"
@@ -1533,6 +2043,39 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
     "@value" : "Käytetään kelao:Appeal-instansseilla (xsd:date)."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#appealHandledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The appeal is handled by this appeal body."
+  }, {
+    "@language" : "fi",
+    "@value" : "Valituksen käsittelee tämä muutoksenhakuelin."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Appeal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "appeal handled by"
+  }, {
+    "@language" : "fi",
+    "@value" : "käsittelevä muutoksenhakuelin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#AppealBody"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "appeal handled by"
+  }, {
+    "@language" : "fi",
+    "@value" : "käsittelevä muutoksenhakuelin"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#appealsDecision",
@@ -1804,6 +2347,114 @@
     "@value" : "Käytetään kelao:Attachment-instansseilla (xsd:anyURI)."
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#belongsToCountry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Alue kuuluu tähän valtioon. Käytetään maakunnille, hyvinvointialueille, työllisyysalueille ja tarvittaessa suoraan kunnille."
+  }, {
+    "@language" : "en",
+    "@value" : "The area belongs to this country. Used for regions, wellbeing service counties, employment areas and, where needed, directly for municipalities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to country"
+  }, {
+    "@language" : "fi",
+    "@value" : "kuuluu valtioon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Country"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#isPartOfArea"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "belongs to country"
+  }, {
+    "@language" : "fi",
+    "@value" : "kuuluu valtioon"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#belongsToEmploymentArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Kunta kuuluu tähän työllisyysalueeseen. Ei pakollinen: esim. Ahvenanmaan kunnilla ei ole työllisyysaluetta."
+  }, {
+    "@language" : "en",
+    "@value" : "The municipality belongs to this employment area. Optional: e.g. municipalities in Åland have no employment area."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to employment area"
+  }, {
+    "@language" : "fi",
+    "@value" : "kuuluu työllisyysalueeseen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#EmploymentArea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#isPartOfArea"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "belongs to employment area"
+  }, {
+    "@language" : "fi",
+    "@value" : "kuuluu työllisyysalueeseen"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#belongsToRegion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Kunta kuuluu tähän maakuntaan. Rinnakkainen hierarkia hyvinvointialueeseen kuulumisen kanssa: kunta kuuluu sekä maakuntaan että hyvinvointialueeseen."
+  }, {
+    "@language" : "en",
+    "@value" : "The municipality belongs to this region (maakunta). Parallel to wellbeing service county membership; the two hierarchies are independent."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Municipality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "belongs to region"
+  }, {
+    "@language" : "fi",
+    "@value" : "kuuluu maakuntaan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Region"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#isPartOfArea"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "belongs to region"
+  }, {
+    "@language" : "fi",
+    "@value" : "kuuluu maakuntaan"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#belongsToWellbeingServiceCounty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1828,6 +2479,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://kela.fi/ontology/kelao#WellbeingServiceCounty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#isPartOfArea"
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1902,6 +2556,75 @@
   }, {
     "@language" : "fi",
     "@value" : "laskentaperuste"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#containsArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A geographic area contains another geographic area. Inverse of 'is part of area'."
+  }, {
+    "@language" : "fi",
+    "@value" : "Alue sisältää toisen maantieteellisen alueen. Käänteisominaisuus ominaisuudelle 'on osa aluetta'."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contains area"
+  }, {
+    "@language" : "fi",
+    "@value" : "sisältää alueen"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://schema.org/containsPlace"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "contains area"
+  }, {
+    "@language" : "fi",
+    "@value" : "sisältää alueen"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#criterionLegalBasis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Kriteerin oikeusperusta: viittaus säädökseen tai sen osaan (ELI-URI, pykälätaso)."
+  }, {
+    "@language" : "en",
+    "@value" : "Legal basis of the criterion: reference to a legal resource or its subdivision (ELI URI, section level)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#EligibilityCriterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "criterion legal basis"
+  }, {
+    "@language" : "fi",
+    "@value" : "kriteerin oikeusperusta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#LegalResource"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "criterion legal basis"
+  }, {
+    "@language" : "fi",
+    "@value" : "kriteerin oikeusperusta"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#currentVersion",
@@ -2554,6 +3277,42 @@
     "@value" : "on käsite"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#hasCustomerRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Asiakkaalla on tämä rooli (hakija, käyttäjä tai etuuden saaja). Sama asiakas voi olla useassa roolissa samanaikaisesti tai eri yhteyksissä."
+  }, {
+    "@language" : "en",
+    "@value" : "The customer has this role (applicant, user or beneficiary). The same customer may hold several roles simultaneously or in different contexts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Customer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "asiakkaan rooli"
+  }, {
+    "@language" : "en",
+    "@value" : "has customer role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#roleOfCustomer"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "asiakkaan rooli"
+  }, {
+    "@language" : "en",
+    "@value" : "has customer role"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#hasDecision",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -2587,7 +3346,73 @@
     "@value" : "has decision"
   } ]
 }, {
-  "@id" : "https://kela.fi/ontology/kelao#hasGeographicArea",
+  "@id" : "https://kela.fi/ontology/kelao#hasEligibilityCriterion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Etuudella on tämä kelpoisuuskriteeri."
+  }, {
+    "@language" : "en",
+    "@value" : "The benefit has this eligibility criterion."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Benefit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has eligibility criterion"
+  }, {
+    "@language" : "fi",
+    "@value" : "kriteerinä"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#EligibilityCriterion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has eligibility criterion"
+  }, {
+    "@language" : "fi",
+    "@value" : "kriteerinä"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#hasIncome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Henkilöllä on tämä tuloerä."
+  }, {
+    "@language" : "en",
+    "@value" : "The agent has this income item."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has income"
+  }, {
+    "@language" : "fi",
+    "@value" : "tulona"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Income"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "has income"
+  }, {
+    "@language" : "fi",
+    "@value" : "tulona"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#hasLocation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2597,7 +3422,7 @@
     "@value" : "Palvelupiste sijaitsee tällä maantieteellisellä alueella."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://kela.fi/ontology/kelao#ServiceUnit"
+    "@id" : "_:genid5"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
@@ -2611,6 +3436,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyChainAxiom" : [ {
+    "@list" : [ {
+      "@id" : "https://kela.fi/ontology/kelao#hasLocation"
+    }, {
+      "@id" : "https://kela.fi/ontology/kelao#isPartOfArea"
+    } ]
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2885,6 +3717,39 @@
     "@value" : "Käytetään kelao:LegalResource-instansseilla. \n         Arvo on xsd:anyURI-muotoinen ELI-URI Finlex-palveluun, \n         esim. 'https://www.finlex.fi/fi/laki/ajantasa/2007/20071301'."
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#incomeConsideredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The income item is taken into account in the means testing of this benefit."
+  }, {
+    "@language" : "fi",
+    "@value" : "Tuloerä otetaan huomioon tämän etuuden tulovähenteisyydessä tai tarveharkinnassa."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Income"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "huomioidaan etuudessa"
+  }, {
+    "@language" : "en",
+    "@value" : "income considered in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Benefit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "huomioidaan etuudessa"
+  }, {
+    "@language" : "en",
+    "@value" : "income considered in"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#indexLinked",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3003,6 +3868,42 @@
     "@value" : "SEL"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#isCriterionFor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Kriteeri koskee tätä etuutta."
+  }, {
+    "@language" : "en",
+    "@value" : "The criterion applies to this benefit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#EligibilityCriterion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is criterion for"
+  }, {
+    "@language" : "fi",
+    "@value" : "on kriteeri etuudelle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Benefit"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#hasEligibilityCriterion"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "is criterion for"
+  }, {
+    "@language" : "fi",
+    "@value" : "on kriteeri etuudelle"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#isEligibleFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3046,7 +3947,7 @@
     "@value" : "On elämäntilanne kohteelle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://kela.fi/ontology/kelao#LifeSituationClassification"
+    "@id" : "https://kela.fi/ontology/kelao#LifeSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
@@ -3067,6 +3968,47 @@
   }, {
     "@language" : "fi",
     "@value" : "on elämäntilanne kohteelle"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#isPartOfArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A geographic area is part of another geographic area. Transitive generic property; specific administrative containment relations are its subproperties."
+  }, {
+    "@language" : "fi",
+    "@value" : "Alue on osa toista maantieteellistä aluetta. Transitiivinen yleisominaisuus, jonka aliominaisuuksia hallinnolliset kuulumissuhteet (kunta-hyvinvointialue, kunta-maakunta, alue-valtio) ovat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is part of area"
+  }, {
+    "@language" : "fi",
+    "@value" : "on osa aluetta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Location"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#containsArea"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#closeMatch" : [ {
+    "@id" : "http://schema.org/containedInPlace"
+  }, {
+    "@id" : "http://www.geonames.org/ontology#parentFeature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "is part of area"
+  }, {
+    "@language" : "fi",
+    "@value" : "on osa aluetta"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#isPartOfBenefit",
@@ -3219,7 +4161,7 @@
     "@value" : "Yläikäraja"
   }, {
     "@language" : "sv",
-    "@value" : "Åldersgräns"
+    "@value" : "Övre åldersgräns"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
@@ -3232,7 +4174,7 @@
     "@value" : "yläikäraja"
   }, {
     "@language" : "sv",
-    "@value" : "åldersgräns"
+    "@value" : "övre åldersgräns"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -3245,7 +4187,7 @@
     "@value" : "yläikäraja"
   }, {
     "@language" : "sv",
-    "@value" : "åldersgräns"
+    "@value" : "övre åldersgräns"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#meansTest",
@@ -3340,7 +4282,7 @@
     "@value" : "Minimum age limit"
   }, {
     "@language" : "sv",
-    "@value" : "Åldersgräns"
+    "@value" : "Nedre åldersgräns"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
@@ -3353,7 +4295,7 @@
     "@value" : "minimum age"
   }, {
     "@language" : "sv",
-    "@value" : "åldersgräns"
+    "@value" : "nedre åldersgräns"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -3366,7 +4308,7 @@
     "@value" : "minimum age"
   }, {
     "@language" : "sv",
-    "@value" : "åldersgräns"
+    "@value" : "nedre åldersgräns"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#minimumAmount",
@@ -3670,6 +4612,105 @@
     "@value" : "part type"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#paymentBasedOnDecision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Maksu perustuu tähän ratkaisuun."
+  }, {
+    "@language" : "en",
+    "@value" : "The payment is based on this decision."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "payment based on decision"
+  }, {
+    "@language" : "fi",
+    "@value" : "perustuu ratkaisuun"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Decision"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "payment based on decision"
+  }, {
+    "@language" : "fi",
+    "@value" : "perustuu ratkaisuun"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#paymentOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Maksu on tämän etuuden suoritus."
+  }, {
+    "@language" : "en",
+    "@value" : "The payment is a disbursement of this benefit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "etuuden maksu"
+  }, {
+    "@language" : "en",
+    "@value" : "payment of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Benefit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "etuuden maksu"
+  }, {
+    "@language" : "en",
+    "@value" : "payment of"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#paymentRecipient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Maksun saaja. Voi olla muu kuin hakija (esim. vuokranantaja tai kunta)."
+  }, {
+    "@language" : "en",
+    "@value" : "Recipient of the payment. May differ from the applicant (e.g. landlord or municipality)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Payment"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "maksun saajana"
+  }, {
+    "@language" : "en",
+    "@value" : "payment recipient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "maksun saajana"
+  }, {
+    "@language" : "en",
+    "@value" : "payment recipient"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#postOffice",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3854,6 +4895,39 @@
     "@value" : "tarkoitus"
   } ]
 }, {
+  "@id" : "https://kela.fi/ontology/kelao#receivesBenefit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Saaja saa tätä etuutta."
+  }, {
+    "@language" : "en",
+    "@value" : "The beneficiary receives this benefit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Beneficiary"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "receives benefit"
+  }, {
+    "@language" : "fi",
+    "@value" : "saa etuutta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Benefit"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "en",
+    "@value" : "receives benefit"
+  }, {
+    "@language" : "fi",
+    "@value" : "saa etuutta"
+  } ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao#recipientUnit",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -3891,6 +4965,39 @@
   }, {
     "@language" : "fi",
     "@value" : "saajayksikkö"
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#recoveryConcerns",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Takaisinperintä kohdistuu tähän maksuun."
+  }, {
+    "@language" : "en",
+    "@value" : "The recovery concerns this payment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Recovery"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "kohdistuu maksuun"
+  }, {
+    "@language" : "en",
+    "@value" : "recovery concerns"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Payment"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "kohdistuu maksuun"
+  }, {
+    "@language" : "en",
+    "@value" : "recovery concerns"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#reducing",
@@ -4057,7 +5164,7 @@
     "@value" : "related to life situation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://kela.fi/ontology/kelao#LifeSituationClassification"
+    "@id" : "https://kela.fi/ontology/kelao#LifeSituation"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "https://kela.fi/ontology/kelao#isLifeSituationFor"
@@ -4270,6 +5377,39 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
     "@value" : "Käytetään kelao:DataProduct-instansseilla."
+  } ]
+}, {
+  "@id" : "https://kela.fi/ontology/kelao#roleOfCustomer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Rooli (hakija, käyttäjä tai etuuden saaja) kuuluu tälle asiakkaalle. Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen."
+  }, {
+    "@language" : "en",
+    "@value" : "The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid10"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://kela.fi/ontology/kelao"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "asiakkaan roolina"
+  }, {
+    "@language" : "en",
+    "@value" : "role of customer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://kela.fi/ontology/kelao#Customer"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
+    "@language" : "fi",
+    "@value" : "asiakkaan roolina"
+  }, {
+    "@language" : "en",
+    "@value" : "role of customer"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#serviceChannelId",
