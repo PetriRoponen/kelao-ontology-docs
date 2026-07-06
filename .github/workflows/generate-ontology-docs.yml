@@ -82,6 +82,9 @@ jobs:
             echo '</html>'
           } > index.html
 
+          # .nojekyll estää GitHubin Jekyll-prosessoinnin
+          touch .nojekyll
+
       - name: Commit and push updated documentation
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
