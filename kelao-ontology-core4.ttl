@@ -1636,6 +1636,9 @@ prov:Entity rdf:type owl:Class .
         skos:prefLabel "Applicant"@en ,
                 "Hakija"@fi ,
                 "Sökande"@sv ;
+        rdfs:comment "Henkilö tai organisaatio, joka hakee etuutta"@fi ;
+        skos:altLabel "Etuudenhakija"@fi, "Förmånssökande"@sv ;
+        rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c74> ;
         skos:scopeNote "Hakija on prosessirooli. kelao:User on sovelluksen käyttäjä; sama henkilö voi olla molempia."@fi .
 
 
@@ -1651,7 +1654,7 @@ prov:Entity rdf:type owl:Class .
                 "Etuushakemus"@fi ,
                 "Förmånsansökan"@sv ;
         skos:definition "An applicant's request for a benefit or service. Filing initiates processing of the case."@en ,
-                "Asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi ,
+                "Asiakirja, jolla etuudenhakija esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi ,
                 "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."@fi ;
         skos:prefLabel "Ansökan"@sv ,
                 "Application"@en ,
