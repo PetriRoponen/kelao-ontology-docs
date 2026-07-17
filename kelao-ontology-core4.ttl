@@ -1820,8 +1820,8 @@ prov:Entity rdf:type owl:Class .
         skos:definition "Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne."@fi ,
                 "An actor that is an association of individuals with a common goal and a purposeful structure."@en ;
         rdfs:subClassOf org:Organization ;
-        rdfs:comment "An actor that is an association of individuals with a common goal and a purposeful structure"@en ,
-                "Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne"@fi ;
+        #rdfs:comment "An actor that is an association of individuals with a common goal and a purposeful structure"@en ,
+        #        "Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne"@fi ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "Organisaatio"@fi ,
                 "Organisation"@sv ,
@@ -1911,8 +1911,8 @@ prov:Entity rdf:type owl:Class .
                 "A country or state, used e.g. to express residence requirements and cross-border situations."@en ;
          rdfs:subClassOf :Location ;
          rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-         rdfs:comment "A country / state. Used e.g. to express residence requirements and cross-border situations."@en ,
-                "Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen."@fi ;
+         #rdfs:comment "A country / state. Used e.g. to express residence requirements and cross-border situations."@en ,
+         #       "Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen."@fi ;
          rdfs:label "Country"@en ,
                 "Valtio"@fi ,
                 "Stat"@sv ;
@@ -1981,8 +1981,8 @@ prov:Entity rdf:type owl:Class .
                 "A region (maakunta): an areal unit of regional development and planning composed of municipalities."@en ;
         rdfs:subClassOf :Location ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-        rdfs:comment "A region (maakunta): an areal unit of regional development and planning composed of municipalities."@en ,
-                "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."@fi ;
+        #rdfs:comment "A region (maakunta): an areal unit of regional development and planning composed of municipalities."@en ,
+        #        "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."@fi ;
         rdfs:label "Maakunta"@fi ,
                 "Region"@en ,
                 "Landskap"@sv ;
