@@ -1964,8 +1964,8 @@ prov:Entity rdf:type owl:Class .
                 "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."@en ;
         rdfs:subClassOf :Location ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-        rdfs:comment "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."@en ,
-                "Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla."@fi ;
+        #rdfs:comment "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."@en ,
+        #       "Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla."@fi ;
         rdfs:label "Municipality"@en ,
                 "Kommun"@sv ,
                 "Kunta"@fi ;
@@ -2036,8 +2036,8 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                 "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."@en ;
         rdfs:subClassOf :Location ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-        rdfs:comment "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."@en ,
-                "Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue."@fi ;
+        #rdfs:comment "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."@en ,
+        #       "Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue."@fi ;
         rdfs:label "Hyvinvointialue"@fi ,
                 "Wellbeing Service County"@en ,
                 "Välfärdsområde"@sv ;
