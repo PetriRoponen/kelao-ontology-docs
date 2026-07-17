@@ -1298,13 +1298,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Municipality",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."
-  }, {
-    "@language" : "fi",
-    "@value" : "Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],
@@ -1812,13 +1805,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#WellbeingServiceCounty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."
-  }, {
-    "@language" : "fi",
-    "@value" : "Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],

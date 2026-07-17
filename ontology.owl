@@ -2981,8 +2981,6 @@ Beneficiary, Payment, Recovery, AppealBody and Income, with their properties.
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Municipality">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
-        <rdfs:comment xml:lang="en">A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">Kommun</rdfs:label>
         <rdfs:label xml:lang="fi">Kunta</rdfs:label>
@@ -3224,8 +3222,6 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#WellbeingServiceCounty">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
-        <rdfs:comment xml:lang="en">A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">Hyvinvointialue</rdfs:label>
         <rdfs:label xml:lang="sv">Välfärdsområde</rdfs:label>

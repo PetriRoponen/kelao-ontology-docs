@@ -2251,8 +2251,6 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#Municipality
 :Municipality rdf:type owl:Class ;
               rdfs:subClassOf :Location ;
-              rdfs:comment "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."@en ,
-                           "Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla."@fi ;
               rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
               rdfs:label "Kommun"@sv ,
                          "Kunta"@fi ,
@@ -2448,8 +2446,6 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
 ###  https://kela.fi/ontology/kelao#WellbeingServiceCounty
 :WellbeingServiceCounty rdf:type owl:Class ;
                         rdfs:subClassOf :Location ;
-                        rdfs:comment "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."@en ,
-                                     "Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue."@fi ;
                         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
                         rdfs:label "Hyvinvointialue"@fi ,
                                    "Välfärdsområde"@sv ,

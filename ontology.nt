@@ -2051,8 +2051,6 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#Municipality
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kela.fi/ontology/kelao#Location> .
-<https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#comment> "A Finnish municipality. Municipalities are identified using Suomi.fi code list URIs."@en .
-<https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#comment> "Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla."@fi .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Kommun"@sv .
 <https://kela.fi/ontology/kelao#Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Kunta"@fi .
@@ -2232,8 +2230,6 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#WellbeingServiceCounty
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kela.fi/ontology/kelao#Location> .
-<https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#comment> "A wellbeing services county: a self-governing area responsible for organising health, social and rescue services in Finland."@en .
-<https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#comment> "Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue."@fi .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#label> "Hyvinvointialue"@fi .
 <https://kela.fi/ontology/kelao#WellbeingServiceCounty> <http://www.w3.org/2000/01/rdf-schema#label> "Välfärdsområde"@sv .
