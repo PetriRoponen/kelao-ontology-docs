@@ -780,13 +780,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Country",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A country / state. Used e.g. to express residence requirements and cross-border situations."
-  }, {
-    "@language" : "fi",
-    "@value" : "Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],
@@ -1338,13 +1331,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Organisation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An actor that is an association of individuals with a common goal and a purposeful structure"
-  }, {
-    "@language" : "fi",
-    "@value" : "Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],
@@ -1486,13 +1472,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Region",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A region (maakunta): an areal unit of regional development and planning composed of municipalities."
-  }, {
-    "@language" : "fi",
-    "@value" : "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],

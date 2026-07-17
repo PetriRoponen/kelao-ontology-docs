@@ -2738,8 +2738,6 @@ Beneficiary, Payment, Recovery, AppealBody and Income, with their properties.
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Country">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
-        <rdfs:comment xml:lang="en">A country / state. Used e.g. to express residence requirements and cross-border situations.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">Country</rdfs:label>
         <rdfs:label xml:lang="sv">Stat</rdfs:label>
@@ -3000,8 +2998,6 @@ Beneficiary, Payment, Recovery, AppealBody and Income, with their properties.
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Organisation">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
-        <rdfs:comment xml:lang="en">An actor that is an association of individuals with a common goal and a purposeful structure</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">Organisaatio</rdfs:label>
         <rdfs:label xml:lang="sv">Organisation</rdfs:label>
@@ -3069,8 +3065,6 @@ Beneficiary, Payment, Recovery, AppealBody and Income, with their properties.
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Region">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
-        <rdfs:comment xml:lang="en">A region (maakunta): an areal unit of regional development and planning composed of municipalities.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">Landskap</rdfs:label>
         <rdfs:label xml:lang="fi">Maakunta</rdfs:label>

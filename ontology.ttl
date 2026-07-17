@@ -2054,8 +2054,6 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#Country
 :Country rdf:type owl:Class ;
          rdfs:subClassOf :Location ;
-         rdfs:comment "A country / state. Used e.g. to express residence requirements and cross-border situations."@en ,
-                      "Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen."@fi ;
          rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
          rdfs:label "Country"@en ,
                     "Stat"@sv ,
@@ -2266,8 +2264,6 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#Organisation
 :Organisation rdf:type owl:Class ;
               rdfs:subClassOf <http://www.w3.org/ns/org#Organization> ;
-              rdfs:comment "An actor that is an association of individuals with a common goal and a purposeful structure"@en ,
-                           "Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne"@fi ;
               rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
               rdfs:label "Organisaatio"@fi ,
                          "Organisation"@sv ,
@@ -2323,8 +2319,6 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#Region
 :Region rdf:type owl:Class ;
         rdfs:subClassOf :Location ;
-        rdfs:comment "A region (maakunta): an areal unit of regional development and planning composed of municipalities."@en ,
-                     "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."@fi ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "Landskap"@sv ,
                    "Maakunta"@fi ,

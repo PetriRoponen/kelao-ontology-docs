@@ -1869,8 +1869,6 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#Country
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kela.fi/ontology/kelao#Location> .
-<https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "A country / state. Used e.g. to express residence requirements and cross-border situations."@en .
-<https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen."@fi .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
 <https://kela.fi/ontology/kelao#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Stat"@sv .
@@ -2065,8 +2063,6 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#Organisation
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
-<https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor that is an association of individuals with a common goal and a purposeful structure"@en .
-<https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2000/01/rdf-schema#comment> "Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne"@fi .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisaatio"@fi .
 <https://kela.fi/ontology/kelao#Organisation> <http://www.w3.org/2000/01/rdf-schema#label> "Organisation"@sv .
@@ -2116,8 +2112,6 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#Region
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://kela.fi/ontology/kelao#Location> .
-<https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "A region (maakunta): an areal unit of regional development and planning composed of municipalities."@en .
-<https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."@fi .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Landskap"@sv .
 <https://kela.fi/ontology/kelao#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Maakunta"@fi .
