@@ -20,7 +20,7 @@
 @base <https://kela.fi/ontology/kelao#> .
 
 <https://kela.fi/ontology/kelao> rdf:type owl:Ontology ;
-        owl:versionIRI <https://kela.fi/ontology/kelao/0.4.1> ;
+        owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/> ;
         dct:abstract """Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  
         organisaatiot, maantieteelliset alueet, palvelukanavat, tietotuotteet, lainsäädännön sekä sosiaaliturvan käsitteet.
         """@fi ,
@@ -45,7 +45,6 @@
         rdfs:label "Finnish Social Security Core Ontology"@en ,
                     "Sosiaaliturvan ydinontologia"@fi ;
         rdfs:seeAlso eli: ,
-                     <https://petriroponen.github.io/kelao-ontology-docs/> ,
                      m8g: ,
                      ptv: ,
                      dct: ,
@@ -245,15 +244,15 @@ skos:inScheme rdf:type owl:ObjectProperty .
 
 ###  https://kela.fi/ontology/kelao#appealsDecision
 :appealsDecision rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Appeal ;
-                 rdfs:range :Decision ;
-                 rdfs:comment "Päätös, johon muutoksenhaku kohdistuu."@fi ,
-                              "The decision the appeal is directed against."@en ;
-                 rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                 rdfs:label "appeals decision"@en ,
-                            "kohdistuu päätökseen"@fi ;
-                 skos:prefLabel "appeals decision"@en ,
-                        "kohdistuu päätökseen"@fi .
+        rdfs:domain :Appeal ;
+        rdfs:range :Decision ;
+        rdfs:comment "Päätös, johon muutoksenhaku kohdistuu."@fi ,
+                "The decision the appeal is directed against."@en ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "appeals decision"@en ,
+                "kohdistuu päätökseen"@fi ;
+        skos:prefLabel "appeals decision"@en ,
+                "kohdistuu päätökseen"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#applicationConcerns
@@ -284,107 +283,107 @@ skos:inScheme rdf:type owl:ObjectProperty .
 
 ###  https://kela.fi/ontology/kelao#broaderBenefit
 :broaderBenefit rdf:type owl:ObjectProperty ;
-                rdfs:domain :Benefit ;
-                rdfs:range :Benefit ;
-                rdfs:comment "Broader benefit"@en ,
-                             "Laajempi etuus"@fi ;
-                rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                rdfs:label "broader benefit"@en ,
-                           "laajempi etuus"@fi ;
-                skos:prefLabel "broader benefit"@en ,
-                        "laajempi etuus"@fi .
+        rdfs:domain :Benefit ;
+        rdfs:range :Benefit ;
+        rdfs:comment "Broader benefit"@en ,
+                "Laajempi etuus"@fi ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "broader benefit"@en ,
+                "laajempi etuus"@fi ;
+        skos:prefLabel "broader benefit"@en ,
+                "laajempi etuus"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#hasApplication
 :hasApplication rdf:type owl:ObjectProperty ;
-                rdfs:domain :Applicant ;
-                rdfs:range :Application ;
-                rdfs:comment "An application submitted by the applicant."@en ,
-                             "Hakijan jättämä hakemus."@fi ;
-                rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                rdfs:label "has application"@en ,
-                           "jätti hakemuksen"@fi ;
-                skos:prefLabel "has application"@en ,
-                        "jätti hakemuksen"@fi .
+        rdfs:domain :Applicant ;
+        rdfs:range :Application ;
+        rdfs:comment "An application submitted by the applicant."@en ,
+                "Hakijan jättämä hakemus."@fi ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "has application"@en ,
+                "jätti hakemuksen"@fi ;
+        skos:prefLabel "has application"@en ,
+                "jätti hakemuksen"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#hasAttachment
 :hasAttachment rdf:type owl:ObjectProperty ;
-               rdfs:domain :Application ;
-               rdfs:range :Attachment ;
-               rdfs:comment "An attachment belonging to the application."@en ,
-                            "Hakemukseen liittyvä liite."@fi ;
-               rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-               rdfs:label "hakemuksen liite"@fi ,
-                          "has attachment"@en ;
-               skos:prefLabel "hakemuksen liite"@fi ,
-                        "has attachment"@en .
+        rdfs:domain :Application ;
+        rdfs:range :Attachment ;
+        rdfs:comment "An attachment belonging to the application."@en ,
+                "Hakemukseen liittyvä liite."@fi ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "hakemuksen liite"@fi ,
+                "has attachment"@en ;
+        skos:prefLabel "hakemuksen liite"@fi ,
+                "has attachment"@en .
 
 
 ###  https://kela.fi/ontology/kelao#hasBenefitGroup
 :hasBenefitGroup rdf:type owl:ObjectProperty ;
-                 rdfs:domain :Benefit ;
-                 rdfs:range :BenefitGroup ;
-                 rdfs:comment "Etuusryhmä"@fi ,
-                              "Has benefit group"@en ;
-                 rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                 rdfs:label "etuusryhmä"@fi ,
-                            "has benefit group"@en ;
-                 skos:prefLabel "etuusryhmä"@fi ,
-                        "has benefit group"@en .
+        rdfs:domain :Benefit ;
+        rdfs:range :BenefitGroup ;
+        rdfs:comment "Etuusryhmä"@fi ,
+                "Has benefit group"@en ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "etuusryhmä"@fi ,
+                "has benefit group"@en ;
+        skos:prefLabel "etuusryhmä"@fi ,
+                "has benefit group"@en .
 
 
 ###  https://kela.fi/ontology/kelao#hasBenefitPart
 :hasBenefitPart rdf:type owl:ObjectProperty ;
-                owl:inverseOf :isPartOfBenefit ;
-                rdfs:domain :StandaloneBenefit ;
-                rdfs:range :BenefitComponent ;
-                rdfs:comment "Etuudella on osa"@fi ,
-                             "Has benefit part"@en ;
-                rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                rdfs:label "etuudella on osa"@fi ,
-                           "has benefit part"@en ;
-                skos:prefLabel "etuudella on osa"@fi ,
-                        "has benefit part"@en .
+        owl:inverseOf :isPartOfBenefit ;
+        rdfs:domain :StandaloneBenefit ;
+        rdfs:range :BenefitComponent ;
+        rdfs:comment "Etuudella on osa"@fi ,
+                "Has benefit part"@en ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "etuudella on osa"@fi ,
+                "has benefit part"@en ;
+        skos:prefLabel "etuudella on osa"@fi ,
+                "has benefit part"@en .
 
 
 ###  https://kela.fi/ontology/kelao#hasConcept
 :hasConcept rdf:type owl:ObjectProperty ;
-            rdfs:domain :Benefit ;
-            rdfs:range skos:Concept ;
-            rdfs:comment "Has concept"@en ,
-                         "On käsite"@fi ;
-            rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-            rdfs:label "has concept"@en ,
-                       "on käsite"@fi ;
-            skos:prefLabel "has concept"@en ,
-                        "on käsite"@fi .
+        rdfs:domain :Benefit ;
+        rdfs:range skos:Concept ;
+        rdfs:comment "Has concept"@en ,
+                "On käsite"@fi ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "has concept"@en ,
+                "on käsite"@fi ;
+        skos:prefLabel "has concept"@en ,
+                "on käsite"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#hasDecision
 :hasDecision rdf:type owl:ObjectProperty ;
-             rdfs:domain :Application ;
-             rdfs:range :Decision ;
-             rdfs:comment "Hakemukseen annettu päätös."@fi ,
-                          "The decision issued on the application."@en ;
-             rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-             rdfs:label "hakemuksen päätös"@fi ,
-                        "has decision"@en ;
-             skos:prefLabel "hakemuksen päätös"@fi ,
-                                   "has decision"@en .
+        rdfs:domain :Application ;
+        rdfs:range :Decision ;
+        rdfs:comment "Hakemukseen annettu päätös."@fi ,
+                "The decision issued on the application."@en ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "hakemuksen päätös"@fi ,
+                "has decision"@en ;
+        skos:prefLabel "hakemuksen päätös"@fi ,
+                "has decision"@en .
 
 
 ###  https://kela.fi/ontology/kelao#hasProvider
 :hasProvider rdf:type owl:ObjectProperty ;
-             rdfs:domain :Benefit ;
-             rdfs:range :Organisation ;
-             rdfs:comment "Has provider"@en ,
-                          "Vastuuorganisaatio"@fi ;
-             rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-             rdfs:label "has provider"@en ,
-                        "vastuuorganisaatio"@fi ;
-             skos:prefLabel "has provider"@en ,
-                    "vastuuorganisaatio"@fi .
+        rdfs:domain :Benefit ;
+        rdfs:range :Organisation ;
+        rdfs:comment "Has provider"@en ,
+                "Vastuuorganisaatio"@fi ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "has provider"@en ,
+                "vastuuorganisaatio"@fi ;
+        skos:prefLabel "has provider"@en ,
+                "vastuuorganisaatio"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#has_part
@@ -406,47 +405,47 @@ skos:inScheme rdf:type owl:ObjectProperty .
 
 ###  https://kela.fi/ontology/kelao#inhibiting
 :inhibiting rdf:type owl:ObjectProperty ;
-            rdfs:domain :Benefit ;
-            rdfs:range :Benefit ;
-            rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-            rdfs:label "estävä etuus"@fi ,
-                       "hindrande förmån"@sv ,
-                       "inhibiting benefit"@en ;
-            rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c66> ;
-            skos:definition "förmån som ska beaktas och på grund av vilken den förmånssökande inte beviljas en annan förmån"@sv ,
-                                   "huomioon otettava etuus, jonka vuoksi etuudenhakijalle ei myönnetä jotain toista etuutta"@fi ;
-            skos:exactMatch <https://iri.suomi.fi/terminology/kela/c66> ;
-            skos:prefLabel "estävä etuus"@fi ,
-                        "hindrande förmån"@sv ,
-                        "inhibiting benefit"@en ;
-            :relationshipAbbreviation "EST" .
+        rdfs:domain :Benefit ;
+        rdfs:range :Benefit ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "estävä etuus"@fi ,
+                "hindrande förmån"@sv ,
+                "inhibiting benefit"@en ;
+        rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c66> ;
+        skos:definition "förmån som ska beaktas och på grund av vilken den förmånssökande inte beviljas en annan förmån"@sv ,
+                "huomioon otettava etuus, jonka vuoksi etuudenhakijalle ei myönnetä jotain toista etuutta"@fi ;
+        skos:exactMatch <https://iri.suomi.fi/terminology/kela/c66> ;
+        skos:prefLabel "estävä etuus"@fi ,
+                "hindrande förmån"@sv ,
+                "inhibiting benefit"@en ;
+        :relationshipAbbreviation "EST" .
 
 
 ###  https://kela.fi/ontology/kelao#investigate
 :investigate rdf:type owl:ObjectProperty ;
-             rdfs:domain :Benefit ;
-             rdfs:range :Benefit ;
-             rdfs:comment "Benefit to investigate"@en ,
-                          "Selvitä etuus"@fi ;
-             rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-             rdfs:label "benefit to investigate"@en ,
-                        "selvitä etuus"@fi ;
-             skos:prefLabel "benefit to investigate"@en ,
-                            "selvitä etuus"@fi ;
-             :relationshipAbbreviation "SEL" .
+        rdfs:domain :Benefit ;
+        rdfs:range :Benefit ;
+        rdfs:comment "Benefit to investigate"@en ,
+                "Selvitä etuus"@fi ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "benefit to investigate"@en ,
+                "selvitä etuus"@fi ;
+        skos:prefLabel "benefit to investigate"@en ,
+                "selvitä etuus"@fi ;
+        :relationshipAbbreviation "SEL" .
 
 
 ###  https://kela.fi/ontology/kelao#isEligibleFor
 :isEligibleFor rdf:type owl:ObjectProperty ;
-               rdfs:domain :User ;
-               rdfs:range :Benefit ;
-               rdfs:comment "Käyttäjä tai hakija on todettu oikeutetuksi etuuteen validoinnin tai päätöksen perusteella."@fi ,
-                            "User or applicant has been determined eligible for the benefit."@en ;
-               rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-               rdfs:label "is eligible for"@en ,
-                          "on oikeutettu etuuteen"@fi ;
-               skos:prefLabel "is eligible for"@en ,
-                        "on oikeutettu etuuteen"@fi .
+        rdfs:domain :User ;
+        rdfs:range :Benefit ;
+        rdfs:comment "Käyttäjä tai hakija on todettu oikeutetuksi etuuteen validoinnin tai päätöksen perusteella."@fi ,
+                "User or applicant has been determined eligible for the benefit."@en ;
+        rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+        rdfs:label "is eligible for"@en ,
+                "on oikeutettu etuuteen"@fi ;
+        skos:prefLabel "is eligible for"@en ,
+                "on oikeutettu etuuteen"@fi .
 
 
 ###  https://kela.fi/ontology/kelao#isLifeSituationFor
@@ -1696,7 +1695,7 @@ prov:Entity rdf:type owl:Class .
                 """Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.
             Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein
             """@fi ,
-                "x"@en ;
+                "A social security benefit or allowance."@en ;
          skos:exactMatch <https://iri.suomi.fi/terminology/kela/c60> ;
          skos:prefLabel "Benefit"@en ,
                 "Etuus"@fi ,
@@ -1910,14 +1909,14 @@ prov:Entity rdf:type owl:Class .
          rdfs:subClassOf :Location ;
          rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
          rdfs:comment "A country / state. Used e.g. to express residence requirements and cross-border situations."@en ,
-                      "Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen."@fi ;
+                "Valtio. Käytetään esim. asumisedellytyksen ja kansainvälisten tilanteiden kuvaamiseen."@fi ;
          rdfs:label "Country"@en ,
-                    "Valtio"@fi ,
-                    "Stat"@sv ;
+                "Valtio"@fi ,
+                "Stat"@sv ;
          skos:exactMatch schema:Country ;
          skos:prefLabel "Country"@en ,
-                   "Valtio"@fi ,
-                   "Stat"@sv ;
+                "Valtio"@fi ,
+                "Stat"@sv ;
          skos:scopeNote "Lähdeontologiassa kuvattu suoraan schema:Country-luokkana; ydinmallissa määritelty omana luokkana ja linkitetty skos:exactMatch-suhteella."@fi .
 
 
@@ -1980,10 +1979,10 @@ prov:Entity rdf:type owl:Class .
         rdfs:subClassOf :Location ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:comment "A region (maakunta): an areal unit of regional development and planning composed of municipalities."@en ,
-                     "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."@fi ;
+                "Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö."@fi ;
         rdfs:label "Maakunta"@fi ,
-                   "Region"@en ,
-                   "Landskap"@sv ;
+                "Region"@en ,
+                "Landskap"@sv ;
         skos:prefLabel "Maakunta"@fi ,
                 "Region"@en ,
                 "Landskap"@sv .
@@ -2073,14 +2072,14 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                 """@fi ;
         rdfs:subClassOf prov:Agent ;
         rdfs:comment "Asiakas: henkilö tai taho, jolla on asiakkuus sosiaaliturvan toimeenpanijaan. Asiakas on pysyvä identiteetti, johon tilannekohtaiset roolit (hakija, käyttäjä, etuuden saaja) kiinnittyvät roolisuhteen kautta."@fi ,
-                      "Customer: a person or party having a customer relationship with the social security administrator. The customer is the persistent identity to which contextual roles (applicant, user, beneficiary) are attached via the role-of-customer relation."@en ;
+                "Customer: a person or party having a customer relationship with the social security administrator. The customer is the persistent identity to which contextual roles (applicant, user, beneficiary) are attached via the role-of-customer relation."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "Asiakas"@fi ,
-                   "Customer"@en ,
-                   "Kund"@sv ;
+                "Customer"@en ,
+                "Kund"@sv ;
         skos:prefLabel "Asiakas"@fi ,
-                       "Customer"@en ,
-                       "Kund"@sv .
+                "Customer"@en ,
+                "Kund"@sv .
 
 :roleOfCustomer rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ;
@@ -2185,8 +2184,8 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                 "Employment area: a statutory area formed by municipalities responsible for organising public employment services (Finnish TE services reform 2025)."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "Työllisyysalue"@fi ,
-                   "Employment area"@en ,
-                   "Sysselsättningsområde"@sv ;
+                "Employment area"@en ,
+                "Sysselsättningsområde"@sv ;
         skos:prefLabel "Työllisyysalue"@fi ,
                 "Employment area"@en ,
                 "Sysselsättningsområde"@sv .
@@ -2232,9 +2231,9 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                 "Eligibility criterion: an individual condition affecting entitlement to a benefit (e.g. age limit, residence requirement, income limit, employment condition). Reified so that each criterion can carry its own legal basis and parameters."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "Etuuskriteeri"@fi ,
-                   "Eligibility criterion"@en ;
+                "Eligibility criterion"@en ;
         skos:prefLabel "Etuuskriteeri"@fi ,
-                       "Eligibility criterion"@en ;
+                "Eligibility criterion"@en ;
         skos:closeMatch m8g:Criterion .
 
 :hasEligibilityCriterion rdf:type owl:ObjectProperty ;
@@ -2254,23 +2253,23 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
         rdfs:range :Benefit ;
         owl:inverseOf :hasEligibilityCriterion ;
         rdfs:comment "Kriteeri koskee tätä etuutta."@fi ,
-                     "The criterion applies to this benefit."@en ;
+                "The criterion applies to this benefit."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "on kriteeri etuudelle"@fi ,
-                   "is criterion for"@en ;
+                "is criterion for"@en ;
         skos:prefLabel "on kriteeri etuudelle"@fi ,
-                       "is criterion for"@en .
+                "is criterion for"@en .
 
 :criterionLegalBasis rdf:type owl:ObjectProperty ;
         rdfs:domain :EligibilityCriterion ;
         rdfs:range :LegalResource ;
         rdfs:comment "Kriteerin oikeusperusta: viittaus säädökseen tai sen osaan (ELI-URI, pykälätaso)."@fi ,
-                     "Legal basis of the criterion: reference to a legal resource or its subdivision (ELI URI, section level)."@en ;
+                "Legal basis of the criterion: reference to a legal resource or its subdivision (ELI URI, section level)."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "kriteerin oikeusperusta"@fi ,
-                   "criterion legal basis"@en ;
+                "criterion legal basis"@en ;
         skos:prefLabel "kriteerin oikeusperusta"@fi ,
-                       "criterion legal basis"@en .
+                "criterion legal basis"@en .
 
 
 ### Tulo #######################################################
@@ -2283,22 +2282,22 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                 "Income: an income item of a person or recipient unit (e.g. wage, self-employment income, capital income, benefit income) that may be taken into account in means testing."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "Tulo"@fi ,
-                   "Income"@en ,
-                   "Inkomst"@sv ;
+                "Income"@en ,
+                "Inkomst"@sv ;
         skos:prefLabel "Tulo"@fi ,
-                       "Income"@en ,
-                       "Inkomst"@sv .
+                "Income"@en ,
+                "Inkomst"@sv .
 
 :hasIncome rdf:type owl:ObjectProperty ;
         rdfs:domain prov:Agent ;
         rdfs:range :Income ;
         rdfs:comment "Henkilöllä on tämä tuloerä."@fi ,
-                     "The agent has this income item."@en ;
+                "The agent has this income item."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "tulona"@fi ,
-                   "has income"@en ;
+                "has income"@en ;
         skos:prefLabel "tulona"@fi ,
-                       "has income"@en .
+                "has income"@en .
 
 :incomeConsideredIn rdf:type owl:ObjectProperty ;
         rdfs:domain :Income ;
@@ -2325,19 +2324,19 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                    "Beneficiary"@en ,
                    "Förmånstagare"@sv ;
         skos:prefLabel "Etuuden saaja"@fi ,
-                       "Beneficiary"@en ,
-                       "Förmånstagare"@sv .
+                "Beneficiary"@en ,
+                "Förmånstagare"@sv .
 
 :receivesBenefit rdf:type owl:ObjectProperty ;
         rdfs:domain :Beneficiary ;
         rdfs:range :Benefit ;
         rdfs:comment "Saaja saa tätä etuutta."@fi ,
-                     "The beneficiary receives this benefit."@en ;
+                "The beneficiary receives this benefit."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "saa etuutta"@fi ,
-                   "receives benefit"@en ;
+                "receives benefit"@en ;
         skos:prefLabel "saa etuutta"@fi ,
-                       "receives benefit"@en .
+                "receives benefit"@en .
 
 ### Maksu ######################################################
 
@@ -2346,14 +2345,14 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                 "A benefit disbursement, or an instalment of one, made on the basis of a decision, linking the decision, benefit and recipient to the money flow."@en ;
         rdfs:subClassOf prov:Entity ;
         rdfs:comment "Maksu tai maksuerä: ratkaisun perusteella maksettu etuussuoritus. Kytkee ratkaisun, etuuden ja saajan rahavirtaan."@fi ,
-                      "Payment or instalment: a benefit disbursement made on the basis of a decision. Links the decision, benefit and recipient to the money flow."@en ;
+                "Payment or instalment: a benefit disbursement made on the basis of a decision. Links the decision, benefit and recipient to the money flow."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "Maksu"@fi ,
-                   "Payment"@en ,
-                   "Betalning"@sv ;
+                "Payment"@en ,
+                "Betalning"@sv ;
         skos:prefLabel "Maksu"@fi ,
-                       "Payment"@en ,
-                       "Betalning"@sv .
+                "Payment"@en ,
+                "Betalning"@sv .
 
 :paymentOf rdf:type owl:ObjectProperty ;
         rdfs:domain :Payment ;
@@ -2381,7 +2380,7 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
         rdfs:domain :Payment ;
         rdfs:range prov:Agent ;
         rdfs:comment "Maksun saaja. Voi olla muu kuin hakija (esim. vuokranantaja tai kunta)."@fi ,
-                     "Recipient of the payment. May differ from the applicant (e.g. landlord or municipality)."@en ;
+                "Recipient of the payment. May differ from the applicant (e.g. landlord or municipality)."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "maksun saajana"@fi ,
                    "payment recipient"@en ;
@@ -2402,14 +2401,14 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                    "Återkrav"@sv ;
         skos:altLabel "Claim for recovery"@en ;
         skos:prefLabel "Takaisinperintä"@fi ,
-                       "Recovery"@en ,
-                       "Återkrav"@sv .
+                "Recovery"@en ,
+                "Återkrav"@sv .
 
 :recoveryConcerns rdf:type owl:ObjectProperty ;
         rdfs:domain :Recovery ;
         rdfs:range :Payment ;
         rdfs:comment "Takaisinperintä kohdistuu tähän maksuun."@fi ,
-                     "The recovery concerns this payment."@en ;
+                "The recovery concerns this payment."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "kohdistuu maksuun"@fi ,
                    "recovery concerns"@en ;
@@ -2424,25 +2423,25 @@ Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty 
                 "A body that handles appeals and requests for rectification, e.g. the Social Security Appeal Board or the Insurance Court."@en ;
         rdfs:subClassOf :Organisation ;
         rdfs:comment "Muutoksenhakuelin: valitusasioita käsittelevä toimielin, esim. sosiaaliturva-asioiden muutoksenhakulautakunta (SAMU) tai vakuutusoikeus."@fi ,
-                      "Appeal body: an organisation handling appeals, e.g. the Social Security Appeal Board (SAMU) or the Insurance Court."@en ;
+                "Appeal body: an organisation handling appeals, e.g. the Social Security Appeal Board (SAMU) or the Insurance Court."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "Muutoksenhakuelin"@fi ,
-                   "Appeal body"@en ,
-                   "Besvärsinstans"@sv ;
+                "Appeal body"@en ,
+                "Besvärsinstans"@sv ;
         skos:prefLabel "Muutoksenhakuelin"@fi ,
-                       "Appeal body"@en ,
-                       "Besvärsinstans"@sv .
+                "Appeal body"@en ,
+                "Besvärsinstans"@sv .
 
 :appealHandledBy rdf:type owl:ObjectProperty ;
         rdfs:domain :Appeal ;
         rdfs:range :AppealBody ;
         rdfs:comment "Valituksen käsittelee tämä muutoksenhakuelin."@fi ,
-                     "The appeal is handled by this appeal body."@en ;
+                "The appeal is handled by this appeal body."@en ;
         rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
         rdfs:label "käsittelevä muutoksenhakuelin"@fi ,
-                   "appeal handled by"@en ;
+                "appeal handled by"@en ;
         skos:prefLabel "käsittelevä muutoksenhakuelin"@fi ,
-                       "appeal handled by"@en .
+                "appeal handled by"@en .
 
 
 #################################################################
