@@ -2573,10 +2573,14 @@ Beneficiary, Payment, Recovery, AppealBody and Income, with their properties.
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Applicant">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="fi">Henkilö tai organisaatio, joka hakee etuutta</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">Applicant</rdfs:label>
         <rdfs:label xml:lang="fi">Hakija</rdfs:label>
         <rdfs:label xml:lang="sv">Sökande</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://iri.suomi.fi/terminology/kela/c74"/>
+        <skos:altLabel xml:lang="fi">Etuudenhakija</skos:altLabel>
+        <skos:altLabel xml:lang="sv">Förmånssökande</skos:altLabel>
         <skos:definition xml:lang="en">A natural or legal person who applies for a benefit or service, or to whom the right to apply has been transferred.</skos:definition>
         <skos:definition xml:lang="fi">Henkilö tai oikeushenkilö, joka hakee etuutta tai palvelua, tai jolle hakuoikeus on siirtynyt.</skos:definition>
         <skos:prefLabel xml:lang="en">Applicant</skos:prefLabel>
@@ -2601,7 +2605,7 @@ Beneficiary, Payment, Recovery, AppealBody and Income, with their properties.
         <skos:altLabel xml:lang="fi">Etuushakemus</skos:altLabel>
         <skos:altLabel xml:lang="sv">Förmånsansökan</skos:altLabel>
         <skos:definition xml:lang="en">An applicant&apos;s request for a benefit or service. Filing initiates processing of the case.</skos:definition>
-        <skos:definition xml:lang="fi">Asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta.</skos:definition>
+        <skos:definition xml:lang="fi">Asiakirja, jolla etuudenhakija esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta.</skos:definition>
         <skos:definition xml:lang="fi">Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka.</skos:definition>
         <skos:prefLabel xml:lang="sv">Ansökan</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Application</skos:prefLabel>

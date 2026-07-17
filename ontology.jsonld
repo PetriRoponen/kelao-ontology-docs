@@ -419,6 +419,10 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#Applicant",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "fi",
+    "@value" : "Henkilö tai organisaatio, joka hakee etuutta"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],
@@ -432,8 +436,18 @@
     "@language" : "sv",
     "@value" : "Sökande"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://iri.suomi.fi/terminology/kela/c74"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "fi",
+    "@value" : "Etuudenhakija"
+  }, {
+    "@language" : "sv",
+    "@value" : "Förmånssökande"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -493,7 +507,7 @@
     "@value" : "An applicant's request for a benefit or service. Filing initiates processing of the case."
   }, {
     "@language" : "fi",
-    "@value" : "Asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."
+    "@value" : "Asiakirja, jolla etuudenhakija esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."
   }, {
     "@language" : "fi",
     "@value" : "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."

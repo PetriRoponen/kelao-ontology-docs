@@ -1919,10 +1919,14 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  https://kela.fi/ontology/kelao#Applicant
 :Applicant rdf:type owl:Class ;
            rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
+           rdfs:comment "Henkilö tai organisaatio, joka hakee etuutta"@fi ;
            rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
            rdfs:label "Applicant"@en ,
                       "Hakija"@fi ,
                       "Sökande"@sv ;
+           rdfs:seeAlso <https://iri.suomi.fi/terminology/kela/c74> ;
+           <http://www.w3.org/2004/02/skos/core#altLabel> "Etuudenhakija"@fi ,
+                                                          "Förmånssökande"@sv ;
            <http://www.w3.org/2004/02/skos/core#definition> "A natural or legal person who applies for a benefit or service, or to whom the right to apply has been transferred."@en ,
                                                             "Henkilö tai oikeushenkilö, joka hakee etuutta tai palvelua, tai jolle hakuoikeus on siirtynyt."@fi ;
            <http://www.w3.org/2004/02/skos/core#prefLabel> "Applicant"@en ,
@@ -1943,7 +1947,7 @@ xsd:duration rdf:type rdfs:Datatype .
                                                             "Etuushakemus"@fi ,
                                                             "Förmånsansökan"@sv ;
              <http://www.w3.org/2004/02/skos/core#definition> "An applicant's request for a benefit or service. Filing initiates processing of the case."@en ,
-                                                              "Asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi ,
+                                                              "Asiakirja, jolla etuudenhakija esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi ,
                                                               "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."@fi ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "Ansökan"@sv ,
                                                              "Application"@en ,

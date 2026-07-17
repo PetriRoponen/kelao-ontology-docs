@@ -1742,10 +1742,14 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#Applicant
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2000/01/rdf-schema#comment> "Henkilö tai organisaatio, joka hakee etuutta"@fi .
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2000/01/rdf-schema#label> "Applicant"@en .
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2000/01/rdf-schema#label> "Hakija"@fi .
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2000/01/rdf-schema#label> "Sökande"@sv .
+<https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://iri.suomi.fi/terminology/kela/c74> .
+<https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2004/02/skos/core#altLabel> "Etuudenhakija"@fi .
+<https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2004/02/skos/core#altLabel> "Förmånssökande"@sv .
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2004/02/skos/core#definition> "A natural or legal person who applies for a benefit or service, or to whom the right to apply has been transferred."@en .
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2004/02/skos/core#definition> "Henkilö tai oikeushenkilö, joka hakee etuutta tai palvelua, tai jolle hakuoikeus on siirtynyt."@fi .
 <https://kela.fi/ontology/kelao#Applicant> <http://www.w3.org/2004/02/skos/core#prefLabel> "Applicant"@en .
@@ -1765,7 +1769,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#altLabel> "Etuushakemus"@fi .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#altLabel> "Förmånsansökan"@sv .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "An applicant's request for a benefit or service. Filing initiates processing of the case."@en .
-<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "Asiakirja, jolla etuudenhakijalle esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi .
+<https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "Asiakirja, jolla etuudenhakija esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta."@fi .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#definition> "Hakijan etuutta tai palvelua koskeva hakemus. Hakemuksen vireilletulo käynnistää asian käsittelyn. Etuushakemus on hakemuksen alaluokka."@fi .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ansökan"@sv .
 <https://kela.fi/ontology/kelao#Application> <http://www.w3.org/2004/02/skos/core#prefLabel> "Application"@en .
