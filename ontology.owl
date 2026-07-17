@@ -11,7 +11,7 @@
      xmlns:kelao="https://kela.fi/ontology/kelao#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://kela.fi/ontology/kelao">
-        <owl:versionIRI rdf:resource="https://kela.fi/ontology/kelao/0.4.1"/>
+        <owl:versionIRI rdf:resource="https://petriroponen.github.io/kelao-ontology-docs/"/>
         <terms:abstract xml:lang="fi">Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  
         organisaatiot, maantieteelliset alueet, palvelukanavat, tietotuotteet, lainsäädännön sekä sosiaaliturvan käsitteet.
         </terms:abstract>
@@ -46,7 +46,6 @@
         <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/org#"/>
         <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#"/>
         <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/shacl#"/>
-        <rdfs:seeAlso rdf:resource="https://petriroponen.github.io/kelao-ontology-docs/"/>
         <rdfs:seeAlso rdf:resource="https://semiceu.github.io/CPSV-AP/releases/3.2.0/"/>
         <owl:priorVersion rdf:resource="https://kela.fi/ontology/kelao/0.4.0"/>
         <owl:versionInfo>0.4.1-core-draft</owl:versionInfo>
@@ -2670,11 +2669,11 @@ Beneficiary, Payment, Recovery, AppealBody and Income, with their properties.
         <skos:altLabel xml:lang="en">Social benefit</skos:altLabel>
         <skos:altLabel xml:lang="fi">Sosiaalietuus</skos:altLabel>
         <skos:altLabel xml:lang="fi">Tuki</skos:altLabel>
+        <skos:definition xml:lang="en">A social security benefit or allowance.</skos:definition>
         <skos:definition xml:lang="sv">Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg.</skos:definition>
         <skos:definition xml:lang="fi">Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.
             Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein
             </skos:definition>
-        <skos:definition xml:lang="en">x</skos:definition>
         <skos:exactMatch rdf:resource="https://iri.suomi.fi/terminology/kela/c60"/>
         <skos:prefLabel xml:lang="en">Benefit</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">Etuus</skos:prefLabel>

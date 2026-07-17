@@ -302,15 +302,13 @@
   }, {
     "@id" : "http://www.w3.org/ns/shacl#"
   }, {
-    "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
-  }, {
     "@id" : "https://semiceu.github.io/CPSV-AP/releases/3.2.0/"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "https://kela.fi/ontology/kelao/0.4.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://kela.fi/ontology/kelao/0.4.1"
+    "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.4.1-core-draft"
@@ -650,14 +648,14 @@
     "@value" : "Tuki"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "A social security benefit or allowance."
+  }, {
     "@language" : "sv",
     "@value" : "Nyttighet vars ekonomiska värde kan fastställas och som beviljas utgående från mottagarens ställning eller livssituation på grunder som fastställts i förväg."
   }, {
     "@language" : "fi",
     "@value" : "Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.\n            Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein\n            "
-  }, {
-    "@language" : "en",
-    "@value" : "x"
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "https://iri.suomi.fi/terminology/kela/c60"
