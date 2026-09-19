@@ -2469,7 +2469,7 @@ kelao:Benefit a owl:Class ;
         <https://petriroponen.github.io/kelao-ontology-docs/>,
         <https://semiceu.github.io/CPSV-AP/releases/3.2.0/> ;
     owl:priorVersion <https://kela.fi/ontology/kelao/0.4.1> ;
-    owl:versionIRI <https://kela.fi/ontology/kelao/0.5.0> ;
+    owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/index-fi.html> ;
     owl:versionInfo "0.5.0-core-draft" ;
     skos:changeNote """Version 0.4.0 (2026-07-03):
 (1) Geographic hierarchy: added the transitive generic property isPartOfArea
