@@ -324,7 +324,7 @@
     "@id" : "https://kela.fi/ontology/kelao/0.4.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://kela.fi/ontology/kelao/0.5.0"
+    "@id" : "https://petriroponen.github.io/kelao-ontology-docs/index-fi.html"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.5.0-core-draft"
