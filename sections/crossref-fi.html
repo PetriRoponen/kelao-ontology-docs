@@ -40,17 +40,36 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Asiakas<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Customer</p>
   <div class="comment">
-   <span class="markdown">Asiakas: henkilö tai taho, jolla on asiakkuus sosiaaliturvan toimeenpanijaan. Asiakas on pysyvä identiteetti, johon tilannekohtaiset roolit (hakija, käyttäjä, etuuden saaja) kiinnittyvät roolisuhteen kautta.</span>
+   <span class="markdown">Asiakas on pysyvä identiteetti, johon tilannekohtaiset roolit (hakija, käyttäjä, etuudensaaja) kiinnittyvät roolisuhteen kautta (kelao:hasCustomerRole).</span>
   </div>
   <div class="comment">
    <span class="markdown">Henkilö tai yhteisö, joka saa tai jolla on mahdollisuus saada arvoa Kelan tarjoamasta palvelusta.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    Kelan asiakkuuden käsitemalli (sisäinen lähde)
    </dd>
   </dl>
   <dl class="description">
@@ -78,11 +97,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Elämäntilanne<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#LifeSituation</p>
   <div class="comment">
-   <span class="markdown">Elämäntilanne on kansalaisen elämän muutosvaihe tai tilanne, johon liittyy julkisten palvelujen ja etuuksien tarve. Yksittäiset elämäntilanteet muodostavat elämäntilanneluokituksen (skos:ConceptScheme). Luokitus on luonnos; pohjana on käytetty DVV:n elämäntapahtumaluokitusta, joka perustuu EU-luokitukseen.</span>
+   <span class="markdown">Yksittäiset elämäntilanteet muodostavat elämäntilanneluokituksen (skos:ConceptScheme), jonka pohjana on DVV:n elämäntapahtumaluokitus.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Elämäntilanteilla tarkoitetaan sellaisia muutosvaiheita, joita kuvaa väliaikaisuus, erityisten palvelujen ja tiedon tarve sekä niihin kohdennetut palvelut.</span>
+   <span class="markdown">Henkilön elämän vaihe tai tilanne, johon liittyy julkisten palvelujen tai etuuksien tarve.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -116,11 +146,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Etuuden osa<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#BenefitComponent</p>
   <div class="comment">
-   <span class="markdown">Osa suurempaa etuuskokonaisuutta.</span>
+   <span class="markdown">Esimerkiksi opintotuen osia ovat opintoraha, asumislisä ja opintolainan valtiontakaus.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Etuuden itsenäinen, erikseen käsiteltävä osa, joka voidaan myöntää vain, jos myös etuus, jonka osa on kyseessä, on myönnetty.</span>
+   <span class="markdown">Etuuden erikseen käsiteltävä osa, joka voidaan myöntää vain, jos myös se etuus, jonka osa on kyseessä, on myönnetty.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -171,10 +212,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Etuuden saaja<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Beneficiary</p>
   <div class="comment">
-   <span class="markdown">Etuuden saaja. Erotetaan hakijasta: esim. lapsilisän hakija on huoltaja, ja maksun saaja voi olla eri henkilö tai taho (esim. kunta tai vuokranantaja).</span>
+   <span class="markdown">Erotetaan hakijasta ja maksunsaajasta: esimerkiksi lapsilisän hakija on huoltaja, ja maksunsaaja voi olla eri taho (esim. kunta tai vuokranantaja).</span>
   </div>
   <div class="comment">
-   <span class="markdown">Toimija, joka saa etuutta. Saaja erotetaan hakijasta ja maksun saajasta, jotka voivat olla eri tahoja.</span>
+   <span class="markdown">Henkilö tai organisaatio, joka saa etuutta.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -182,6 +223,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c75">https://iri.suomi.fi/terminology/kela/c75</a>
    </dd>
   </dl>
   <dl class="description">
@@ -209,10 +258,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Etuus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Benefit</p>
   <div class="comment">
-   <span class="markdown">Sosiaaliturvan etuus tai tuki. Yleinen luokka — käytä alaluokkia instansseissa. Kelan etuudet ovat sosiaalietuuksia. Joskus käytetään myös termiä sosiaaliturvaetuus.</span>
+   <span class="markdown">Yleinen luokka. Kelan etuudet ovat sosiaalietuuksia; joskus käytetään myös termiä sosiaaliturvaetuus. Etuus ei aina ole rahamääräinen, mutta sen rahallinen arvo on laskettavissa.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein. Verotus: suoritus, joka maksetaan saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein </span>
+   <span class="markdown">Taloudelliselta arvoltaan määriteltävissä oleva hyödyke, joka myönnetään saajan aseman tai elämäntilanteen perusteella ennalta määritellyin perustein.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -220,6 +269,17 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c60">https://iri.suomi.fi/terminology/kela/c60</a>
+   </dd>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/verotus/c66">https://iri.suomi.fi/terminology/verotus/c66</a>
    </dd>
   </dl>
   <dl class="description">
@@ -253,11 +313,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Etuuskriteeri<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#EligibilityCriterion</p>
   <div class="comment">
-   <span class="markdown">Etuuskriteeri: yksittäinen ehto, jonka täyttyminen vaikuttaa oikeuteen saada etuus (esim. ikäraja, asumisedellytys, tuloraja, työssäoloehto). Reifioituna luokkana kriteeri voi kantaa oman lakiperustansa ja parametrinsa.</span>
+   <span class="markdown">Esimerkiksi ikäraja, asumisedellytys, tuloraja tai työssäoloehto. Mallinnettu omana luokkana, jotta kriteeri voi kantaa oman oikeusperustansa ja parametrinsa.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Yksittäinen ehto, jonka täyttyminen vaikuttaa oikeuteen saada etuus, esimerkiksi ikäraja, asumisedellytys, tuloraja tai työssäoloehto.</span>
+   <span class="markdown">Etuuden myöntämisedellytys, jonka täyttyminen vaikuttaa oikeuteen saada etuus tai etuuden määrään.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -291,11 +362,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Etuusryhmä<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#BenefitGroup</p>
   <div class="comment">
-   <span class="markdown">Kelan etuusryhmitys</span>
+   <span class="markdown">Etuusryhmät ovat skos:Concept-yksilöitä erillisessä luokituksessa (skos:ConceptScheme); yksittäinen etuus liitetään ryhmään ominaisuudella kelao:hasBenefitGroup.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Kelan etuuksien ryhmittelyssä käytettävä luokka, joka kokoaa toisiinsa liittyvät etuudet yhteen ryhmään.</span>
+   <span class="markdown">Luokitteluyksikkö, joka kokoaa toisiinsa liittyvät Kelan etuudet yhteen ryhmään.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -323,6 +405,9 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Hakemus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Application</p>
   <div class="comment">
+   <span class="markdown">Hakemuksen vireilletulo käynnistää asian käsittelyn. Käsitteellinen luokka: tietämysgraafi ei sisällä hakijakohtaisia hakemuksia.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">Asiakirja, jolla etuudenhakija esittää pyynnön tai hänen puolestaan ja hänen suostumuksellaan esitetään pyyntö saada jotain etuutta.</span>
   </div>
   <dl class="definedBy">
@@ -331,6 +416,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c77">https://iri.suomi.fi/terminology/kela/c77</a>
    </dd>
   </dl>
   <dl class="description">
@@ -358,10 +451,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Hakija<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Applicant</p>
   <div class="comment">
-   <span class="markdown">Henkilö tai organisaatio, joka hakee etuutta</span>
+   <span class="markdown">Hakija on asiakkaan prosessirooli (ks. kelao:hasCustomerRole). kelao:User on sovelluksen käyttäjä; sama henkilö voi olla molempia.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Henkilö tai oikeushenkilö, joka hakee etuutta tai palvelua, tai jolle hakuoikeus on siirtynyt.</span>
+   <span class="markdown">Henkilö tai organisaatio, joka hakee etuutta.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -369,6 +462,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c74">https://iri.suomi.fi/terminology/kela/c74</a>
    </dd>
   </dl>
   <dl class="description">
@@ -396,7 +497,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Hyvinvointialue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#WellbeingServiceCounty</p>
   <div class="comment">
-   <span class="markdown">Hyvinvointialue. Suomen sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä vastaava itsehallinnollinen alue.</span>
+   <span class="markdown">21 hyvinvointialuetta sekä Helsingin kaupunki, joka hoitaa hyvinvointialueen tehtävät. Kunta kuuluu täsmälleen yhteen hyvinvointialueeseen.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Julkisoikeudellinen yhteisö, jolla on alueellaan itsehallinto ja joka vastaa sosiaali- ja terveydenhuollon sekä pelastustoimen järjestämisestä.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -404,6 +508,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    laki hyvinvointialueesta (611/2021) 2 §
    </dd>
   </dl>
   <dl class="description">
@@ -431,11 +543,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Itsenäinen etuus<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#StandaloneBenefit</p>
   <div class="comment">
-   <span class="markdown">Kokonainen, itsenäinen etuus.</span>
+   <span class="markdown">Huom. termi "itsenäinen etuus" tarkoittaa sanastossa ja EU-asetuksessa 883/2004 eri asiaa (itsenäinen eläke, c535). Nimeäminen tarkistettava versiossa 0.6.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Kokonainen, itsenäinen etuus, joka voidaan myöntää sellaisenaan ja joka voi koostua osaetuuksista (etuuden osista).</span>
+   <span class="markdown">Etuus, joka voidaan myöntää sellaisenaan ja joka voi koostua etuuden osista.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -475,7 +598,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Kunta<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Municipality</p>
   <div class="comment">
-   <span class="markdown">Suomen kunta. Kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla.</span>
+   <span class="markdown">Suomen kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla ja kolminumeroisella kuntakoodilla. Kunta kuuluu maakuntaan ja hyvinvointialueeseen.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Alueellinen itsehallintoyksikkö, joka hoitaa asukkaidensa itsehallintoon kuuluvat ja laissa säädetyt tehtävät.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -483,6 +609,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    kuntalaki (410/2015) 1 §
    </dd>
   </dl>
   <dl class="description">
@@ -516,11 +650,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Käyttäjä<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#User</p>
   <div class="comment">
-   <span class="markdown">Sovelluksen käyttäjä, esim. verkkosovelluksen käyttäjä.</span>
+   <span class="markdown">Käyttäjä on asiakkaan rooli (kelao:hasCustomerRole). Erotetaan hakijasta: käyttäjä voi selvittää oikeuttaan etuuteen jättämättä hakemusta.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Sovelluksen käyttäjä, agentti tms.</span>
+   <span class="markdown">Henkilö, joka käyttää sosiaaliturvan sähköistä asiointi- tai tietopalvelua.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -554,11 +699,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Lain osa<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#LegalResourcePart</p>
   <div class="comment">
-   <span class="markdown">Lain tai asetuksen osa (luku, pykälä, momentti, kohta yms.). Tämä luokka on tarkoitettu erottamaan kokonaiset lait niiden osista. EU-asetuksissa ym. on myös muu jaottelu kuin Suomessa.</span>
+   <span class="markdown">Esimerkiksi kansaneläkelain 23 §. Erottaa kokonaiset säädökset niiden osista; EU-säädöksissä jaottelu (artikla, kohta) poikkeaa kansallisesta.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Lain tai asetuksen osa riippumatta siitä, onko kyseessä luku, pykälä vai momentti</span>
+   <span class="markdown">Säädöksen rakenteellinen osa, kuten luku, pykälä, momentti tai kohta.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -591,8 +747,19 @@ This section provides details for each class and property defined by Sosiaalitur
    <span class="markdown">Hakemuksen liite, esim. tosite, todistus tai lomake.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Hakemukseen liitettävä lisämateriaali, joka täydentää tai todentaa hakemuksen tietoja.</span>
+   <span class="markdown">Hakemukseen liitettävä asiakirja tai muu aineisto, joka täydentää tai todentaa hakemuksessa esitettyjä tietoja.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -620,7 +787,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Maakunta<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Region</p>
   <div class="comment">
-   <span class="markdown">Maakunta. Kuntien muodostama alueellisen kehittämisen ja suunnittelun yksikkö.</span>
+   <span class="markdown">Suomessa 19 maakuntaa (2025). Rinnakkainen hierarkia hyvinvointialueiden kanssa: kunta kuuluu sekä maakuntaan että hyvinvointialueeseen.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Kuntien muodostama alue, joka toimii alueiden kehittämisen ja maakuntakaavoituksen yksikkönä.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -628,6 +798,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    laki alueiden kehittämisestä ja Euroopan unionin alue- ja rakennepolitiikan toimeenpanosta (756/2021)
    </dd>
   </dl>
   <dl class="description">
@@ -655,11 +833,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Maksu<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Payment</p>
   <div class="comment">
-   <span class="markdown">Maksu tai maksuerä: ratkaisun perusteella maksettu etuussuoritus. Kytkee ratkaisun, etuuden ja saajan rahavirtaan.</span>
+   <span class="markdown">Kytkee päätöksen, etuuden ja maksunsaajan rahavirtaan. Maksunsaaja ei aina ole sama kuin etuudensaaja (sanasto c76).</span>
   </div>
   <div class="comment">
-   <span class="markdown">Ratkaisun perusteella maksettu etuussuoritus tai sen maksuerä, joka kytkee ratkaisun, etuuden ja saajan rahavirtaan.</span>
+   <span class="markdown">Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -693,14 +882,39 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Muutoksenhaku<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Appeal</p>
   <div class="comment">
-   <span class="markdown">Hakijan päätökseen kohdistama oikaisuvaatimus tai valitus.</span>
+   <span class="markdown">Käytetään sekä oikaisuvaatimuksille että valituksille. Sanastossa muutoksenhaku (c736) on menettely; tämä luokka kuvaa siinä esitettyä vaatimusta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c741">https://iri.suomi.fi/terminology/kela/c741</a>
+   </dd>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c744">https://iri.suomi.fi/terminology/kela/c744</a>
    </dd>
   </dl>
   <dl class="description">
@@ -722,10 +936,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Muutoksenhakuelin<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#AppealBody</p>
   <div class="comment">
-   <span class="markdown">Muutoksenhakuelin: valitusasioita käsittelevä toimielin, esim. sosiaaliturva-asioiden muutoksenhakulautakunta (SAMU) tai vakuutusoikeus.</span>
+   <span class="markdown">Kelan toiminnassa esimerkiksi sosiaaliturva-asioiden muutoksenhakulautakunta (SAMU), opintotuen muutoksenhakulautakunta, vakuutusoikeus ja hallinto-oikeudet.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Valitus- ja oikaisuvaatimusasioita käsittelevä toimielin, esimerkiksi sosiaaliturva-asioiden muutoksenhakulautakunta tai vakuutusoikeus.</span>
+   <span class="markdown">Muutoksenhakuja käsittelevä, päätöksen tehneestä viranomaisesta ulkopuolinen toimielin.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -733,6 +947,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c748">https://iri.suomi.fi/terminology/kela/c748</a>
    </dd>
   </dl>
   <dl class="description">
@@ -754,7 +976,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Organisaatio<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Organisation</p>
   <div class="comment">
-   <span class="markdown">Toimija, joka on henkilöiden muodostama yhteenliittymä ja jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne.</span>
+   <span class="markdown">Kattaa julkisen, yksityisen ja kolmannen sektorin toimijat. Vastaa PTV:n ja schema.orgin Organization-käsitettä; EU Core Public Organisation on erikoistapaus.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Henkilöiden muodostama yhteenliittymä, jolla on yhteinen tavoite ja tarkoituksenmukainen rakenne.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -762,6 +987,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://iri.suomi.fi/model/suomiptv2/">http://iri.suomi.fi/model/suomiptv2/</a>
    </dd>
   </dl>
   <dl class="description">
@@ -795,10 +1028,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Palvelu<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Service</p>
   <div class="comment">
-   <span class="markdown">Sosiaaliturvaan liittyvä palvelu, esim. hakemus- tai neuvontapalvelu.</span>
+   <span class="markdown">Sosiaaliturvaan liittyvä palvelu, esimerkiksi hakemus- tai neuvontapalvelu. Palvelu liitetään etuuteen (kelao:relatedService) ja on käytettävissä palvelukanavien kautta.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Toiminto, jolla palveluntoteuttaja vastaa asiakkaan tarpeeseen.</span>
+   <span class="markdown">Toiminto, jolla palveluntuottaja vastaa asiakkaan tarpeeseen.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -806,6 +1039,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://iri.suomi.fi/model/suomiptv2/">http://iri.suomi.fi/model/suomiptv2/</a>
    </dd>
   </dl>
   <dl class="description">
@@ -833,7 +1074,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Palvelukanava<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#ServiceChannel</p>
   <div class="comment">
-   <span class="markdown">Palvelu- tai asiointikanava: tapa, jolla asiakas saa palvelun käyttöönsä. Kanava voi olla esimerkiksi verkkoasiointi, verkkosivu, tulostettava lomake, puhelinasiointi tai fyysinen palvelupaikka. Yhdellä palvelulla voi olla useita vaihtoehtoisia tai peräkkäisiä kanavia.</span>
+   <span class="markdown">Esimerkiksi verkkoasiointi, puhelinpalvelu, tulostettava lomake tai palvelupiste. Linkitetty PTV:n ServiceChannel-käsitteeseen skos:closeMatch-suhteella.</span>
   </div>
   <div class="comment">
    <span class="markdown">Tapa, jolla asiakas saa palvelun käyttöönsä.</span>
@@ -844,6 +1085,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://iri.suomi.fi/model/suomiptv2/">http://iri.suomi.fi/model/suomiptv2/</a>
    </dd>
   </dl>
   <dl class="description">
@@ -865,7 +1114,7 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Palvelupiste<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#ServiceUnit</p>
   <div class="comment">
-   <span class="markdown">Palvelupisteet voivat olla sekä yksityisten että julkishallinnon toimijoiden ylläpitämiä. Vrt. asiointipiste. Joissain palvelupisteissä on asiakastietokoneita, joilla asiakkaat voivat asioida myös itsenäisesti. Kelan palvelupisteissä tarjotaan Kelan palveluja, ja niissä työskentelee Kelan palveluasiantuntijoita. Kelan palvelupiste voi sijaita myös muualla kuin Kelan omissa tiloissa. Palvelupiste, jolla on fyysinen sijainti. Palvelupisteiden tiedot on yhdistetty Kelan sisäisestä lähteestä ja PTV:n palvelukanavatiedoista (entity matching).</span>
+   <span class="markdown">Palvelukanavan erikoistapaus, jolla on fyysinen sijainti. Kelan palvelupisteissä työskentelee Kelan palveluasiantuntijoita.</span>
   </div>
   <div class="comment">
    <span class="markdown">Toimipiste, jota ylläpitää pääsääntöisesti yksi toimija ja jossa voi saada kyseisen toimijan tai muiden toimijoiden tarjoamia palveluja.</span>
@@ -876,6 +1125,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c862">https://iri.suomi.fi/terminology/kela/c862</a>
    </dd>
   </dl>
   <dl class="description">
@@ -903,7 +1160,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Päätös<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Decision</p>
   <div class="comment">
-   <span class="markdown">Viranomaisen ratkaisu hakemukseen; myöntää tai hylkää haetun etuuden kokonaan tai osittain.</span>
+   <span class="markdown">Etuuspäätös voi olla myönteinen tai kielteinen ja koskea esimerkiksi etuuden myöntämistä, hylkäämistä, tarkistamista, keskeyttämistä, lakkauttamista, maksamista tai takaisinperintää.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Päätös etuutta koskevan asian ratkaisemisesta.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -911,6 +1171,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c78">https://iri.suomi.fi/terminology/kela/c78</a>
    </dd>
   </dl>
   <dl class="description">
@@ -932,11 +1200,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Sijainti<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Location</p>
   <div class="comment">
-   <span class="markdown">Maantieteellinen alue, jota voidaan käyttää esim. asuinpaikan, palvelun toiminta-alueen tai palvelupisteen sijainnin kuvaamiseen. Yliluokka kunnille, hyvinvointialueille, maakunnille ja valtioille.</span>
+   <span class="markdown">Yliluokka kunnille, hyvinvointialueille, maakunnille, työllisyysalueille ja valtioille. Linkitetty W3C Location Core -sanastoon (locn:Location).</span>
   </div>
   <div class="comment">
-   <span class="markdown">Mikä tahansa maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta.</span>
+   <span class="markdown">Maantieteellinen alue koosta tai hallinnollisesta tasosta riippumatta.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -970,10 +1249,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Säädös<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#LegalResource</p>
   <div class="comment">
-   <span class="markdown">Lainsäädäntöaineistoon kuuluva teos. Tämä koskee lainvoimaisesti säädettyjä lakeja (riippumatta siitä, ovatko ne vielä voimassa). Oikeudellinen resurssi voi edustaa säädöstä tai mitä tahansa säädöksen osaa, kuten artiklaa. Oikeudelliset resurssit voidaan linkittää toisiinsa mallissa määriteltyjen ominaisuuksien avulla.</span>
+   <span class="markdown">Vastaa ELI-ontologian LegalResource-luokkaa. Kattaa lait, asetukset ja EU-säädökset riippumatta siitä, ovatko ne voimassa. Säädöksen osat kuvataan luokalla kelao:LegalResourcePart.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Tekstikokonaisuus, joka sisältää julkisen vallan antamia yleisesti noudatettaviksi tarkoitettuja säännöksiä.</span>
+   <span class="markdown">Julkisen vallan antama, yleisesti noudatettavaksi tarkoitettu säädös tai sen versio.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -981,6 +1260,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/eli/ontology#LegalResource">http://data.europa.eu/eli/ontology#LegalResource</a>
    </dd>
   </dl>
   <dl>
@@ -1019,11 +1306,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Säädöstyyppi<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#StatuteType</p>
   <div class="comment">
-   <span class="markdown">Säädöksen tyyppi määritellään skos-luokituksessa StatuteType. Luokitus on luonnos. Sisältää Kelaan soveltuvan sekä suomalaisen että eu-lainsäädännön</span>
+   <span class="markdown">Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä erillisessä luokituksessa (luonnos).</span>
   </div>
   <div class="comment">
-   <span class="markdown">Säädöksen tyyppi sen antajan ja oikeudellisen aseman mukaan, esimerkiksi laki, asetus tai EU-asetus. Tyypit määritellään erillisessä SKOS-luokituksessa.</span>
+   <span class="markdown">Säädöksen laji sen antajan ja oikeudellisen aseman mukaan.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1051,11 +1349,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Takaisinperintä<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Recovery</p>
   <div class="comment">
-   <span class="markdown">Takaisinperintä: liikaa tai perusteetta maksetun etuuden perintä takaisin saajalta.</span>
+   <span class="markdown">Takaisinperinnästä annetaan etuuspäätös. Kohdistuu maksuun (kelao:recoveryConcerns).</span>
   </div>
   <div class="comment">
-   <span class="markdown">Liikaa tai perusteetta maksetun etuuden periminen takaisin saajalta.</span>
+   <span class="markdown">Menettely, jossa liikaa tai perusteetta maksettu etuus peritään takaisin.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1083,11 +1392,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Tietotuote<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#DataProduct</p>
   <div class="comment">
-   <span class="markdown">Hallittu ja omistettu tietokokonaisuus, jolla on tarkoitus, arvo ja elinkaari ja joka vastaa tiedon hyödyntäjän tarpeisiin. Esimerkiksi raportti tai muu etuuteen liittyvä tietotuote.</span>
+   <span class="markdown">Esimerkiksi etuuteen liittyvä raportti tai tilasto. Ehdolla siirrettäväksi ydinontologian ulkopuoliseen laajennusmoduuliin versiossa 0.6.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Tietotuote on tuote, joka helpottaa lopputavoitteen saavuttamista datan avulla.</span>
+   <span class="markdown">Hallittu ja omistettu tietokokonaisuus, jolla on tarkoitus, arvo ja elinkaari ja joka vastaa tiedon hyödyntäjän tarpeisiin.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1109,11 +1429,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Tulo<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Income</p>
   <div class="comment">
-   <span class="markdown">Tulo: henkilön tai saajayksikön tuloerä (esim. palkka, yrittäjätulo, pääomatulo, etuustulo), joka voidaan ottaa huomioon etuuden tulovähenteisyydessä tai tarveharkinnassa.</span>
+   <span class="markdown">Esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo. Vrt. sanaston käsitteet etuoikeutettu tulo (c72) ja etuusperusteinen tulo (c732).</span>
   </div>
   <div class="comment">
-   <span class="markdown">Henkilön tai saajayksikön tuloerä, esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo, joka voidaan ottaa huomioon etuuden tulovähenteisyydessä tai tarveharkinnassa.</span>
+   <span class="markdown">Henkilön tai ruokakunnan tuloerä, joka voidaan ottaa huomioon etuuden määrää laskettaessa tai tarveharkinnassa.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1147,10 +1478,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Työllisyysalue<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#EmploymentArea</p>
   <div class="comment">
-   <span class="markdown">Työllisyysalue: kuntien muodostama työvoimapalveluiden järjestämisvastuualue (TE-palvelut 2025 -uudistus).</span>
+   <span class="markdown">Perustuu lakiin työvoimapalveluiden järjestämisestä (380/2023); voimassa 1.1.2025 alkaen.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Kuntien muodostama, julkisten työvoimapalveluiden järjestämisestä vastaava lakisääteinen alue (TE-palvelut 2025 -uudistus).</span>
+   <span class="markdown">Kuntien muodostama alue, joka vastaa julkisten työvoimapalvelujen järjestämisestä.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -1158,6 +1489,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    laki työvoimapalveluiden järjestämisestä (380/2023)
    </dd>
   </dl>
   <dl class="description">
@@ -1185,8 +1524,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>Valtio<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#Country</p>
   <div class="comment">
-   <span class="markdown">Valtio. Käytetään esimerkiksi asumisedellytyksen ja rajat ylittävien tilanteiden kuvaamiseen.</span>
+   <span class="markdown">Käytetään asumisedellytyksen ja rajat ylittävien tilanteiden (EU, ETA, Sveitsi, sosiaaliturvasopimusmaat) kuvaamiseen. Linkitetty schema:Country-luokkaan.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Itsenäinen valtio, jonka alueella henkilö asuu, työskentelee tai jonka lainsäädäntöä sosiaaliturvaan sovelletaan.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1279,6 +1632,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Asiakkaalla on tämä rooli (hakija, käyttäjä tai etuuden saaja). Sama asiakas voi olla useassa roolissa samanaikaisesti tai eri yhteyksissä.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee roolin (hakija, käyttäjä tai etuudensaaja), jossa asiakas toimii.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1314,8 +1681,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>asiakkaan roolina<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#roleOfCustomer</p>
   <div class="comment">
-   <span class="markdown">Rooli (hakija, käyttäjä tai etuuden saaja) kuuluu tälle asiakkaalle. Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen.</span>
+   <span class="markdown">Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen. Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva, tarkistettava 0.6:ssa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee asiakkaan, jolle rooli kuuluu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1354,6 +1735,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Hakijan tai ruokakunnan asuinkunta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee kunnan, jossa hakija asuu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1383,8 +1778,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>ennakkosuoritus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#advancePayment</p>
   <div class="comment">
-   <span class="markdown">Ennakkosuoritus</span>
+   <span class="markdown">Käytetään etuuksien välisen ennakkosuoritussuhteen kuvaamiseen. Käyttöala tarkistettava.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee, että etuutta voidaan maksaa ennakkona toisen etuuden odotusajalta.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1414,7 +1823,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>estävä etuus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#inhibiting</p>
   <div class="comment">
-   <span class="markdown">huomioon otettava etuus, jonka vuoksi etuudenhakijalle ei myönnetä jotain toista etuutta</span>
+   <span class="markdown">Esimerkiksi työkyvyttömyyseläke on estävä etuus ansiopäivärahan, yleistuen ja opintotuen suhteen. Käsite: sanasto c66 (estävä etuus).</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee huomioon otettavan etuuden, jonka vuoksi etuudenhakijalle ei myönnetä tätä etuutta.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -1422,6 +1834,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c66">https://iri.suomi.fi/terminology/kela/c66</a>
    </dd>
   </dl>
   <div class="description">
@@ -1445,8 +1865,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>etuudella on osa<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasBenefitPart</p>
   <div class="comment">
-   <span class="markdown">Etuudella on osa</span>
+   <span class="markdown">Suhde, joka ilmaisee etuuden osan, josta itsenäinen etuus koostuu.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1484,6 +1915,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Maksu on tämän etuuden suoritus.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, jonka suoritus maksu on.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1515,6 +1960,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Etuus, johon tietotuote (esim. raportti) liittyy.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, jota tietotuote koskee.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1544,8 +2003,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>etuusryhmä<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasBenefitGroup</p>
   <div class="comment">
-   <span class="markdown">Etuusryhmä</span>
+   <span class="markdown">Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1577,6 +2047,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Etuuteen liittyvä palvelu, esim. hakemus- tai neuvontapalvelu.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuteen liittyvän palvelun.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1608,6 +2092,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Hakija hakee tätä etuutta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, jota hakija hakee.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1639,6 +2137,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Hakemukseen liittyvä liite.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee hakemukseen kuuluvan liitteen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1670,6 +2182,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Hakemukseen annettu päätös.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee hakemukseen annetun päätöksen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1701,6 +2227,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Etuus jota hakemus koskee.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, jota hakemus koskee.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1730,8 +2270,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>huomautus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#noteworthy</p>
   <div class="comment">
-   <span class="markdown">Huomautus</span>
+   <span class="markdown">Täydentää suhteita kelao:inhibiting ja kelao:reducing (vrt. sanaston huomioon otettava etuus, c63). Nimi ja käyttöala tarkistettava.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee toisen etuuden, joka on otettava huomioon tätä etuutta ratkaistaessa ilman että se estää tai vähentää etuutta.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1763,6 +2317,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Tuloerä otetaan huomioon tämän etuuden tulovähenteisyydessä tai tarveharkinnassa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, jonka määrää laskettaessa tai tarveharkinnassa tuloerä otetaan huomioon.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1794,6 +2362,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Hakijan jättämä hakemus.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee hakijan jättämän hakemuksen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1825,6 +2407,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Palvelulla on palvelukanava. Palvelu on käytettävissä palvelukanavien kautta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee palvelukanavan, jonka kautta palvelu on käytettävissä.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1856,6 +2452,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Takaisinperintä kohdistuu tähän maksuun.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee maksun, johon takaisinperintä kohdistuu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1887,6 +2497,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Päätös, johon muutoksenhaku kohdistuu.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee päätöksen, johon muutoksenhaku kohdistuu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1918,6 +2542,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Kriteerin oikeusperusta: viittaus säädökseen tai sen osaan (ELI-URI, pykälätaso).</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee säädöksen tai sen osan, johon etuuskriteeri perustuu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1949,6 +2587,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Etuudella on tämä kelpoisuuskriteeri.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden myöntämisedellytyksen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -1986,6 +2638,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Kunta kuuluu tähän hyvinvointialueeseen.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee hyvinvointialueen, johon kunta kuuluu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2023,6 +2689,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Kunta kuuluu tähän maakuntaan. Rinnakkainen hierarkia hyvinvointialueeseen kuulumisen kanssa: kunta kuuluu sekä maakuntaan että hyvinvointialueeseen.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee maakunnan, johon kunta kuuluu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2060,6 +2740,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Kunta kuuluu tähän työllisyysalueeseen. Ei pakollinen: esim. Ahvenanmaan kunnilla ei ole työllisyysaluetta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee työllisyysalueen, johon kunta kuuluu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2097,6 +2791,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Alue kuuluu tähän valtioon. Käytetään maakunnille, hyvinvointialueille, työllisyysalueille ja tarvittaessa suoraan kunnille.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee valtion, johon alue kuuluu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2134,6 +2842,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Valituksen käsittelee tämä muutoksenhakuelin.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee muutoksenhakuelimen, joka käsittelee muutoksenhaun.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2163,8 +2885,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>laajempi etuus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#broaderBenefit</p>
   <div class="comment">
-   <span class="markdown">Laajempi etuus</span>
+   <span class="markdown">Käsitehierarkia, ei osa–kokonaisuus-suhde (vrt. kelao:isPartOfBenefit). Esimerkiksi opintoraha → opintotuki.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee laajemman etuuskokonaisuuden, johon etuus käsitteellisesti sisältyy.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2194,8 +2930,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>liittyy elämäntilanteeseen<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#relatedToLifeSituation</p>
   <div class="comment">
-   <span class="markdown">Liittyy elämäntilanteeseen</span>
+   <span class="markdown">Suhde, joka ilmaisee elämäntilanteen, johon etuus liittyy.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2231,7 +2978,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>maksun saajana<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#paymentRecipient</p>
   <div class="comment">
-   <span class="markdown">Maksun saaja. Voi olla muu kuin hakija (esim. vuokranantaja tai kunta).</span>
+   <span class="markdown">Maksunsaaja ei aina ole sama kuin etuudensaaja, esimerkiksi alaikäisen etuudensaajan huoltaja, kunta tai vuokranantaja.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee henkilön tai organisaation, jolle rahallinen etuus maksetaan.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -2239,6 +2989,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c76">https://iri.suomi.fi/terminology/kela/c76</a>
    </dd>
   </dl>
   <div class="description">
@@ -2262,8 +3020,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>minimimääräinen etuus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#minimumAmount</p>
   <div class="comment">
-   <span class="markdown">Minimimääräinen etuus</span>
+   <span class="markdown">Käyttöala tarkistettava: nykyinen kommentti ("minimimääräinen etuus") ei kerro suhteen suuntaa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, joka määrää tämän etuuden vähimmäismäärän.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2293,8 +3065,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>on elämäntilanne kohteelle<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#isLifeSituationFor</p>
   <div class="comment">
-   <span class="markdown">On elämäntilanne kohteelle</span>
+   <span class="markdown">Suhde, joka ilmaisee etuuden, johon elämäntilanne liittyy.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2332,6 +3115,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Kriteeri koskee tätä etuutta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, jonka myöntämisedellytys kriteeri on.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2367,8 +3164,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>on käsite<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasConcept</p>
   <div class="comment">
-   <span class="markdown">On käsite</span>
+   <span class="markdown">Käytetään linkitykseen Kelan terminologisen sanaston ja muiden SKOS-sanastojen käsitteisiin.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka liittää etuuteen sitä kuvaavan sanaston käsitteen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2400,6 +3211,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Etuus tai palvelu perustuu tähän lakiin tai säädökseen.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee säädöksen, johon etuus perustuu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2429,8 +3254,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>on oikeutettu etuuteen<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#isEligibleFor</p>
   <div class="comment">
-   <span class="markdown">Käyttäjä tai hakija on todettu oikeutetuksi etuuteen validoinnin tai päätöksen perusteella.</span>
+   <span class="markdown">Käsitteellinen suhde: perustuu esiselvitykseen tai päätökseen. Tietämysgraafi ei sisällä henkilökohtaisia oikeustietoja.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, johon käyttäjä on todettu oikeutetuksi.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2462,6 +3301,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Alue on osa toista maantieteellistä aluetta. Transitiivinen yleisominaisuus, jonka aliominaisuuksia hallinnolliset kuulumissuhteet (kunta-hyvinvointialue, kunta-maakunta, alue-valtio) ovat.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee, että alue on osa toista maantieteellistä aluetta.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2504,8 +3357,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>on osa etuutta<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#isPartOfBenefit</p>
   <div class="comment">
-   <span class="markdown">On osa etuutta</span>
+   <span class="markdown">Suhde, joka ilmaisee itsenäisen etuuden, jonka osa etuuden osa on.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2541,7 +3405,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>on osa säädöstä<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#has_part</p>
   <div class="comment">
-   <span class="markdown">Lain tai muun säädöksen osa esim. pykälä.</span>
+   <span class="markdown">ELI-ontologian eli:has_part-ominaisuuden aliominaisuus; nimi noudattaa siksi ELI:n snake_case-käytäntöä.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee säädöksen rakenteellisen osan.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -2549,6 +3416,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/eli/ontology#has_part">http://data.europa.eu/eli/ontology#has_part</a>
    </dd>
   </dl>
   <div class="description">
@@ -2580,6 +3455,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Organisaatiolla on palvelupiste.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee organisaation ylläpitämän palvelupisteen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2617,6 +3506,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Palvelupisteen vastuuorganisaatio.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee palvelupisteestä vastaavan organisaation.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2654,6 +3557,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Maksu perustuu tähän ratkaisuun.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee päätöksen, johon maksu perustuu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2685,6 +3602,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Saaja saa tätä etuutta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, jota etuudensaaja saa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2714,8 +3645,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>selvitä etuus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#investigate</p>
   <div class="comment">
-   <span class="markdown">Selvitä etuus</span>
+   <span class="markdown">Käyttöala ja nimi tarkistettava 0.6:ssa; verbimuotoinen nimi poikkeaa käytännöstä.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee toisen etuuden, jonka saamisen edellytykset on selvitettävä ennen tämän etuuden ratkaisemista.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2745,8 +3690,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>sijaitsee alueella<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasLocation</p>
   <div class="comment">
-   <span class="markdown">Palvelupiste sijaitsee tällä maantieteellisellä alueella.</span>
+   <span class="markdown">Ominaisuusketju hasLocation o isPartOfArea → hasLocation periyttää sijainnin aluehierarkiassa ylöspäin. Domain on unioni (palvelupiste, organisaatio); ei OWL 2 RL -yhteensopiva, tarkistettava 0.6:ssa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee maantieteellisen alueen, jolla palvelupiste tai organisaatio sijaitsee.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2784,6 +3743,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Alue sisältää toisen maantieteellisen alueen. Käänteisominaisuus ominaisuudelle 'on osa aluetta'.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee, että alue sisältää toisen maantieteellisen alueen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2820,7 +3793,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>säädöksen tyyppi<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#type_document</p>
   <div class="comment">
-   <span class="markdown">Lain tai muun säädöksen tyyppi</span>
+   <span class="markdown">ELI-ontologian eli:type_document-ominaisuuden aliominaisuus; nimi noudattaa ELI:n käytäntöä. Arvot ovat kelao:StatuteType-yksilöitä.</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee säädöksen lajin.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -2828,6 +3804,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/eli/ontology#type_document">http://data.europa.eu/eli/ontology#type_document</a>
    </dd>
   </dl>
   <div class="description">
@@ -2857,8 +3841,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>säädös tai vaatimusprofiili koskee etuutta<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#relatedBenefit</p>
   <div class="comment">
-   <span class="markdown">Yhteys etuuteen</span>
+   <span class="markdown">Käänteinen suunta suhteelle kelao:legalReference. Label "säädös tai vaatimusprofiili koskee etuutta" lyhennettävä.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee etuuden, jota säädös koskee.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2888,8 +3886,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>tarveharkinnan tulo<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#meansTestedIncome</p>
   <div class="comment">
-   <span class="markdown">Tarveharkinnan tulo</span>
+   <span class="markdown">Vrt. kelao:incomeConsideredIn (tuloerä → etuus). Päällekkäisyys tarkistettava 0.6:ssa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee toisen etuuden, joka otetaan tulona huomioon tämän etuuden tarveharkinnassa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2919,8 +3931,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>tietotuotteen vastuuorganisaatio<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#dataProductOwner</p>
   <div class="comment">
-   <span class="markdown">Tietotuotteen vastuuorganisaatio</span>
+   <span class="markdown">Suhde, joka ilmaisee tietotuotteesta vastaavan organisaation.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2952,6 +3975,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Henkilöllä on tämä tuloerä.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee toimijan tuloerän.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -2981,8 +4018,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>vastuuorganisaatio<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#hasProvider</p>
   <div class="comment">
-   <span class="markdown">Vastuuorganisaatio</span>
+   <span class="markdown">Suhde, joka ilmaisee organisaation, joka vastaa etuuden toimeenpanosta.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3012,7 +4060,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>vähentävä etuus<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#reducing</p>
   <div class="comment">
-   <span class="markdown">huomioon otettava etuus, joka vähentää toisen etuuden määrää</span>
+   <span class="markdown">Käsite: sanasto c65 (vähentävä etuus).</span>
+  </div>
+  <div class="comment">
+   <span class="markdown">Suhde, joka ilmaisee huomioon otettavan etuuden, joka vähentää tämän etuuden määrää.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -3020,6 +4071,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c65">https://iri.suomi.fi/terminology/kela/c65</a>
    </dd>
   </dl>
   <div class="description">
@@ -3108,8 +4167,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>ajantasaisen lainosan URI<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#currentVersion</p>
   <div class="comment">
-   <span class="markdown">Ajantasaisen lainosan URI</span>
+   <span class="markdown">Säädöksen osan ajantasaisen version verkko-osoite.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3133,8 +4203,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>alaikäraja<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#minimumAge</p>
   <div class="comment">
-   <span class="markdown">Alaikäraja</span>
+   <span class="markdown">Minimum age limit</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Ikä, jonka henkilön on täytettävä ollakseen oikeutettu etuuteen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3158,8 +4242,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>alueen tyyppi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#areaType</p>
   <div class="comment">
+   <span class="markdown">Päällekkäinen luokan (rdf:type) kanssa.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">Alueen tyyppi.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3183,8 +4281,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>aluekoodi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#areaCode</p>
   <div class="comment">
-   <span class="markdown">Virallinen aluekoodi (esim. kuntanumero tai hyvinvointialueen tunnus).</span>
+   <span class="markdown">Esimerkiksi kuntanumero tai hyvinvointialueen tunnus. Yleinen ominaisuus; korvaa aluetyyppikohtaiset koodiominaisuudet.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Alueen virallinen koodi kansallisessa koodistossa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3211,6 +4323,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Maantieteellisen alueen GeoNames-tunniste.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Alueen tunniste GeoNames-tietokannassa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3234,8 +4360,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>hakemuksen tila<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#applicationStatus</p>
   <div class="comment">
-   <span class="markdown">Hakemuksen käsittelyvaiheen tila.</span>
+   <span class="markdown">Esimerkiksi vireillä, käsittelyssä tai ratkaistu. Arvojoukko koodistona 0.6:ssa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Hakemuksen käsittelyn tila.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3259,8 +4399,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>hyvinvointialueen koodi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#wellbeingServiceCountyCode</p>
   <div class="comment">
+   <span class="markdown">Päällekkäinen yleisen kelao:areaCode-ominaisuuden kanssa.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">Hyvinvointialueen koodi.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3284,8 +4438,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>hyvinvointialueen nimi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#wellbeingServiceCountyName</p>
   <div class="comment">
+   <span class="markdown">Päällekkäinen rdfs:label-annotaation kanssa.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">Hyvinvointialueen nimi.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3309,11 +4477,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>indeksisidonnainen<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#indexLinked</p>
   <div class="comment">
-   <span class="markdown">Mihin indeksiin etuus on sidottu (esim. Kansaneläkeindeksi)</span>
+   <span class="markdown">Esimerkiksi kansaneläkeindeksi (sanasto c520). Arvojoukko koodistona 0.6:ssa.</span>
   </div>
   <div class="comment">
-   <span class="markdown">Mihin indeksiin etuus on sidottu (esim. Kansaneläkeindeksi)</span>
+   <span class="markdown">Indeksi, johon etuuden määrä on sidottu.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3339,6 +4518,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Osan järjestysnumero (esim. 1, 2, 3...)</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Säädöksen osan järjestysnumero.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3364,6 +4557,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Katuosoite. Palvelupisteissä ei ole erikseen käyntiosoitetta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Palvelupisteen katuosoite.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3387,8 +4594,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>kotisivu<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#homepage</p>
   <div class="comment">
-   <span class="markdown">Kotisivu</span>
+   <span class="markdown">Etuutta kuvaavan verkkosivun osoite.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3412,8 +4630,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>kuntakoodi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#municipalityCode</p>
   <div class="comment">
-   <span class="markdown">Kunnan kolminumeroinen koodi.</span>
+   <span class="markdown">Päällekkäinen yleisen kelao:areaCode-ominaisuuden kanssa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Kunnan kolminumeroinen kuntanumero.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3439,12 +4671,23 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Yleisen asumistuen kuntaryhmäluokitus: I, II, III tai IV.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Asumisen kalleuden perusteella muodostettu kuntien ryhmä, johon kunta on luokiteltu asumistukien ja opintotuen asumislisän laskemista varten.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c552">https://iri.suomi.fi/terminology/kela/c552</a>
    </dd>
   </dl>
   <div class="description">
@@ -3462,8 +4705,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>käsittelyaika<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#processingTime</p>
   <div class="comment">
-   <span class="markdown">Etuuden keskimääräinen käsittelyaika päivinä hakemuksen saapumisesta. Joissain tapauksissa kyse on arkipäivistä esim. 5,1 arkipäivää.</span>
+   <span class="markdown">Arvo xsd:duration-muodossa. Ilmaise arkipäivät samalla ominaisuudella ja kirjaa laskentatapa huomautukseen.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Hakemuksen keskimääräinen käsittelyaika hakemuksen saapumisesta päätökseen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3487,8 +4744,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>käsittelyaika arkipäivinä<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#processingTimeBusinessDays</p>
   <div class="comment">
-   <span class="markdown">Käsittelyaika arkipäivinä (maanantai–perjantai, pois lukien pyhäpäivät).</span>
+   <span class="markdown">Päällekkäinen kelao:processingTime-ominaisuuden kanssa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Hakemuksen keskimääräinen käsittelyaika arkipäivinä.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3514,6 +4785,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Lainosan esim. pykälän teksti</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Säädöksen osan teksti.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3537,11 +4822,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>laskentaperuste<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#calculationBase</p>
   <div class="comment">
-   <span class="markdown">Laskentaperuste</span>
+   <span class="markdown">Peruste, jonka mukaan etuuden määrä lasketaan.</span>
   </div>
-  <div class="comment">
-   <span class="markdown">Miten etuuden määrä lasketaan</span>
-  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3565,8 +4858,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>leveysaste<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#latitude</p>
   <div class="comment">
-   <span class="markdown">Leveysaste.</span>
+   <span class="markdown">Sijainnin leveysaste WGS84-koordinaatistossa.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3592,6 +4896,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">URI-linkki liitteeseen, josta liite löytyy.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Verkko-osoite, josta liitelomake tai -ohje on saatavilla.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3617,6 +4935,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Tietotuotteen verkko-osoite (URI), josta saa lisätietoja.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Verkko-osoite, josta saa lisätietoja tietotuotteesta.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3642,6 +4974,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Kelan sisäisesti käyttämä etuuden lyhenne</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Etuuden lyhenne, jota Kela käyttää sisäisesti.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3667,6 +5013,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Päivä jolloin muutoksenhaku jätettiin.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Päivä, jona muutoksenhaku on jätetty.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3690,8 +5050,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>määrä<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#amount</p>
   <div class="comment">
-   <span class="markdown">Rahallinen määrä.</span>
+   <span class="markdown">Käytetään etuuden, maksun, tuloerän ja takaisinperinnän määrälle. Valuutta oletusarvoisesti euro.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Rahamäärä euroina.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3723,6 +5097,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Onko liite haettavissa tai ilmoitettavissa OmaKelassa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Tieto siitä, voiko liitteen toimittaa OmaKela-asiointipalvelussa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3748,6 +5136,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Esim. '23' pykälälle, '1' momentille, 'a' kohdalle</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Säädöksen osan tunnus.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3771,8 +5173,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>osan tyyppi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#partType</p>
   <div class="comment">
-   <span class="markdown">Esim. 'luku', 'pykälä', 'momentti', 'kohta'</span>
+   <span class="markdown">Esimerkiksi luku, pykälä, momentti tai kohta.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Säädöksen osan laji.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3809,12 +5225,23 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Säädöksen kansallinen tunniste muodossa numero/vuosi.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Säädöksen kansallinen tunniste muodossa numero/vuosi.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/eli/ontology#id_local">http://data.europa.eu/eli/ontology#id_local</a>
    </dd>
   </dl>
   <div class="description">
@@ -3840,6 +5267,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Palvelukanavan yksilöivä tunniste Palvelutietovarannossa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Palvelukanavan yksilöivä tunniste Palvelutietovarannossa (PTV).</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3863,8 +5304,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>palvelun aukioloajat<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#serviceHours</p>
   <div class="comment">
-   <span class="markdown">Palvelun aukioloajat.</span>
+   <span class="markdown">Service opening hours.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Palvelupisteen aukioloajat.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3888,8 +5343,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>palvelupisteen tyyppi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#serviceUnitType</p>
   <div class="comment">
+   <span class="markdown">Esimerkiksi Kelan palvelupiste, yhteispalvelupiste tai pop up -palvelupiste (sanasto c863). Arvojoukko koodistona 0.6:ssa.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">Palvelupisteen tyyppi.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3913,8 +5382,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>pituusaste<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#longitude</p>
   <div class="comment">
-   <span class="markdown">Pituusaste.</span>
+   <span class="markdown">Sijainnin pituusaste WGS84-koordinaatistossa.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3940,6 +5420,17 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Postinumero.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3965,6 +5456,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Postitoimipaikka. Haetaan postinumeron perusteella.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Postitoimipaikka.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -3988,8 +5493,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>päätöksen lopputulos<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#decisionOutcome</p>
   <div class="comment">
-   <span class="markdown">Päätöksen lopputulos.</span>
+   <span class="markdown">Esimerkiksi myönnetty, hylätty tai osittain myönnetty. Arvojoukko koodistona 0.6:ssa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Päätöksen ratkaisun lopputulos.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4015,6 +5534,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Päivä jolloin päätös annettiin.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Päivä, jona päätös on annettu.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4038,8 +5571,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>rahoitus<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#financing</p>
   <div class="comment">
-   <span class="markdown">Kuinka rahoitus on järjestetty</span>
+   <span class="markdown">Esimerkiksi valtion rahoitus, vakuutusmaksurahoitus tai näiden yhdistelmä.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Tapa, jolla etuuden rahoitus on järjestetty.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4065,6 +5612,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Raporttikokonaisuus, johon raportti sisältyy.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Raporttikokonaisuus, johon tietotuote sisältyy.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4088,8 +5649,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>saajayksikkö<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#recipientUnit</p>
   <div class="comment">
-   <span class="markdown">Saajayksikkö</span>
+   <span class="markdown">Esimerkiksi henkilö, ruokakunta (sanasto c544) tai perhe.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Yksikkö, jolle etuus myönnetään ja jonka perusteella etuuden määrä lasketaan.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4115,12 +5690,23 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Säädöksen hyväksymis- tai allekirjoituspäivä muodossa vvvv-kk-pp.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Päivä, jona säädös on hyväksytty tai allekirjoitettu.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/eli/ontology#date_document">http://data.europa.eu/eli/ontology#date_document</a>
    </dd>
   </dl>
   <div class="description">
@@ -4146,6 +5732,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Etuuden tarkoitus</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Tarkoitus, jota varten etuus on säädetty.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4169,10 +5769,10 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>tarveharkinta<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#meansTest</p>
   <div class="comment">
-   <span class="markdown">Etuuden oikeuden päättely edellyttää tarveharkintaa, tarveharkinnan selitys.</span>
+   <span class="markdown">Vapaamuotoinen selitys etuuden tarveharkinnasta. Käsite: sanasto c688 (tarveharkinta).</span>
   </div>
   <div class="comment">
-   <span class="markdown">Etuuksien tai palvelujen myöntämisen kriteerien soveltaminen henkilön tarpeeseen.</span>
+   <span class="markdown">Kuvaus siitä, miten etuuksien tai palvelujen myöntämisen kriteerejä sovelletaan henkilön tarpeeseen.</span>
   </div>
   <dl class="definedBy">
    <dt>
@@ -4180,6 +5780,14 @@ This section provides details for each class and property defined by Sosiaalitur
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c688">https://iri.suomi.fi/terminology/kela/c688</a>
    </dd>
   </dl>
   <div class="description">
@@ -4197,8 +5805,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>tiedostomuoto<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#fileFormat</p>
   <div class="comment">
-   <span class="markdown">Tiedostomuoto.</span>
+   <span class="markdown">Tietotuotteen tiedostomuoto.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4224,6 +5843,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Tietotuotteen asia- tai avainsanat.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Tietotuotteen sisältöä kuvaavat asiasanat.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4249,6 +5882,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Raportin tai muun tietotuotteen tunniste, esim. WIT100a.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Tietotuotteen yksilöivä tunniste.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4272,8 +5919,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>tietotuotteen tyyppi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#dataProductType</p>
   <div class="comment">
+   <span class="markdown">Type of data product.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">Tietotuotteen tyyppi.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4297,8 +5958,19 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>toimiston numero<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#officeNumber</p>
   <div class="comment">
-   <span class="markdown">Toimiston numero.</span>
+   <span class="markdown">Palvelupisteen numero Kelan sisäisessä toimipisterekisterissä.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4324,12 +5996,23 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Säädöksen virallinen ELI-URI Finlex-sivulle.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Säädöksen virallinen ELI-tunniste (URI).</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/eli/ontology#">http://data.europa.eu/eli/ontology#</a>
    </dd>
   </dl>
   <div class="description">
@@ -4353,8 +6036,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>työllisyysalueen koodi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#employmentAreaCode</p>
   <div class="comment">
+   <span class="markdown">Päällekkäinen suhteen kelao:belongsToEmploymentArea ja kelao:areaCode kanssa.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">Työllisyysalueen koodi.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4378,8 +6075,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>työllisyysalueen nimi<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#employmentAreaName</p>
   <div class="comment">
+   <span class="markdown">Päällekkäinen suhteen kelao:belongsToEmploymentArea ja työllisyysalueen labelin kanssa.</span>
+  </div>
+  <div class="comment">
    <span class="markdown">Työllisyysalueen nimi.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4405,6 +6116,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Yksilöllinen tunniste uuid. Käytössä etuuksilla, palvelukanavilla, palveluilla ja liitteissä.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Yleiskäyttöinen yksilöivä tunniste (UUID).</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4434,14 +6159,36 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>vaatii asumisen Suomessa<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#residenceRequired</p>
   <div class="comment">
-   <span class="markdown">edellytys, jonka mukaan etuudenhakijan täytyy asua ja edunjättäjän täytyi asua kuollessaan Suomessa, EU- tai Eta-maassa tai Sveitsissä, jotta etuudenhakijalla olisi oikeus etuuteen.</span>
+   <span class="markdown">Asumisedellytys (sanasto c529): etuudenhakijan täytyy asua Suomessa, EU- tai Eta-maassa tai Sveitsissä.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Tieto siitä, edellyttääkö etuuden saaminen asumisedellytyksen täyttymistä.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c529">https://iri.suomi.fi/terminology/kela/c529</a>
    </dd>
   </dl>
   <div class="description">
@@ -4459,14 +6206,33 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>vaatii työhistorian<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#requiresEmploymentHistory</p>
   <div class="comment">
-   <span class="markdown">Vaatii työhistorian</span>
+   <span class="markdown">Tieto siitä, edellyttääkö etuuden saaminen työssäoloehdon täyttymistä.</span>
   </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c678">https://iri.suomi.fi/terminology/kela/c678</a>
    </dd>
   </dl>
   <div class="description">
@@ -4486,6 +6252,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Organisaatiota tarkempi vastuutaho, esim. ryhmä tai tiimi.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Tietotuotteesta vastaava organisaation osa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4511,6 +6291,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Onko etuus verotettava vai ei</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Tieto siitä, onko etuus veronalaista tuloa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4536,12 +6330,23 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Päivämäärä, jolloin säädöksen tämä versio on voimassa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Päivä, jona säädöksen tämä versio on tullut voimaan.</span>
+  </div>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="http://data.europa.eu/eli/ontology#version_date">http://data.europa.eu/eli/ontology#version_date</a>
    </dd>
   </dl>
   <div class="description">
@@ -4567,6 +6372,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Hakemuksen vireilletulopäivä.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Päivä, jona hakemus on tullut vireille.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4590,14 +6409,36 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>voimassa alkaen<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#validFrom</p>
   <div class="comment">
-   <span class="markdown">Etuuden voimassaolon alku, milloin Kela tai muu organisaatio alkoi sitä maksamaan.</span>
+   <span class="markdown">Etuuden voimassaoloaika (sanasto c70): ajanjakso, jona etuus on voimassa.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Päivä, josta alkaen etuus on voimassa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c70">https://iri.suomi.fi/terminology/kela/c70</a>
    </dd>
   </dl>
   <div class="description">
@@ -4617,12 +6458,34 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Etuuden voimassaolon loppu</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Päivä, johon asti etuus on voimassa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
    </dt>
    <dd>
     <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+  <dl class="definedBy">
+   <dt>
+    Source
+   </dt>
+   <dd>
+    <a href="https://iri.suomi.fi/terminology/kela/c70">https://iri.suomi.fi/terminology/kela/c70</a>
    </dd>
   </dl>
   <div class="description">
@@ -4642,6 +6505,20 @@ This section provides details for each class and property defined by Sosiaalitur
   <div class="comment">
    <span class="markdown">Maantieteellisen alueen Wikidata-tunniste.</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Alueen tunniste Wikidatassa.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
@@ -4665,8 +6542,22 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>yläikäraja<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#maximumAge</p>
   <div class="comment">
-   <span class="markdown">Yläikäraja</span>
+   <span class="markdown">Maximum age limit</span>
   </div>
+  <div class="comment">
+   <span class="markdown">Ikä, jonka ylittänyt henkilö ei ole oikeutettu etuuteen.</span>
+  </div>
+  <dl>
+   <dt>
+    editorial note
+   </dt>
+   <dd>
+    Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).
+   </dd>
+   <dd>
+    The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).
+   </dd>
+  </dl>
   <dl class="definedBy">
    <dt>
     Is defined by
