@@ -710,8 +710,6 @@ Review round based on the definition workbook. (1) Corrected definitions, source
         <rdfs:label xml:lang="en">has benefit group</rdfs:label>
         <skos:definition xml:lang="en">Relation stating the benefit group into which a benefit is classified.</skos:definition>
         <skos:definition xml:lang="fi">Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:prefLabel xml:lang="fi">etuusryhmä</skos:prefLabel>
         <skos:prefLabel xml:lang="en">has benefit group</skos:prefLabel>
     </owl:ObjectProperty>
@@ -2640,8 +2638,6 @@ Review round based on the definition workbook. (1) Corrected definitions, source
         <skos:closeMatch rdf:resource="https://iri.suomi.fi/terminology/kela/c744"/>
         <skos:definition xml:lang="en">A customer’s demand that a decision issued by an authority or an appeal body be changed, made either as a request for rectification or as an appeal.</skos:definition>
         <skos:definition xml:lang="fi">Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:prefLabel xml:lang="en">Appeal</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">Muutoksenhaku</skos:prefLabel>
         <skos:prefLabel xml:lang="sv">Ändringssökande</skos:prefLabel>
@@ -2739,8 +2735,6 @@ Review round based on the definition workbook. (1) Corrected definitions, source
         <rdfs:label xml:lang="fi">Liite</rdfs:label>
         <skos:definition xml:lang="en">Additional material received from a customer, or material provided to the customer in connection with an outgoing document.</skos:definition>
         <skos:definition xml:lang="fi">Asiakkaalta vastaanotettu lisämateriaali tai lähtevän asiakirjan yhteydessä asiakkaalle välitettävä lisämateriaali.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:prefLabel xml:lang="en">Attachment</skos:prefLabel>
         <skos:prefLabel xml:lang="sv">Bilaga</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">Liite</skos:prefLabel>
@@ -3160,8 +3154,6 @@ Review round based on the definition workbook. (1) Corrected definitions, source
         <rdfs:label xml:lang="en">Payment</rdfs:label>
         <skos:definition xml:lang="en">A benefit disbursement, or an instalment of it, paid to the payee on the basis of a benefit decision.</skos:definition>
         <skos:definition xml:lang="fi">Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:prefLabel xml:lang="sv">Betalning</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">Maksu</skos:prefLabel>
         <skos:prefLabel xml:lang="en">Payment</skos:prefLabel>

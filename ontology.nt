@@ -424,8 +424,6 @@
 <https://kela.fi/ontology/kelao#hasBenefitGroup> <http://www.w3.org/2000/01/rdf-schema#label> "has benefit group"@en .
 <https://kela.fi/ontology/kelao#hasBenefitGroup> <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit group into which a benefit is classified."@en .
 <https://kela.fi/ontology/kelao#hasBenefitGroup> <http://www.w3.org/2004/02/skos/core#definition> "Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu."@fi .
-<https://kela.fi/ontology/kelao#hasBenefitGroup> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi .
-<https://kela.fi/ontology/kelao#hasBenefitGroup> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en .
 <https://kela.fi/ontology/kelao#hasBenefitGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "etuusryhmä"@fi .
 <https://kela.fi/ontology/kelao#hasBenefitGroup> <http://www.w3.org/2004/02/skos/core#prefLabel> "has benefit group"@en .
 # 
@@ -1893,8 +1891,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#closeMatch> <https://iri.suomi.fi/terminology/kela/c744> .
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#definition> "A customer’s demand that a decision issued by an authority or an appeal body be changed, made either as a request for rectification or as an appeal."@en .
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#definition> "Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena."@fi .
-<https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi .
-<https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en .
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Appeal"@en .
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Muutoksenhaku"@fi .
 <https://kela.fi/ontology/kelao#Appeal> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ändringssökande"@sv .
@@ -1972,8 +1968,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2000/01/rdf-schema#label> "Liite"@fi .
 <https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#definition> "Additional material received from a customer, or material provided to the customer in connection with an outgoing document."@en .
 <https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#definition> "Asiakkaalta vastaanotettu lisämateriaali tai lähtevän asiakirjan yhteydessä asiakkaalle välitettävä lisämateriaali."@fi .
-<https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi .
-<https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en .
 <https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Attachment"@en .
 <https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bilaga"@sv .
 <https://kela.fi/ontology/kelao#Attachment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Liite"@fi .
@@ -2298,8 +2292,6 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2000/01/rdf-schema#label> "Payment"@en .
 <https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#definition> "A benefit disbursement, or an instalment of it, paid to the payee on the basis of a benefit decision."@en .
 <https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#definition> "Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä."@fi .
-<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi .
-<https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en .
 <https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Betalning"@sv .
 <https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maksu"@fi .
 <https://kela.fi/ontology/kelao#Payment> <http://www.w3.org/2004/02/skos/core#prefLabel> "Payment"@en .

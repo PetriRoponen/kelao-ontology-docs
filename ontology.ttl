@@ -519,8 +519,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "has benefit group"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit group into which a benefit is classified."@en ,
                                                                   "Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "etuusryhmä"@fi ,
                                                                  "has benefit group"@en .
 
@@ -2057,8 +2055,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                                          <https://iri.suomi.fi/terminology/kela/c744> ;
         <http://www.w3.org/2004/02/skos/core#definition> "A customer’s demand that a decision issued by an authority or an appeal body be changed, made either as a request for rectification or as an appeal."@en ,
                                                          "Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena."@fi ;
-        <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                            "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Appeal"@en ,
                                                         "Muutoksenhaku"@fi ,
                                                         "Ändringssökande"@sv ;
@@ -2140,8 +2136,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "Liite"@fi ;
             <http://www.w3.org/2004/02/skos/core#definition> "Additional material received from a customer, or material provided to the customer in connection with an outgoing document."@en ,
                                                              "Asiakkaalta vastaanotettu lisämateriaali tai lähtevän asiakirjan yhteydessä asiakkaalle välitettävä lisämateriaali."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "Attachment"@en ,
                                                             "Bilaga"@sv ,
                                                             "Liite"@fi ;
@@ -2489,8 +2483,6 @@ xsd:duration rdf:type rdfs:Datatype .
                     "Payment"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A benefit disbursement, or an instalment of it, paid to the payee on the basis of a benefit decision."@en ,
                                                           "Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä."@fi ;
-         <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                             "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Betalning"@sv ,
                                                          "Maksu"@fi ,
                                                          "Payment"@en ;
