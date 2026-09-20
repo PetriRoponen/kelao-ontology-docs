@@ -508,8 +508,6 @@ kelao:hasBenefitGroup a owl:ObjectProperty ;
     rdfs:range kelao:BenefitGroup ;
     skos:definition "Relation stating the benefit group into which a benefit is classified."@en,
         "Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has benefit group"@en,
         "etuusryhmä"@fi .
 
@@ -1819,8 +1817,6 @@ kelao:Appeal a owl:Class ;
         kelaterm:c744 ;
     skos:definition "A customer’s demand that a decision issued by an authority or an appeal body be changed, made either as a request for rectification or as an appeal."@en,
         "Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Appeal"@en,
         "Muutoksenhaku"@fi,
         "Ändringssökande"@sv ;
@@ -1939,8 +1935,6 @@ kelao:Attachment a owl:Class ;
     rdfs:subClassOf schema:DigitalDocument ;
     skos:definition "Additional material received from a customer, or material provided to the customer in connection with an outgoing document."@en,
         "Asiakkaalta vastaanotettu lisämateriaali tai lähtevän asiakirjan yhteydessä asiakkaalle välitettävä lisämateriaali."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Attachment"@en,
         "Liite"@fi,
         "Bilaga"@sv ;
@@ -2033,8 +2027,6 @@ kelao:Payment a owl:Class ;
     rdfs:subClassOf prov:Entity ;
     skos:definition "A benefit disbursement, or an instalment of it, paid to the payee on the basis of a benefit decision."@en,
         "Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Payment"@en,
         "Maksu"@fi,
         "Betalning"@sv ;
