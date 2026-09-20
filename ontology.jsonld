@@ -128,13 +128,25 @@
   "@id" : "http://purl.org/dc/terms/identifier",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/license",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/modified",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rightsHolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/subject",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/title",
@@ -227,14 +239,17 @@
   "@id" : "http://www.w3.org/ns/prov#Entity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "https://kela.fi/ontology/kelao",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "fi",
-    "@value" : "Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  \n        organisaatiot, maantieteelliset alueet, palvelukanavat, tietotuotteet, lainsäädännön sekä sosiaaliturvan käsitteet.\n        "
+    "@value" : "Sosiaaliturvan ydinontologia (kelao) kuvaa Suomen sosiaaliturvajärjestelmän keskeiset käsitteet ja niiden väliset suhteet koneellisesti tulkittavassa muodossa: etuudet ja niiden osat, myöntämisedellytykset, hakemus- ja päätösprosessin, maksut ja takaisinperinnän, muutoksenhaun, asiakkaan roolit, palvelut ja palvelukanavat, hallinnollisen aluehierarkian sekä säädöspohjan. Ontologia täydentää Kelan terminologista sanastoa: sanasto määrittelee käsitteet ihmislukijalle, ontologia tekee käsitteiden väliset suhteet, rajoitteet ja päättelysäännöt koneellisesti tarkistettaviksi ja kyselytäviksi."
   }, {
     "@language" : "en",
-    "@value" : "The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.\n\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.\n"
+    "@value" : "The Finnish Social Security Core Ontology (kelao) describes the core concepts of the Finnish social security system and the relationships between them in a machine-interpretable form: benefits and their components, eligibility criteria, the application and decision process, payments and recovery, appeals, customer roles, services and service channels, the administrative area hierarchy, and the underlying legislation. The ontology complements Kela's terminological vocabulary: the vocabulary defines concepts for human readers, while the ontology makes the relationships, constraints and inference rules between concepts machine-checkable and queryable."
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@id" : "https://www.linkedin.com/in/petri-roponen-052aa772"
@@ -248,16 +263,20 @@
   } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Core Ontology for Finnish social security concepts: applicants, benefits, eligibility criteria, services, organisations and legislation."
-  }, {
-    "@language" : "en",
-    "@value" : "This is a draft version. Content is subject to change."
+    "@value" : "A core ontology providing the structured semantics that knowledge graphs, AI agents and information systems need for social security concepts."
   }, {
     "@language" : "fi",
-    "@value" : "Tämä on luonnosversio (Draft). Sisältö voi muuttua."
+    "@value" : "Ydinontologia, joka tarjoaa tietämysgraafien, tekoälyagenttien ja tietojärjestelmien tarvitseman rakenteisen semantiikan sosiaaliturvan käsitteille."
+  } ],
+  "http://purl.org/dc/terms/identifier" : [ {
+    "@value" : "https://kela.fi/ontology/kelao/0.5.2"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@value" : "en"
   }, {
-    "@language" : "fi",
-    "@value" : "Ydinontologia Suomen sosiaaliturvan keskeisille käsitteille: hakijat, etuudet, etuuskriteerit, palvelut, organisaatiot ja säädökset."
+    "@value" : "fi"
+  }, {
+    "@value" : "sv"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
@@ -266,8 +285,24 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2026-09-20"
   } ],
-  "http://purl.org/dc/terms/source" : [ {
-    "@id" : "https://iri.suomi.fi/terminology/kela/"
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://www.kela.fi/"
+  } ],
+  "http://purl.org/dc/terms/rightsHolder" : [ {
+    "@id" : "https://www.kela.fi/"
+  } ],
+  "http://purl.org/dc/terms/subject" : [ {
+    "@language" : "fi",
+    "@value" : "julkishallinto"
+  }, {
+    "@language" : "en",
+    "@value" : "public administration"
+  }, {
+    "@language" : "en",
+    "@value" : "social security"
+  }, {
+    "@language" : "fi",
+    "@value" : "sosiaaliturva"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
@@ -284,8 +319,11 @@
     "@value" : "https://kela.fi/ontology/kelao#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The core version contains only the central social security concepts (benefits, eligibility, life situations, legislation, customership, services, areas). Extensions (e.g. data products) are deliberately kept outside the core ontology. Reuses external vocabularies and ontologies: PROV-O, ELI, CPSV, PTV (Finnish Service Catalogue), schema.org, WGS84 Geo, W3C Locn, W3C Org, SHACL, and Kela's terminological vocabulary (v7.1)."
+  }, {
     "@language" : "fi",
-    "@value" : "Ydinversio sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, ...)."
+    "@value" : "Ydinversio sisältää vain sosiaaliturvan keskeiset käsitteet (etuudet, kelpoisuus, elämäntilanteet, säädökset, asiakkuus, palvelut, alueet). Laajennukset (esim. tietotuotteet) on tarkoituksella rajattu ydinontologian ulkopuolelle. Hyödyntää ulkoisia sanastoja ja ontologioita: PROV-O, ELI, CPSV, PTV (Suomi.fi-palvelutietovaranto), schema.org, WGS84 Geo, W3C Locn, W3C Org, SHACL sekä Kelan terminologinen sanasto (v7.1)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -295,42 +333,18 @@
     "@value" : "Sosiaaliturvan ydinontologia"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://data.europa.eu/eli/ontology#"
-  }, {
-    "@id" : "http://data.europa.eu/m8g/"
-  }, {
-    "@id" : "http://iri.suomi.fi/model/suomiptv2/"
-  }, {
-    "@id" : "http://purl.org/dc/terms/"
-  }, {
-    "@id" : "http://purl.org/vocab/cpsv#"
-  }, {
-    "@id" : "http://schema.org/"
-  }, {
-    "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#"
-  }, {
-    "@id" : "http://www.w3.org/ns/locn#"
-  }, {
-    "@id" : "http://www.w3.org/ns/org#"
-  }, {
-    "@id" : "http://www.w3.org/ns/prov#"
-  }, {
-    "@id" : "http://www.w3.org/ns/shacl#"
-  }, {
-    "@id" : "https://iri.suomi.fi/terminology/kela/"
-  }, {
     "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
   }, {
     "@id" : "https://semiceu.github.io/CPSV-AP/releases/3.2.0/"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
-    "@id" : "https://kela.fi/ontology/kelao/0.5.0"
+    "@id" : "https://kela.fi/ontology/kelao/0.5.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
     "@id" : "https://petriroponen.github.io/kelao-ontology-docs/index-fi.html"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.5.1-core-draft"
+    "@value" : "0.5.2-core-draft"
   } ],
   "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
     "@language" : "fi",
@@ -343,7 +357,10 @@
     "@value" : "Versio 0.5.0 (2026-09-19):\nMääritelmäkierros. (1) Jokaisella luokalla ja ominaisuudella on skos:definition@fi ja @en; määritelmät noudattavat muotoa \"<yläkäsite>, joka <erottava piirre>\". Luokkien Appeal, AppealBody, Applicant, Application, Beneficiary, Benefit, Decision ja ServiceUnit määritelmät on otettu Kelan terminologisesta sanastosta (v7.1) ja lähde merkitty dcterms:source-viittauksella käsitteen IRI:in; sanastosta johdettuja ovat lisäksi ominaisuudet inhibiting, reducing, paymentRecipient, meansTest, municipalityGroup, residenceRequired, requiresEmploymentHistory, validFrom ja validTo. Ulkoisiin lähteisiin (ELI, PTV, kuntalaki, laki hyvinvointialueesta, laki alueiden kehittämisestä, laki työvoimapalveluiden järjestämisestä) perustuvat määritelmät on merkitty samoin. (2) Määritelmät, joilla ei ole virallista lähdettä, on merkitty skos:editorialNote-huomautuksella tarkistettaviksi käsiteasiantuntijoiden kanssa versiossa 0.6. (3) Annotaatiokäytäntö yhtenäistetty: skos:definition = määritelmä, rdfs:comment = lyhyt käyttöohje; labelia toistaneet kommentit poistettu. (4) Sanastolinkitykset: luokille skos:exactMatch (AppealBody c748, Beneficiary c75, Decision c78, ServiceUnit c862; Appeal skos:closeMatch c741 ja c744); ominaisuuksien skos:exactMatch-linkit käsitteisiin muutettu skos:relatedMatch-suhteiksi, koska ominaisuus ja käsite eivät ole sama asia. (5) Benefit-luokan määritelmästä siirretty verotuksen sanaston määritelmä skos:note-huomautukseksi. (6) relationshipAbbreviation-literaalit tyypitetty xsd:string. (7) Versiointimetatiedot päivitetty. Rakenteellisia muutoksia (luokkien, ominaisuuksien, domainien tai rangejen lisäyksiä tai poistoja) ei tehty; karsintaehdokkaat ja mallinnushavainnot on koottu erilliseen määritelmätyökirjaan versiota 0.6 varten."
   }, {
     "@language" : "fi",
-    "@value" : "Versio 0.5.1 (2026-09-20):\nMääritelmätyökirjan katselmointikierros. (1) Korjattu määritelmiä, lähteitä tai kommentteja: Attachment, BenefitComponent, BenefitGroup, Country, Decision, EligibilityCriterion (lisätty synonyymit), EmploymentArea (epäluotettava lakiviittauslähde poistettu), Location, Municipality, Payment, Region, WellbeingServiceCounty; roleOfCustomer-kommenttia täydennetty; processingTime-kommentti korvattu lopullisella tekstillä. (2) rdfs:domain lisätty 40 datatyyppiominaisuudelle, ja ei-rajoittava, useamman luokan schema:domainIncludes ominaisuuksille amount, postOffice, postalCode ja uuid; toteuttaa määritelmätyökirjan karsintaryhmien katselmoinnin (Huomio #6). (3) Kaikki katselmoinnissa hylätyt karsintaehdokkaat (Päätös = hylkää) poistettiin suoraan vanhentamisen sijaan: karsintaryhmä G2 kokonaisuudessaan -- luokka DataProduct, objektiominaisuudet dataProductOwner ja referenceToBenefit sekä datatyyppiominaisuudet additionalInformation, dataProductId, dataProductKeywords, dataProductType, fileFormat, reportCollection ja responsibleParty -- sekä yhdeksän muuta karsintaryhmien G1 ja G3 ehdokasta (areaType, employmentAreaCode, employmentAreaName, geonamesId, municipalityCode, officeNumber, wellbeingServiceCountyCode, wellbeingServiceCountyName, wikidataId) ja päällekkäinen processingTimeBusinessDays. Kaikki poistetut termit ja niiden poiston syy on kirjattu version 0.6 määritelmätyökirjan \"Poistetut\"-välilehdelle. (4) latitude ja longitude hyväksytty (ei karsita) ja niiden lähteeksi vaihdettu SEMIC Core Location Vocabulary."
+    "@value" : "Versio 0.5.1 (2026-09-20):\nMääritelmätyökirjan katselmointikierros. (1) Korjattu määritelmiä, lähteitä tai kommentteja asiantuntijakatselmoinnin perusteella: Attachment, BenefitComponent, BenefitGroup, Country, Decision, EligibilityCriterion (lisätty synonyymit), EmploymentArea (epäluotettava lakiviittauslähde poistettu), Location, Municipality, Payment, Region, WellbeingServiceCounty; roleOfCustomer-kommenttia täydennetty; processingTime-kommentti korvattu lopullisella tekstillä. (2) rdfs:domain lisätty 40 datatyyppiominaisuudelle, ja ei-rajoittava, useamman luokan schema:domainIncludes ominaisuuksille amount, postOffice, postalCode ja uuid; toteuttaa määritelmätyökirjan karsintaryhmien katselmoinnin (Huomio #6). (3) Kaikki katselmoinnissa hylätyt karsintaehdokkaat (Päätös = hylkää) poistettiin suoraan vanhentamisen sijaan: karsintaryhmä G2 kokonaisuudessaan -- luokka DataProduct, objektiominaisuudet dataProductOwner ja referenceToBenefit sekä datatyyppiominaisuudet additionalInformation, dataProductId, dataProductKeywords, dataProductType, fileFormat, reportCollection ja responsibleParty -- sekä yhdeksän muuta karsintaryhmien G1 ja G3 ehdokasta (areaType, employmentAreaCode, employmentAreaName, geonamesId, municipalityCode, officeNumber, wellbeingServiceCountyCode, wellbeingServiceCountyName, wikidataId) ja päällekkäinen processingTimeBusinessDays. Kaikki poistetut termit ja niiden poiston syy on kirjattu version 0.6 määritelmätyökirjan \"Poistetut\"-välilehdelle. (4) latitude ja longitude hyväksytty (ei karsita) ja niiden lähteeksi vaihdettu SEMIC Core Location Vocabulary."
+  }, {
+    "@language" : "fi",
+    "@value" : "Versio 0.5.2 (2026-09-20):\nMetatietojen siivous ontologiatasolla; luokkiin, ominaisuuksiin tai aksioomiin ei tehty muutoksia. (1) dcterms:abstract ja dcterms:description sisältävät nyt täsmälleen yhden arvon kieltä kohden aiemman, varsinaisen kuvauksen ja siihen sekoitetun, asiaan kuulumattoman ”luonnosversio”-huomautuksen sijaan; luonnostila näkyy jo owl:versionInfo-kentän ”-core-draft”-päättteestä. (2) Poistettu ontologiatason dcterms:source, joka osoitti koko kelaterm:-nimiavaruuteen: vain osa termeistä on tosiasiassa peräisin sieltä, ja tämä on jo merkitty jokaiselle sellaiselle termille erikseen. (3) rdfs:seeAlso, joka listasi jokaisen hyödynnetyn sanaston paljaan nimiavaruus-IRI:n (näkyvissä jo @prefix-määrittelyinä), sisältää nyt vain aidot dokumentaatiolinkit; hyödynnetyt sanastot nimetään sen sijaan selväkielisesti rdfs:comment-kentässä. (4) Lisätty aiemmin puuttuneet dcterms:publisher, dcterms:rightsHolder (Kela), dcterms:identifier, dcterms:language ja dcterms:subject."
   }, {
     "@language" : "en",
     "@value" : "Version 0.4.0 (2026-07-03):\n(1) Geographic hierarchy: added the transitive generic property isPartOfArea\nwith inverse containsArea, and its subproperties belongsToRegion,\nbelongsToCountry and belongsToEmploymentArea. The existing property\nbelongsToWellbeingServiceCounty was linked into the same hierarchy as a\nsubproperty. Added class EmploymentArea. Added the property chain\nhasLocation o isPartOfArea -> hasLocation, so that location propagates\nupwards through the area hierarchy. The domain of hasLocation was widened\nto cover both service units and organisations (union).\n(2) Social security core concepts: added classes EligibilityCriterion\n(with legal-basis reference), Customer with role relations (roleOfCustomer,\nhasCustomerRole; applicant, user and beneficiary as customer roles),\nBeneficiary, Payment, Recovery, AppealBody and Income, with their properties.\n"
@@ -352,7 +369,10 @@
     "@value" : "Version 0.5.0 (2026-09-19):\nDefinition round. (1) Every class and property now has skos:definition@fi and @en in the form \"<genus>, which <differentia>\". Definitions of Appeal, AppealBody, Applicant, Application, Beneficiary, Benefit, Decision and ServiceUnit are taken from the Kela terminological vocabulary (v7.1) with dcterms:source pointing to the concept IRI; the properties inhibiting, reducing, paymentRecipient, meansTest, municipalityGroup, residenceRequired, requiresEmploymentHistory, validFrom and validTo are likewise derived from it. Definitions based on external sources (ELI, PTV, Finnish acts) are marked the same way. (2) Definitions without an authoritative source carry a skos:editorialNote flagging them for review with terminology experts in version 0.6. (3) Annotation practice unified: skos:definition = definition, rdfs:comment = short usage note; comments merely repeating the label were removed. (4) Vocabulary mappings: skos:exactMatch for classes; property-level skos:exactMatch links to concepts changed to skos:relatedMatch. (5) The taxation vocabulary definition moved from Benefit's definition to a skos:note. (6) relationshipAbbreviation literals typed xsd:string. (7) Versioning metadata updated. No structural changes were made; pruning candidates and modelling issues are collected in a separate definition workbook for version 0.6."
   }, {
     "@language" : "en",
-    "@value" : "Version 0.5.1 (2026-09-20):\nReview round based on the definition workbook. (1) Corrected definitions, sources or comments: Attachment, BenefitComponent, BenefitGroup, Country, Decision, EligibilityCriterion (added synonyms), EmploymentArea (unreliable legal-act source removed), Location, Municipality, Payment, Region, WellbeingServiceCounty; roleOfCustomer comment clarified; processingTime comment resolved into a definitive text. (2) rdfs:domain added to 40 datatype properties, and schema:domainIncludes (non-restrictive, multi-class) added to amount, postOffice, postalCode and uuid, implementing the workbook's pruning-group review (Huomio #6). (3) All pruning candidates rejected in the review (Päätös = hylkää) were removed outright rather than deprecated: the DataProduct group (G2) in full -- class DataProduct, object properties dataProductOwner and referenceToBenefit, and datatype properties additionalInformation, dataProductId, dataProductKeywords, dataProductType, fileFormat, reportCollection and responsibleParty -- together with nine further candidates from groups G1 and G3 (areaType, employmentAreaCode, employmentAreaName, geonamesId, municipalityCode, officeNumber, wellbeingServiceCountyCode, wellbeingServiceCountyName, wikidataId) and the overlapping processingTimeBusinessDays. All removed terms are recorded, with their reason for removal, on the \"Poistetut\" sheet of the version 0.6 definition workbook. (4) latitude and longitude were confirmed (not pruned) and re-sourced to the SEMIC Core Location Vocabulary."
+    "@value" : "Version 0.5.1 (2026-09-20):\nReview round based on the definition workbook. (1) Corrected definitions, sources or comments after expert review: Attachment, BenefitComponent, BenefitGroup, Country, Decision, EligibilityCriterion (added synonyms), EmploymentArea (unreliable legal-act source removed), Location, Municipality, Payment, Region, WellbeingServiceCounty; roleOfCustomer comment clarified; processingTime comment resolved into a definitive text. (2) rdfs:domain added to 40 datatype properties, and schema:domainIncludes (non-restrictive, multi-class) added to amount, postOffice, postalCode and uuid, implementing the workbook's pruning-group review (Huomio #6). (3) All pruning candidates rejected in the review (Päätös = hylkää) were removed outright rather than deprecated: the DataProduct group (G2) in full -- class DataProduct, object properties dataProductOwner and referenceToBenefit, and datatype properties additionalInformation, dataProductId, dataProductKeywords, dataProductType, fileFormat, reportCollection and responsibleParty -- together with nine further candidates from groups G1 and G3 (areaType, employmentAreaCode, employmentAreaName, geonamesId, municipalityCode, officeNumber, wellbeingServiceCountyCode, wellbeingServiceCountyName, wikidataId) and the overlapping processingTimeBusinessDays. All removed terms are recorded, with their reason for removal, on the \"Poistetut\" sheet of the version 0.6 definition workbook. (4) latitude and longitude were confirmed (not pruned) and re-sourced to the SEMIC Core Location Vocabulary."
+  }, {
+    "@language" : "en",
+    "@value" : "Version 0.5.2 (2026-09-20):\nMetadata cleanup at the ontology level; no classes, properties or axioms were changed. (1) dcterms:abstract and dcterms:description each now carry exactly one value per language, instead of a mix of an actual description and an unrelated \"draft version\" notice crammed into dcterms:description; draft status is already signalled by the \"-core-draft\" suffix in owl:versionInfo. (2) Removed the ontology-level dcterms:source pointing at the whole kelaterm: vocabulary namespace: only a subset of terms are actually sourced from it, and that is already recorded individually on each such term. (3) rdfs:seeAlso, which listed bare namespace URIs for every reused vocabulary (already visible as @prefix declarations), now lists only genuine documentation links; the reused vocabularies are instead named in plain language in rdfs:comment. (4) Added dcterms:publisher, dcterms:rightsHolder (Kela), dcterms:identifier, dcterms:language and dcterms:subject, all previously absent."
   } ],
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
@@ -407,6 +427,13 @@
   }, {
     "@language" : "fi",
     "@value" : "Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "fi",
+    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
+  }, {
+    "@language" : "en",
+    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -863,13 +890,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Joukko etuuksia, joilla on samankaltainen tarkoitus tai muu määritelty looginen yhteenkuuluvuus, joiden perusteella ne on luokiteltu kuuluvaksi yhteen."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1578,6 +1598,13 @@
   }, {
     "@language" : "fi",
     "@value" : "Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "fi",
+    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
+  }, {
+    "@language" : "en",
+    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
@@ -3479,6 +3506,13 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@language" : "fi",
+    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
+  }, {
+    "@language" : "en",
+    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -6774,5 +6808,18 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
     "@value" : "Käytetään kelao:LegalResource-instansseilla. Kuvaa hetken, jolloin säädöksen kyseinen versio on voimassa."
+  } ]
+}, {
+  "@id" : "https://www.kela.fi/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "fi",
+    "@value" : "Kela"
+  }, {
+    "@language" : "en",
+    "@value" : "Social Insurance Institution of Finland"
   } ]
 } ]
