@@ -9,7 +9,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:kelao="https://kela.fi/ontology/kelao#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
     <owl:Ontology rdf:about="https://kela.fi/ontology/kelao">
         <owl:versionIRI rdf:resource="https://petriroponen.github.io/kelao-ontology-docs/index-fi.html"/>
         <terms:abstract xml:lang="fi">Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  
@@ -27,7 +28,7 @@
         <terms:description xml:lang="fi">Tämä on luonnosversio (Draft). Sisältö voi muuttua.</terms:description>
         <terms:description xml:lang="fi">Ydinontologia Suomen sosiaaliturvan keskeisille käsitteille: hakijat, etuudet, etuuskriteerit, palvelut, organisaatiot ja säädökset.</terms:description>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-19</terms:modified>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-20</terms:modified>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/"/>
         <terms:title xml:lang="en">Finnish Social Security Core Ontology</terms:title>
         <terms:title xml:lang="fi">Sosiaaliturvan ydinontologia</terms:title>
@@ -50,8 +51,8 @@
         <rdfs:seeAlso rdf:resource="https://iri.suomi.fi/terminology/kela/"/>
         <rdfs:seeAlso rdf:resource="https://petriroponen.github.io/kelao-ontology-docs/"/>
         <rdfs:seeAlso rdf:resource="https://semiceu.github.io/CPSV-AP/releases/3.2.0/"/>
-        <owl:priorVersion rdf:resource="https://kela.fi/ontology/kelao/0.4.1"/>
-        <owl:versionInfo>0.5.0-core-draft</owl:versionInfo>
+        <owl:priorVersion rdf:resource="https://kela.fi/ontology/kelao/0.5.0"/>
+        <owl:versionInfo>0.5.1-core-draft</owl:versionInfo>
         <skos:changeNote xml:lang="fi">Versio 0.4.0 (2026-07-03):
 (1) Aluehierarkia: lisätty transitiivinen yleisominaisuus &apos;on osa aluetta&apos; (isPartOfArea)
 käänteisominaisuuksineen (containsArea) sekä sen aliominaisuudet kuuluu maakuntaan
@@ -88,6 +89,8 @@ skos:ConceptScheme. Ominaisuuksien isLifeSituationFor (domain) ja
 relatedToLifeSituation (range) viittaukset päivitetty.</skos:changeNote>
         <skos:changeNote xml:lang="fi">Versio 0.5.0 (2026-09-19):
 Määritelmäkierros. (1) Jokaisella luokalla ja ominaisuudella on skos:definition@fi ja @en; määritelmät noudattavat muotoa &quot;&lt;yläkäsite&gt;, joka &lt;erottava piirre&gt;&quot;. Luokkien Appeal, AppealBody, Applicant, Application, Beneficiary, Benefit, Decision ja ServiceUnit määritelmät on otettu Kelan terminologisesta sanastosta (v7.1) ja lähde merkitty dcterms:source-viittauksella käsitteen IRI:in; sanastosta johdettuja ovat lisäksi ominaisuudet inhibiting, reducing, paymentRecipient, meansTest, municipalityGroup, residenceRequired, requiresEmploymentHistory, validFrom ja validTo. Ulkoisiin lähteisiin (ELI, PTV, kuntalaki, laki hyvinvointialueesta, laki alueiden kehittämisestä, laki työvoimapalveluiden järjestämisestä) perustuvat määritelmät on merkitty samoin. (2) Määritelmät, joilla ei ole virallista lähdettä, on merkitty skos:editorialNote-huomautuksella tarkistettaviksi käsiteasiantuntijoiden kanssa versiossa 0.6. (3) Annotaatiokäytäntö yhtenäistetty: skos:definition = määritelmä, rdfs:comment = lyhyt käyttöohje; labelia toistaneet kommentit poistettu. (4) Sanastolinkitykset: luokille skos:exactMatch (AppealBody c748, Beneficiary c75, Decision c78, ServiceUnit c862; Appeal skos:closeMatch c741 ja c744); ominaisuuksien skos:exactMatch-linkit käsitteisiin muutettu skos:relatedMatch-suhteiksi, koska ominaisuus ja käsite eivät ole sama asia. (5) Benefit-luokan määritelmästä siirretty verotuksen sanaston määritelmä skos:note-huomautukseksi. (6) relationshipAbbreviation-literaalit tyypitetty xsd:string. (7) Versiointimetatiedot päivitetty. Rakenteellisia muutoksia (luokkien, ominaisuuksien, domainien tai rangejen lisäyksiä tai poistoja) ei tehty; karsintaehdokkaat ja mallinnushavainnot on koottu erilliseen määritelmätyökirjaan versiota 0.6 varten.</skos:changeNote>
+        <skos:changeNote xml:lang="fi">Versio 0.5.1 (2026-09-20):
+Määritelmätyökirjan katselmointikierros. (1) Korjattu määritelmiä, lähteitä tai kommentteja: Attachment, BenefitComponent, BenefitGroup, Country, Decision, EligibilityCriterion (lisätty synonyymit), EmploymentArea (epäluotettava lakiviittauslähde poistettu), Location, Municipality, Payment, Region, WellbeingServiceCounty; roleOfCustomer-kommenttia täydennetty; processingTime-kommentti korvattu lopullisella tekstillä. (2) rdfs:domain lisätty 40 datatyyppiominaisuudelle, ja ei-rajoittava, useamman luokan schema:domainIncludes ominaisuuksille amount, postOffice, postalCode ja uuid; toteuttaa määritelmätyökirjan karsintaryhmien katselmoinnin (Huomio #6). (3) Kaikki katselmoinnissa hylätyt karsintaehdokkaat (Päätös = hylkää) poistettiin suoraan vanhentamisen sijaan: karsintaryhmä G2 kokonaisuudessaan -- luokka DataProduct, objektiominaisuudet dataProductOwner ja referenceToBenefit sekä datatyyppiominaisuudet additionalInformation, dataProductId, dataProductKeywords, dataProductType, fileFormat, reportCollection ja responsibleParty -- sekä yhdeksän muuta karsintaryhmien G1 ja G3 ehdokasta (areaType, employmentAreaCode, employmentAreaName, geonamesId, municipalityCode, officeNumber, wellbeingServiceCountyCode, wellbeingServiceCountyName, wikidataId) ja päällekkäinen processingTimeBusinessDays. Kaikki poistetut termit ja niiden poiston syy on kirjattu version 0.6 määritelmätyökirjan &quot;Poistetut&quot;-välilehdelle. (4) latitude ja longitude hyväksytty (ei karsita) ja niiden lähteeksi vaihdettu SEMIC Core Location Vocabulary.</skos:changeNote>
         <skos:changeNote xml:lang="en">Version 0.4.0 (2026-07-03):
 (1) Geographic hierarchy: added the transitive generic property isPartOfArea
 with inverse containsArea, and its subproperties belongsToRegion,
@@ -104,6 +107,8 @@ Beneficiary, Payment, Recovery, AppealBody and Income, with their properties.
 </skos:changeNote>
         <skos:changeNote xml:lang="en">Version 0.5.0 (2026-09-19):
 Definition round. (1) Every class and property now has skos:definition@fi and @en in the form &quot;&lt;genus&gt;, which &lt;differentia&gt;&quot;. Definitions of Appeal, AppealBody, Applicant, Application, Beneficiary, Benefit, Decision and ServiceUnit are taken from the Kela terminological vocabulary (v7.1) with dcterms:source pointing to the concept IRI; the properties inhibiting, reducing, paymentRecipient, meansTest, municipalityGroup, residenceRequired, requiresEmploymentHistory, validFrom and validTo are likewise derived from it. Definitions based on external sources (ELI, PTV, Finnish acts) are marked the same way. (2) Definitions without an authoritative source carry a skos:editorialNote flagging them for review with terminology experts in version 0.6. (3) Annotation practice unified: skos:definition = definition, rdfs:comment = short usage note; comments merely repeating the label were removed. (4) Vocabulary mappings: skos:exactMatch for classes; property-level skos:exactMatch links to concepts changed to skos:relatedMatch. (5) The taxation vocabulary definition moved from Benefit&apos;s definition to a skos:note. (6) relationshipAbbreviation literals typed xsd:string. (7) Versioning metadata updated. No structural changes were made; pruning candidates and modelling issues are collected in a separate definition workbook for version 0.6.</skos:changeNote>
+        <skos:changeNote xml:lang="en">Version 0.5.1 (2026-09-20):
+Review round based on the definition workbook. (1) Corrected definitions, sources or comments: Attachment, BenefitComponent, BenefitGroup, Country, Decision, EligibilityCriterion (added synonyms), EmploymentArea (unreliable legal-act source removed), Location, Municipality, Payment, Region, WellbeingServiceCounty; roleOfCustomer comment clarified; processingTime comment resolved into a definitive text. (2) rdfs:domain added to 40 datatype properties, and schema:domainIncludes (non-restrictive, multi-class) added to amount, postOffice, postalCode and uuid, implementing the workbook&apos;s pruning-group review (Huomio #6). (3) All pruning candidates rejected in the review (Päätös = hylkää) were removed outright rather than deprecated: the DataProduct group (G2) in full -- class DataProduct, object properties dataProductOwner and referenceToBenefit, and datatype properties additionalInformation, dataProductId, dataProductKeywords, dataProductType, fileFormat, reportCollection and responsibleParty -- together with nine further candidates from groups G1 and G3 (areaType, employmentAreaCode, employmentAreaName, geonamesId, municipalityCode, officeNumber, wellbeingServiceCountyCode, wellbeingServiceCountyName, wikidataId) and the overlapping processingTimeBusinessDays. All removed terms are recorded, with their reason for removal, on the &quot;Poistetut&quot; sheet of the version 0.6 definition workbook. (4) latitude and longitude were confirmed (not pruned) and re-sourced to the SEMIC Core Location Vocabulary.</skos:changeNote>
         <skos:scopeNote xml:lang="fi">Sosiaaliturvan tietämysgraafi (KELAO) ei sisällä hakijakohtaisia tietoja — henkilötiedot käsitellään Kelan operatiivisissa järjestelmissä.</skos:scopeNote>
         <skos:scopeNote xml:lang="en">The Social Security knowledge graph (KELAO) does not contain applicant-level data — personal data is processed in Kela&apos;s operational systems.</skos:scopeNote>
     </owl:Ontology>
@@ -196,6 +201,13 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/domainIncludes -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/domainIncludes"/>
     
 
 
@@ -641,25 +653,6 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
         <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:prefLabel xml:lang="en">criterion legal basis</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">kriteerin oikeusperusta</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#dataProductOwner -->
-
-
-    <owl:ObjectProperty rdf:about="https://kela.fi/ontology/kelao#dataProductOwner">
-        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#DataProduct"/>
-        <rdfs:range rdf:resource="https://kela.fi/ontology/kelao#Organisation"/>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">data product owner</rdfs:label>
-        <rdfs:label xml:lang="fi">tietotuotteen vastuuorganisaatio</rdfs:label>
-        <skos:definition xml:lang="en">Relation stating the organisation responsible for a data product.</skos:definition>
-        <skos:definition xml:lang="fi">Suhde, joka ilmaisee tietotuotteesta vastaavan organisaation.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">data product owner</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">tietotuotteen vastuuorganisaatio</skos:prefLabel>
     </owl:ObjectProperty>
     
 
@@ -1357,26 +1350,6 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#referenceToBenefit -->
-
-
-    <owl:ObjectProperty rdf:about="https://kela.fi/ontology/kelao#referenceToBenefit">
-        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#DataProduct"/>
-        <rdfs:range rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
-        <rdfs:comment xml:lang="fi">Etuus, johon tietotuote (esim. raportti) liittyy.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">etuus johon raportti kuuluu</rdfs:label>
-        <rdfs:label xml:lang="en">reference to benefit</rdfs:label>
-        <skos:definition xml:lang="en">Relation stating the benefit that a data product concerns.</skos:definition>
-        <skos:definition xml:lang="fi">Suhde, joka ilmaisee etuuden, jota tietotuote koskee.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">etuus johon raportti kuuluu</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">reference to benefit</skos:prefLabel>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#relatedBenefit -->
 
 
@@ -1474,8 +1447,8 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="https://kela.fi/ontology/kelao#Customer"/>
-        <rdfs:comment xml:lang="fi">Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen. Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva, tarkistettava 0.6:ssa.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen. Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva, tarkistettava 0.6:ssa. Sama henkilö tai ruokakunta voi esiintyä useassa roolissa samanaikaisesti, esimerkiksi hakijana, käyttäjänä ja maksunsaajana.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer. The same person or household may hold several roles at the same time, e.g. as applicant, user and payee.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">asiakkaan roolina</rdfs:label>
         <rdfs:label xml:lang="en">role of customer</rdfs:label>
@@ -1593,6 +1566,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#abbreviation">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Internal abbreviation used by Kela for the benefit.</rdfs:comment>
         <rdfs:comment xml:lang="fi">Kelan sisäisesti käyttämä etuuden lyhenne</rdfs:comment>
@@ -1609,33 +1583,16 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#additionalInformation -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#additionalInformation">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <rdfs:comment xml:lang="en">The URI of the data product where more information is available.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Tietotuotteen verkko-osoite (URI), josta saa lisätietoja.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">additional information</rdfs:label>
-        <rdfs:label xml:lang="fi">lisätietoja</rdfs:label>
-        <skos:definition xml:lang="fi">Verkko-osoite, josta saa lisätietoja tietotuotteesta.</skos:definition>
-        <skos:definition xml:lang="en">Web address providing further information on a data product.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">additional information</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">lisätietoja</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:DataProduct-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#amount -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#amount">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/amount"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#Income"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#Payment"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#Recovery"/>
         <rdfs:comment xml:lang="fi">Käytetään etuuden, maksun, tuloerän ja takaisinperinnän määrälle. Valuutta oletusarvoisesti euro.</rdfs:comment>
         <rdfs:comment xml:lang="en">The amount of money.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -1655,6 +1612,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#appealDate">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Appeal"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Date the appeal was filed.</rdfs:comment>
         <rdfs:comment xml:lang="fi">Päivä jolloin muutoksenhaku jätettiin.</rdfs:comment>
@@ -1676,6 +1634,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#applicationStatus">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Application"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esimerkiksi vireillä, käsittelyssä tai ratkaistu. Arvojoukko koodistona 0.6:ssa.</rdfs:comment>
         <rdfs:comment xml:lang="en">Processing status of the application.</rdfs:comment>
@@ -1698,6 +1657,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#areaCode">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esimerkiksi kuntanumero tai hyvinvointialueen tunnus. Yleinen ominaisuus; korvaa aluetyyppikohtaiset koodiominaisuudet.</rdfs:comment>
         <rdfs:comment xml:lang="en">Official area code (e.g. municipality number or wellbeing service county identifier).</rdfs:comment>
@@ -1715,30 +1675,11 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#areaType -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#areaType">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Päällekkäinen luokan (rdf:type) kanssa.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">alueen tyyppi</rdfs:label>
-        <rdfs:label xml:lang="en">area type</rdfs:label>
-        <skos:definition xml:lang="fi">Alueen tyyppi.</skos:definition>
-        <skos:definition xml:lang="en">Type of an area.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">alueen tyyppi</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">area type</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:Location-instansseilla. Lähdeontologiassa nimellä alueTyyppi.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#attachmentInOmaKela -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#attachmentInOmaKela">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Attachment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="fi">Onko liite haettavissa tai ilmoitettavissa OmaKelassa.</rdfs:comment>
         <rdfs:comment xml:lang="en">Whether the attachment can be requested or reported in OmaKela.</rdfs:comment>
@@ -1760,6 +1701,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#attachmentUri">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Attachment"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">URI link to where the attachment can be found.</rdfs:comment>
         <rdfs:comment xml:lang="fi">URI-linkki liitteeseen, josta liite löytyy.</rdfs:comment>
@@ -1781,6 +1723,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#calculationBase">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">calculation base</rdfs:label>
@@ -1799,6 +1742,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#currentVersion">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResourcePart"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">ajantasaisen lainosan URI</rdfs:label>
@@ -1813,73 +1757,12 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#dataProductId -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#dataProductId">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Identifier of a report or other data product, e.g. WIT100a.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Raportin tai muun tietotuotteen tunniste, esim. WIT100a.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">data product id</rdfs:label>
-        <rdfs:label xml:lang="fi">tietotuotteen tunniste</rdfs:label>
-        <skos:definition xml:lang="fi">Tietotuotteen yksilöivä tunniste.</skos:definition>
-        <skos:definition xml:lang="en">Unique identifier of a data product.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">data product id</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">tietotuotteen tunniste</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:DataProduct-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#dataProductKeywords -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#dataProductKeywords">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Keywords of the data product.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Tietotuotteen asia- tai avainsanat.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">data product keywords</rdfs:label>
-        <rdfs:label xml:lang="fi">tietotuotteen asiasanat</rdfs:label>
-        <skos:definition xml:lang="en">Keywords describing the content of a data product.</skos:definition>
-        <skos:definition xml:lang="fi">Tietotuotteen sisältöä kuvaavat asiasanat.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">data product keywords</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">tietotuotteen asiasanat</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:DataProduct-instansseilla. Lähdeontologiassa nimellä dataProductKeyWords.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#dataProductType -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#dataProductType">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Type of data product.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">data product type</rdfs:label>
-        <rdfs:label xml:lang="fi">tietotuotteen tyyppi</rdfs:label>
-        <skos:definition xml:lang="fi">Tietotuotteen tyyppi.</skos:definition>
-        <skos:definition xml:lang="en">Type of a data product.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">data product type</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">tietotuotteen tyyppi</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:DataProduct-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#date_document -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#date_document">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#date_document"/>
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <terms:source rdf:resource="http://data.europa.eu/eli/ontology#date_document"/>
         <rdfs:comment xml:lang="en">Date of adoption or signature of the legal resource (yyyy-mm-dd).</rdfs:comment>
@@ -1901,6 +1784,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#decisionDate">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Decision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Date the decision was issued.</rdfs:comment>
         <rdfs:comment xml:lang="fi">Päivä jolloin päätös annettiin.</rdfs:comment>
@@ -1922,6 +1806,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#decisionOutcome">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Decision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esimerkiksi myönnetty, hylätty tai osittain myönnetty. Arvojoukko koodistona 0.6:ssa.</rdfs:comment>
         <rdfs:comment xml:lang="en">Outcome of the decision.</rdfs:comment>
@@ -1939,69 +1824,11 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#employmentAreaCode -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#employmentAreaCode">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Päällekkäinen suhteen kelao:belongsToEmploymentArea ja kelao:areaCode kanssa.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">employment area code</rdfs:label>
-        <rdfs:label xml:lang="fi">työllisyysalueen koodi</rdfs:label>
-        <skos:definition xml:lang="en">Code of an employment area.</skos:definition>
-        <skos:definition xml:lang="fi">Työllisyysalueen koodi.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">employment area code</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">työllisyysalueen koodi</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:Location-instansseilla (tyypillisesti kunnalla).</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#employmentAreaName -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#employmentAreaName">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Päällekkäinen suhteen kelao:belongsToEmploymentArea ja työllisyysalueen labelin kanssa.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">employment area name</rdfs:label>
-        <rdfs:label xml:lang="fi">työllisyysalueen nimi</rdfs:label>
-        <skos:definition xml:lang="en">Name of an employment area.</skos:definition>
-        <skos:definition xml:lang="fi">Työllisyysalueen nimi.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">employment area name</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">työllisyysalueen nimi</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:Location-instansseilla (tyypillisesti kunnalla).</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#fileFormat -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#fileFormat">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">file format</rdfs:label>
-        <rdfs:label xml:lang="fi">tiedostomuoto</rdfs:label>
-        <skos:definition xml:lang="en">File format of a data product.</skos:definition>
-        <skos:definition xml:lang="fi">Tietotuotteen tiedostomuoto.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">file format</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">tiedostomuoto</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:DataProduct-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#filingDate -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#filingDate">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Application"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Date the application was filed and became pending.</rdfs:comment>
         <rdfs:comment xml:lang="fi">Hakemuksen vireilletulopäivä.</rdfs:comment>
@@ -2023,6 +1850,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#financing">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esimerkiksi valtion rahoitus, vakuutusmaksurahoitus tai näiden yhdistelmä.</rdfs:comment>
         <rdfs:comment xml:lang="en">How the financing is organized</rdfs:comment>
@@ -2042,31 +1870,11 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#geonamesId -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#geonamesId">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Maantieteellisen alueen GeoNames-tunniste.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Unique identifier in the GeoNames database.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">geonames id</rdfs:label>
-        <rdfs:label xml:lang="fi">geonames-tunniste</rdfs:label>
-        <skos:definition xml:lang="fi">Alueen tunniste GeoNames-tietokannassa.</skos:definition>
-        <skos:definition xml:lang="en">Identifier of an area in the GeoNames database.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">geonames id</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">geonames-tunniste</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:Location-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#homepage -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#homepage">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">homepage</rdfs:label>
@@ -2088,6 +1896,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#id_local">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#id_local"/>
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:source rdf:resource="http://data.europa.eu/eli/ontology#id_local"/>
         <rdfs:comment xml:lang="en">National identifier of the legal resource in the form number/year.</rdfs:comment>
@@ -2112,6 +1921,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#identifier">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/identifier"/>
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <terms:source rdf:resource="http://data.europa.eu/eli/ontology#"/>
         <rdfs:comment xml:lang="en">Official ELI URI identifying the legal resource on Finlex.</rdfs:comment>
@@ -2136,6 +1946,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#indexLinked">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esimerkiksi kansaneläkeindeksi (sanasto c520). Arvojoukko koodistona 0.6:ssa.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2156,14 +1967,14 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#latitude">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <terms:source rdf:resource="https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.1/"/>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">latitude</rdfs:label>
         <rdfs:label xml:lang="fi">leveysaste</rdfs:label>
-        <skos:definition xml:lang="en">Latitude of a location in the WGS84 reference system.</skos:definition>
         <skos:definition xml:lang="fi">Sijainnin leveysaste WGS84-koordinaatistossa.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
+        <skos:definition xml:lang="en">The geographic coordinate that specifies the north / south position of the geometry on the Earth&apos;s surface.</skos:definition>
         <skos:exactMatch rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
         <skos:prefLabel xml:lang="en">latitude</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">leveysaste</skos:prefLabel>
@@ -2176,14 +1987,14 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#longitude">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Location"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <terms:source rdf:resource="https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.1/"/>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">longitude</rdfs:label>
         <rdfs:label xml:lang="fi">pituusaste</rdfs:label>
-        <skos:definition xml:lang="en">Longitude of a location in the WGS84 reference system.</skos:definition>
         <skos:definition xml:lang="fi">Sijainnin pituusaste WGS84-koordinaatistossa.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
+        <skos:definition xml:lang="en">The geographic coordinate that specifies the east / west position of the Geometry on the Earth&apos;s surface.</skos:definition>
         <skos:exactMatch rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
         <skos:prefLabel xml:lang="en">longitude</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">pituusaste</skos:prefLabel>
@@ -2196,6 +2007,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#maximumAge">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Maximum age limit</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2217,6 +2029,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#meansTest">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/c688"/>
         <rdfs:comment xml:lang="en">Determining entitlement to benefits requires a means test.</rdfs:comment>
@@ -2241,6 +2054,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#minimumAge">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Minimum age limit</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2258,30 +2072,11 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#municipalityCode -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#municipalityCode">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Päällekkäinen yleisen kelao:areaCode-ominaisuuden kanssa.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">kuntakoodi</rdfs:label>
-        <rdfs:label xml:lang="en">municipality code</rdfs:label>
-        <skos:definition xml:lang="fi">Kunnan kolminumeroinen kuntanumero.</skos:definition>
-        <skos:definition xml:lang="en">Three-digit municipality code.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">kuntakoodi</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">municipality code</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:Municipality-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#municipalityGroup -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#municipalityGroup">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Municipality"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/c552"/>
         <rdfs:comment xml:lang="en">Kela&apos;s municipality group for general housing allowance: I, II, III or IV.</rdfs:comment>
@@ -2300,29 +2095,11 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#officeNumber -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#officeNumber">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">office number</rdfs:label>
-        <rdfs:label xml:lang="fi">toimiston numero</rdfs:label>
-        <skos:definition xml:lang="en">Number of a service unit in Kela’s internal register of offices.</skos:definition>
-        <skos:definition xml:lang="fi">Palvelupisteen numero Kelan sisäisessä toimipisterekisterissä.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">office number</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">toimiston numero</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:ServiceUnit-instansseilla. Lähdeontologiassa nimellä toimisto_nro.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#partIdentifier -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#partIdentifier">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResourcePart"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esim. &apos;23&apos; pykälälle, &apos;1&apos; momentille, &apos;a&apos; kohdalle</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2342,6 +2119,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#partOrder">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResourcePart"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="fi">Osan järjestysnumero (esim. 1, 2, 3...)</rdfs:comment>
         <rdfs:comment xml:lang="en">Part order of the statute</rdfs:comment>
@@ -2362,6 +2140,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#partText">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResourcePart"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Lainosan esim. pykälän teksti</rdfs:comment>
         <rdfs:comment xml:lang="en">Part text of the statute</rdfs:comment>
@@ -2382,6 +2161,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#partType">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResourcePart"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esimerkiksi luku, pykälä, momentti tai kohta.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2404,6 +2184,8 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#postOffice">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#ServiceChannel"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#ServiceUnit"/>
         <rdfs:comment xml:lang="en">Post office; searched by postal code.</rdfs:comment>
         <rdfs:comment xml:lang="fi">Postitoimipaikka. Haetaan postinumeron perusteella.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2425,6 +2207,8 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#postalCode">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#ServiceChannel"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#ServiceUnit"/>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">postal code</rdfs:label>
         <rdfs:label xml:lang="fi">postinumero</rdfs:label>
@@ -2444,9 +2228,10 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#processingTime">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-        <rdfs:comment xml:lang="fi">Arvo xsd:duration-muodossa. Ilmaise arkipäivät samalla ominaisuudella ja kirjaa laskentatapa huomautukseen.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Typical time required to process the benefit application.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Arvo ilmaistaan xsd:duration-muodossa. Käsittelyaika arkipäivinä ilmaistaan samalla ominaisuudella (esim. 5,1 arkipäivää = P5DT19H12M); päällekkäinen ominaisuus kelao:processingTimeBusinessDays on poistettu tämän vuoksi versiossa 0.5.1.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Expressed in xsd:duration format. Processing time in business days is expressed with the same property (e.g. 5.1 business days = P5DT19H12M); the overlapping property kelao:processingTimeBusinessDays was removed for this reason in version 0.5.1.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">handläggningstid</rdfs:label>
         <rdfs:label xml:lang="fi">käsittelyaika</rdfs:label>
@@ -2463,31 +2248,11 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#processingTimeBusinessDays -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#processingTimeBusinessDays">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-        <rdfs:comment xml:lang="en">Processing time in business days (Monday-Friday, excluding holidays). Decimal values allowed (e.g., 5.1 = 5 days and 0.8 hours).</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Päällekkäinen kelao:processingTime-ominaisuuden kanssa.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">käsittelyaika arkipäivinä</rdfs:label>
-        <rdfs:label xml:lang="en">processing time in business days</rdfs:label>
-        <skos:definition xml:lang="en">Average processing time of an application in business days.</skos:definition>
-        <skos:definition xml:lang="fi">Hakemuksen keskimääräinen käsittelyaika arkipäivinä.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">käsittelyaika arkipäivinä</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">processing time in business days</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">xsd:duration ei kuulu OWL 2 DL -datatyyppikarttaan, mutta on tuettu kaikissa KELAO-kohdejärjestelmissä (GraphDB, Fuseki).</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#purpose -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#purpose">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Etuuden tarkoitus</rdfs:comment>
         <rdfs:comment xml:lang="en">The purpose of the benefit</rdfs:comment>
@@ -2510,6 +2275,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#recipientUnit">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esimerkiksi henkilö, ruokakunta (sanasto c544) tai perhe.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2528,31 +2294,11 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#reportCollection -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#reportCollection">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Raporttikokonaisuus, johon raportti sisältyy.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Report collection the report is included in.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">raporttikokonaisuus</rdfs:label>
-        <rdfs:label xml:lang="en">report collection</rdfs:label>
-        <skos:definition xml:lang="fi">Raporttikokonaisuus, johon tietotuote sisältyy.</skos:definition>
-        <skos:definition xml:lang="en">Report collection to which a data product belongs.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">raporttikokonaisuus</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">report collection</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:DataProduct-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#requiresEmploymentHistory -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#requiresEmploymentHistory">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/c678"/>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2573,6 +2319,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#residenceRequired">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/c529"/>
         <rdfs:comment xml:lang="fi">Asumisedellytys (sanasto c529): etuudenhakijan täytyy asua Suomessa, EU- tai Eta-maassa tai Sveitsissä.</rdfs:comment>
@@ -2593,31 +2340,11 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#responsibleParty -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#responsibleParty">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">A responsible party more specific than an organisation, e.g. a group or team.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Organisaatiota tarkempi vastuutaho, esim. ryhmä tai tiimi.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">responsible party</rdfs:label>
-        <rdfs:label xml:lang="fi">vastuutaho</rdfs:label>
-        <skos:definition xml:lang="en">Organisational unit responsible for a data product.</skos:definition>
-        <skos:definition xml:lang="fi">Tietotuotteesta vastaava organisaation osa.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">responsible party</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">vastuutaho</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:DataProduct-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#serviceChannelId -->
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#serviceChannelId">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#ServiceChannel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Palvelukanavan yksilöivä tunniste Palvelutietovarannossa.</rdfs:comment>
         <rdfs:comment xml:lang="en">Unique identifier of the service channel in PTV.</rdfs:comment>
@@ -2639,6 +2366,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#serviceHours">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#ServiceUnit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Service opening hours.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2659,6 +2387,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#serviceUnitType">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#ServiceUnit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Esimerkiksi Kelan palvelupiste, yhteispalvelupiste tai pop up -palvelupiste (sanasto c863). Arvojoukko koodistona 0.6:ssa.</rdfs:comment>
         <rdfs:comment xml:lang="en">Type of service unit.</rdfs:comment>
@@ -2680,6 +2409,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#streetAddress">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#ServiceUnit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="fi">Katuosoite. Palvelupisteissä ei ole erikseen käyntiosoitetta.</rdfs:comment>
         <rdfs:comment xml:lang="en">Street address. Service units do not have a separate visiting address.</rdfs:comment>
@@ -2702,6 +2432,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#taxable">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Is the benefit taxable</rdfs:comment>
         <rdfs:comment xml:lang="fi">Onko etuus verotettava vai ei</rdfs:comment>
@@ -2728,6 +2459,10 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#uuid">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/identifier"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#Attachment"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#Service"/>
+        <schema:domainIncludes rdf:resource="https://kela.fi/ontology/kelao#ServiceChannel"/>
         <rdfs:comment xml:lang="en">Universally unique identifier used for benefits and attachments.</rdfs:comment>
         <rdfs:comment xml:lang="fi">Yksilöllinen tunniste uuid. Käytössä etuuksilla, palvelukanavilla, palveluilla ja liitteissä.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -2747,6 +2482,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#validFrom">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/c70"/>
         <rdfs:comment xml:lang="fi">Etuuden voimassaoloaika (sanasto c70): ajanjakso, jona etuus on voimassa.</rdfs:comment>
@@ -2772,6 +2508,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#validTo">
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/c70"/>
         <rdfs:comment xml:lang="en">End date of benefit validity</rdfs:comment>
@@ -2799,6 +2536,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#versionDate">
         <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/eli/ontology#version_date"/>
+        <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#LegalResource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <terms:source rdf:resource="http://data.europa.eu/eli/ontology#version_date"/>
         <rdfs:comment xml:lang="fi">Päivämäärä, jolloin säädöksen tämä versio on voimassa.</rdfs:comment>
@@ -2812,67 +2550,6 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
         <skos:prefLabel xml:lang="fi">versiointipäivä</skos:prefLabel>
         <skos:prefLabel xml:lang="en">version date</skos:prefLabel>
         <skos:scopeNote xml:lang="fi">Käytetään kelao:LegalResource-instansseilla. Kuvaa hetken, jolloin säädöksen kyseinen versio on voimassa.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#wellbeingServiceCountyCode -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#wellbeingServiceCountyCode">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Päällekkäinen yleisen kelao:areaCode-ominaisuuden kanssa.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">hyvinvointialueen koodi</rdfs:label>
-        <rdfs:label xml:lang="en">wellbeing service county code</rdfs:label>
-        <skos:definition xml:lang="en">Code of a wellbeing services county.</skos:definition>
-        <skos:definition xml:lang="fi">Hyvinvointialueen koodi.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">hyvinvointialueen koodi</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">wellbeing service county code</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:WellbeingServiceCounty-instansseilla (tai kunnalla viittaustietona).</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#wellbeingServiceCountyName -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#wellbeingServiceCountyName">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Päällekkäinen rdfs:label-annotaation kanssa.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">hyvinvointialueen nimi</rdfs:label>
-        <rdfs:label xml:lang="en">wellbeing service county name</rdfs:label>
-        <skos:definition xml:lang="fi">Hyvinvointialueen nimi.</skos:definition>
-        <skos:definition xml:lang="en">Name of a wellbeing services county.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">hyvinvointialueen nimi</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">wellbeing service county name</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:WellbeingServiceCounty-instansseilla.</skos:scopeNote>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#wikidataId -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#wikidataId">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Maantieteellisen alueen Wikidata-tunniste.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Unique identifier in Wikidata.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">wikidata id</rdfs:label>
-        <rdfs:label xml:lang="fi">wikidata-tunniste</rdfs:label>
-        <skos:definition xml:lang="fi">Alueen tunniste Wikidatassa.</skos:definition>
-        <skos:definition xml:lang="en">Identifier of an area in Wikidata.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">wikidata id</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">wikidata-tunniste</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:Location-instansseilla. Lähdeontologiassa nimellä wikiDataId.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 
@@ -3053,14 +2730,15 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Attachment">
         <rdfs:subClassOf rdf:resource="http://schema.org/DigitalDocument"/>
+        <terms:source xml:lang="fi">Kelan MOT-sanakirja</terms:source>
         <rdfs:comment xml:lang="en">An application attachment, e.g. a receipt, certificate or form.</rdfs:comment>
         <rdfs:comment xml:lang="fi">Hakemuksen liite, esim. tosite, todistus tai lomake.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">Attachment</rdfs:label>
         <rdfs:label xml:lang="sv">Bilaga</rdfs:label>
         <rdfs:label xml:lang="fi">Liite</rdfs:label>
-        <skos:definition xml:lang="en">A document or other material attached to an application that supplements or verifies the information given in the application.</skos:definition>
-        <skos:definition xml:lang="fi">Hakemukseen liitettävä asiakirja tai muu aineisto, joka täydentää tai todentaa hakemuksessa esitettyjä tietoja.</skos:definition>
+        <skos:definition xml:lang="en">Additional material received from a customer, or material provided to the customer in connection with an outgoing document.</skos:definition>
+        <skos:definition xml:lang="fi">Asiakkaalta vastaanotettu lisämateriaali tai lähtevän asiakirjan yhteydessä asiakkaalle välitettävä lisämateriaali.</skos:definition>
         <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
         <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:prefLabel xml:lang="en">Attachment</skos:prefLabel>
@@ -3130,6 +2808,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#BenefitComponent">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Benefit"/>
         <owl:disjointWith rdf:resource="https://kela.fi/ontology/kelao#StandaloneBenefit"/>
+        <terms:source xml:lang="fi">Kelan MOT-sanakirja</terms:source>
         <rdfs:comment xml:lang="fi">Esimerkiksi opintotuen osia ovat opintoraha, asumislisä ja opintolainan valtiontakaus.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">Benefit Component</rdfs:label>
@@ -3138,8 +2817,6 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
         <skos:altLabel xml:lang="en">sub-benefit</skos:altLabel>
         <skos:definition xml:lang="en">A separately handled part of a benefit that can be granted only if the benefit of which it is a part has also been granted.</skos:definition>
         <skos:definition xml:lang="fi">Etuuden erikseen käsiteltävä osa, joka voidaan myöntää vain, jos myös se etuus, jonka osa on kyseessä, on myönnetty.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:example xml:lang="fi">Esimerkiksi opintotuessa etuuden osia ovat opintoraha, asumislisä ja opintolainan valtiontakaus; lesken- ja lapseneläkkeessä osia ovat perus- ja täydennysmäärät.</skos:example>
         <skos:example xml:lang="en">For example, the study grant, housing supplement and government guarantee for student loan are parts of the financial aid for students.</skos:example>
         <skos:prefLabel xml:lang="en">Benefit Component</skos:prefLabel>
@@ -3159,12 +2836,13 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
                 <owl:hasValue rdf:resource="http://kela.fi/kg/EtuusryhmaScheme"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <terms:source xml:lang="fi">Kelan MOT-sanakirja</terms:source>
         <rdfs:comment xml:lang="fi">Etuusryhmät ovat skos:Concept-yksilöitä erillisessä luokituksessa (skos:ConceptScheme); yksittäinen etuus liitetään ryhmään ominaisuudella kelao:hasBenefitGroup.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">Benefit Group</rdfs:label>
         <rdfs:label xml:lang="fi">Etuusryhmä</rdfs:label>
-        <skos:definition xml:lang="en">A classification unit that groups related Kela benefits together.</skos:definition>
-        <skos:definition xml:lang="fi">Luokitteluyksikkö, joka kokoaa toisiinsa liittyvät Kelan etuudet yhteen ryhmään.</skos:definition>
+        <skos:definition xml:lang="en">A group of benefits that share a similar purpose or other defined logical connection, on the basis of which they have been classified as belonging together.</skos:definition>
+        <skos:definition xml:lang="fi">Joukko etuuksia, joilla on samankaltainen tarkoitus tai muu määritelty looginen yhteenkuuluvuus, joiden perusteella ne on luokiteltu kuuluvaksi yhteen.</skos:definition>
         <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
         <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:prefLabel xml:lang="en">Benefit Group</skos:prefLabel>
@@ -3178,13 +2856,14 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Country">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
+        <terms:source rdf:resource="https://termipankki.fi/tepa/fi/haku/valtio"/>
         <rdfs:comment xml:lang="fi">Käytetään asumisedellytyksen ja rajat ylittävien tilanteiden (EU, ETA, Sveitsi, sosiaaliturvasopimusmaat) kuvaamiseen. Linkitetty schema:Country-luokkaan.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">Country</rdfs:label>
         <rdfs:label xml:lang="sv">Stat</rdfs:label>
         <rdfs:label xml:lang="fi">Valtio</rdfs:label>
-        <skos:definition xml:lang="en">A sovereign state in whose territory a person resides or works, or whose legislation applies to social security.</skos:definition>
-        <skos:definition xml:lang="fi">Itsenäinen valtio, jonka alueella henkilö asuu, työskentelee tai jonka lainsäädäntöä sosiaaliturvaan sovelletaan.</skos:definition>
+        <skos:definition xml:lang="en">A sovereign state in whose territory a person resides or works, or whose legislation applies to social security, or a political union that has sovereign legislative power over a defined geographic area.</skos:definition>
+        <skos:definition xml:lang="fi">Itsenäinen valtio, jonka alueella henkilö asuu, työskentelee tai jonka lainsäädäntöä sosiaaliturvaan sovelletaan, tai poliittinen yhteenliittymä, jolla on suvereeni lainsäädäntövalta tietyllä maantieteellisellä alueella.</skos:definition>
         <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
         <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:exactMatch rdf:resource="http://schema.org/Country"/>
@@ -3223,35 +2902,13 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
     
 
 
-    <!-- https://kela.fi/ontology/kelao#DataProduct -->
-
-
-    <owl:Class rdf:about="https://kela.fi/ontology/kelao#DataProduct">
-        <rdfs:comment xml:lang="en">A managed and governed collection of data with a purpose, value, ownership and life-cycle that meets consumer needs, e.g. a report or other benefit-related data product.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Esimerkiksi etuuteen liittyvä raportti tai tilasto. Ehdolla siirrettäväksi ydinontologian ulkopuoliseen laajennusmoduuliin versiossa 0.6.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">Data Product</rdfs:label>
-        <rdfs:label xml:lang="sv">Informationsprodukt</rdfs:label>
-        <rdfs:label xml:lang="fi">Tietotuote</rdfs:label>
-        <skos:definition xml:lang="en">A managed and owned collection of data that has a purpose, value and life cycle and meets the needs of its consumers.</skos:definition>
-        <skos:definition xml:lang="fi">Hallittu ja omistettu tietokokonaisuus, jolla on tarkoitus, arvo ja elinkaari ja joka vastaa tiedon hyödyntäjän tarpeisiin.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">Data Product</skos:prefLabel>
-        <skos:prefLabel xml:lang="sv">Informationsprodukt</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">Tietotuote</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Itsenäinen luokka. Mahdollinen linkitys ulkoiseen data product -sanastoon (esim. DPROD) jätetty myöhempään harmonisointiin.</skos:scopeNote>
-    </owl:Class>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#Decision -->
 
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Decision">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/c78"/>
-        <rdfs:comment xml:lang="fi">Etuuspäätös voi olla myönteinen tai kielteinen ja koskea esimerkiksi etuuden myöntämistä, hylkäämistä, tarkistamista, keskeyttämistä, lakkauttamista, maksamista tai takaisinperintää.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Päätös etuutta koskevan asian ratkaisemisesta. Etuuspäätös voi olla myönteinen tai kielteinen ja koskea esimerkiksi etuuden myöntämistä, hylkäämistä, tarkistamista, keskeyttämistä, lakkauttamista, maksamista tai takaisinperintää.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">Beslut</rdfs:label>
         <rdfs:label xml:lang="en">Decision</rdfs:label>
@@ -3280,6 +2937,8 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">Eligibility criterion</rdfs:label>
         <rdfs:label xml:lang="fi">Etuuskriteeri</rdfs:label>
+        <skos:altLabel xml:lang="fi">etuusehto</skos:altLabel>
+        <skos:altLabel xml:lang="fi">etuusperuste</skos:altLabel>
         <skos:closeMatch rdf:resource="http://data.europa.eu/m8g/Criterion"/>
         <skos:definition xml:lang="en">A condition for granting a benefit whose fulfilment affects entitlement to the benefit or its amount.</skos:definition>
         <skos:definition xml:lang="fi">Etuuden myöntämisedellytys, jonka täyttyminen vaikuttaa oikeuteen saada etuus tai etuuden määrään.</skos:definition>
@@ -3296,7 +2955,6 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#EmploymentArea">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
-        <terms:source xml:lang="fi">laki työvoimapalveluiden järjestämisestä (380/2023)</terms:source>
         <rdfs:comment xml:lang="en">Employment area: a statutory area formed by municipalities responsible for organising public employment services (Finnish TE services reform 2025).</rdfs:comment>
         <rdfs:comment xml:lang="fi">Perustuu lakiin työvoimapalveluiden järjestämisestä (380/2023); voimassa 1.1.2025 alkaen.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -3305,6 +2963,8 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
         <rdfs:label xml:lang="fi">Työllisyysalue</rdfs:label>
         <skos:definition xml:lang="en">An area formed by municipalities that is responsible for organising public employment services.</skos:definition>
         <skos:definition xml:lang="fi">Kuntien muodostama alue, joka vastaa julkisten työvoimapalvelujen järjestämisestä.</skos:definition>
+        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
+        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
         <skos:prefLabel xml:lang="en">Employment area</skos:prefLabel>
         <skos:prefLabel xml:lang="sv">Sysselsättningsområde</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">Työllisyysalue</skos:prefLabel>
@@ -3414,6 +3074,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Location">
+        <terms:source rdf:resource="https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.1/"/>
         <rdfs:comment xml:lang="en">A geographic area used e.g. to describe a place of residence, a service operating area, or the location of a service unit. Superclass for municipalities, wellbeing service counties, regions and countries.</rdfs:comment>
         <rdfs:comment xml:lang="fi">Yliluokka kunnille, hyvinvointialueille, maakunnille, työllisyysalueille ja valtioille. Linkitetty W3C Location Core -sanastoon (locn:Location).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
@@ -3441,8 +3102,8 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Municipality">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
-        <terms:source xml:lang="fi">kuntalaki (410/2015) 1 §</terms:source>
-        <rdfs:comment xml:lang="fi">Suomen kunnat tunnistetaan Suomi.fi-koodiston URI-tunnisteilla ja kolminumeroisella kuntakoodilla. Kunta kuuluu maakuntaan ja hyvinvointialueeseen.</rdfs:comment>
+        <terms:source rdf:resource="https://valter.sanakirja.fi/all/all/kunta"/>
+        <rdfs:comment xml:lang="fi">Suomen kunnat tunnistetaan kolminumeroisella kuntakoodilla. Kunta kuuluu maakuntaan ja hyvinvointialueeseen.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">Kommun</rdfs:label>
         <rdfs:label xml:lang="fi">Kunta</rdfs:label>
@@ -3490,8 +3151,9 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Payment">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
-        <rdfs:comment xml:lang="fi">Kytkee päätöksen, etuuden ja maksunsaajan rahavirtaan. Maksunsaaja ei aina ole sama kuin etuudensaaja (sanasto c76).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Payment or instalment: a benefit disbursement made on the basis of a decision. Links the decision, benefit and recipient to the money flow.</rdfs:comment>
+        <terms:source xml:lang="fi">Kelan MOT-sanasto</terms:source>
+        <rdfs:comment xml:lang="fi">Kytkee päätöksen, etuuden ja maksunsaajan rahavirtaan. Maksunsaaja ei aina ole sama kuin etuudensaaja (sanasto c76). Maksu, joka perustuu etuuspäätöksessä syntyviin maksutietoihin.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Payment or instalment: a benefit disbursement made on the basis of a decision. Links the decision, benefit and recipient to the money flow. A payment based on the payment data generated by the benefit decision.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">Betalning</rdfs:label>
         <rdfs:label xml:lang="fi">Maksu</rdfs:label>
@@ -3536,7 +3198,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#Region">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
-        <terms:source xml:lang="fi">laki alueiden kehittämisestä ja Euroopan unionin alue- ja rakennepolitiikan toimeenpanosta (756/2021)</terms:source>
+        <terms:source rdf:resource="https://stat.fi/meta/kas/maakunta.html"/>
         <rdfs:comment xml:lang="fi">Suomessa 19 maakuntaa (2025). Rinnakkainen hierarkia hyvinvointialueiden kanssa: kunta kuuluu sekä maakuntaan että hyvinvointialueeseen.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">Landskap</rdfs:label>
@@ -3699,7 +3361,7 @@ Definition round. (1) Every class and property now has skos:definition@fi and @e
 
     <owl:Class rdf:about="https://kela.fi/ontology/kelao#WellbeingServiceCounty">
         <rdfs:subClassOf rdf:resource="https://kela.fi/ontology/kelao#Location"/>
-        <terms:source xml:lang="fi">laki hyvinvointialueesta (611/2021) 2 §</terms:source>
+        <terms:source rdf:resource="https://valter.sanakirja.fi/all/all/hyvinvointialue"/>
         <rdfs:comment xml:lang="fi">21 hyvinvointialuetta sekä Helsingin kaupunki, joka hoitaa hyvinvointialueen tehtävät. Kunta kuuluu täsmälleen yhteen hyvinvointialueeseen.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">Hyvinvointialue</rdfs:label>
