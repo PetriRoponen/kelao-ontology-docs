@@ -1861,23 +1861,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                                          "verotettava"@fi .
 
 
-###  https://kela.fi/ontology/kelao#uuid
-:uuid rdf:type owl:DatatypeProperty ;
-      rdfs:subPropertyOf <http://schema.org/identifier> ;
-      rdfs:range xsd:string ;
-      rdfs:comment "Universally unique identifier used for benefits and attachments."@en ,
-                   "Yksilöllinen tunniste uuid. Käytössä etuuksilla, palvelukanavilla, palveluilla ja liitteissä."@fi ;
-      rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-      rdfs:label "uuid"@en ,
-                 "uuid"@fi ;
-      <http://www.w3.org/2004/02/skos/core#definition> "Universally unique identifier (UUID)."@en ,
-                                                       "Yleiskäyttöinen yksilöivä tunniste (UUID)."@fi ;
-      <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                          "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
-      <http://www.w3.org/2004/02/skos/core#prefLabel> "uuid"@en ,
-                                                      "uuid"@fi .
-
-
 ###  https://kela.fi/ontology/kelao#validFrom
 :validFrom rdf:type owl:DatatypeProperty ;
            rdfs:range xsd:date ;
@@ -2541,8 +2524,9 @@ xsd:duration rdf:type rdfs:Datatype .
                                owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
                                owl:hasValue <http://kela.fi/kg/saadostyyppi-luokitus>
                              ] ;
-             rdfs:comment "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä erillisessä luokituksessa (luonnos)."@fi ,
-                          "Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en ;
+             <http://purl.org/dc/terms/source> <http://uri.suomi.fi/codelist/sotute/saadostyyppi> ;
+             rdfs:comment "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa."@fi ,
+                          "Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en ;
              rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
              rdfs:label "Författningstyp"@sv ,
                         "Statute Type"@en ,

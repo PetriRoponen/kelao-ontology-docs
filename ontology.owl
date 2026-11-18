@@ -2389,27 +2389,6 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
     
 
 
-    <!-- https://kela.fi/ontology/kelao#uuid -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#uuid">
-        <rdfs:subPropertyOf rdf:resource="http://schema.org/identifier"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Universally unique identifier used for benefits and attachments.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Yksilöllinen tunniste uuid. Käytössä etuuksilla, palvelukanavilla, palveluilla ja liitteissä.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="en">uuid</rdfs:label>
-        <rdfs:label xml:lang="fi">uuid</rdfs:label>
-        <skos:definition xml:lang="en">Universally unique identifier (UUID).</skos:definition>
-        <skos:definition xml:lang="fi">Yleiskäyttöinen yksilöivä tunniste (UUID).</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="en">uuid</skos:prefLabel>
-        <skos:prefLabel xml:lang="fi">uuid</skos:prefLabel>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- https://kela.fi/ontology/kelao#validFrom -->
 
 
@@ -3237,8 +3216,9 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
                 <owl:hasValue rdf:resource="http://kela.fi/kg/saadostyyppi-luokitus"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="fi">Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä erillisessä luokituksessa (luonnos).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree.</rdfs:comment>
+        <terms:source rdf:resource="http://uri.suomi.fi/codelist/sotute/saadostyyppi"/>
+        <rdfs:comment xml:lang="fi">Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">Författningstyp</rdfs:label>
         <rdfs:label xml:lang="en">Statute Type</rdfs:label>

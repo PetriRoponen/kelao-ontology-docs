@@ -1905,12 +1905,15 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#StatuteType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@id" : "http://uri.suomi.fi/codelist/sotute/saadostyyppi"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä erillisessä luokituksessa (luonnos)."
+    "@value" : "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa."
   }, {
     "@language" : "en",
-    "@value" : "Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."
+    "@value" : "Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
@@ -6381,53 +6384,6 @@
   }, {
     "@language" : "en",
     "@value" : "type of document"
-  } ]
-}, {
-  "@id" : "https://kela.fi/ontology/kelao#uuid",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Universally unique identifier used for benefits and attachments."
-  }, {
-    "@language" : "fi",
-    "@value" : "Yksilöllinen tunniste uuid. Käytössä etuuksilla, palvelukanavilla, palveluilla ja liitteissä."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://kela.fi/ontology/kelao"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "uuid"
-  }, {
-    "@language" : "fi",
-    "@value" : "uuid"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://schema.org/identifier"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Universally unique identifier (UUID)."
-  }, {
-    "@language" : "fi",
-    "@value" : "Yleiskäyttöinen yksilöivä tunniste (UUID)."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "en",
-    "@value" : "uuid"
-  }, {
-    "@language" : "fi",
-    "@value" : "uuid"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#validFrom",

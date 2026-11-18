@@ -1705,22 +1705,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://kela.fi/ontology/kelao#taxable> <http://www.w3.org/2004/02/skos/core#prefLabel> "taxable"@en .
 <https://kela.fi/ontology/kelao#taxable> <http://www.w3.org/2004/02/skos/core#prefLabel> "verotettava"@fi .
 # 
-# https://kela.fi/ontology/kelao#uuid
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/identifier> .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2000/01/rdf-schema#comment> "Universally unique identifier used for benefits and attachments."@en .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2000/01/rdf-schema#comment> "Yksilöllinen tunniste uuid. Käytössä etuuksilla, palvelukanavilla, palveluilla ja liitteissä."@fi .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2000/01/rdf-schema#label> "uuid"@en .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2000/01/rdf-schema#label> "uuid"@fi .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2004/02/skos/core#definition> "Universally unique identifier (UUID)."@en .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2004/02/skos/core#definition> "Yleiskäyttöinen yksilöivä tunniste (UUID)."@fi .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2004/02/skos/core#prefLabel> "uuid"@en .
-<https://kela.fi/ontology/kelao#uuid> <http://www.w3.org/2004/02/skos/core#prefLabel> "uuid"@fi .
-# 
 # https://kela.fi/ontology/kelao#validFrom
 <https://kela.fi/ontology/kelao#validFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#validFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
@@ -2344,8 +2328,9 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 _:genid16 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/saadostyyppi-luokitus> .
 _:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä erillisessä luokituksessa (luonnos)."@fi .
-<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en .
+<https://kela.fi/ontology/kelao#StatuteType> <http://purl.org/dc/terms/source> <http://uri.suomi.fi/codelist/sotute/saadostyyppi> .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa."@fi .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#label> "Författningstyp"@sv .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#label> "Statute Type"@en .
