@@ -15,14 +15,16 @@ This ontology has the following classes and properties.</span>
       <a href="#BenefitComponent" title="https://kela.fi/ontology/kelao#BenefitComponent">Etuuden osa</a>
    </li>
    <li>
-      <a href="#Beneficiary" title="https://kela.fi/ontology/kelao#Beneficiary">Etuuden saaja</a>
+      <a href="#Beneficiary" title="https://kela.fi/ontology/kelao#Beneficiary">Etuudensaaja</a>
    </li>
    <li>
       <a href="#Benefit" title="https://kela.fi/ontology/kelao#Benefit">Etuus</a>
    </li>
    <li>
-      <a href="#EligibilityCriterion"
-         title="https://kela.fi/ontology/kelao#EligibilityCriterion">Etuuskriteeri</a>
+      <a href="#BenefitPeriod" title="https://kela.fi/ontology/kelao#BenefitPeriod">Etuusjakso</a>
+   </li>
+   <li>
+      <a href="#Decision" title="https://kela.fi/ontology/kelao#Decision">Etuuspäätös</a>
    </li>
    <li>
       <a href="#BenefitGroup" title="https://kela.fi/ontology/kelao#BenefitGroup">Etuusryhmä</a>
@@ -38,18 +40,10 @@ This ontology has the following classes and properties.</span>
          title="https://kela.fi/ontology/kelao#WellbeingServiceCounty">Hyvinvointialue</a>
    </li>
    <li>
-      <a href="#StandaloneBenefit"
-         title="https://kela.fi/ontology/kelao#StandaloneBenefit">Itsenäinen etuus</a>
-   </li>
-   <li>
       <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Kunta</a>
    </li>
    <li>
       <a href="#User" title="https://kela.fi/ontology/kelao#User">Käyttäjä</a>
-   </li>
-   <li>
-      <a href="#LegalResourcePart"
-         title="https://kela.fi/ontology/kelao#LegalResourcePart">Lain osa</a>
    </li>
    <li>
       <a href="#Attachment" title="https://kela.fi/ontology/kelao#Attachment">Liite</a>
@@ -61,10 +55,17 @@ This ontology has the following classes and properties.</span>
       <a href="#Payment" title="https://kela.fi/ontology/kelao#Payment">Maksu</a>
    </li>
    <li>
+      <a href="#Payee" title="https://kela.fi/ontology/kelao#Payee">Maksunsaaja</a>
+   </li>
+   <li>
       <a href="#Appeal" title="https://kela.fi/ontology/kelao#Appeal">Muutoksenhaku</a>
    </li>
    <li>
       <a href="#AppealBody" title="https://kela.fi/ontology/kelao#AppealBody">Muutoksenhakuelin</a>
+   </li>
+   <li>
+      <a href="#EligibilityCriterion"
+         title="https://kela.fi/ontology/kelao#EligibilityCriterion">Myöntämisedellytys</a>
    </li>
    <li>
       <a href="#Organisation" title="https://kela.fi/ontology/kelao#Organisation">Organisaatio</a>
@@ -77,9 +78,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#ServiceUnit" title="https://kela.fi/ontology/kelao#ServiceUnit">Palvelupiste</a>
-   </li>
-   <li>
-      <a href="#Decision" title="https://kela.fi/ontology/kelao#Decision">Päätös</a>
    </li>
    <li>
       <a href="#Location" title="https://kela.fi/ontology/kelao#Location">Sijainti</a>
@@ -109,7 +107,7 @@ This ontology has the following classes and properties.</span>
       <a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">asiakkaan rooli</a>
    </li>
    <li>
-      <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">asiakkaan roolina</a>
+      <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">asiakkaan rooli</a>
    </li>
    <li>
       <a href="#residesInMunicipality"
@@ -147,11 +145,11 @@ This ontology has the following classes and properties.</span>
          title="https://kela.fi/ontology/kelao#applicationConcerns">hakemus koskee etuutta</a>
    </li>
    <li>
-      <a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">huomautus</a>
-   </li>
-   <li>
       <a href="#incomeConsideredIn"
          title="https://kela.fi/ontology/kelao#incomeConsideredIn">huomioidaan etuudessa</a>
+   </li>
+   <li>
+      <a href="#noteworthy" title="https://kela.fi/ontology/kelao#noteworthy">huomioon otettava etuus</a>
    </li>
    <li>
       <a href="#hasApplication" title="https://kela.fi/ontology/kelao#hasApplication">jätti hakemuksen</a>
@@ -209,16 +207,10 @@ This ontology has the following classes and properties.</span>
          title="https://kela.fi/ontology/kelao#isLifeSituationFor">on elämäntilanne kohteelle</a>
    </li>
    <li>
-      <a href="#isCriterionFor" title="https://kela.fi/ontology/kelao#isCriterionFor">on kriteeri etuudelle</a>
-   </li>
-   <li>
       <a href="#hasConcept" title="https://kela.fi/ontology/kelao#hasConcept">on käsite</a>
    </li>
    <li>
       <a href="#legalReference" title="https://kela.fi/ontology/kelao#legalReference">on lakiviittaus</a>
-   </li>
-   <li>
-      <a href="#isEligibleFor" title="https://kela.fi/ontology/kelao#isEligibleFor">on oikeutettu etuuteen</a>
    </li>
    <li>
       <a href="#isPartOfArea" title="https://kela.fi/ontology/kelao#isPartOfArea">on osa aluetta</a>
@@ -291,9 +283,6 @@ This ontology has the following classes and properties.</span>
       <a href="#indexLinked" title="https://kela.fi/ontology/kelao#indexLinked">indeksisidonnainen</a>
    </li>
    <li>
-      <a href="#partOrder" title="https://kela.fi/ontology/kelao#partOrder">järjestysnumero</a>
-   </li>
-   <li>
       <a href="#streetAddress" title="https://kela.fi/ontology/kelao#streetAddress">katuosoite</a>
    </li>
    <li>
@@ -320,6 +309,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#abbreviation" title="https://kela.fi/ontology/kelao#abbreviation">lyhenne</a>
+   </li>
+   <li>
+      <a href="#paymentDate" title="https://kela.fi/ontology/kelao#paymentDate">maksupäivä</a>
    </li>
    <li>
       <a href="#appealDate" title="https://kela.fi/ontology/kelao#appealDate">muutoksenhaun päivä</a>
@@ -371,13 +363,19 @@ This ontology has the following classes and properties.</span>
       <a href="#recipientUnit" title="https://kela.fi/ontology/kelao#recipientUnit">saajayksikkö</a>
    </li>
    <li>
-      <a href="#date_document" title="https://kela.fi/ontology/kelao#date_document">säädöksen päiväys</a>
+      <a href="#date_document" title="https://kela.fi/ontology/kelao#date_document">säädöksen antamispäivä</a>
    </li>
    <li>
       <a href="#purpose" title="https://kela.fi/ontology/kelao#purpose">tarkoitus</a>
    </li>
    <li>
       <a href="#meansTest" title="https://kela.fi/ontology/kelao#meansTest">tarveharkinta</a>
+   </li>
+   <li>
+      <a href="#identifier" title="https://kela.fi/ontology/kelao#identifier">tunniste</a>
+   </li>
+   <li>
+      <a href="#uuid" title="https://kela.fi/ontology/kelao#uuid">uuid</a>
    </li>
    <li>
       <a href="#residenceRequired"
@@ -397,6 +395,10 @@ This ontology has the following classes and properties.</span>
       <a href="#filingDate" title="https://kela.fi/ontology/kelao#filingDate">vireilletulopäivä</a>
    </li>
    <li>
+      <a href="#first_date_entry_in_force"
+         title="https://kela.fi/ontology/kelao#first_date_entry_in_force">voimaantulopäivä</a>
+   </li>
+   <li>
       <a href="#validFrom" title="https://kela.fi/ontology/kelao#validFrom">voimassa alkaen</a>
    </li>
    <li>
@@ -404,16 +406,5 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#maximumAge" title="https://kela.fi/ontology/kelao#maximumAge">yläikäraja</a>
-   </li>
-</ul><h4>Named Individuals</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    class="hlist">
-   <li>
-      <a href="#https://www.kela.fi/" title="https://www.kela.fi/">Kela</a>
-   </li>
-   <li>
-      <a href="#https://kela.fi/ontology/kelao" title="https://kela.fi/ontology/kelao">
-         <span>Sosiaaliturvan ydinontologia</span>
-      </a>
    </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
