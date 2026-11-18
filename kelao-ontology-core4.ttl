@@ -1378,21 +1378,6 @@ kelao:type_document a owl:ObjectProperty ;
         "säädöksen tyyppi"@fi,
         "type"@sv .
 
-kelao:uuid a owl:DatatypeProperty ;
-    rdfs:label "uuid"@en,
-        "uuid"@fi ;
-    rdfs:comment "Universally unique identifier used for benefits and attachments."@en,
-        "Yksilöllinen tunniste uuid. Käytössä etuuksilla, palvelukanavilla, palveluilla ja liitteissä."@fi ;
-    rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-    rdfs:range xsd:string ;
-    rdfs:subPropertyOf schema:identifier ;
-    skos:definition "Universally unique identifier (UUID)."@en,
-        "Yleiskäyttöinen yksilöivä tunniste (UUID)."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
-    skos:prefLabel "uuid"@en,
-        "uuid"@fi .
-
 kelao:validFrom a owl:DatatypeProperty ;
     rdfs:label "valid from"@en,
         "voimassa alkaen"@fi,
@@ -1539,8 +1524,9 @@ kelao:StatuteType a owl:Class ;
     rdfs:label "Statute Type"@en,
         "Säädöstyyppi"@fi,
         "Författningstyp"@sv ;
-    rdfs:comment "Statute type classification (draft). The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en,
-        "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä erillisessä luokituksessa (luonnos)."@fi ;
+    dcterms:source <http://uri.suomi.fi/codelist/sotute/saadostyyppi> ;
+    rdfs:comment "Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en,
+        "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa."@fi ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue <http://kela.fi/kg/saadostyyppi-luokitus> ;
