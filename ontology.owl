@@ -1628,8 +1628,6 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
         <rdfs:label xml:lang="fi">vireilletulopäivä</rdfs:label>
         <skos:definition xml:lang="en">Date on which the matter became pending.</skos:definition>
         <skos:definition xml:lang="fi">Päivä, jona asia on tullut vireille.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava.</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition was provided by a terminology expert in the 0.6 review round; source to be verified.</skos:editorialNote>
         <skos:prefLabel xml:lang="en">filing date</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">vireilletulopäivä</skos:prefLabel>
         <skos:scopeNote xml:lang="fi">Käytetään kelao:Application-instansseilla (xsd:date).</skos:scopeNote>
@@ -2543,8 +2541,6 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
         <rdfs:label xml:lang="sv">Förmånsperiod</rdfs:label>
         <skos:definition xml:lang="en">A period of time for which a benefit is decided on the same grounds.</skos:definition>
         <skos:definition xml:lang="fi">Ajanjakso, jolta etuus ratkaistaan samoin perustein.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä lisätty 0.6-kommenttikierroksella; lähde tarkistettava.</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition was added in the 0.6 review round; source to be verified.</skos:editorialNote>
         <skos:prefLabel xml:lang="en">Benefit Period</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">Etuusjakso</skos:prefLabel>
         <skos:prefLabel xml:lang="sv">Förmånsperiod</skos:prefLabel>

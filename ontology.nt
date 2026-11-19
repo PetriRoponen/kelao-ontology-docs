@@ -1099,8 +1099,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://kela.fi/ontology/kelao#filingDate> <http://www.w3.org/2000/01/rdf-schema#label> "vireilletulopäivä"@fi .
 <https://kela.fi/ontology/kelao#filingDate> <http://www.w3.org/2004/02/skos/core#definition> "Date on which the matter became pending."@en .
 <https://kela.fi/ontology/kelao#filingDate> <http://www.w3.org/2004/02/skos/core#definition> "Päivä, jona asia on tullut vireille."@fi .
-<https://kela.fi/ontology/kelao#filingDate> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava."@fi .
-<https://kela.fi/ontology/kelao#filingDate> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition was provided by a terminology expert in the 0.6 review round; source to be verified."@en .
 <https://kela.fi/ontology/kelao#filingDate> <http://www.w3.org/2004/02/skos/core#prefLabel> "filing date"@en .
 <https://kela.fi/ontology/kelao#filingDate> <http://www.w3.org/2004/02/skos/core#prefLabel> "vireilletulopäivä"@fi .
 <https://kela.fi/ontology/kelao#filingDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:Application-instansseilla (xsd:date)."@fi .
@@ -1773,8 +1771,6 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://kela.fi/ontology/kelao#BenefitPeriod> <http://www.w3.org/2000/01/rdf-schema#label> "Förmånsperiod"@sv .
 <https://kela.fi/ontology/kelao#BenefitPeriod> <http://www.w3.org/2004/02/skos/core#definition> "A period of time for which a benefit is decided on the same grounds."@en .
 <https://kela.fi/ontology/kelao#BenefitPeriod> <http://www.w3.org/2004/02/skos/core#definition> "Ajanjakso, jolta etuus ratkaistaan samoin perustein."@fi .
-<https://kela.fi/ontology/kelao#BenefitPeriod> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä lisätty 0.6-kommenttikierroksella; lähde tarkistettava."@fi .
-<https://kela.fi/ontology/kelao#BenefitPeriod> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition was added in the 0.6 review round; source to be verified."@en .
 <https://kela.fi/ontology/kelao#BenefitPeriod> <http://www.w3.org/2004/02/skos/core#prefLabel> "Benefit Period"@en .
 <https://kela.fi/ontology/kelao#BenefitPeriod> <http://www.w3.org/2004/02/skos/core#prefLabel> "Etuusjakso"@fi .
 <https://kela.fi/ontology/kelao#BenefitPeriod> <http://www.w3.org/2004/02/skos/core#prefLabel> "Förmånsperiod"@sv .

@@ -893,13 +893,6 @@
     "@language" : "fi",
     "@value" : "Ajanjakso, jolta etuus ratkaistaan samoin perustein."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä lisätty 0.6-kommenttikierroksella; lähde tarkistettava."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition was added in the 0.6 review round; source to be verified."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "Benefit Period"
@@ -3034,13 +3027,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Päivä, jona asia on tullut vireille."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition was provided by a terminology expert in the 0.6 review round; source to be verified."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
