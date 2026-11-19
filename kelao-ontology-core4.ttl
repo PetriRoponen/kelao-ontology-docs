@@ -73,8 +73,8 @@ kelao:BenefitPeriod a owl:Class ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
     skos:definition "A period of time for which a benefit is decided on the same grounds."@en,
         "Ajanjakso, jolta etuus ratkaistaan samoin perustein."@fi ;
-    skos:editorialNote "The definition was added in the 0.6 review round; source to be verified."@en,
-        "Määritelmä lisätty 0.6-kommenttikierroksella; lähde tarkistettava."@fi ;
+    #skos:editorialNote "The definition was added in the 0.6 review round; source to be verified."@en,
+    #    "Määritelmä lisätty 0.6-kommenttikierroksella; lähde tarkistettava."@fi ;
     skos:prefLabel "Benefit Period"@en,
         "Etuusjakso"@fi,
         "Förmånsperiod"@sv .
@@ -460,8 +460,8 @@ kelao:filingDate a owl:DatatypeProperty ;
     rdfs:range xsd:date ;
     skos:definition "Date on which the matter became pending."@en,
         "Päivä, jona asia on tullut vireille."@fi ;
-    skos:editorialNote "The definition was provided by a terminology expert in the 0.6 review round; source to be verified."@en,
-        "Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava."@fi ;
+    #skos:editorialNote "The definition was provided by a terminology expert in the 0.6 review round; source to be verified."@en,
+    #    "Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava."@fi ;
     skos:prefLabel "filing date"@en,
         "vireilletulopäivä"@fi ;
     skos:scopeNote "Käytetään kelao:Application-instansseilla (xsd:date)."@fi .
