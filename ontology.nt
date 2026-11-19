@@ -680,7 +680,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://kela.fi/ontology/kelao#meansTestedIncome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://kela.fi/ontology/kelao#meansTestedIncome> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Benefit> .
 <https://kela.fi/ontology/kelao#meansTestedIncome> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Benefit> .
-<https://kela.fi/ontology/kelao#meansTestedIncome> <http://www.w3.org/2000/01/rdf-schema#comment> "Vrt. kelao:incomeConsideredIn (tuloerä → etuus). Päällekkäisyys tarkistettava 0.6:ssa."@fi .
 <https://kela.fi/ontology/kelao#meansTestedIncome> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#meansTestedIncome> <http://www.w3.org/2000/01/rdf-schema#label> "means-tested income"@en .
 <https://kela.fi/ontology/kelao#meansTestedIncome> <http://www.w3.org/2000/01/rdf-schema#label> "tarveharkinnan tulo"@fi .
@@ -1856,7 +1855,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#Income
 <https://kela.fi/ontology/kelao#Income> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
-<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo. Vrt. sanaston käsitteet etuoikeutettu tulo (c72) ja etuusperusteinen tulo (c732)."@fi .
+<https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo. Vrt. Kelan terminologisen sanaston käsitteet etuoikeutettu tulo (c72) ja etuusperusteinen tulo (c732)."@fi .
 <https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#comment> "Income: an income item of a person or recipient unit (e.g. wage, self-employment income, capital income, benefit income) that may be taken into account in means testing."@en .
 <https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#Income> <http://www.w3.org/2000/01/rdf-schema#label> "Income"@en .
@@ -2097,7 +2096,7 @@ _:genid12 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/saadostyyp
 _:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://purl.org/dc/terms/source> <http://uri.suomi.fi/codelist/sotute/saadostyyppi> .
-<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa."@fi .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä koodistot.suomi.fi-koodiston Säädöstyyppi-luokituksessa."@fi .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#label> "Författningstyp"@sv .
@@ -2120,8 +2119,6 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <https://kela.fi/ontology/kelao#User> <http://www.w3.org/2000/01/rdf-schema#label> "User"@en .
 <https://kela.fi/ontology/kelao#User> <http://www.w3.org/2004/02/skos/core#definition> "A person or group that uses a system in its actual environment of use."@en .
 <https://kela.fi/ontology/kelao#User> <http://www.w3.org/2004/02/skos/core#definition> "Henkilö tai ryhmä, joka käyttää järjestelmää sen oikeassa käyttöympäristössä."@fi .
-<https://kela.fi/ontology/kelao#User> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava."@fi .
-<https://kela.fi/ontology/kelao#User> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition was provided by a terminology expert in the 0.6 review round; source to be verified."@en .
 <https://kela.fi/ontology/kelao#User> <http://www.w3.org/2004/02/skos/core#prefLabel> "Användare"@sv .
 <https://kela.fi/ontology/kelao#User> <http://www.w3.org/2004/02/skos/core#prefLabel> "Käyttäjä"@fi .
 <https://kela.fi/ontology/kelao#User> <http://www.w3.org/2004/02/skos/core#prefLabel> "User"@en .

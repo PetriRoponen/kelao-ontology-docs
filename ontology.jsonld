@@ -1174,7 +1174,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo. Vrt. sanaston käsitteet etuoikeutettu tulo (c72) ja etuusperusteinen tulo (c732)."
+    "@value" : "Esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo. Vrt. Kelan terminologisen sanaston käsitteet etuoikeutettu tulo (c72) ja etuusperusteinen tulo (c732)."
   }, {
     "@language" : "en",
     "@value" : "Income: an income item of a person or recipient unit (e.g. wage, self-employment income, capital income, benefit income) that may be taken into account in means testing."
@@ -1863,7 +1863,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa."
+    "@value" : "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä koodistot.suomi.fi-koodiston Säädöstyyppi-luokituksessa."
   }, {
     "@language" : "en",
     "@value" : "Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."
@@ -1935,13 +1935,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Henkilö tai ryhmä, joka käyttää järjestelmää sen oikeassa käyttöympäristössä."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition was provided by a terminology expert in the 0.6 review round; source to be verified."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
@@ -4280,10 +4273,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#meansTestedIncome",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi",
-    "@value" : "Vrt. kelao:incomeConsideredIn (tuloerä → etuus). Päällekkäisyys tarkistettava 0.6:ssa."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://kela.fi/ontology/kelao#Benefit"
   } ],
