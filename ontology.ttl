@@ -8,13 +8,8 @@
 
 <https://kela.fi/ontology/kelao> rdf:type owl:Ontology ;
                                   owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/index-fi.html> ;
-                                  <http://purl.org/dc/terms/abstract> """Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  
-        organisaatiot, maantieteelliset alueet, palvelukanavat, lainsäädännön sekä sosiaaliturvan käsitteet.
-        """@fi ,
-                                                                      """The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.
-	It is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:
-        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.
-"""@en ;
+                                  <http://purl.org/dc/terms/abstract> "Sosiaaliturvan ydinontologia (kelao) kuvaa Suomen sosiaaliturvajärjestelmän keskeiset käsitteet ja niiden väliset suhteet koneellisesti tulkittavassa muodossa: etuudet ja niiden osat, myöntämisedellytykset, hakemus- ja päätösprosessin, maksut ja takaisinperinnän, muutoksenhaun, asiakkaan roolit, palvelut ja palvelukanavat, hallinnollisen aluehierarkian sekä säädöspohjan. Ontologia täydentää Kelan terminologista sanastoa: sanasto määrittelee käsitteet ihmislukijalle, ontologia tekee käsitteiden väliset suhteet, rajoitteet ja päättelysäännöt koneellisesti tarkistettaviksi ja kyselytäviksi."@fi ,
+                                                                      "The Finnish Social Security Core Ontology (kelao) describes the core concepts of the Finnish social security system and the relationships between them in a machine-interpretable form: benefits and their components, eligibility criteria, the application and decision process, payments and recovery, appeals, customer roles, services and service channels, the administrative area hierarchy, and the underlying legislation. The ontology complements Kela's terminological vocabulary: the vocabulary defines concepts for human readers, while the ontology makes the relationships, constraints and inference rules between concepts machine-checkable and queryable."@en ;
                                   <http://purl.org/dc/terms/contributor> <https://www.linkedin.com/in/petri-roponen-052aa772> ;
                                   <http://purl.org/dc/terms/created> "2026-06-08"^^xsd:date ;
                                   <http://purl.org/dc/terms/creator> "Petri Roponen" ;
@@ -44,7 +39,6 @@
                                                <http://www.w3.org/ns/prov#> ,
                                                <http://www.w3.org/ns/shacl#> ,
                                                <https://iri.suomi.fi/terminology/kela/> ,
-                                               <https://petriroponen.github.io/kelao-ontology-docs/> ,
                                                <https://semiceu.github.io/CPSV-AP/releases/3.2.0/> ;
                                   owl:priorVersion <https://kela.fi/ontology/kelao/0.5.2> ;
                                   owl:versionInfo "0.6.0-core-draft" ;
@@ -218,14 +212,7 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
 
 
 ###  https://kela.fi/ontology/kelao#relationshipAbbreviation
-:relationshipAbbreviation rdf:type owl:AnnotationProperty ;
-                          rdfs:comment "Relaation lyhenne"@fi ,
-                                       "Relationship abbreviation"@en ;
-                          rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                          rdfs:label "Relaation lyhenne"@fi ,
-                                     "Relationship abbreviation"@en ;
-                          <http://www.w3.org/2004/02/skos/core#prefLabel> "Relaation lyhenne"@fi ,
-                                                                          "Relationship abbreviation"@en .
+:relationshipAbbreviation rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -1770,23 +1757,6 @@ xsd:duration rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#prefLabel> "residence required"@en ,
                                                                    "vaatii asumisen Suomessa"@fi ;
                    <http://www.w3.org/2004/02/skos/core#relatedMatch> <https://iri.suomi.fi/terminology/kela/c529> .
-
-
-###  https://kela.fi/ontology/kelao#serviceChannelId
-:serviceChannelId rdf:type owl:DatatypeProperty ;
-                  rdfs:range xsd:string ;
-                  rdfs:comment "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa."@fi ,
-                               "Unique identifier of the service channel in PTV."@en ;
-                  rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                  rdfs:label "palvelukanavan tunniste"@fi ,
-                             "service channel id"@en ;
-                  <http://www.w3.org/2004/02/skos/core#definition> "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa (PTV)."@fi ,
-                                                                   "Unique identifier of a service channel in the Finnish Service Catalogue (PTV)."@en ;
-                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                      "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
-                  <http://www.w3.org/2004/02/skos/core#prefLabel> "palvelukanavan tunniste"@fi ,
-                                                                  "service channel id"@en ;
-                  <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceChannel-instansseilla."@fi .
 
 
 ###  https://kela.fi/ontology/kelao#serviceHours

@@ -12,13 +12,8 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://kela.fi/ontology/kelao">
         <owl:versionIRI rdf:resource="https://petriroponen.github.io/kelao-ontology-docs/index-fi.html"/>
-        <terms:abstract xml:lang="fi">Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  
-        organisaatiot, maantieteelliset alueet, palvelukanavat, lainsäädännön sekä sosiaaliturvan käsitteet.
-        </terms:abstract>
-        <terms:abstract xml:lang="en">The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.
-	It is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:
-        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.
-</terms:abstract>
+        <terms:abstract xml:lang="fi">Sosiaaliturvan ydinontologia (kelao) kuvaa Suomen sosiaaliturvajärjestelmän keskeiset käsitteet ja niiden väliset suhteet koneellisesti tulkittavassa muodossa: etuudet ja niiden osat, myöntämisedellytykset, hakemus- ja päätösprosessin, maksut ja takaisinperinnän, muutoksenhaun, asiakkaan roolit, palvelut ja palvelukanavat, hallinnollisen aluehierarkian sekä säädöspohjan. Ontologia täydentää Kelan terminologista sanastoa: sanasto määrittelee käsitteet ihmislukijalle, ontologia tekee käsitteiden väliset suhteet, rajoitteet ja päättelysäännöt koneellisesti tarkistettaviksi ja kyselytäviksi.</terms:abstract>
+        <terms:abstract xml:lang="en">The Finnish Social Security Core Ontology (kelao) describes the core concepts of the Finnish social security system and the relationships between them in a machine-interpretable form: benefits and their components, eligibility criteria, the application and decision process, payments and recovery, appeals, customer roles, services and service channels, the administrative area hierarchy, and the underlying legislation. The ontology complements Kela&apos;s terminological vocabulary: the vocabulary defines concepts for human readers, while the ontology makes the relationships, constraints and inference rules between concepts machine-checkable and queryable.</terms:abstract>
         <terms:contributor rdf:resource="https://www.linkedin.com/in/petri-roponen-052aa772"/>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-06-08</terms:created>
         <terms:creator>Petri Roponen</terms:creator>
@@ -48,7 +43,6 @@
         <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/prov#"/>
         <rdfs:seeAlso rdf:resource="http://www.w3.org/ns/shacl#"/>
         <rdfs:seeAlso rdf:resource="https://iri.suomi.fi/terminology/kela/"/>
-        <rdfs:seeAlso rdf:resource="https://petriroponen.github.io/kelao-ontology-docs/"/>
         <rdfs:seeAlso rdf:resource="https://semiceu.github.io/CPSV-AP/releases/3.2.0/"/>
         <owl:priorVersion rdf:resource="https://kela.fi/ontology/kelao/0.5.2"/>
         <owl:versionInfo>0.6.0-core-draft</owl:versionInfo>
@@ -308,15 +302,7 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
     <!-- https://kela.fi/ontology/kelao#relationshipAbbreviation -->
 
 
-    <owl:AnnotationProperty rdf:about="https://kela.fi/ontology/kelao#relationshipAbbreviation">
-        <rdfs:comment xml:lang="fi">Relaation lyhenne</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship abbreviation</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">Relaation lyhenne</rdfs:label>
-        <rdfs:label xml:lang="en">Relationship abbreviation</rdfs:label>
-        <skos:prefLabel xml:lang="fi">Relaation lyhenne</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">Relationship abbreviation</skos:prefLabel>
-    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="https://kela.fi/ontology/kelao#relationshipAbbreviation"/>
     
 
 
@@ -2276,27 +2262,6 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
         <skos:prefLabel xml:lang="en">residence required</skos:prefLabel>
         <skos:prefLabel xml:lang="fi">vaatii asumisen Suomessa</skos:prefLabel>
         <skos:relatedMatch rdf:resource="https://iri.suomi.fi/terminology/kela/c529"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#serviceChannelId -->
-
-
-    <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#serviceChannelId">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Palvelukanavan yksilöivä tunniste Palvelutietovarannossa.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Unique identifier of the service channel in PTV.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">palvelukanavan tunniste</rdfs:label>
-        <rdfs:label xml:lang="en">service channel id</rdfs:label>
-        <skos:definition xml:lang="fi">Palvelukanavan yksilöivä tunniste Palvelutietovarannossa (PTV).</skos:definition>
-        <skos:definition xml:lang="en">Unique identifier of a service channel in the Finnish Service Catalogue (PTV).</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">palvelukanavan tunniste</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">service channel id</skos:prefLabel>
-        <skos:scopeNote xml:lang="fi">Käytetään kelao:ServiceChannel-instansseilla.</skos:scopeNote>
     </owl:DatatypeProperty>
     
 

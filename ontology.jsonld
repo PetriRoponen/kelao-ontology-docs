@@ -231,10 +231,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
     "@language" : "fi",
-    "@value" : "Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  \n        organisaatiot, maantieteelliset alueet, palvelukanavat, lainsäädännön sekä sosiaaliturvan käsitteet.\n        "
+    "@value" : "Sosiaaliturvan ydinontologia (kelao) kuvaa Suomen sosiaaliturvajärjestelmän keskeiset käsitteet ja niiden väliset suhteet koneellisesti tulkittavassa muodossa: etuudet ja niiden osat, myöntämisedellytykset, hakemus- ja päätösprosessin, maksut ja takaisinperinnän, muutoksenhaun, asiakkaan roolit, palvelut ja palvelukanavat, hallinnollisen aluehierarkian sekä säädöspohjan. Ontologia täydentää Kelan terminologista sanastoa: sanasto määrittelee käsitteet ihmislukijalle, ontologia tekee käsitteiden väliset suhteet, rajoitteet ja päättelysäännöt koneellisesti tarkistettaviksi ja kyselytäviksi."
   }, {
     "@language" : "en",
-    "@value" : "The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.\n\tIt is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:\n        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.\n"
+    "@value" : "The Finnish Social Security Core Ontology (kelao) describes the core concepts of the Finnish social security system and the relationships between them in a machine-interpretable form: benefits and their components, eligibility criteria, the application and decision process, payments and recovery, appeals, customer roles, services and service channels, the administrative area hierarchy, and the underlying legislation. The ontology complements Kela's terminological vocabulary: the vocabulary defines concepts for human readers, while the ontology makes the relationships, constraints and inference rules between concepts machine-checkable and queryable."
   } ],
   "http://purl.org/dc/terms/contributor" : [ {
     "@id" : "https://www.linkedin.com/in/petri-roponen-052aa772"
@@ -318,8 +318,6 @@
     "@id" : "http://www.w3.org/ns/shacl#"
   }, {
     "@id" : "https://iri.suomi.fi/terminology/kela/"
-  }, {
-    "@id" : "https://petriroponen.github.io/kelao-ontology-docs/"
   }, {
     "@id" : "https://semiceu.github.io/CPSV-AP/releases/3.2.0/"
   } ],
@@ -5806,31 +5804,7 @@
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#relationshipAbbreviation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi",
-    "@value" : "Relaation lyhenne"
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship abbreviation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://kela.fi/ontology/kelao"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi",
-    "@value" : "Relaation lyhenne"
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship abbreviation"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "fi",
-    "@value" : "Relaation lyhenne"
-  }, {
-    "@language" : "en",
-    "@value" : "Relationship abbreviation"
-  } ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#requiresEmploymentHistory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -6028,54 +6002,6 @@
   }, {
     "@language" : "en",
     "@value" : "role of customer"
-  } ]
-}, {
-  "@id" : "https://kela.fi/ontology/kelao#serviceChannelId",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi",
-    "@value" : "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa."
-  }, {
-    "@language" : "en",
-    "@value" : "Unique identifier of the service channel in PTV."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://kela.fi/ontology/kelao"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi",
-    "@value" : "palvelukanavan tunniste"
-  }, {
-    "@language" : "en",
-    "@value" : "service channel id"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "fi",
-    "@value" : "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa (PTV)."
-  }, {
-    "@language" : "en",
-    "@value" : "Unique identifier of a service channel in the Finnish Service Catalogue (PTV)."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "fi",
-    "@value" : "palvelukanavan tunniste"
-  }, {
-    "@language" : "en",
-    "@value" : "service channel id"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
-    "@language" : "fi",
-    "@value" : "Käytetään kelao:ServiceChannel-instansseilla."
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#serviceHours",
