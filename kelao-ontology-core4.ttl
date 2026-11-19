@@ -104,8 +104,8 @@ kelao:abbreviation a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Abbreviation of a benefit used internally by Kela."@en,
         "Etuuden lyhenne, jota Kela käyttää sisäisesti."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "abbreviation"@en,
         "lyhenne"@fi .
 
@@ -118,8 +118,8 @@ kelao:advancePayment a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating that a benefit may be paid as an advance for the waiting period of another benefit."@en,
         "Suhde, joka ilmaisee, että etuutta voidaan maksaa ennakkona toisen etuuden odotusajalta."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "advance payment"@en,
         "ennakkosuoritus"@fi ;
     kelao:relationshipAbbreviation "ENN"^^xsd:string .
@@ -146,8 +146,8 @@ kelao:amount a owl:DatatypeProperty ;
     rdfs:subPropertyOf schema:amount ;
     skos:definition "Monetary amount in euros."@en,
         "Rahamäärä euroina."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "amount"@en,
         "määrä"@fi .
 
@@ -160,8 +160,8 @@ kelao:appealDate a owl:DatatypeProperty ;
     rdfs:range xsd:date ;
     skos:definition "Date on which the appeal was lodged."@en,
         "Päivä, jona muutoksenhaku on jätetty."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "appeal date"@en,
         "muutoksenhaun päivä"@fi ;
     skos:scopeNote "Käytetään kelao:Appeal-instansseilla (xsd:date)."@fi .
@@ -176,8 +176,8 @@ kelao:appealHandledBy a owl:ObjectProperty ;
     rdfs:range kelao:AppealBody ;
     skos:definition "Relation stating the appeal body that handles the appeal."@en,
         "Suhde, joka ilmaisee muutoksenhakuelimen, joka käsittelee muutoksenhaun."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "appeal handled by"@en,
         "käsittelevä muutoksenhakuelin"@fi .
 
@@ -191,8 +191,8 @@ kelao:appealsDecision a owl:ObjectProperty ;
     rdfs:range kelao:Decision ;
     skos:definition "Relation stating the decision that the appeal concerns."@en,
         "Suhde, joka ilmaisee päätöksen, johon muutoksenhaku kohdistuu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "appeals decision"@en,
         "kohdistuu päätökseen"@fi .
 
@@ -206,8 +206,8 @@ kelao:applicationConcerns a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating the benefit that the application concerns."@en,
         "Suhde, joka ilmaisee etuuden, jota hakemus koskee."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "application concerns"@en,
         "hakemus koskee etuutta"@fi .
 
@@ -220,8 +220,8 @@ kelao:applicationStatus a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Processing status of an application."@en,
         "Hakemuksen käsittelyn tila."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "application status"@en,
         "hakemuksen tila"@fi ;
     skos:scopeNote "Käytetään kelao:Application-instansseilla. Esim. 'vireillä', 'käsittelyssä', 'ratkaistu'."@fi .
@@ -236,8 +236,8 @@ kelao:appliesFor a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating the benefit that the applicant applies for."@en,
         "Suhde, joka ilmaisee etuuden, jota hakija hakee."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "applies for"@en,
         "hakee etuutta"@fi .
 
@@ -251,8 +251,8 @@ kelao:areaCode a owl:DatatypeProperty,
     rdfs:range xsd:string ;
     skos:definition "Official code of an area in a national code list."@en,
         "Alueen virallinen koodi kansallisessa koodistossa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "area code"@en,
         "aluekoodi"@fi ;
     skos:scopeNote "Käytetään kelao:Location-instansseilla (ja sen alaluokilla)."@fi .
@@ -266,8 +266,8 @@ kelao:attachmentInOmaKela a owl:DatatypeProperty ;
     rdfs:range xsd:boolean ;
     skos:definition "Whether the attachment can be submitted in the OmaKela e-service."@en,
         "Tieto siitä, voiko liitteen toimittaa OmaKela-asiointipalvelussa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "is attachment in OmaKela"@en,
         "onko liite OmaKelassa"@fi ;
     skos:scopeNote "Käytetään kelao:Attachment-instansseilla (xsd:boolean)."@fi .
@@ -281,8 +281,8 @@ kelao:attachmentUri a owl:DatatypeProperty ;
     rdfs:range xsd:anyURI ;
     skos:definition "Web address where the attachment form or instructions are available."@en,
         "Verkko-osoite, josta liitelomake tai -ohje on saatavilla."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "attachment uri"@en,
         "liitteen uri"@fi ;
     skos:scopeNote "Käytetään kelao:Attachment-instansseilla (xsd:anyURI)."@fi .
@@ -298,8 +298,8 @@ kelao:belongsToCountry a owl:ObjectProperty ;
     rdfs:subPropertyOf kelao:isPartOfArea ;
     skos:definition "Relation stating the country to which an area belongs."@en,
         "Suhde, joka ilmaisee valtion, johon alue kuuluu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "belongs to country"@en,
         "kuuluu valtioon"@fi .
 
@@ -314,8 +314,8 @@ kelao:belongsToEmploymentArea a owl:ObjectProperty ;
     rdfs:subPropertyOf kelao:isPartOfArea ;
     skos:definition "Relation stating the employment area to which a municipality belongs."@en,
         "Suhde, joka ilmaisee työllisyysalueen, johon kunta kuuluu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "belongs to employment area"@en,
         "kuuluu työllisyysalueeseen"@fi .
 
@@ -330,8 +330,8 @@ kelao:belongsToRegion a owl:ObjectProperty ;
     rdfs:subPropertyOf kelao:isPartOfArea ;
     skos:definition "Relation stating the region to which a municipality belongs."@en,
         "Suhde, joka ilmaisee maakunnan, johon kunta kuuluu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "belongs to region"@en,
         "kuuluu maakuntaan"@fi .
 
@@ -345,8 +345,8 @@ kelao:belongsToWellbeingServiceCounty a owl:ObjectProperty ;
     rdfs:subPropertyOf kelao:isPartOfArea ;
     skos:definition "Relation stating the wellbeing services county to which a municipality belongs."@en,
         "Suhde, joka ilmaisee hyvinvointialueen, johon kunta kuuluu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "belongs to wellbeing service county"@en,
         "kuuluu hyvinvointialueeseen"@fi .
 
@@ -359,8 +359,8 @@ kelao:broaderBenefit a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating the broader benefit under which a benefit is conceptually subsumed."@en,
         "Suhde, joka ilmaisee laajemman etuuskokonaisuuden, johon etuus käsitteellisesti sisältyy."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "broader benefit"@en,
         "laajempi etuus"@fi .
 
@@ -371,8 +371,8 @@ kelao:calculationBase a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Basis on which the amount of a benefit is calculated."@en,
         "Peruste, jonka mukaan etuuden määrä lasketaan."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "calculation base"@en,
         "laskentaperuste"@fi .
 
@@ -386,8 +386,8 @@ kelao:criterionLegalBasis a owl:ObjectProperty ;
     rdfs:range kelao:LegalResource ;
     skos:definition "Relation stating the statute or part of a statute on which an eligibility criterion is based."@en,
         "Suhde, joka ilmaisee säädöksen tai sen osan, johon etuuskriteeri perustuu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "criterion legal basis"@en,
         "kriteerin oikeusperusta"@fi .
 
@@ -398,8 +398,8 @@ kelao:currentVersion a owl:DatatypeProperty ;
     rdfs:range xsd:anyURI ;
     skos:definition "Web address of the current version of a part of a statute."@en,
         "Säädöksen osan ajantasaisen version verkko-osoite."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "current version uri"@en,
         "ajantasaisen lainosan URI"@fi .
 
@@ -430,8 +430,8 @@ kelao:decisionDate a owl:DatatypeProperty ;
     rdfs:range xsd:date ;
     skos:definition "Date on which the decision was issued."@en,
         "Päivä, jona päätös on annettu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "decision date"@en,
         "päätöspäivä"@fi ;
     skos:scopeNote "Käytetään kelao:Decision-instansseilla (xsd:date)."@fi .
@@ -477,8 +477,8 @@ kelao:financing a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "The way in which the financing of a benefit is arranged."@en,
         "Tapa, jolla etuuden rahoitus on järjestetty."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "financing"@en,
         "rahoitus"@fi,
         "financsieringen"@sv .
@@ -506,8 +506,8 @@ kelao:hasApplication a owl:ObjectProperty ;
     rdfs:range kelao:Application ;
     skos:definition "Relation stating an application submitted by the applicant."@en,
         "Suhde, joka ilmaisee hakijan jättämän hakemuksen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has application"@en,
         "jätti hakemuksen"@fi .
 
@@ -521,8 +521,8 @@ kelao:hasAttachment a owl:ObjectProperty ;
     rdfs:range kelao:Attachment ;
     skos:definition "Relation stating an attachment belonging to an application."@en,
         "Suhde, joka ilmaisee hakemukseen kuuluvan liitteen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has attachment"@en,
         "hakemuksen liite"@fi .
 
@@ -534,8 +534,8 @@ kelao:hasBenefitGroup a owl:ObjectProperty ;
     rdfs:range kelao:BenefitGroup ;
     skos:definition "Relation stating the benefit group into which a benefit is classified."@en,
         "Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has benefit group"@en,
         "etuusryhmä"@fi .
 
@@ -548,8 +548,8 @@ kelao:hasBenefitPart a owl:ObjectProperty ;
     owl:inverseOf kelao:isPartOfBenefit ;
     skos:definition "Relation stating a benefit component of which a benefit consists."@en,
         "Suhde, joka ilmaisee etuuden osan, josta etuus koostuu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has benefit part"@en,
         "etuudella on osa"@fi .
 
@@ -562,8 +562,8 @@ kelao:hasConcept a owl:ObjectProperty ;
     rdfs:range skos:Concept ;
     skos:definition "Relation linking a benefit to a vocabulary concept that describes it."@en,
         "Suhde, joka liittää etuuteen sitä kuvaavan sanaston käsitteen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has concept"@en,
         "on käsite"@fi .
 
@@ -579,8 +579,8 @@ kelao:hasCustomerRole a owl:ObjectProperty ;
     owl:inverseOf kelao:roleOfCustomer ;
     skos:definition "Relation stating a role (applicant, user or beneficiary) in which a customer acts."@en,
         "Suhde, joka ilmaisee roolin (hakija, käyttäjä tai etuudensaaja), jossa asiakas toimii."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has customer role"@en,
         "asiakkaan rooli"@fi .
 
@@ -594,8 +594,8 @@ kelao:hasDecision a owl:ObjectProperty ;
     rdfs:range kelao:Decision ;
     skos:definition "Relation stating the decision issued on an application."@en,
         "Suhde, joka ilmaisee hakemukseen annetun päätöksen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has decision"@en,
         "hakemuksen päätös"@fi .
 
@@ -609,8 +609,8 @@ kelao:hasEligibilityCriterion a owl:ObjectProperty ;
     rdfs:range kelao:EligibilityCriterion ;
     skos:definition "Relation stating an eligibility criterion of a benefit."@en,
         "Suhde, joka ilmaisee etuuden myöntämisedellytyksen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has eligibility criterion"@en,
         "kriteerinä"@fi .
 
@@ -624,8 +624,8 @@ kelao:hasIncome a owl:ObjectProperty ;
     rdfs:range kelao:Income ;
     skos:definition "Relation stating an income item of an agent."@en,
         "Suhde, joka ilmaisee toimijan tuloerän."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has income"@en,
         "tulona"@fi .
 
@@ -637,8 +637,8 @@ kelao:hasProvider a owl:ObjectProperty ;
     rdfs:range kelao:Organisation ;
     skos:definition "Relation stating the organisation responsible for administering a benefit."@en,
         "Suhde, joka ilmaisee organisaation, joka vastaa etuuden toimeenpanosta."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has provider"@en,
         "vastuuorganisaatio"@fi .
 
@@ -653,8 +653,8 @@ kelao:hasServiceChannel a owl:ObjectProperty ;
     skos:closeMatch ptv:hasServiceChannel ;
     skos:definition "Relation stating a service channel through which a service is available."@en,
         "Suhde, joka ilmaisee palvelukanavan, jonka kautta palvelu on käytettävissä."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has channel"@en,
         "kanava"@fi .
 
@@ -683,8 +683,8 @@ kelao:homepage a owl:DatatypeProperty ;
     rdfs:range xsd:anyURI ;
     skos:definition "Address of the web page describing a benefit."@en,
         "Etuutta kuvaavan verkkosivun osoite."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:exactMatch ptv:homePage ;
     skos:prefLabel "homepage"@en,
         "kotisivu"@fi ;
@@ -737,8 +737,8 @@ kelao:incomeConsideredIn a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating the benefit in whose calculation or means test an income item is taken into account."@en,
         "Suhde, joka ilmaisee etuuden, jonka määrää laskettaessa tai tarveharkinnassa tuloerä otetaan huomioon."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "income considered in"@en,
         "huomioidaan etuudessa"@fi .
 
@@ -750,8 +750,8 @@ kelao:indexLinked a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Index to which the amount of a benefit is linked."@en,
         "Indeksi, johon etuuden määrä on sidottu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "index linked"@en,
         "indeksisidonnainen"@fi ;
     skos:relatedMatch kelaterm:c520 .
@@ -783,8 +783,8 @@ kelao:investigate a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating another benefit whose entitlement must be examined before this benefit is decided."@en,
         "Suhde, joka ilmaisee toisen etuuden, jonka saamisen edellytykset on selvitettävä ennen tämän etuuden ratkaisemista."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "benefit to investigate"@en,
         "selvitä etuus"@fi ;
     kelao:relationshipAbbreviation "SEL"^^xsd:string .
@@ -796,8 +796,8 @@ kelao:latitude a owl:DatatypeProperty ;
     rdfs:range xsd:decimal ;
     skos:definition "Latitude of a location in the WGS84 reference system."@en,
         "Sijainnin leveysaste WGS84-koordinaatistossa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:exactMatch geo:lat ;
     skos:prefLabel "latitude"@en,
         "leveysaste"@fi ;
@@ -812,8 +812,8 @@ kelao:legalReference a owl:ObjectProperty ;
     rdfs:range kelao:LegalResource ;
     skos:definition "Relation stating the statute on which a benefit is based."@en,
         "Suhde, joka ilmaisee säädöksen, johon etuus perustuu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has legal reference"@en,
         "on lakiviittaus"@fi .
 
@@ -824,8 +824,8 @@ kelao:longitude a owl:DatatypeProperty ;
     rdfs:range xsd:decimal ;
     skos:definition "Longitude of a location in the WGS84 reference system."@en,
         "Sijainnin pituusaste WGS84-koordinaatistossa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:exactMatch geo:long ;
     skos:prefLabel "longitude"@en,
         "pituusaste"@fi ;
@@ -840,8 +840,8 @@ kelao:maximumAge a owl:DatatypeProperty ;
     rdfs:range xsd:integer ;
     skos:definition "Age above which a person is not entitled to the benefit."@en,
         "Ikä, jonka ylittänyt henkilö ei ole oikeutettu etuuteen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "maximum age"@en,
         "yläikäraja"@fi,
         "övre åldersgräns"@sv .
@@ -873,8 +873,8 @@ kelao:meansTestedIncome a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating another benefit that is counted as income in the means test of this benefit."@en,
         "Suhde, joka ilmaisee toisen etuuden, joka otetaan tulona huomioon tämän etuuden tarveharkinnassa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "means-tested income"@en,
         "tarveharkinnan tulo"@fi .
 
@@ -887,8 +887,8 @@ kelao:minimumAge a owl:DatatypeProperty ;
     rdfs:range xsd:integer ;
     skos:definition "Age a person must have reached to be entitled to the benefit."@en,
         "Ikä, jonka henkilön on täytettävä ollakseen oikeutettu etuuteen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "minimum age"@en,
         "alaikäraja"@fi,
         "nedre åldersgräns"@sv .
@@ -902,8 +902,8 @@ kelao:minimumAmount a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating the benefit that determines the minimum amount of this benefit."@en,
         "Suhde, joka ilmaisee etuuden, joka määrää tämän etuuden vähimmäismäärän."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "minimum amount benefit"@en,
         "minimimääräinen etuus"@fi ;
     kelao:relationshipAbbreviation "MIN"^^xsd:string .
@@ -933,8 +933,8 @@ kelao:noteworthy a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating another benefit to be noted when deciding this benefit without preventing or reducing it."@en,
         "Suhde, joka ilmaisee toisen etuuden, joka on otettava huomioon tätä etuutta ratkaistaessa ilman että se estää tai vähentää etuutta."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "benefit to be noted"@en,
         "huomioon otettava etuus"@fi ;
     skos:relatedMatch kelaterm:c63 ;
@@ -948,8 +948,8 @@ kelao:partIdentifier a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Identifier of a part of a statute."@en,
         "Säädöksen osan tunnus."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "part identifier"@en,
         "osan tunniste"@fi .
 
@@ -962,8 +962,8 @@ kelao:partText a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Text of a part of a statute."@en,
         "Säädöksen osan teksti."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "part text"@en,
         "lainosan teksti"@fi .
 
@@ -975,8 +975,8 @@ kelao:partType a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Kind of a part of a statute."@en,
         "Säädöksen osan laji."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:example "momentti"@fi,
         "pykälä"@fi ;
     skos:prefLabel "part type"@en,
@@ -992,8 +992,8 @@ kelao:paymentBasedOnDecision a owl:ObjectProperty ;
     rdfs:range kelao:Decision ;
     skos:definition "Relation stating the decision on which a payment is based."@en,
         "Suhde, joka ilmaisee päätöksen, johon maksu perustuu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "payment based on decision"@en,
         "perustuu ratkaisuun"@fi .
 
@@ -1021,8 +1021,8 @@ kelao:paymentOf a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating the benefit of which the payment is a disbursement."@en,
         "Suhde, joka ilmaisee etuuden, jonka suoritus maksu on."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "payment of"@en,
         "etuuden maksu"@fi .
 
@@ -1051,8 +1051,8 @@ kelao:postOffice a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Post office (postal locality)."@en,
         "Postitoimipaikka."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "post office"@en,
         "postitoimipaikka"@fi ;
     skos:scopeNote "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."@fi .
@@ -1064,8 +1064,8 @@ kelao:postalCode a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Postal code."@en,
         "Postinumero."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:exactMatch schema:postalCode ;
     skos:prefLabel "postal code"@en,
         "postinumero"@fi ;
@@ -1081,8 +1081,8 @@ kelao:processingTime a owl:DatatypeProperty ;
     rdfs:range xsd:duration ;
     skos:definition "Average processing time of an application from receipt to decision."@en,
         "Hakemuksen keskimääräinen käsittelyaika hakemuksen saapumisesta päätökseen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "processing time"@en,
         "käsittelyaika"@fi,
         "handläggningstid"@sv ;
@@ -1098,8 +1098,8 @@ kelao:purpose a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Purpose for which the benefit has been enacted."@en,
         "Tarkoitus, jota varten etuus on säädetty."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "purpose"@en,
         "tarkoitus"@fi,
         "syftet med förmånen"@sv .
@@ -1114,8 +1114,8 @@ kelao:receivesBenefit a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating the benefit that a beneficiary receives."@en,
         "Suhde, joka ilmaisee etuuden, jota etuudensaaja saa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "receives benefit"@en,
         "saa etuutta"@fi .
 
@@ -1128,8 +1128,8 @@ kelao:recipientUnit a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Unit to which the benefit is granted and on the basis of which its amount is calculated."@en,
         "Yksikkö, jolle etuus myönnetään ja jonka perusteella etuuden määrä lasketaan."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "recipient unit"@en,
         "saajayksikkö"@fi,
         "mottagande enhet"@sv ;
@@ -1145,8 +1145,8 @@ kelao:recoveryConcerns a owl:ObjectProperty ;
     rdfs:range kelao:Payment ;
     skos:definition "Relation stating the payment that a recovery concerns."@en,
         "Suhde, joka ilmaisee maksun, johon takaisinperintä kohdistuu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "recovery concerns"@en,
         "kohdistuu maksuun"@fi .
 
@@ -1175,8 +1175,8 @@ kelao:relatedBenefit a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating a benefit that a statute concerns."@en,
         "Suhde, joka ilmaisee etuuden, jota säädös koskee."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has related benefit"@en,
         "säädös koskee etuutta"@fi .
 
@@ -1190,8 +1190,8 @@ kelao:relatedService a owl:ObjectProperty ;
     rdfs:range kelao:Service ;
     skos:definition "Relation stating a service related to a benefit."@en,
         "Suhde, joka ilmaisee etuuteen liittyvän palvelun."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "related service"@en,
         "etuuteen liittyvä palvelu"@fi .
 
@@ -1204,8 +1204,8 @@ kelao:relatedToLifeSituation a owl:ObjectProperty ;
     owl:inverseOf kelao:isLifeSituationFor ;
     skos:definition "Relation stating a life situation to which a benefit is related."@en,
         "Suhde, joka ilmaisee elämäntilanteen, johon etuus liittyy."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "related to life situation"@en,
         "liittyy elämäntilanteeseen"@fi .
 
@@ -1226,8 +1226,8 @@ kelao:requiresEmploymentHistory a owl:DatatypeProperty ;
     rdfs:range xsd:boolean ;
     skos:definition "Whether entitlement to the benefit requires that the employment condition is met."@en,
         "Tieto siitä, edellyttääkö etuuden saaminen työssäoloehdon täyttymistä."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "requires employment history"@en,
         "vaatii työhistorian"@fi ;
     skos:relatedMatch kelaterm:c678 .
@@ -1244,8 +1244,8 @@ kelao:residenceRequired a owl:DatatypeProperty ;
     skos:definition "Whether entitlement to the benefit requires that the residence condition is met."@en,
         "Tieto siitä, edellyttääkö etuuden saaminen asumisedellytyksen täyttymistä."@fi,
         "krav enligt vilket en förmånssökande ska bo i Finland, ett EU-land, ett EES-land eller Schweiz och en förmånslåtare vid sin död måste bo i något av dessa länder för att förmånssökanden ska ha rätt till en förmån"@sv ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "residence required"@en,
         "vaatii asumisen Suomessa"@fi ;
     skos:relatedMatch kelaterm:c529 .
@@ -1259,8 +1259,8 @@ kelao:residesInMunicipality a owl:ObjectProperty ;
     rdfs:range kelao:Municipality ;
     skos:definition "Relation stating the municipality in which the applicant resides."@en,
         "Suhde, joka ilmaisee kunnan, jossa hakija asuu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "resides in municipality"@en,
         "asuu kunnassa"@fi ;
     skos:scopeNote "Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja."@fi .
@@ -1290,8 +1290,8 @@ kelao:serviceHours a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Time during which a service or a service unit is available to customers."@en,
         "Aika, jona palvelu tai palvelupiste on asiakkaiden käytettävissä."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "service hours"@en,
         "palvelun aukioloajat"@fi ;
     skos:scopeNote "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."@fi .
@@ -1307,8 +1307,8 @@ kelao:serviceUnitOrganization a owl:ObjectProperty ;
     owl:inverseOf kelao:hasServiceUnit ;
     skos:definition "Relation stating the organisation responsible for a service unit."@en,
         "Suhde, joka ilmaisee palvelupisteestä vastaavan organisaation."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "service unit organisation"@en,
         "palvelupisteen organisaatio"@fi .
 
@@ -1321,8 +1321,8 @@ kelao:serviceUnitType a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Type of a service unit."@en,
         "Palvelupisteen tyyppi."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "service unit type"@en,
         "palvelupisteen tyyppi"@fi ;
     skos:scopeNote "Käytetään kelao:ServiceUnit-instansseilla."@fi .
@@ -1336,8 +1336,8 @@ kelao:streetAddress a owl:DatatypeProperty ;
     rdfs:range xsd:string ;
     skos:definition "Street address of a service unit."@en,
         "Palvelupisteen katuosoite."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:exactMatch schema:streetAddress ;
     skos:prefLabel "street address"@en,
         "katuosoite"@fi ;
@@ -1354,8 +1354,8 @@ kelao:taxable a owl:DatatypeProperty ;
     rdfs:range xsd:boolean ;
     skos:definition "Whether the benefit is taxable income."@en,
         "Tieto siitä, onko etuus veronalaista tuloa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:note "Tiedot löytyvät myös sivulta https://www.kela.fi/verotus"@fi ;
     skos:prefLabel "taxable"@en,
         "verotettava"@fi,
@@ -1390,8 +1390,8 @@ kelao:validFrom a owl:DatatypeProperty ;
     rdfs:range xsd:date ;
     skos:definition "Date from which the benefit is in force."@en,
         "Päivä, josta alkaen etuus on voimassa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:exactMatch schema:startDate ;
     skos:prefLabel "valid from"@en,
         "voimassa alkaen"@fi,
@@ -1410,8 +1410,8 @@ kelao:validTo a owl:DatatypeProperty ;
     rdfs:range xsd:date ;
     skos:definition "Date until which the benefit is in force."@en,
         "Päivä, johon asti etuus on voimassa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:exactMatch schema:endDate ;
     skos:prefLabel "valid to"@en,
         "voimassa asti"@fi,
@@ -1515,8 +1515,8 @@ kelao:Recovery a owl:Class ;
     skos:altLabel "Claim for recovery"@en ;
     skos:definition "A procedure by which a benefit paid in excess or without grounds is reclaimed."@en,
         "Menettely, jossa liikaa tai perusteetta maksettu etuus peritään takaisin."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Recovery"@en,
         "Takaisinperintä"@fi,
         "Återkrav"@sv .
@@ -1535,8 +1535,8 @@ kelao:StatuteType a owl:Class ;
         skos:Concept ;
     skos:definition "The kind of a statute according to its issuer and legal status."@en,
         "Säädöksen laji sen antajan ja oikeudellisen aseman mukaan."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Statute Type"@en,
         "Säädöstyyppi"@fi,
         "Författningstyp"@sv .
@@ -1553,8 +1553,8 @@ kelao:containsArea a owl:ObjectProperty,
     skos:closeMatch schema:containsPlace ;
     skos:definition "Relation stating that an area contains another geographic area."@en,
         "Suhde, joka ilmaisee, että alue sisältää toisen maantieteellisen alueen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "contains area"@en,
         "sisältää alueen"@fi .
 
@@ -1569,8 +1569,8 @@ kelao:hasLocation a owl:ObjectProperty ;
     owl:propertyChainAxiom ( kelao:hasLocation kelao:isPartOfArea ) ;
     skos:definition "Relation stating the geographic area in which a service unit or organisation is located."@en,
         "Suhde, joka ilmaisee maantieteellisen alueen, jolla palvelupiste tai organisaatio sijaitsee."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "is located in"@en,
         "sijaitsee alueella"@fi .
 
@@ -1583,8 +1583,8 @@ kelao:hasServiceUnit a owl:ObjectProperty ;
     rdfs:range kelao:ServiceUnit ;
     skos:definition "Relation stating a service unit maintained by an organisation."@en,
         "Suhde, joka ilmaisee organisaation ylläpitämän palvelupisteen."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "has service unit"@en,
         "on palvelupiste"@fi .
 
@@ -1596,8 +1596,8 @@ kelao:isLifeSituationFor a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating a benefit to which a life situation is related."@en,
         "Suhde, joka ilmaisee etuuden, johon elämäntilanne liittyy."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "is life situation for"@en,
         "on elämäntilanne kohteelle"@fi .
 
@@ -1609,8 +1609,8 @@ kelao:isPartOfBenefit a owl:ObjectProperty ;
     rdfs:range kelao:Benefit ;
     skos:definition "Relation stating the benefit of which a benefit component is a part."@en,
         "Suhde, joka ilmaisee etuuden, jonka osa etuuden osa on."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "is part of benefit"@en,
         "on osa etuutta"@fi .
 
@@ -1626,9 +1626,9 @@ kelao:roleOfCustomer a owl:FunctionalProperty,
     rdfs:range kelao:Customer ;
     skos:definition "Relation stating the customer to whom a role belongs."@en,
         "Suhde, joka ilmaisee asiakkaan, jolle rooli kuuluu."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."@fi,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+    skos:editorialNote "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."@fi ;
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "role of customer"@en,
         "asiakkaan rooli"@fi .
 
@@ -1663,8 +1663,8 @@ kelao:Appeal a owl:Class ;
         kelaterm:c744 ;
     skos:definition "A customer’s demand that a decision issued by an authority or an appeal body be changed, made either as a request for rectification or as an appeal."@en,
         "Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Appeal"@en,
         "Muutoksenhaku"@fi,
         "Ändringssökande"@sv ;
@@ -1713,8 +1713,8 @@ kelao:Customer a owl:Class ;
     rdfs:subClassOf prov:Agent ;
     skos:definition "A person or organisation that receives, or may receive, value from a service provided by Kela."@en,
         "Henkilö tai yhteisö, joka saa tai jolla on mahdollisuus saada arvoa Kelan tarjoamasta palvelusta."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Customer"@en,
         "Asiakas"@fi,
         "Kund"@sv ;
@@ -1734,8 +1734,8 @@ kelao:EligibilityCriterion a owl:Class ;
     skos:closeMatch cv:Criterion ;
     skos:definition "A condition for granting a benefit whose fulfilment affects entitlement to the benefit or its amount."@en,
         "Etuuden myöntämisedellytys, jonka täyttyminen vaikuttaa oikeuteen saada etuus tai etuuden määrään."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Eligibility criterion"@en,
         "Myöntämisedellytys"@fi .
 
@@ -1764,8 +1764,8 @@ kelao:Income a owl:Class ;
     rdfs:subClassOf prov:Entity ;
     skos:definition "An income item of a person or household that may be taken into account when calculating the amount of a benefit or in means testing."@en,
         "Henkilön tai ruokakunnan tuloerä, joka voidaan ottaa huomioon etuuden määrää laskettaessa tai tarveharkinnassa."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Income"@en,
         "Tulo"@fi,
         "Inkomst"@sv ;
@@ -1964,8 +1964,8 @@ kelao:Payment a owl:Class ;
     rdfs:subClassOf prov:Entity ;
     skos:definition "A benefit disbursement, or an instalment of it, paid to the payee on the basis of a benefit decision."@en,
         "Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "Payment"@en,
         "Maksu"@fi,
         "Betalning"@sv ;
@@ -2042,8 +2042,8 @@ kelao:isPartOfArea a owl:ObjectProperty,
         <http://www.geonames.org/ontology#parentFeature> ;
     skos:definition "Relation stating that an area is part of another geographic area."@en,
         "Suhde, joka ilmaisee, että alue on osa toista maantieteellistä aluetta."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "is part of area"@en,
         "on osa aluetta"@fi .
 
