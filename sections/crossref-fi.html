@@ -766,6 +766,12 @@ This section provides details for each class and property defined by Sosiaalitur
    <dd>
     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
    </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#paymentRecipient" title="https://kela.fi/ontology/kelao#paymentRecipient">maksun saajana</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
   </dl>
  </div>
  <div class="entity" id="Appeal">
@@ -2420,7 +2426,7 @@ This section provides details for each class and property defined by Sosiaalitur
      has range
     </dt>
     <dd>
-     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Payee" title="https://kela.fi/ontology/kelao#Payee">Maksunsaaja</a> <sup class="type-c" title="class">c</sup>
     </dd>
    </dl>
   </div>
@@ -3218,13 +3224,12 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#date_document" title="https://kela.fi/ontology/kelao#date_document">säädöksen antamispäivä</a></li>
   <li><a href="#purpose" title="https://kela.fi/ontology/kelao#purpose">tarkoitus</a></li>
   <li><a href="#meansTest" title="https://kela.fi/ontology/kelao#meansTest">tarveharkinta</a></li>
-  <li><a href="#identifier" title="https://kela.fi/ontology/kelao#identifier">tunniste</a></li>
   <li><a href="#residenceRequired" title="https://kela.fi/ontology/kelao#residenceRequired">vaatii asumisen Suomessa</a></li>
   <li><a href="#requiresEmploymentHistory" title="https://kela.fi/ontology/kelao#requiresEmploymentHistory">vaatii työhistorian</a></li>
   <li><a href="#taxable" title="https://kela.fi/ontology/kelao#taxable">verotettava</a></li>
   <li><a href="#versionDate" title="https://kela.fi/ontology/kelao#versionDate">versiointipäivä</a></li>
   <li><a href="#filingDate" title="https://kela.fi/ontology/kelao#filingDate">vireilletulopäivä</a></li>
-  <li><a href="#first_date_entry_in_force" title="https://kela.fi/ontology/kelao#first_date_entry_in_force">voimaantulopäivä</a></li>
+  <li><a href="#firstDateEntryInForce" title="https://kela.fi/ontology/kelao#firstDateEntryInForce">voimaantulopäivä</a></li>
   <li><a href="#validFrom" title="https://kela.fi/ontology/kelao#validFrom">voimassa alkaen</a></li>
   <li><a href="#validTo" title="https://kela.fi/ontology/kelao#validTo">voimassa asti</a></li>
   <li><a href="#maximumAge" title="https://kela.fi/ontology/kelao#maximumAge">yläikäraja</a></li>
@@ -4205,48 +4210,6 @@ This section provides details for each class and property defined by Sosiaalitur
    </dl>
   </div>
  </div>
- <div class="entity" id="identifier">
-  <h3>tunniste<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#identifier</p>
-  <div class="comment">
-   <span class="markdown">Säädöksen virallinen ELI-URI Finlex-sivulle.</span>
-  </div>
-  <div class="comment">
-   <span class="markdown">Säädöksen virallinen ELI-tunniste (URI).</span>
-  </div>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
-   </dd>
-  </dl>
-  <dl class="definedBy">
-   <dt>
-    Source
-   </dt>
-   <dd>
-    <a href="http://data.europa.eu/eli/ontology#">http://data.europa.eu/eli/ontology#</a>
-   </dd>
-  </dl>
-  <div class="description">
-   <dl>
-    <dt>
-     has super-properties
-    </dt>
-    <dd>
-     <a href="http://purl.org/dc/terms/identifier" target="_blank" title="http://purl.org/dc/terms/identifier">identifier</a> <sup class="type-dp" title="data property">dp</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="residenceRequired">
   <h3>vaatii asumisen Suomessa<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#residenceRequired</p>
@@ -4414,9 +4377,9 @@ This section provides details for each class and property defined by Sosiaalitur
    </dl>
   </div>
  </div>
- <div class="entity" id="first_date_entry_in_force">
+ <div class="entity" id="firstDateEntryInForce">
   <h3>voimaantulopäivä<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#first_date_entry_in_force</p>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#firstDateEntryInForce</p>
   <div class="comment">
    <span class="markdown">Ensimmäinen päivä, jolloin jokin osa säädöksestä tulee voimaan.</span>
   </div>
@@ -4576,8 +4539,8 @@ This section provides details for each class and property defined by Sosiaalitur
   <li><a href="#http://www.w3.org/2004/02/skos/core#prefLabel" title="http://www.w3.org/2004/02/skos/core#prefLabel"> <span>pref Label</span> </a></li>
   <li><a href="#http://purl.org/vocab/vann/preferredNamespacePrefix" title="http://purl.org/vocab/vann/preferredNamespacePrefix"> <span>preferred Namespace Prefix</span> </a></li>
   <li><a href="#http://purl.org/vocab/vann/preferredNamespaceUri" title="http://purl.org/vocab/vann/preferredNamespaceUri"> <span>preferred Namespace Uri</span> </a></li>
+  <li><a href="#relationshipAbbreviation" title="https://kela.fi/ontology/kelao#relationshipAbbreviation">relaation lyhenne</a></li>
   <li><a href="#http://www.w3.org/2004/02/skos/core#relatedMatch" title="http://www.w3.org/2004/02/skos/core#relatedMatch"> <span>related Match</span> </a></li>
-  <li><a href="#relationshipAbbreviation" title="https://kela.fi/ontology/kelao#relationshipAbbreviation"> <span>relationship Abbreviation</span> </a></li>
   <li><a href="#http://www.w3.org/2004/02/skos/core#scopeNote" title="http://www.w3.org/2004/02/skos/core#scopeNote"> <span>scope Note</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/source" title="http://purl.org/dc/terms/source"> <span>source</span> </a></li>
   <li><a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title"> <span>title</span> </a></li>
@@ -4693,13 +4656,24 @@ This section provides details for each class and property defined by Sosiaalitur
   <h3>preferred Namespace Uri<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/vocab/vann/preferredNamespaceUri</p>
  </div>
+ <div class="entity" id="relationshipAbbreviation">
+  <h3>relaation lyhenne<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#relationshipAbbreviation</p>
+  <div class="comment">
+   <span class="markdown">relaation lyhenne</span>
+  </div>
+  <dl class="definedBy">
+   <dt>
+    Is defined by
+   </dt>
+   <dd>
+    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="http://www.w3.org/2004/02/skos/core#relatedMatch">
   <h3>related Match<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/2004/02/skos/core#relatedMatch</p>
- </div>
- <div class="entity" id="relationshipAbbreviation">
-  <h3>relationship Abbreviation<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#relationshipAbbreviation</p>
  </div>
  <div class="entity" id="http://www.w3.org/2004/02/skos/core#scopeNote">
   <h3>scope Note<sup class="type-ap" title="annotation property">ap</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#annotationproperties">Annotation Property ToC</a> </span></h3>
