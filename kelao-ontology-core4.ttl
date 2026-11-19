@@ -576,7 +576,6 @@ kelao:hasCustomerRole a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
     rdfs:range [ a owl:Class ;
             owl:unionOf ( kelao:Applicant kelao:Beneficiary kelao:User ) ] ;
-    owl:inverseOf kelao:roleOfCustomer ;
     skos:definition "Relation stating a role (applicant, user or beneficiary) in which a customer acts."@en,
         "Suhde, joka ilmaisee roolin (hakija, käyttäjä tai etuudensaaja), jossa asiakas toimii."@fi ;
 #    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
@@ -1613,24 +1612,6 @@ kelao:isPartOfBenefit a owl:ObjectProperty ;
 #        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
     skos:prefLabel "is part of benefit"@en,
         "on osa etuutta"@fi .
-
-kelao:roleOfCustomer a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "role of customer"@en,
-        "asiakkaan rooli"@fi ;
-    rdfs:comment "The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer."@en,
-        "Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen. Sama henkilö tai ruokakunta voi esiintyä useassa roolissa samanaikaisesti, esimerkiksi hakijana, käyttäjänä ja maksunsaajana."@fi ;
-    rdfs:domain [ a owl:Class ;
-            owl:unionOf ( kelao:Applicant kelao:Beneficiary kelao:User ) ] ;
-    rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-    rdfs:range kelao:Customer ;
-    skos:definition "Relation stating the customer to whom a role belongs."@en,
-        "Suhde, joka ilmaisee asiakkaan, jolle rooli kuuluu."@fi ;
-#    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-    skos:editorialNote "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."@fi ;
-#        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
-    skos:prefLabel "role of customer"@en,
-        "asiakkaan rooli"@fi .
 
 eli:LegalResource a owl:Class .
 
