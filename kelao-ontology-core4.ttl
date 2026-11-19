@@ -1209,14 +1209,14 @@ kelao:relatedToLifeSituation a owl:ObjectProperty ;
     skos:prefLabel "related to life situation"@en,
         "liittyy elämäntilanteeseen"@fi .
 
-kelao:relationshipAbbreviation a owl:AnnotationProperty ;
-    rdfs:label "Relationship abbreviation"@en,
-        "Relaation lyhenne"@fi ;
-    rdfs:comment "Relationship abbreviation"@en,
-        "Relaation lyhenne"@fi ;
-    rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-    skos:prefLabel "Relationship abbreviation"@en,
-        "Relaation lyhenne"@fi .
+#kelao:relationshipAbbreviation a owl:AnnotationProperty ;
+#    rdfs:label "relationship abbreviation"@en,
+#        "relaation lyhenne"@fi ;
+#    rdfs:comment "relationship abbreviation"@en,
+#        "relaation lyhenne"@fi ;
+#    rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+#    skos:prefLabel "relationship abbreviation"@en,
+#        "relaation lyhenne"@fi .
 
 kelao:requiresEmploymentHistory a owl:DatatypeProperty ;
     rdfs:label "requires employment history"@en,
@@ -1265,20 +1265,21 @@ kelao:residesInMunicipality a owl:ObjectProperty ;
         "asuu kunnassa"@fi ;
     skos:scopeNote "Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja."@fi .
 
-kelao:serviceChannelId a owl:DatatypeProperty ;
-    rdfs:label "service channel id"@en,
-        "palvelukanavan tunniste"@fi ;
-    rdfs:comment "Unique identifier of the service channel in PTV."@en,
-        "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa."@fi ;
-    rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-    rdfs:range xsd:string ;
-    skos:definition "Unique identifier of a service channel in the Finnish Service Catalogue (PTV)."@en,
-        "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa (PTV)."@fi ;
-    skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
-        "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
-    skos:prefLabel "service channel id"@en,
-        "palvelukanavan tunniste"@fi ;
-    skos:scopeNote "Käytetään kelao:ServiceChannel-instansseilla."@fi .
+# kelao:serviceChannelId a owl:DatatypeProperty ;
+#     rdfs:label "service channel id"@en,
+#         "palvelukanavan tunniste"@fi ;
+#     rdfs:comment "Unique identifier of the service channel in PTV."@en,
+#         "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa."@fi ;
+#     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
+#     rdfs:range xsd:string ;
+#     skos:definition "Unique identifier of a service channel in the Finnish Service Catalogue (PTV)."@en,
+#         "Palvelukanavan yksilöivä tunniste Palvelutietovarannossa (PTV)."@fi ;
+#     skos:editorialNote "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en,
+#         "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ;
+#     skos:prefLabel "service channel id"@en,
+#         "palvelukanavan tunniste"@fi ;
+#     skos:scopeNote "Käytetään kelao:ServiceChannel-instansseilla."@fi .
+# Kommentoitu pois: ei kuulu sosiaaliturvan ydinontologiaan (PTV-tekninen tunniste).
 
 kelao:serviceHours a owl:DatatypeProperty ;
     rdfs:label "service hours"@en,
@@ -2118,13 +2119,8 @@ kelao:Benefit a owl:Class ;
 <https://kela.fi/ontology/kelao> a owl:Ontology ;
     rdfs:label "Finnish Social Security Core Ontology"@en,
         "Sosiaaliturvan ydinontologia"@fi ;
-    dcterms:abstract """The Social Security Core Ontology describes the conceptual structure of the Finnish social security system.
-	It is intended to support knowledge graph implementations for policy analysis, eligibility reasoning and data integration. The ontology models relationships between:
-        benefits, eligibility criteria, services, life situations, organisations, legislation, and concepts.
-"""@en,
-        """Sosiaaliturvan ydinontologia kuvaa etuudet, etuuskriteerit, palvelut,  
-        organisaatiot, maantieteelliset alueet, palvelukanavat, lainsäädännön sekä sosiaaliturvan käsitteet.
-        """@fi ;
+    dcterms:abstract "The Finnish Social Security Core Ontology (kelao) describes the core concepts of the Finnish social security system and the relationships between them in a machine-interpretable form: benefits and their components, eligibility criteria, the application and decision process, payments and recovery, appeals, customer roles, services and service channels, the administrative area hierarchy, and the underlying legislation. The ontology complements Kela's terminological vocabulary: the vocabulary defines concepts for human readers, while the ontology makes the relationships, constraints and inference rules between concepts machine-checkable and queryable."@en,
+        "Sosiaaliturvan ydinontologia (kelao) kuvaa Suomen sosiaaliturvajärjestelmän keskeiset käsitteet ja niiden väliset suhteet koneellisesti tulkittavassa muodossa: etuudet ja niiden osat, myöntämisedellytykset, hakemus- ja päätösprosessin, maksut ja takaisinperinnän, muutoksenhaun, asiakkaan roolit, palvelut ja palvelukanavat, hallinnollisen aluehierarkian sekä säädöspohjan. Ontologia täydentää Kelan terminologista sanastoa: sanasto määrittelee käsitteet ihmislukijalle, ontologia tekee käsitteiden väliset suhteet, rajoitteet ja päättelysäännöt koneellisesti tarkistettaviksi ja kyselytäviksi."@fi ;
     dcterms:contributor <https://www.linkedin.com/in/petri-roponen-052aa772> ;
     dcterms:created "2026-06-08"^^xsd:date ;
     dcterms:creator "Petri Roponen" ;
@@ -2152,7 +2148,6 @@ kelao:Benefit a owl:Class ;
         prov:,
         sh:,
         kelaterm:,
-        <https://petriroponen.github.io/kelao-ontology-docs/>,
         <https://semiceu.github.io/CPSV-AP/releases/3.2.0/> ;
     owl:priorVersion <https://kela.fi/ontology/kelao/0.5.2> ;
     owl:versionIRI <https://petriroponen.github.io/kelao-ontology-docs/index-fi.html> ;
