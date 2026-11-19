@@ -508,7 +508,6 @@ xsd:duration rdf:type rdfs:Datatype .
 
 ###  https://kela.fi/ontology/kelao#hasCustomerRole
 :hasCustomerRole rdf:type owl:ObjectProperty ;
-                 owl:inverseOf :roleOfCustomer ;
                  rdfs:domain :Customer ;
                  rdfs:range [ rdf:type owl:Class ;
                               owl:unionOf ( :Applicant
@@ -962,28 +961,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        <http://www.w3.org/2004/02/skos/core#prefLabel> "asuu kunnassa"@fi ,
                                                                        "resides in municipality"@en ;
                        <http://www.w3.org/2004/02/skos/core#scopeNote> "Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja."@fi .
-
-
-###  https://kela.fi/ontology/kelao#roleOfCustomer
-:roleOfCustomer rdf:type owl:ObjectProperty ,
-                         owl:FunctionalProperty ;
-                rdfs:domain [ rdf:type owl:Class ;
-                              owl:unionOf ( :Applicant
-                                            :Beneficiary
-                                            :User
-                                          )
-                            ] ;
-                rdfs:range :Customer ;
-                rdfs:comment "Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen. Sama henkilö tai ruokakunta voi esiintyä useassa roolissa samanaikaisesti, esimerkiksi hakijana, käyttäjänä ja maksunsaajana."@fi ,
-                             "The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer."@en ;
-                rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
-                rdfs:label "asiakkaan rooli"@fi ,
-                           "role of customer"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the customer to whom a role belongs."@en ,
-                                                                 "Suhde, joka ilmaisee asiakkaan, jolle rooli kuuluu."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."@fi ;
-                <http://www.w3.org/2004/02/skos/core#prefLabel> "asiakkaan rooli"@fi ,
-                                                                "role of customer"@en .
 
 
 ###  https://kela.fi/ontology/kelao#serviceUnitOrganization

@@ -154,7 +154,7 @@ This section provides details for each class and property defined by Finnish Soc
     is in domain of
    </dt>
    <dd>
-    <a href="#appliesFor" title="https://kela.fi/ontology/kelao#appliesFor">applies for</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasApplication" title="https://kela.fi/ontology/kelao#hasApplication">has application</a> <sup class="type-op" title="object property">op</sup>, <a href="#residesInMunicipality" title="https://kela.fi/ontology/kelao#residesInMunicipality">resides in municipality</a> <sup class="type-op" title="object property">op</sup>, <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">role of customer</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#appliesFor" title="https://kela.fi/ontology/kelao#appliesFor">applies for</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasApplication" title="https://kela.fi/ontology/kelao#hasApplication">has application</a> <sup class="type-op" title="object property">op</sup>, <a href="#residesInMunicipality" title="https://kela.fi/ontology/kelao#residesInMunicipality">resides in municipality</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -286,7 +286,7 @@ This section provides details for each class and property defined by Finnish Soc
     is in domain of
    </dt>
    <dd>
-    <a href="#receivesBenefit" title="https://kela.fi/ontology/kelao#receivesBenefit">receives benefit</a> <sup class="type-op" title="object property">op</sup>, <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">role of customer</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#receivesBenefit" title="https://kela.fi/ontology/kelao#receivesBenefit">receives benefit</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -600,12 +600,6 @@ This section provides details for each class and property defined by Finnish Soc
    </dt>
    <dd>
     <a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">has customer role</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
-    is in range of
-   </dt>
-   <dd>
-    <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">role of customer</a> <sup class="type-op" title="object property">op</sup>
    </dd>
   </dl>
  </div>
@@ -1342,12 +1336,6 @@ This section provides details for each class and property defined by Finnish Soc
     <a href="http://www.w3.org/ns/prov#Agent" target="_blank" title="http://www.w3.org/ns/prov#Agent">Agent</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">role of customer</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-   <dt>
     is in range of
    </dt>
    <dd>
@@ -1450,7 +1438,6 @@ This section provides details for each class and property defined by Finnish Soc
   <li><a href="#relatedService" title="https://kela.fi/ontology/kelao#relatedService">related service</a></li>
   <li><a href="#relatedToLifeSituation" title="https://kela.fi/ontology/kelao#relatedToLifeSituation">related to life situation</a></li>
   <li><a href="#residesInMunicipality" title="https://kela.fi/ontology/kelao#residesInMunicipality">resides in municipality</a></li>
-  <li><a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">role of customer</a></li>
   <li><a href="#serviceUnitOrganization" title="https://kela.fi/ontology/kelao#serviceUnitOrganization">service unit organisation</a></li>
   <li><a href="#type_document" title="https://kela.fi/ontology/kelao#type_document">type of document</a></li>
  </ul>
@@ -2195,12 +2182,6 @@ This section provides details for each class and property defined by Finnish Soc
     </dt>
     <dd>
      <a href="#Applicant" title="https://kela.fi/ontology/kelao#Applicant">Applicant</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Beneficiary" title="https://kela.fi/ontology/kelao#Beneficiary">Beneficiary</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#User" title="https://kela.fi/ontology/kelao#User">User</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#roleOfCustomer" title="https://kela.fi/ontology/kelao#roleOfCustomer">role of customer</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -3120,55 +3101,6 @@ This section provides details for each class and property defined by Finnish Soc
     </dt>
     <dd>
      <a href="#Municipality" title="https://kela.fi/ontology/kelao#Municipality">Municipality</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="roleOfCustomer">
-  <h3>role of customer<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> https://kela.fi/ontology/kelao#roleOfCustomer</p>
-  <div class="comment">
-   <span class="markdown">The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer.</span>
-  </div>
-  <div class="comment">
-   <span class="markdown">Relation stating the customer to whom a role belongs.</span>
-  </div>
-  <dl>
-   <dt>
-    editorial note
-   </dt>
-   <dd>
-    Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti).
-   </dd>
-  </dl>
-  <dl class="definedBy">
-   <dt>
-    Is defined by
-   </dt>
-   <dd>
-    <a href="https://kela.fi/ontology/kelao">https://kela.fi/ontology/kelao</a>
-   </dd>
-  </dl>
-  <div class="description">
-   <p><strong>has characteristics: </strong> functional</p>
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Applicant" title="https://kela.fi/ontology/kelao#Applicant">Applicant</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Beneficiary" title="https://kela.fi/ontology/kelao#Beneficiary">Beneficiary</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#User" title="https://kela.fi/ontology/kelao#User">User</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="#Customer" title="https://kela.fi/ontology/kelao#Customer">Customer</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     is inverse of
-    </dt>
-    <dd>
-     <a href="#hasCustomerRole" title="https://kela.fi/ontology/kelao#hasCustomerRole">has customer role</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>

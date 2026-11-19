@@ -706,7 +706,6 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
 
 
     <owl:ObjectProperty rdf:about="https://kela.fi/ontology/kelao#hasCustomerRole">
-        <owl:inverseOf rdf:resource="https://kela.fi/ontology/kelao#roleOfCustomer"/>
         <rdfs:domain rdf:resource="https://kela.fi/ontology/kelao#Customer"/>
         <rdfs:range>
             <owl:Class>
@@ -1279,35 +1278,6 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
         <skos:prefLabel xml:lang="fi">asuu kunnassa</skos:prefLabel>
         <skos:prefLabel xml:lang="en">resides in municipality</skos:prefLabel>
         <skos:scopeNote xml:lang="fi">Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja.</skos:scopeNote>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://kela.fi/ontology/kelao#roleOfCustomer -->
-
-
-    <owl:ObjectProperty rdf:about="https://kela.fi/ontology/kelao#roleOfCustomer">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://kela.fi/ontology/kelao#Applicant"/>
-                    <rdf:Description rdf:about="https://kela.fi/ontology/kelao#Beneficiary"/>
-                    <rdf:Description rdf:about="https://kela.fi/ontology/kelao#User"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://kela.fi/ontology/kelao#Customer"/>
-        <rdfs:comment xml:lang="fi">Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen. Sama henkilö tai ruokakunta voi esiintyä useassa roolissa samanaikaisesti, esimerkiksi hakijana, käyttäjänä ja maksunsaajana.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
-        <rdfs:label xml:lang="fi">asiakkaan rooli</rdfs:label>
-        <rdfs:label xml:lang="en">role of customer</rdfs:label>
-        <skos:definition xml:lang="en">Relation stating the customer to whom a role belongs.</skos:definition>
-        <skos:definition xml:lang="fi">Suhde, joka ilmaisee asiakkaan, jolle rooli kuuluu.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti).</skos:editorialNote>
-        <skos:prefLabel xml:lang="fi">asiakkaan rooli</skos:prefLabel>
-        <skos:prefLabel xml:lang="en">role of customer</skos:prefLabel>
     </owl:ObjectProperty>
     
 

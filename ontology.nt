@@ -416,7 +416,6 @@
 # 
 # https://kela.fi/ontology/kelao#hasCustomerRole
 <https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2002/07/owl#inverseOf> <https://kela.fi/ontology/kelao#roleOfCustomer> .
 <https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#domain> <https://kela.fi/ontology/kelao#Customer> .
 <https://kela.fi/ontology/kelao#hasCustomerRole> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
 _:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
@@ -856,33 +855,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://kela.fi/ontology/kelao#residesInMunicipality> <http://www.w3.org/2004/02/skos/core#prefLabel> "asuu kunnassa"@fi .
 <https://kela.fi/ontology/kelao#residesInMunicipality> <http://www.w3.org/2004/02/skos/core#prefLabel> "resides in municipality"@en .
 <https://kela.fi/ontology/kelao#residesInMunicipality> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja."@fi .
-# 
-# https://kela.fi/ontology/kelao#roleOfCustomer
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid10 .
-_:genid10 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#User> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Beneficiary> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Applicant> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#range> <https://kela.fi/ontology/kelao#Customer> .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#comment> "Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen. Sama henkilö tai ruokakunta voi esiintyä useassa roolissa samanaikaisesti, esimerkiksi hakijana, käyttäjänä ja maksunsaajana."@fi .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#comment> "The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer."@en .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#label> "asiakkaan rooli"@fi .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2000/01/rdf-schema#label> "role of customer"@en .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the customer to whom a role belongs."@en .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2004/02/skos/core#definition> "Suhde, joka ilmaisee asiakkaan, jolle rooli kuuluu."@fi .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2004/02/skos/core#editorialNote> "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."@fi .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2004/02/skos/core#prefLabel> "asiakkaan rooli"@fi .
-<https://kela.fi/ontology/kelao#roleOfCustomer> <http://www.w3.org/2004/02/skos/core#prefLabel> "role of customer"@en .
 # 
 # https://kela.fi/ontology/kelao#serviceUnitOrganization
 <https://kela.fi/ontology/kelao#serviceUnitOrganization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -1782,10 +1754,10 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#BenefitGroup
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/EtuusryhmaScheme> .
-_:genid14 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/EtuusryhmaScheme> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://purl.org/dc/terms/source> "Kelan MOT-sanasto"@fi .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Etuusryhmät ovat skos:Concept-yksilöitä erillisessä luokituksessa (skos:ConceptScheme); yksittäinen etuus liitetään ryhmään ominaisuudella kelao:hasBenefitGroup."@fi .
 <https://kela.fi/ontology/kelao#BenefitGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
@@ -1935,10 +1907,10 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#LifeSituation
 <https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid15 .
-_:genid15 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/ElamantilanneluokitusScheme> .
-_:genid15 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/ElamantilanneluokitusScheme> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://kela.fi/ontology/kelao#LifeSituation> <http://purl.org/dc/terms/source> "Sosiaalihuollon tietokomponenttien sanasto, v3.0 (THL, 2015)"@fi .
 <https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual life situations form the life-situation classification (a skos:ConceptScheme)."@en .
 <https://kela.fi/ontology/kelao#LifeSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Yksittäiset elämäntilanteet muodostavat elämäntilanneluokituksen (skos:ConceptScheme), jonka pohjana on DVV:n elämäntapahtumaluokitus."@fi .
@@ -2134,10 +2106,10 @@ _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # https://kela.fi/ontology/kelao#StatuteType
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/saadostyyppi-luokitus> .
-_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#hasValue> <http://kela.fi/kg/saadostyyppi-luokitus> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://purl.org/dc/terms/source> <http://uri.suomi.fi/codelist/sotute/saadostyyppi> .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa."@fi .
 <https://kela.fi/ontology/kelao#StatuteType> <http://www.w3.org/2000/01/rdf-schema#comment> "Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en .
@@ -2211,24 +2183,24 @@ _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
-_:genid17 <http://www.w3.org/2002/07/owl#members> _:genid22 .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#WellbeingServiceCounty> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid13 <http://www.w3.org/2002/07/owl#members> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#WellbeingServiceCounty> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Region> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Municipality> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#EmploymentArea> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Country> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Region> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Municipality> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#EmploymentArea> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://kela.fi/ontology/kelao#Country> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/2000/01/rdf-schema#comment> "Hallinnolliset aluetyypit ovat toisensa poissulkevia."@fi .
-_:genid17 <http://www.w3.org/2000/01/rdf-schema#comment> "The administrative area types are mutually disjoint."@en .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#comment> "Hallinnolliset aluetyypit ovat toisensa poissulkevia."@fi .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#comment> "The administrative area types are mutually disjoint."@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

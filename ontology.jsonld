@@ -12,18 +12,6 @@
   } ]
 }, {
   "@id" : "_:genid10",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#unionOf" : [ {
-    "@list" : [ {
-      "@id" : "https://kela.fi/ontology/kelao#Applicant"
-    }, {
-      "@id" : "https://kela.fi/ontology/kelao#Beneficiary"
-    }, {
-      "@id" : "https://kela.fi/ontology/kelao#User"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://kela.fi/kg/EtuusryhmaScheme"
@@ -32,7 +20,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid15",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://kela.fi/kg/ElamantilanneluokitusScheme"
@@ -41,7 +29,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid16",
+  "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://kela.fi/kg/saadostyyppi-luokitus"
@@ -50,7 +38,7 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid17",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
@@ -862,7 +850,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   }, {
-    "@id" : "_:genid14"
+    "@id" : "_:genid10"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -1310,7 +1298,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   }, {
-    "@id" : "_:genid15"
+    "@id" : "_:genid11"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "fi",
@@ -1887,7 +1875,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
   }, {
-    "@id" : "_:genid16"
+    "@id" : "_:genid12"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "fi",
@@ -3362,9 +3350,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid1"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://kela.fi/ontology/kelao#roleOfCustomer"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@language" : "en",
@@ -5420,50 +5405,6 @@
   "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
     "@language" : "fi",
     "@value" : "Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja."
-  } ]
-}, {
-  "@id" : "https://kela.fi/ontology/kelao#roleOfCustomer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "fi",
-    "@value" : "Funktionaalinen: yksi rooli-instanssi kiinnittyy täsmälleen yhteen asiakkaaseen. Sama henkilö tai ruokakunta voi esiintyä useassa roolissa samanaikaisesti, esimerkiksi hakijana, käyttäjänä ja maksunsaajana."
-  }, {
-    "@language" : "en",
-    "@value" : "The role (applicant, user or beneficiary) belongs to this customer. Functional: one role instance is attached to exactly one customer."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid10"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@id" : "https://kela.fi/ontology/kelao"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "fi",
-    "@value" : "asiakkaan rooli"
-  }, {
-    "@language" : "en",
-    "@value" : "role of customer"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://kela.fi/ontology/kelao#Customer"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#definition" : [ {
-    "@language" : "en",
-    "@value" : "Relation stating the customer to whom a role belongs."
-  }, {
-    "@language" : "fi",
-    "@value" : "Suhde, joka ilmaisee asiakkaan, jolle rooli kuuluu."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
-    "@language" : "fi",
-    "@value" : "asiakkaan rooli"
-  }, {
-    "@language" : "en",
-    "@value" : "role of customer"
   } ]
 }, {
   "@id" : "https://kela.fi/ontology/kelao#serviceHours",
