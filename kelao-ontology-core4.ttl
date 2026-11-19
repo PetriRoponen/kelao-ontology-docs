@@ -866,7 +866,7 @@ kelao:meansTest a owl:DatatypeProperty ;
 kelao:meansTestedIncome a owl:ObjectProperty ;
     rdfs:label "means-tested income"@en,
         "tarveharkinnan tulo"@fi ;
-    rdfs:comment "Vrt. kelao:incomeConsideredIn (tuloerä → etuus). Päällekkäisyys tarkistettava 0.6:ssa."@fi ;
+    #rdfs:comment "Vrt. kelao:incomeConsideredIn (tuloerä → etuus). Päällekkäisyys tarkistettava 0.6:ssa."@fi ;
     rdfs:domain kelao:Benefit ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
     rdfs:range kelao:Benefit ;
@@ -1528,7 +1528,7 @@ kelao:StatuteType a owl:Class ;
         "Författningstyp"@sv ;
     dcterms:source <http://uri.suomi.fi/codelist/sotute/saadostyyppi> ;
     rdfs:comment "Statute type classification. The Skos-classification has 13 classes for example EU regulation, Decree, Agreement, Government decree, and Presidential decree."@en,
-        "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä Suomi.fi-koodiston Säädöstyyppi-luokituksessa."@fi ;
+        "Esimerkiksi laki, valtioneuvoston asetus, EU-asetus tai sopimus. Lajit ovat skos:Concept-yksilöitä koodistot.suomi.fi-koodiston Säädöstyyppi-luokituksessa."@fi ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue <http://kela.fi/kg/saadostyyppi-luokitus> ;
@@ -1746,7 +1746,7 @@ kelao:Income a owl:Class ;
         "Tulo"@fi,
         "Inkomst"@sv ;
     rdfs:comment "Income: an income item of a person or recipient unit (e.g. wage, self-employment income, capital income, benefit income) that may be taken into account in means testing."@en,
-        "Esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo. Vrt. sanaston käsitteet etuoikeutettu tulo (c72) ja etuusperusteinen tulo (c732)."@fi ;
+        "Esimerkiksi palkka, yrittäjätulo, pääomatulo tai etuustulo. Vrt. Kelan terminologisen sanaston käsitteet etuoikeutettu tulo (c72) ja etuusperusteinen tulo (c732)."@fi ;
     rdfs:isDefinedBy <https://kela.fi/ontology/kelao> ;
     rdfs:subClassOf prov:Entity ;
     skos:definition "An income item of a person or household that may be taken into account when calculating the amount of a benefit or in means testing."@en,
@@ -1836,8 +1836,8 @@ kelao:User a owl:Class ;
     rdfs:subClassOf prov:Agent ;
     skos:definition "A person or group that uses a system in its actual environment of use."@en,
         "Henkilö tai ryhmä, joka käyttää järjestelmää sen oikeassa käyttöympäristössä."@fi ;
-    skos:editorialNote "The definition was provided by a terminology expert in the 0.6 review round; source to be verified."@en,
-        "Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava."@fi ;
+    #skos:editorialNote "The definition was provided by a terminology expert in the 0.6 review round; source to be verified."@en,
+    #    "Määritelmä on saatu käsiteasiantuntijan kommenttina 0.6-kierroksella; lähde tarkistettava."@fi ;
     skos:prefLabel "User"@en,
         "Käyttäjä"@fi,
         "Användare"@sv ;
