@@ -1448,7 +1448,7 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#applicationStatus">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Esimerkiksi vireillä, käsittelyssä tai ratkaistu. Arvojoukko koodistona 0.6:ssa.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Esimerkiksi vireillä, käsittelyssä tai ratkaistu. Arvojoukko koodistona.</rdfs:comment>
         <rdfs:comment xml:lang="en">Processing status of the application.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">application status</rdfs:label>
@@ -1600,7 +1600,7 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#decisionOutcome">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Esimerkiksi myönnetty, hylätty tai osittain myönnetty. Arvojoukko koodistona 0.6:ssa.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Esimerkiksi myönnetty, hylätty tai osittain myönnetty. Arvojoukko koodistona.</rdfs:comment>
         <rdfs:comment xml:lang="en">Outcome of the decision.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">decision outcome</rdfs:label>
@@ -1749,7 +1749,7 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#indexLinked">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Esimerkiksi kansaneläkeindeksi (sanasto c520). Arvojoukko koodistona 0.6:ssa.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Esimerkiksi kansaneläkeindeksi (sanasto c520). Arvojoukko koodistona.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">indeksisidonnainen</rdfs:label>
         <rdfs:label xml:lang="en">index linked</rdfs:label>
@@ -1867,7 +1867,7 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <terms:source rdf:resource="https://iri.suomi.fi/terminology/kela/c552"/>
         <rdfs:comment xml:lang="en">Kela&apos;s municipality group for general housing allowance: I, II or III. The Ylatti system additionally has the class ‘other than I, II or III’.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Yleisen asumistuen kuntaryhmäluokitus: I, II ja III. Ylatissa on lisäksi luokka ”muu kuin I, II tai III”.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Yleisen asumistuen kuntaryhmäluokitus: I, II ja III. Yleisessä asumistuessa on lisäksi luokka ”muu kuin I, II tai III”.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">kuntaryhmä</rdfs:label>
         <rdfs:label xml:lang="en">municipality group</rdfs:label>
@@ -1947,8 +1947,6 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
         <rdfs:label xml:lang="en">payment date</rdfs:label>
         <skos:definition xml:lang="en">Banking day on which the payment is in the payee’s account.</skos:definition>
         <skos:definition xml:lang="fi">Pankkipäivä, jona maksusuoritus on maksunsaajan tilillä.</skos:definition>
-        <skos:editorialNote xml:lang="fi">Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.7).</skos:editorialNote>
-        <skos:editorialNote xml:lang="en">The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.7).</skos:editorialNote>
         <skos:prefLabel xml:lang="fi">maksupäivä</skos:prefLabel>
         <skos:prefLabel xml:lang="en">payment date</skos:prefLabel>
         <skos:scopeNote xml:lang="fi">Käytetään kelao:Payment-instansseilla (xsd:date).</skos:scopeNote>
@@ -1961,8 +1959,6 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#postOffice">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Post office; searched by postal code.</rdfs:comment>
-        <rdfs:comment xml:lang="fi">Postitoimipaikka. Haetaan postinumeron perusteella.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="en">post office</rdfs:label>
         <rdfs:label xml:lang="fi">postitoimipaikka</rdfs:label>
@@ -1998,7 +1994,7 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#processingTime">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
-        <rdfs:comment xml:lang="fi">Arvo ilmaistaan xsd:duration-muodossa. Käsittelyaika arkipäivinä ilmaistaan samalla ominaisuudella (esim. 5,1 arkipäivää = P5DT19H12M); päällekkäinen ominaisuus kelao:processingTimeBusinessDays on poistettu tämän vuoksi versiossa 0.5.1.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Arvo ilmaistaan xsd:duration-muodossa. Käsittelyaika arkipäivinä ilmaistaan samalla ominaisuudella (esim. 5,1 arkipäivää = P5DT19H12M); päällekkäinen ominaisuus kelao:processingTimeBusinessDays.</rdfs:comment>
         <rdfs:comment xml:lang="en">Typical time required to process the benefit application.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="sv">handläggningstid</rdfs:label>
@@ -2118,7 +2114,7 @@ Review round with terminology experts (definition workbook 0.6; comments by Vesa
 
     <owl:DatatypeProperty rdf:about="https://kela.fi/ontology/kelao#serviceUnitType">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="fi">Esimerkiksi Kelan palvelupiste, yhteispalvelupiste tai pop up -palvelupiste (sanasto c863). Arvojoukko koodistona 0.6:ssa.</rdfs:comment>
+        <rdfs:comment xml:lang="fi">Esimerkiksi Kelan palvelupiste, yhteispalvelupiste tai pop up -palvelupiste (sanasto c863). Arvojoukko koodistona.</rdfs:comment>
         <rdfs:comment xml:lang="en">Type of service unit.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://kela.fi/ontology/kelao"/>
         <rdfs:label xml:lang="fi">palvelupisteen tyyppi</rdfs:label>

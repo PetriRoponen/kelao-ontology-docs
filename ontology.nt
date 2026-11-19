@@ -964,7 +964,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # https://kela.fi/ontology/kelao#applicationStatus
 <https://kela.fi/ontology/kelao#applicationStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#applicationStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://kela.fi/ontology/kelao#applicationStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi vireillä, käsittelyssä tai ratkaistu. Arvojoukko koodistona 0.6:ssa."@fi .
+<https://kela.fi/ontology/kelao#applicationStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi vireillä, käsittelyssä tai ratkaistu. Arvojoukko koodistona."@fi .
 <https://kela.fi/ontology/kelao#applicationStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Processing status of the application."@en .
 <https://kela.fi/ontology/kelao#applicationStatus> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#applicationStatus> <http://www.w3.org/2000/01/rdf-schema#label> "application status"@en .
@@ -1076,7 +1076,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # https://kela.fi/ontology/kelao#decisionOutcome
 <https://kela.fi/ontology/kelao#decisionOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#decisionOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://kela.fi/ontology/kelao#decisionOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi myönnetty, hylätty tai osittain myönnetty. Arvojoukko koodistona 0.6:ssa."@fi .
+<https://kela.fi/ontology/kelao#decisionOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi myönnetty, hylätty tai osittain myönnetty. Arvojoukko koodistona."@fi .
 <https://kela.fi/ontology/kelao#decisionOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Outcome of the decision."@en .
 <https://kela.fi/ontology/kelao#decisionOutcome> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#decisionOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "decision outcome"@en .
@@ -1186,7 +1186,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # https://kela.fi/ontology/kelao#indexLinked
 <https://kela.fi/ontology/kelao#indexLinked> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#indexLinked> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://kela.fi/ontology/kelao#indexLinked> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi kansaneläkeindeksi (sanasto c520). Arvojoukko koodistona 0.6:ssa."@fi .
+<https://kela.fi/ontology/kelao#indexLinked> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi kansaneläkeindeksi (sanasto c520). Arvojoukko koodistona."@fi .
 <https://kela.fi/ontology/kelao#indexLinked> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#indexLinked> <http://www.w3.org/2000/01/rdf-schema#label> "indeksisidonnainen"@fi .
 <https://kela.fi/ontology/kelao#indexLinked> <http://www.w3.org/2000/01/rdf-schema#label> "index linked"@en .
@@ -1274,7 +1274,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://kela.fi/ontology/kelao#municipalityGroup> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <https://kela.fi/ontology/kelao#municipalityGroup> <http://purl.org/dc/terms/source> <https://iri.suomi.fi/terminology/kela/c552> .
 <https://kela.fi/ontology/kelao#municipalityGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Kela's municipality group for general housing allowance: I, II or III. The Ylatti system additionally has the class ‘other than I, II or III’."@en .
-<https://kela.fi/ontology/kelao#municipalityGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Yleisen asumistuen kuntaryhmäluokitus: I, II ja III. Ylatissa on lisäksi luokka ”muu kuin I, II tai III”."@fi .
+<https://kela.fi/ontology/kelao#municipalityGroup> <http://www.w3.org/2000/01/rdf-schema#comment> "Yleisen asumistuen kuntaryhmäluokitus: I, II ja III. Yleisessä asumistuessa on lisäksi luokka ”muu kuin I, II tai III”."@fi .
 <https://kela.fi/ontology/kelao#municipalityGroup> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#municipalityGroup> <http://www.w3.org/2000/01/rdf-schema#label> "kuntaryhmä"@fi .
 <https://kela.fi/ontology/kelao#municipalityGroup> <http://www.w3.org/2000/01/rdf-schema#label> "municipality group"@en .
@@ -1334,8 +1334,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 <https://kela.fi/ontology/kelao#paymentDate> <http://www.w3.org/2000/01/rdf-schema#label> "payment date"@en .
 <https://kela.fi/ontology/kelao#paymentDate> <http://www.w3.org/2004/02/skos/core#definition> "Banking day on which the payment is in the payee’s account."@en .
 <https://kela.fi/ontology/kelao#paymentDate> <http://www.w3.org/2004/02/skos/core#definition> "Pankkipäivä, jona maksusuoritus on maksunsaajan tilillä."@fi .
-<https://kela.fi/ontology/kelao#paymentDate> <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.7)."@fi .
-<https://kela.fi/ontology/kelao#paymentDate> <http://www.w3.org/2004/02/skos/core#editorialNote> "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.7)."@en .
 <https://kela.fi/ontology/kelao#paymentDate> <http://www.w3.org/2004/02/skos/core#prefLabel> "maksupäivä"@fi .
 <https://kela.fi/ontology/kelao#paymentDate> <http://www.w3.org/2004/02/skos/core#prefLabel> "payment date"@en .
 <https://kela.fi/ontology/kelao#paymentDate> <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:Payment-instansseilla (xsd:date)."@fi .
@@ -1343,8 +1341,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # https://kela.fi/ontology/kelao#postOffice
 <https://kela.fi/ontology/kelao#postOffice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#postOffice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://kela.fi/ontology/kelao#postOffice> <http://www.w3.org/2000/01/rdf-schema#comment> "Post office; searched by postal code."@en .
-<https://kela.fi/ontology/kelao#postOffice> <http://www.w3.org/2000/01/rdf-schema#comment> "Postitoimipaikka. Haetaan postinumeron perusteella."@fi .
 <https://kela.fi/ontology/kelao#postOffice> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#postOffice> <http://www.w3.org/2000/01/rdf-schema#label> "post office"@en .
 <https://kela.fi/ontology/kelao#postOffice> <http://www.w3.org/2000/01/rdf-schema#label> "postitoimipaikka"@fi .
@@ -1370,7 +1366,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # https://kela.fi/ontology/kelao#processingTime
 <https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
-<https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Arvo ilmaistaan xsd:duration-muodossa. Käsittelyaika arkipäivinä ilmaistaan samalla ominaisuudella (esim. 5,1 arkipäivää = P5DT19H12M); päällekkäinen ominaisuus kelao:processingTimeBusinessDays on poistettu tämän vuoksi versiossa 0.5.1."@fi .
+<https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Arvo ilmaistaan xsd:duration-muodossa. Käsittelyaika arkipäivinä ilmaistaan samalla ominaisuudella (esim. 5,1 arkipäivää = P5DT19H12M); päällekkäinen ominaisuus kelao:processingTimeBusinessDays."@fi .
 <https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Typical time required to process the benefit application."@en .
 <https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#processingTime> <http://www.w3.org/2000/01/rdf-schema#label> "handläggningstid"@sv .
@@ -1460,7 +1456,7 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 # https://kela.fi/ontology/kelao#serviceUnitType
 <https://kela.fi/ontology/kelao#serviceUnitType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://kela.fi/ontology/kelao#serviceUnitType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<https://kela.fi/ontology/kelao#serviceUnitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi Kelan palvelupiste, yhteispalvelupiste tai pop up -palvelupiste (sanasto c863). Arvojoukko koodistona 0.6:ssa."@fi .
+<https://kela.fi/ontology/kelao#serviceUnitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Esimerkiksi Kelan palvelupiste, yhteispalvelupiste tai pop up -palvelupiste (sanasto c863). Arvojoukko koodistona."@fi .
 <https://kela.fi/ontology/kelao#serviceUnitType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of service unit."@en .
 <https://kela.fi/ontology/kelao#serviceUnitType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://kela.fi/ontology/kelao> .
 <https://kela.fi/ontology/kelao#serviceUnitType> <http://www.w3.org/2000/01/rdf-schema#label> "palvelupisteen tyyppi"@fi .

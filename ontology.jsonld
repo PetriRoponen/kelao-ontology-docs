@@ -2311,7 +2311,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Esimerkiksi vireillä, käsittelyssä tai ratkaistu. Arvojoukko koodistona 0.6:ssa."
+    "@value" : "Esimerkiksi vireillä, käsittelyssä tai ratkaistu. Arvojoukko koodistona."
   }, {
     "@language" : "en",
     "@value" : "Processing status of the application."
@@ -2962,7 +2962,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Esimerkiksi myönnetty, hylätty tai osittain myönnetty. Arvojoukko koodistona 0.6:ssa."
+    "@value" : "Esimerkiksi myönnetty, hylätty tai osittain myönnetty. Arvojoukko koodistona."
   }, {
     "@language" : "en",
     "@value" : "Outcome of the decision."
@@ -3880,7 +3880,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Esimerkiksi kansaneläkeindeksi (sanasto c520). Arvojoukko koodistona 0.6:ssa."
+    "@value" : "Esimerkiksi kansaneläkeindeksi (sanasto c520). Arvojoukko koodistona."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
@@ -4455,7 +4455,7 @@
     "@value" : "Kela's municipality group for general housing allowance: I, II or III. The Ylatti system additionally has the class ‘other than I, II or III’."
   }, {
     "@language" : "fi",
-    "@value" : "Yleisen asumistuen kuntaryhmäluokitus: I, II ja III. Ylatissa on lisäksi luokka ”muu kuin I, II tai III”."
+    "@value" : "Yleisen asumistuen kuntaryhmäluokitus: I, II ja III. Yleisessä asumistuessa on lisäksi luokka ”muu kuin I, II tai III”."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
@@ -4716,13 +4716,6 @@
     "@language" : "fi",
     "@value" : "Pankkipäivä, jona maksusuoritus on maksunsaajan tilillä."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.7)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.7)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "maksupäivä"
@@ -4826,13 +4819,6 @@
 }, {
   "@id" : "https://kela.fi/ontology/kelao#postOffice",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Post office; searched by postal code."
-  }, {
-    "@language" : "fi",
-    "@value" : "Postitoimipaikka. Haetaan postinumeron perusteella."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@id" : "https://kela.fi/ontology/kelao"
   } ],
@@ -4906,7 +4892,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Arvo ilmaistaan xsd:duration-muodossa. Käsittelyaika arkipäivinä ilmaistaan samalla ominaisuudella (esim. 5,1 arkipäivää = P5DT19H12M); päällekkäinen ominaisuus kelao:processingTimeBusinessDays on poistettu tämän vuoksi versiossa 0.5.1."
+    "@value" : "Arvo ilmaistaan xsd:duration-muodossa. Käsittelyaika arkipäivinä ilmaistaan samalla ominaisuudella (esim. 5,1 arkipäivää = P5DT19H12M); päällekkäinen ominaisuus kelao:processingTimeBusinessDays."
   }, {
     "@language" : "en",
     "@value" : "Typical time required to process the benefit application."
@@ -5495,7 +5481,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "fi",
-    "@value" : "Esimerkiksi Kelan palvelupiste, yhteispalvelupiste tai pop up -palvelupiste (sanasto c863). Arvojoukko koodistona 0.6:ssa."
+    "@value" : "Esimerkiksi Kelan palvelupiste, yhteispalvelupiste tai pop up -palvelupiste (sanasto c863). Arvojoukko koodistona."
   }, {
     "@language" : "en",
     "@value" : "Type of service unit."
