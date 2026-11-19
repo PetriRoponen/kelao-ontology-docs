@@ -261,8 +261,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "ennakkosuoritus"@fi ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating that a benefit may be paid as an advance for the waiting period of another benefit."@en ,
                                                                  "Suhde, joka ilmaisee, että etuutta voidaan maksaa ennakkona toisen etuuden odotusajalta."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "advance payment"@en ,
                                                                 "ennakkosuoritus"@fi ;
                 :relationshipAbbreviation "ENN" .
@@ -279,8 +277,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "käsittelevä muutoksenhakuelin"@fi ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the appeal body that handles the appeal."@en ,
                                                                   "Suhde, joka ilmaisee muutoksenhakuelimen, joka käsittelee muutoksenhaun."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "appeal handled by"@en ,
                                                                  "käsittelevä muutoksenhakuelin"@fi .
 
@@ -296,8 +292,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "kohdistuu päätökseen"@fi ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the decision that the appeal concerns."@en ,
                                                                   "Suhde, joka ilmaisee päätöksen, johon muutoksenhaku kohdistuu."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "appeals decision"@en ,
                                                                  "kohdistuu päätökseen"@fi .
 
@@ -313,8 +307,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                 "hakemus koskee etuutta"@fi ;
                      <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit that the application concerns."@en ,
                                                                       "Suhde, joka ilmaisee etuuden, jota hakemus koskee."@fi ;
-                     <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                         "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                      <http://www.w3.org/2004/02/skos/core#prefLabel> "application concerns"@en ,
                                                                      "hakemus koskee etuutta"@fi .
 
@@ -330,8 +322,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "hakee etuutta"@fi ;
             <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit that the applicant applies for."@en ,
                                                              "Suhde, joka ilmaisee etuuden, jota hakija hakee."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "applies for"@en ,
                                                             "hakee etuutta"@fi .
 
@@ -348,8 +338,6 @@ xsd:duration rdf:type rdfs:Datatype .
                              "kuuluu valtioon"@fi ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the country to which an area belongs."@en ,
                                                                    "Suhde, joka ilmaisee valtion, johon alue kuuluu."@fi ;
-                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                      "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                   <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to country"@en ,
                                                                   "kuuluu valtioon"@fi .
 
@@ -366,8 +354,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                     "kuuluu työllisyysalueeseen"@fi ;
                          <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the employment area to which a municipality belongs."@en ,
                                                                           "Suhde, joka ilmaisee työllisyysalueen, johon kunta kuuluu."@fi ;
-                         <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                             "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                          <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to employment area"@en ,
                                                                          "kuuluu työllisyysalueeseen"@fi .
 
@@ -384,8 +370,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "kuuluu maakuntaan"@fi ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the region to which a municipality belongs."@en ,
                                                                   "Suhde, joka ilmaisee maakunnan, johon kunta kuuluu."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to region"@en ,
                                                                  "kuuluu maakuntaan"@fi .
 
@@ -401,8 +385,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                             "kuuluu hyvinvointialueeseen"@fi ;
                                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the wellbeing services county to which a municipality belongs."@en ,
                                                                                   "Suhde, joka ilmaisee hyvinvointialueen, johon kunta kuuluu."@fi ;
-                                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to wellbeing service county"@en ,
                                                                                  "kuuluu hyvinvointialueeseen"@fi .
 
@@ -417,8 +399,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "laajempi etuus"@fi ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the broader benefit under which a benefit is conceptually subsumed."@en ,
                                                                  "Suhde, joka ilmaisee laajemman etuuskokonaisuuden, johon etuus käsitteellisesti sisältyy."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "broader benefit"@en ,
                                                                 "laajempi etuus"@fi .
 
@@ -436,8 +416,6 @@ xsd:duration rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#closeMatch> <http://schema.org/containsPlace> ;
               <http://www.w3.org/2004/02/skos/core#definition> "Relation stating that an area contains another geographic area."@en ,
                                                                "Suhde, joka ilmaisee, että alue sisältää toisen maantieteellisen alueen."@fi ;
-              <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                  "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "contains area"@en ,
                                                               "sisältää alueen"@fi .
 
@@ -453,8 +431,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                 "kriteerin oikeusperusta"@fi ;
                      <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the statute or part of a statute on which an eligibility criterion is based."@en ,
                                                                       "Suhde, joka ilmaisee säädöksen tai sen osan, johon etuuskriteeri perustuu."@fi ;
-                     <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                         "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                      <http://www.w3.org/2004/02/skos/core#prefLabel> "criterion legal basis"@en ,
                                                                      "kriteerin oikeusperusta"@fi .
 
@@ -470,8 +446,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "jätti hakemuksen"@fi ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating an application submitted by the applicant."@en ,
                                                                  "Suhde, joka ilmaisee hakijan jättämän hakemuksen."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has application"@en ,
                                                                 "jätti hakemuksen"@fi .
 
@@ -487,8 +461,6 @@ xsd:duration rdf:type rdfs:Datatype .
                           "has attachment"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "Relation stating an attachment belonging to an application."@en ,
                                                                 "Suhde, joka ilmaisee hakemukseen kuuluvan liitteen."@fi ;
-               <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                   "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                <http://www.w3.org/2004/02/skos/core#prefLabel> "hakemuksen liite"@fi ,
                                                                "has attachment"@en .
 
@@ -502,8 +474,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "has benefit group"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit group into which a benefit is classified."@en ,
                                                                   "Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "etuusryhmä"@fi ,
                                                                  "has benefit group"@en .
 
@@ -518,8 +488,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "has benefit part"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating a benefit component of which a benefit consists."@en ,
                                                                  "Suhde, joka ilmaisee etuuden osan, josta etuus koostuu."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "etuudella on osa"@fi ,
                                                                 "has benefit part"@en .
 
@@ -534,8 +502,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "on käsite"@fi ;
             <http://www.w3.org/2004/02/skos/core#definition> "Relation linking a benefit to a vocabulary concept that describes it."@en ,
                                                              "Suhde, joka liittää etuuteen sitä kuvaavan sanaston käsitteen."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "has concept"@en ,
                                                             "on käsite"@fi .
 
@@ -557,8 +523,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "has customer role"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating a role (applicant, user or beneficiary) in which a customer acts."@en ,
                                                                   "Suhde, joka ilmaisee roolin (hakija, käyttäjä tai etuudensaaja), jossa asiakas toimii."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "asiakkaan rooli"@fi ,
                                                                  "has customer role"@en .
 
@@ -574,8 +538,6 @@ xsd:duration rdf:type rdfs:Datatype .
                         "has decision"@en ;
              <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the decision issued on an application."@en ,
                                                               "Suhde, joka ilmaisee hakemukseen annetun päätöksen."@fi ;
-             <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                 "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "hakemuksen päätös"@fi ,
                                                              "has decision"@en .
 
@@ -591,8 +553,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                     "kriteerinä"@fi ;
                          <http://www.w3.org/2004/02/skos/core#definition> "Relation stating an eligibility criterion of a benefit."@en ,
                                                                           "Suhde, joka ilmaisee etuuden myöntämisedellytyksen."@fi ;
-                         <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                             "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                          <http://www.w3.org/2004/02/skos/core#prefLabel> "has eligibility criterion"@en ,
                                                                          "kriteerinä"@fi .
 
@@ -608,8 +568,6 @@ xsd:duration rdf:type rdfs:Datatype .
                       "tulona"@fi ;
            <http://www.w3.org/2004/02/skos/core#definition> "Relation stating an income item of an agent."@en ,
                                                             "Suhde, joka ilmaisee toimijan tuloerän."@fi ;
-           <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                               "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
            <http://www.w3.org/2004/02/skos/core#prefLabel> "has income"@en ,
                                                            "tulona"@fi .
 
@@ -631,8 +589,6 @@ xsd:duration rdf:type rdfs:Datatype .
                         "sijaitsee alueella"@fi ;
              <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the geographic area in which a service unit or organisation is located."@en ,
                                                               "Suhde, joka ilmaisee maantieteellisen alueen, jolla palvelupiste tai organisaatio sijaitsee."@fi ;
-             <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                 "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "is located in"@en ,
                                                              "sijaitsee alueella"@fi .
 
@@ -646,8 +602,6 @@ xsd:duration rdf:type rdfs:Datatype .
                         "vastuuorganisaatio"@fi ;
              <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the organisation responsible for administering a benefit."@en ,
                                                               "Suhde, joka ilmaisee organisaation, joka vastaa etuuden toimeenpanosta."@fi ;
-             <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                 "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "has provider"@en ,
                                                              "vastuuorganisaatio"@fi .
 
@@ -664,8 +618,6 @@ xsd:duration rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#closeMatch> <http://iri.suomi.fi/model/suomiptv2/hasServiceChannel> ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Relation stating a service channel through which a service is available."@en ,
                                                                     "Suhde, joka ilmaisee palvelukanavan, jonka kautta palvelu on käytettävissä."@fi ;
-                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                       "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                    <http://www.w3.org/2004/02/skos/core#prefLabel> "has channel"@en ,
                                                                    "kanava"@fi .
 
@@ -680,8 +632,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "on palvelupiste"@fi ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating a service unit maintained by an organisation."@en ,
                                                                  "Suhde, joka ilmaisee organisaation ylläpitämän palvelupisteen."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has service unit"@en ,
                                                                 "on palvelupiste"@fi .
 
@@ -717,8 +667,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                "income considered in"@en ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit in whose calculation or means test an income item is taken into account."@en ,
                                                                      "Suhde, joka ilmaisee etuuden, jonka määrää laskettaessa tai tarveharkinnassa tuloerä otetaan huomioon."@fi ;
-                    <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                        "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                     <http://www.w3.org/2004/02/skos/core#prefLabel> "huomioidaan etuudessa"@fi ,
                                                                     "income considered in"@en .
 
@@ -753,8 +701,6 @@ xsd:duration rdf:type rdfs:Datatype .
                         "selvitä etuus"@fi ;
              <http://www.w3.org/2004/02/skos/core#definition> "Relation stating another benefit whose entitlement must be examined before this benefit is decided."@en ,
                                                               "Suhde, joka ilmaisee toisen etuuden, jonka saamisen edellytykset on selvitettävä ennen tämän etuuden ratkaisemista."@fi ;
-             <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                 "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "benefit to investigate"@en ,
                                                              "selvitä etuus"@fi ;
              :relationshipAbbreviation "SEL" .
@@ -769,8 +715,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                "on elämäntilanne kohteelle"@fi ;
                     <http://www.w3.org/2004/02/skos/core#definition> "Relation stating a benefit to which a life situation is related."@en ,
                                                                      "Suhde, joka ilmaisee etuuden, johon elämäntilanne liittyy."@fi ;
-                    <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                        "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                     <http://www.w3.org/2004/02/skos/core#prefLabel> "is life situation for"@en ,
                                                                     "on elämäntilanne kohteelle"@fi .
 
@@ -790,8 +734,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                                                <http://www.geonames.org/ontology#parentFeature> ;
               <http://www.w3.org/2004/02/skos/core#definition> "Relation stating that an area is part of another geographic area."@en ,
                                                                "Suhde, joka ilmaisee, että alue on osa toista maantieteellistä aluetta."@fi ;
-              <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                  "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "is part of area"@en ,
                                                               "on osa aluetta"@fi .
 
@@ -805,8 +747,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "on osa etuutta"@fi ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit of which a benefit component is a part."@en ,
                                                                   "Suhde, joka ilmaisee etuuden, jonka osa etuuden osa on."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "is part of benefit"@en ,
                                                                  "on osa etuutta"@fi .
 
@@ -821,8 +761,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "on lakiviittaus"@fi ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the statute on which a benefit is based."@en ,
                                                                  "Suhde, joka ilmaisee säädöksen, johon etuus perustuu."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has legal reference"@en ,
                                                                 "on lakiviittaus"@fi .
 
@@ -837,8 +775,6 @@ xsd:duration rdf:type rdfs:Datatype .
                               "tarveharkinnan tulo"@fi ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Relation stating another benefit that is counted as income in the means test of this benefit."@en ,
                                                                     "Suhde, joka ilmaisee toisen etuuden, joka otetaan tulona huomioon tämän etuuden tarveharkinnassa."@fi ;
-                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                       "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                    <http://www.w3.org/2004/02/skos/core#prefLabel> "means-tested income"@en ,
                                                                    "tarveharkinnan tulo"@fi .
 
@@ -853,8 +789,6 @@ xsd:duration rdf:type rdfs:Datatype .
                           "minimum amount benefit"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit that determines the minimum amount of this benefit."@en ,
                                                                 "Suhde, joka ilmaisee etuuden, joka määrää tämän etuuden vähimmäismäärän."@fi ;
-               <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                   "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                <http://www.w3.org/2004/02/skos/core#prefLabel> "minimimääräinen etuus"@fi ,
                                                                "minimum amount benefit"@en ;
                :relationshipAbbreviation "MIN" .
@@ -870,8 +804,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "huomioon otettava etuus"@fi ;
             <http://www.w3.org/2004/02/skos/core#definition> "Relation stating another benefit to be noted when deciding this benefit without preventing or reducing it."@en ,
                                                              "Suhde, joka ilmaisee toisen etuuden, joka on otettava huomioon tätä etuutta ratkaistaessa ilman että se estää tai vähentää etuutta."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "benefit to be noted"@en ,
                                                             "huomioon otettava etuus"@fi ;
             <http://www.w3.org/2004/02/skos/core#relatedMatch> <https://iri.suomi.fi/terminology/kela/c63> ;
@@ -889,8 +821,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                    "perustuu ratkaisuun"@fi ;
                         <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the decision on which a payment is based."@en ,
                                                                          "Suhde, joka ilmaisee päätöksen, johon maksu perustuu."@fi ;
-                        <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                            "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                         <http://www.w3.org/2004/02/skos/core#prefLabel> "payment based on decision"@en ,
                                                                         "perustuu ratkaisuun"@fi .
 
@@ -906,8 +836,6 @@ xsd:duration rdf:type rdfs:Datatype .
                       "payment of"@en ;
            <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit of which the payment is a disbursement."@en ,
                                                             "Suhde, joka ilmaisee etuuden, jonka suoritus maksu on."@fi ;
-           <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                               "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
            <http://www.w3.org/2004/02/skos/core#prefLabel> "etuuden maksu"@fi ,
                                                            "payment of"@en .
 
@@ -941,8 +869,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "saa etuutta"@fi ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the benefit that a beneficiary receives."@en ,
                                                                   "Suhde, joka ilmaisee etuuden, jota etuudensaaja saa."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "receives benefit"@en ,
                                                                  "saa etuutta"@fi .
 
@@ -958,8 +884,6 @@ xsd:duration rdf:type rdfs:Datatype .
                              "recovery concerns"@en ;
                   <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the payment that a recovery concerns."@en ,
                                                                    "Suhde, joka ilmaisee maksun, johon takaisinperintä kohdistuu."@fi ;
-                  <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                      "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                   <http://www.w3.org/2004/02/skos/core#prefLabel> "kohdistuu maksuun"@fi ,
                                                                   "recovery concerns"@en .
 
@@ -992,8 +916,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "säädös koskee etuutta"@fi ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating a benefit that a statute concerns."@en ,
                                                                  "Suhde, joka ilmaisee etuuden, jota säädös koskee."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "has related benefit"@en ,
                                                                 "säädös koskee etuutta"@fi .
 
@@ -1009,8 +931,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "related service"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating a service related to a benefit."@en ,
                                                                  "Suhde, joka ilmaisee etuuteen liittyvän palvelun."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "etuuteen liittyvä palvelu"@fi ,
                                                                 "related service"@en .
 
@@ -1025,8 +945,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                    "related to life situation"@en ;
                         <http://www.w3.org/2004/02/skos/core#definition> "Relation stating a life situation to which a benefit is related."@en ,
                                                                          "Suhde, joka ilmaisee elämäntilanteen, johon etuus liittyy."@fi ;
-                        <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                            "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                         <http://www.w3.org/2004/02/skos/core#prefLabel> "liittyy elämäntilanteeseen"@fi ,
                                                                         "related to life situation"@en .
 
@@ -1041,8 +959,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                   "resides in municipality"@en ;
                        <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the municipality in which the applicant resides."@en ,
                                                                         "Suhde, joka ilmaisee kunnan, jossa hakija asuu."@fi ;
-                       <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                           "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                        <http://www.w3.org/2004/02/skos/core#prefLabel> "asuu kunnassa"@fi ,
                                                                        "resides in municipality"@en ;
                        <http://www.w3.org/2004/02/skos/core#scopeNote> "Käsitteellinen suhde. KELAO-tietämysgraafi ei sisällä hakijakohtaisia instansseja."@fi .
@@ -1065,9 +981,7 @@ xsd:duration rdf:type rdfs:Datatype .
                            "role of customer"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the customer to whom a role belongs."@en ,
                                                                  "Suhde, joka ilmaisee asiakkaan, jolle rooli kuuluu."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."@fi ,
-                                                                    "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
+                <http://www.w3.org/2004/02/skos/core#editorialNote> "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."@fi ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "asiakkaan rooli"@fi ,
                                                                 "role of customer"@en .
 
@@ -1084,8 +998,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                     "service unit organisation"@en ;
                          <http://www.w3.org/2004/02/skos/core#definition> "Relation stating the organisation responsible for a service unit."@en ,
                                                                           "Suhde, joka ilmaisee palvelupisteestä vastaavan organisaation."@fi ;
-                         <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                             "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                          <http://www.w3.org/2004/02/skos/core#prefLabel> "palvelupisteen organisaatio"@fi ,
                                                                          "service unit organisation"@en .
 
@@ -1152,8 +1064,6 @@ xsd:duration rdf:type rdfs:Datatype .
                          "lyhenne"@fi ;
               <http://www.w3.org/2004/02/skos/core#definition> "Abbreviation of a benefit used internally by Kela."@en ,
                                                                "Etuuden lyhenne, jota Kela käyttää sisäisesti."@fi ;
-              <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                  "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "abbreviation"@en ,
                                                               "lyhenne"@fi .
 
@@ -1169,8 +1079,6 @@ xsd:duration rdf:type rdfs:Datatype .
                    "määrä"@fi ;
         <http://www.w3.org/2004/02/skos/core#definition> "Monetary amount in euros."@en ,
                                                          "Rahamäärä euroina."@fi ;
-        <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                            "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "amount"@en ,
                                                         "määrä"@fi .
 
@@ -1185,8 +1093,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "muutoksenhaun päivä"@fi ;
             <http://www.w3.org/2004/02/skos/core#definition> "Date on which the appeal was lodged."@en ,
                                                              "Päivä, jona muutoksenhaku on jätetty."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "appeal date"@en ,
                                                             "muutoksenhaun päivä"@fi ;
             <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:Appeal-instansseilla (xsd:date)."@fi .
@@ -1202,8 +1108,6 @@ xsd:duration rdf:type rdfs:Datatype .
                               "hakemuksen tila"@fi ;
                    <http://www.w3.org/2004/02/skos/core#definition> "Hakemuksen käsittelyn tila."@fi ,
                                                                     "Processing status of an application."@en ;
-                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                       "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                    <http://www.w3.org/2004/02/skos/core#prefLabel> "application status"@en ,
                                                                    "hakemuksen tila"@fi ;
                    <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:Application-instansseilla. Esim. 'vireillä', 'käsittelyssä', 'ratkaistu'."@fi .
@@ -1220,8 +1124,6 @@ xsd:duration rdf:type rdfs:Datatype .
                      "area code"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "Alueen virallinen koodi kansallisessa koodistossa."@fi ,
                                                            "Official code of an area in a national code list."@en ;
-          <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                              "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "aluekoodi"@fi ,
                                                           "area code"@en ;
           <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:Location-instansseilla (ja sen alaluokilla)."@fi .
@@ -1237,8 +1139,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                 "onko liite OmaKelassa"@fi ;
                      <http://www.w3.org/2004/02/skos/core#definition> "Tieto siitä, voiko liitteen toimittaa OmaKela-asiointipalvelussa."@fi ,
                                                                       "Whether the attachment can be submitted in the OmaKela e-service."@en ;
-                     <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                         "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                      <http://www.w3.org/2004/02/skos/core#prefLabel> "is attachment in OmaKela"@en ,
                                                                      "onko liite OmaKelassa"@fi ;
                      <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:Attachment-instansseilla (xsd:boolean)."@fi .
@@ -1254,8 +1154,6 @@ xsd:duration rdf:type rdfs:Datatype .
                           "liitteen uri"@fi ;
                <http://www.w3.org/2004/02/skos/core#definition> "Verkko-osoite, josta liitelomake tai -ohje on saatavilla."@fi ,
                                                                 "Web address where the attachment form or instructions are available."@en ;
-               <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                   "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                <http://www.w3.org/2004/02/skos/core#prefLabel> "attachment uri"@en ,
                                                                "liitteen uri"@fi ;
                <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:Attachment-instansseilla (xsd:anyURI)."@fi .
@@ -1269,8 +1167,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "laskentaperuste"@fi ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Basis on which the amount of a benefit is calculated."@en ,
                                                                   "Peruste, jonka mukaan etuuden määrä lasketaan."@fi ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "calculation base"@en ,
                                                                  "laskentaperuste"@fi .
 
@@ -1283,8 +1179,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "current version uri"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Säädöksen osan ajantasaisen version verkko-osoite."@fi ,
                                                                  "Web address of the current version of a part of a statute."@en ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "ajantasaisen lainosan URI"@fi ,
                                                                 "current version uri"@en .
 
@@ -1319,8 +1213,6 @@ xsd:duration rdf:type rdfs:Datatype .
                          "päätöspäivä"@fi ;
               <http://www.w3.org/2004/02/skos/core#definition> "Date on which the decision was issued."@en ,
                                                                "Päivä, jona päätös on annettu."@fi ;
-              <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                  "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "decision date"@en ,
                                                               "päätöspäivä"@fi ;
               <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:Decision-instansseilla (xsd:date)."@fi .
@@ -1372,8 +1264,6 @@ xsd:duration rdf:type rdfs:Datatype .
                       "rahoitus"@fi ;
            <http://www.w3.org/2004/02/skos/core#definition> "Tapa, jolla etuuden rahoitus on järjestetty."@fi ,
                                                             "The way in which the financing of a benefit is arranged."@en ;
-           <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                               "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
            <http://www.w3.org/2004/02/skos/core#prefLabel> "financing"@en ,
                                                            "financsieringen"@sv ,
                                                            "rahoitus"@fi .
@@ -1402,8 +1292,6 @@ xsd:duration rdf:type rdfs:Datatype .
                      "kotisivu"@fi ;
           <http://www.w3.org/2004/02/skos/core#definition> "Address of the web page describing a benefit."@en ,
                                                            "Etuutta kuvaavan verkkosivun osoite."@fi ;
-          <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                              "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
           <http://www.w3.org/2004/02/skos/core#exactMatch> <http://iri.suomi.fi/model/suomiptv2/homePage> ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "homepage"@en ,
                                                           "kotisivu"@fi ;
@@ -1460,8 +1348,6 @@ xsd:duration rdf:type rdfs:Datatype .
                         "index linked"@en ;
              <http://www.w3.org/2004/02/skos/core#definition> "Indeksi, johon etuuden määrä on sidottu."@fi ,
                                                               "Index to which the amount of a benefit is linked."@en ;
-             <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                 "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "indeksisidonnainen"@fi ,
                                                              "index linked"@en ;
              <http://www.w3.org/2004/02/skos/core#relatedMatch> <https://iri.suomi.fi/terminology/kela/c520> .
@@ -1475,8 +1361,6 @@ xsd:duration rdf:type rdfs:Datatype .
                      "leveysaste"@fi ;
           <http://www.w3.org/2004/02/skos/core#definition> "Latitude of a location in the WGS84 reference system."@en ,
                                                            "Sijainnin leveysaste WGS84-koordinaatistossa."@fi ;
-          <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                              "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
           <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.w3.org/2003/01/geo/wgs84_pos#lat> ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "latitude"@en ,
                                                           "leveysaste"@fi ;
@@ -1491,8 +1375,6 @@ xsd:duration rdf:type rdfs:Datatype .
                       "pituusaste"@fi ;
            <http://www.w3.org/2004/02/skos/core#definition> "Longitude of a location in the WGS84 reference system."@en ,
                                                             "Sijainnin pituusaste WGS84-koordinaatistossa."@fi ;
-           <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                               "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
            <http://www.w3.org/2004/02/skos/core#exactMatch> <http://www.w3.org/2003/01/geo/wgs84_pos#long> ;
            <http://www.w3.org/2004/02/skos/core#prefLabel> "longitude"@en ,
                                                            "pituusaste"@fi ;
@@ -1509,8 +1391,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "övre åldersgräns"@sv ;
             <http://www.w3.org/2004/02/skos/core#definition> "Age above which a person is not entitled to the benefit."@en ,
                                                              "Ikä, jonka ylittänyt henkilö ei ole oikeutettu etuuteen."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "maximum age"@en ,
                                                             "yläikäraja"@fi ,
                                                             "övre åldersgräns"@sv .
@@ -1546,8 +1426,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "nedre åldersgräns"@sv ;
             <http://www.w3.org/2004/02/skos/core#definition> "Age a person must have reached to be entitled to the benefit."@en ,
                                                              "Ikä, jonka henkilön on täytettävä ollakseen oikeutettu etuuteen."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "alaikäraja"@fi ,
                                                             "minimum age"@en ,
                                                             "nedre åldersgräns"@sv .
@@ -1580,8 +1458,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "part identifier"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Identifier of a part of a statute."@en ,
                                                                  "Säädöksen osan tunnus."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "osan tunniste"@fi ,
                                                                 "part identifier"@en .
 
@@ -1596,8 +1472,6 @@ xsd:duration rdf:type rdfs:Datatype .
                      "part text"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "Säädöksen osan teksti."@fi ,
                                                            "Text of a part of a statute."@en ;
-          <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                              "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "lainosan teksti"@fi ,
                                                           "part text"@en .
 
@@ -1611,8 +1485,6 @@ xsd:duration rdf:type rdfs:Datatype .
                      "part type"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "Kind of a part of a statute."@en ,
                                                            "Säädöksen osan laji."@fi ;
-          <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                              "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
           <http://www.w3.org/2004/02/skos/core#example> "momentti"@fi ,
                                                         "pykälä"@fi ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "osan tyyppi"@fi ,
@@ -1645,8 +1517,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "postitoimipaikka"@fi ;
             <http://www.w3.org/2004/02/skos/core#definition> "Post office (postal locality)."@en ,
                                                              "Postitoimipaikka."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "post office"@en ,
                                                             "postitoimipaikka"@fi ;
             <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."@fi .
@@ -1660,8 +1530,6 @@ xsd:duration rdf:type rdfs:Datatype .
                        "postinumero"@fi ;
             <http://www.w3.org/2004/02/skos/core#definition> "Postal code."@en ,
                                                              "Postinumero."@fi ;
-            <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
             <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/postalCode> ;
             <http://www.w3.org/2004/02/skos/core#prefLabel> "postal code"@en ,
                                                             "postinumero"@fi ;
@@ -1679,8 +1547,6 @@ xsd:duration rdf:type rdfs:Datatype .
                            "processing time"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "Average processing time of an application from receipt to decision."@en ,
                                                                  "Hakemuksen keskimääräinen käsittelyaika hakemuksen saapumisesta päätökseen."@fi ;
-                <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                    "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                 <http://www.w3.org/2004/02/skos/core#prefLabel> "handläggningstid"@sv ,
                                                                 "käsittelyaika"@fi ,
                                                                 "processing time"@en ;
@@ -1698,8 +1564,6 @@ xsd:duration rdf:type rdfs:Datatype .
                     "tarkoitus"@fi ;
          <http://www.w3.org/2004/02/skos/core#definition> "Purpose for which the benefit has been enacted."@en ,
                                                           "Tarkoitus, jota varten etuus on säädetty."@fi ;
-         <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                             "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "purpose"@en ,
                                                          "syftet med förmånen"@sv ,
                                                          "tarkoitus"@fi .
@@ -1715,8 +1579,6 @@ xsd:duration rdf:type rdfs:Datatype .
                           "saajayksikkö"@fi ;
                <http://www.w3.org/2004/02/skos/core#definition> "Unit to which the benefit is granted and on the basis of which its amount is calculated."@en ,
                                                                 "Yksikkö, jolle etuus myönnetään ja jonka perusteella etuuden määrä lasketaan."@fi ;
-               <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                   "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                <http://www.w3.org/2004/02/skos/core#prefLabel> "mottagande enhet"@sv ,
                                                                "recipient unit"@en ,
                                                                "saajayksikkö"@fi ;
@@ -1732,8 +1594,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                       "vaatii työhistorian"@fi ;
                            <http://www.w3.org/2004/02/skos/core#definition> "Tieto siitä, edellyttääkö etuuden saaminen työssäoloehdon täyttymistä."@fi ,
                                                                             "Whether entitlement to the benefit requires that the employment condition is met."@en ;
-                           <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                               "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                            <http://www.w3.org/2004/02/skos/core#prefLabel> "requires employment history"@en ,
                                                                            "vaatii työhistorian"@fi ;
                            <http://www.w3.org/2004/02/skos/core#relatedMatch> <https://iri.suomi.fi/terminology/kela/c678> .
@@ -1752,8 +1612,6 @@ xsd:duration rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#definition> "Tieto siitä, edellyttääkö etuuden saaminen asumisedellytyksen täyttymistä."@fi ,
                                                                     "Whether entitlement to the benefit requires that the residence condition is met."@en ,
                                                                     "krav enligt vilket en förmånssökande ska bo i Finland, ett EU-land, ett EES-land eller Schweiz och en förmånslåtare vid sin död måste bo i något av dessa länder för att förmånssökanden ska ha rätt till en förmån"@sv ;
-                   <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                       "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                    <http://www.w3.org/2004/02/skos/core#prefLabel> "residence required"@en ,
                                                                    "vaatii asumisen Suomessa"@fi ;
                    <http://www.w3.org/2004/02/skos/core#relatedMatch> <https://iri.suomi.fi/terminology/kela/c529> .
@@ -1769,8 +1627,6 @@ xsd:duration rdf:type rdfs:Datatype .
                          "service hours"@en ;
               <http://www.w3.org/2004/02/skos/core#definition> "Aika, jona palvelu tai palvelupiste on asiakkaiden käytettävissä."@fi ,
                                                                "Time during which a service or a service unit is available to customers."@en ;
-              <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                  "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "palvelun aukioloajat"@fi ,
                                                               "service hours"@en ;
               <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceChannel- ja kelao:ServiceUnit-instansseilla."@fi .
@@ -1786,8 +1642,6 @@ xsd:duration rdf:type rdfs:Datatype .
                             "service unit type"@en ;
                  <http://www.w3.org/2004/02/skos/core#definition> "Palvelupisteen tyyppi."@fi ,
                                                                   "Type of a service unit."@en ;
-                 <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                     "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                  <http://www.w3.org/2004/02/skos/core#prefLabel> "palvelupisteen tyyppi"@fi ,
                                                                  "service unit type"@en ;
                  <http://www.w3.org/2004/02/skos/core#scopeNote> "Käytetään kelao:ServiceUnit-instansseilla."@fi .
@@ -1803,8 +1657,6 @@ xsd:duration rdf:type rdfs:Datatype .
                           "street address"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "Palvelupisteen katuosoite."@fi ,
                                                                 "Street address of a service unit."@en ;
-               <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                   "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/streetAddress> ;
                <http://www.w3.org/2004/02/skos/core#prefLabel> "katuosoite"@fi ,
                                                                "street address"@en ;
@@ -1823,8 +1675,6 @@ xsd:duration rdf:type rdfs:Datatype .
                     "verotettava"@fi ;
          <http://www.w3.org/2004/02/skos/core#definition> "Tieto siitä, onko etuus veronalaista tuloa."@fi ,
                                                           "Whether the benefit is taxable income."@en ;
-         <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                             "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
          <http://www.w3.org/2004/02/skos/core#note> "Tiedot löytyvät myös sivulta https://www.kela.fi/verotus"@fi ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "beskattningsbar"@sv ,
                                                          "taxable"@en ,
@@ -1843,8 +1693,6 @@ xsd:duration rdf:type rdfs:Datatype .
                       "voimassa alkaen"@fi ;
            <http://www.w3.org/2004/02/skos/core#definition> "Date from which the benefit is in force."@en ,
                                                             "Päivä, josta alkaen etuus on voimassa."@fi ;
-           <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                               "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
            <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/startDate> ;
            <http://www.w3.org/2004/02/skos/core#prefLabel> "början av giltighet"@sv ,
                                                            "valid from"@en ,
@@ -1865,8 +1713,6 @@ xsd:duration rdf:type rdfs:Datatype .
                     "voimassa asti"@fi ;
          <http://www.w3.org/2004/02/skos/core#definition> "Date until which the benefit is in force."@en ,
                                                           "Päivä, johon asti etuus on voimassa."@fi ;
-         <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                             "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
          <http://www.w3.org/2004/02/skos/core#exactMatch> <http://schema.org/endDate> ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "tills giltigt"@sv ,
                                                          "valid to"@en ,
@@ -1944,8 +1790,6 @@ xsd:duration rdf:type rdfs:Datatype .
                                                          <https://iri.suomi.fi/terminology/kela/c744> ;
         <http://www.w3.org/2004/02/skos/core#definition> "A customer’s demand that a decision issued by an authority or an appeal body be changed, made either as a request for rectification or as an appeal."@en ,
                                                          "Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena."@fi ;
-        <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                            "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Appeal"@en ,
                                                         "Muutoksenhaku"@fi ,
                                                         "Ändringssökande"@sv ;
@@ -2163,8 +2007,6 @@ xsd:duration rdf:type rdfs:Datatype .
                      "Kund"@sv ;
           <http://www.w3.org/2004/02/skos/core#definition> "A person or organisation that receives, or may receive, value from a service provided by Kela."@en ,
                                                            "Henkilö tai yhteisö, joka saa tai jolla on mahdollisuus saada arvoa Kelan tarjoamasta palvelusta."@fi ;
-          <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                              "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Asiakas"@fi ,
                                                           "Customer"@en ,
                                                           "Kund"@sv ;
@@ -2206,8 +2048,6 @@ xsd:duration rdf:type rdfs:Datatype .
                       <http://www.w3.org/2004/02/skos/core#closeMatch> <http://data.europa.eu/m8g/Criterion> ;
                       <http://www.w3.org/2004/02/skos/core#definition> "A condition for granting a benefit whose fulfilment affects entitlement to the benefit or its amount."@en ,
                                                                        "Etuuden myöntämisedellytys, jonka täyttyminen vaikuttaa oikeuteen saada etuus tai etuuden määrään."@fi ;
-                      <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                          "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Eligibility criterion"@en ,
                                                                       "Myöntämisedellytys"@fi .
 
@@ -2240,8 +2080,6 @@ xsd:duration rdf:type rdfs:Datatype .
                    "Tulo"@fi ;
         <http://www.w3.org/2004/02/skos/core#definition> "An income item of a person or household that may be taken into account when calculating the amount of a benefit or in means testing."@en ,
                                                          "Henkilön tai ruokakunnan tuloerä, joka voidaan ottaa huomioon etuuden määrää laskettaessa tai tarveharkinnassa."@fi ;
-        <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                            "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
         <http://www.w3.org/2004/02/skos/core#prefLabel> "Income"@en ,
                                                         "Inkomst"@sv ,
                                                         "Tulo"@fi ;
@@ -2383,8 +2221,6 @@ xsd:duration rdf:type rdfs:Datatype .
                     "Payment"@en ;
          <http://www.w3.org/2004/02/skos/core#definition> "A benefit disbursement, or an instalment of it, paid to the payee on the basis of a benefit decision."@en ,
                                                           "Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä."@fi ;
-         <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                             "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
          <http://www.w3.org/2004/02/skos/core#prefLabel> "Betalning"@sv ,
                                                          "Maksu"@fi ,
                                                          "Payment"@en ;
@@ -2403,8 +2239,6 @@ xsd:duration rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#altLabel> "Claim for recovery"@en ;
           <http://www.w3.org/2004/02/skos/core#definition> "A procedure by which a benefit paid in excess or without grounds is reclaimed."@en ,
                                                            "Menettely, jossa liikaa tai perusteetta maksettu etuus peritään takaisin."@fi ;
-          <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                              "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
           <http://www.w3.org/2004/02/skos/core#prefLabel> "Recovery"@en ,
                                                           "Takaisinperintä"@fi ,
                                                           "Återkrav"@sv .
@@ -2503,8 +2337,6 @@ xsd:duration rdf:type rdfs:Datatype .
                         "Säädöstyyppi"@fi ;
              <http://www.w3.org/2004/02/skos/core#definition> "Säädöksen laji sen antajan ja oikeudellisen aseman mukaan."@fi ,
                                                               "The kind of a statute according to its issuer and legal status."@en ;
-             <http://www.w3.org/2004/02/skos/core#editorialNote> "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."@fi ,
-                                                                 "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."@en ;
              <http://www.w3.org/2004/02/skos/core#prefLabel> "Författningstyp"@sv ,
                                                              "Statute Type"@en ,
                                                              "Säädöstyyppi"@fi .

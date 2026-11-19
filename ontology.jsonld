@@ -406,13 +406,6 @@
     "@language" : "fi",
     "@value" : "Asiakkaan vaatimus viranomaisen tai muutoksenhakuelimen antaman päätöksen muuttamisesta, joka tehdään joko oikaisuvaatimuksena tai valituksena."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "Appeal"
@@ -1017,13 +1010,6 @@
     "@language" : "fi",
     "@value" : "Henkilö tai yhteisö, joka saa tai jolla on mahdollisuus saada arvoa Kelan tarjoamasta palvelusta."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "Asiakas"
@@ -1132,13 +1118,6 @@
     "@language" : "fi",
     "@value" : "Etuuden myöntämisedellytys, jonka täyttyminen vaikuttaa oikeuteen saada etuus tai etuuden määrään."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "Eligibility criterion"
@@ -1225,13 +1204,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Henkilön tai ruokakunnan tuloerä, joka voidaan ottaa huomioon etuuden määrää laskettaessa tai tarveharkinnassa."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1610,13 +1582,6 @@
     "@language" : "fi",
     "@value" : "Etuuspäätöksen perusteella maksunsaajalle maksettu etuussuoritus tai sen maksuerä."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
     "@value" : "Betalning"
@@ -1666,13 +1631,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Menettely, jossa liikaa tai perusteetta maksettu etuus peritään takaisin."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -1938,13 +1896,6 @@
     "@language" : "en",
     "@value" : "The kind of a statute according to its issuer and legal status."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
     "@value" : "Författningstyp"
@@ -2082,13 +2033,6 @@
     "@language" : "fi",
     "@value" : "Etuuden lyhenne, jota Kela käyttää sisäisesti."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "abbreviation"
@@ -2125,13 +2069,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee, että etuutta voidaan maksaa ennakkona toisen etuuden odotusajalta."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2213,13 +2150,6 @@
     "@language" : "fi",
     "@value" : "Rahamäärä euroina."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "amount"
@@ -2256,13 +2186,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Päivä, jona muutoksenhaku on jätetty."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2308,13 +2231,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee muutoksenhakuelimen, joka käsittelee muutoksenhaun."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "appeal handled by"
@@ -2354,13 +2270,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee päätöksen, johon muutoksenhaku kohdistuu."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2402,13 +2311,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, jota hakemus koskee."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "application concerns"
@@ -2445,13 +2347,6 @@
   }, {
     "@language" : "en",
     "@value" : "Processing status of an application."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2497,13 +2392,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, jota hakija hakee."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "applies for"
@@ -2540,13 +2428,6 @@
   }, {
     "@language" : "en",
     "@value" : "Official code of an area in a national code list."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -2589,13 +2470,6 @@
     "@language" : "en",
     "@value" : "Whether the attachment can be submitted in the OmaKela e-service."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "is attachment in OmaKela"
@@ -2636,13 +2510,6 @@
   }, {
     "@language" : "en",
     "@value" : "Web address where the attachment form or instructions are available."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2691,13 +2558,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee valtion, johon alue kuuluu."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "belongs to country"
@@ -2740,13 +2600,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee työllisyysalueen, johon kunta kuuluu."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2791,13 +2644,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee maakunnan, johon kunta kuuluu."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "belongs to region"
@@ -2838,13 +2684,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee hyvinvointialueen, johon kunta kuuluu."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "belongs to wellbeing service county"
@@ -2882,13 +2721,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee laajemman etuuskokonaisuuden, johon etuus käsitteellisesti sisältyy."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "broader benefit"
@@ -2918,13 +2750,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Peruste, jonka mukaan etuuden määrä lasketaan."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -2969,13 +2794,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee, että alue sisältää toisen maantieteellisen alueen."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "contains area"
@@ -3016,13 +2834,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee säädöksen tai sen osan, johon etuuskriteeri perustuu."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "criterion legal basis"
@@ -3052,13 +2863,6 @@
   }, {
     "@language" : "en",
     "@value" : "Web address of the current version of a part of a statute."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -3153,13 +2957,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Päivä, jona päätös on annettu."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3304,13 +3101,6 @@
     "@language" : "en",
     "@value" : "The way in which the financing of a benefit is arranged."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "financing"
@@ -3394,13 +3184,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee hakijan jättämän hakemuksen."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "has application"
@@ -3441,13 +3224,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee hakemukseen kuuluvan liitteen."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "hakemuksen liite"
@@ -3480,13 +3256,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuusryhmän, johon etuus on luokiteltu."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -3524,13 +3293,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden osan, josta etuus koostuu."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "etuudella on osa"
@@ -3567,13 +3329,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka liittää etuuteen sitä kuvaavan sanaston käsitteen."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3618,13 +3373,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee roolin (hakija, käyttäjä tai etuudensaaja), jossa asiakas toimii."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "asiakkaan rooli"
@@ -3664,13 +3412,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee hakemukseen annetun päätöksen."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -3712,13 +3453,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden myöntämisedellytyksen."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "has eligibility criterion"
@@ -3758,13 +3492,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee toimijan tuloerän."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3810,13 +3537,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee maantieteellisen alueen, jolla palvelupiste tai organisaatio sijaitsee."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "is located in"
@@ -3849,13 +3569,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee organisaation, joka vastaa etuuden toimeenpanosta."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -3900,13 +3613,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee palvelukanavan, jonka kautta palvelu on käytettävissä."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "has channel"
@@ -3943,13 +3649,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee organisaation ylläpitämän palvelupisteen."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4034,13 +3733,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Etuutta kuvaavan verkkosivun osoite."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://iri.suomi.fi/model/suomiptv2/homePage"
@@ -4191,13 +3883,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, jonka määrää laskettaessa tai tarveharkinnassa tuloerä otetaan huomioon."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "huomioidaan etuudessa"
@@ -4231,13 +3916,6 @@
   }, {
     "@language" : "en",
     "@value" : "Index to which the amount of a benefit is linked."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -4334,13 +4012,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee toisen etuuden, jonka saamisen edellytykset on selvitettävä ennen tämän etuuden ratkaisemista."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "benefit to investigate"
@@ -4376,13 +4047,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, johon elämäntilanne liittyy."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4432,13 +4096,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee, että alue on osa toista maantieteellistä aluetta."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "is part of area"
@@ -4472,13 +4129,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, jonka osa etuuden osa on."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "is part of benefit"
@@ -4508,13 +4158,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Sijainnin leveysaste WGS84-koordinaatistossa."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#lat"
@@ -4560,13 +4203,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee säädöksen, johon etuus perustuu."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "has legal reference"
@@ -4596,13 +4232,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Sijainnin pituusaste WGS84-koordinaatistossa."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://www.w3.org/2003/01/geo/wgs84_pos#long"
@@ -4647,13 +4276,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Ikä, jonka ylittänyt henkilö ei ole oikeutettu etuuteen."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -4750,13 +4372,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee toisen etuuden, joka otetaan tulona huomioon tämän etuuden tarveharkinnassa."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "means-tested income"
@@ -4793,13 +4408,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Ikä, jonka henkilön on täytettävä ollakseen oikeutettu etuuteen."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -4840,13 +4448,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, joka määrää tämän etuuden vähimmäismäärän."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -4938,13 +4539,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee toisen etuuden, joka on otettava huomioon tätä etuutta ratkaistaessa ilman että se estää tai vähentää etuutta."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "benefit to be noted"
@@ -4985,13 +4579,6 @@
     "@language" : "fi",
     "@value" : "Säädöksen osan tunnus."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "osan tunniste"
@@ -5029,13 +4616,6 @@
     "@language" : "en",
     "@value" : "Text of a part of a statute."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "lainosan teksti"
@@ -5069,13 +4649,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Säädöksen osan laji."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#example" : [ {
     "@language" : "fi",
@@ -5123,13 +4696,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee päätöksen, johon maksu perustuu."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -5215,13 +4781,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, jonka suoritus maksu on."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -5309,13 +4868,6 @@
     "@language" : "fi",
     "@value" : "Postitoimipaikka."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "post office"
@@ -5349,13 +4901,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Postinumero."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://schema.org/postalCode"
@@ -5404,13 +4949,6 @@
     "@language" : "fi",
     "@value" : "Hakemuksen keskimääräinen käsittelyaika hakemuksen saapumisesta päätökseen."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
     "@value" : "handläggningstid"
@@ -5458,13 +4996,6 @@
     "@language" : "fi",
     "@value" : "Tarkoitus, jota varten etuus on säädetty."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "purpose"
@@ -5508,13 +5039,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, jota etuudensaaja saa."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "receives benefit"
@@ -5551,13 +5075,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Yksikkö, jolle etuus myönnetään ja jonka perusteella etuuden määrä lasketaan."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "sv",
@@ -5604,13 +5121,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee maksun, johon takaisinperintä kohdistuu."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -5698,13 +5208,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuden, jota säädös koskee."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "has related benefit"
@@ -5745,13 +5248,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee etuuteen liittyvän palvelun."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "etuuteen liittyvä palvelu"
@@ -5788,13 +5284,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee elämäntilanteen, johon etuus liittyy."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "liittyy elämäntilanteeseen"
@@ -5830,13 +5319,6 @@
   }, {
     "@language" : "en",
     "@value" : "Whether entitlement to the benefit requires that the employment condition is met."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
@@ -5888,13 +5370,6 @@
     "@language" : "sv",
     "@value" : "krav enligt vilket en förmånssökande ska bo i Finland, ett EU-land, ett EES-land eller Schweiz och en förmånslåtare vid sin död måste bo i något av dessa länder för att förmånssökanden ska ha rätt till en förmån"
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "en",
     "@value" : "residence required"
@@ -5934,13 +5409,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee kunnan, jossa hakija asuu."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -5989,12 +5457,6 @@
   "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
     "@language" : "fi",
     "@value" : "Domain on unioni (hakija, käyttäjä, etuudensaaja); ei OWL 2 RL -yhteensopiva (ks. määritelmätyökirjan Huomiot-välilehti)."
-  }, {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -6032,13 +5494,6 @@
   }, {
     "@language" : "en",
     "@value" : "Time during which a service or a service unit is available to customers."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -6087,13 +5542,6 @@
     "@language" : "fi",
     "@value" : "Suhde, joka ilmaisee palvelupisteestä vastaavan organisaation."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
     "@value" : "palvelupisteen organisaatio"
@@ -6130,13 +5578,6 @@
   }, {
     "@language" : "en",
     "@value" : "Type of a service unit."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#prefLabel" : [ {
     "@language" : "fi",
@@ -6178,13 +5619,6 @@
   }, {
     "@language" : "en",
     "@value" : "Street address of a service unit."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://schema.org/streetAddress"
@@ -6235,13 +5669,6 @@
   }, {
     "@language" : "en",
     "@value" : "Whether the benefit is taxable income."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#note" : [ {
     "@language" : "fi",
@@ -6347,13 +5774,6 @@
     "@language" : "fi",
     "@value" : "Päivä, josta alkaen etuus on voimassa."
   } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
-  } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://schema.org/startDate"
   } ],
@@ -6408,13 +5828,6 @@
   }, {
     "@language" : "fi",
     "@value" : "Päivä, johon asti etuus on voimassa."
-  } ],
-  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
-    "@language" : "fi",
-    "@value" : "Määritelmä on ontologian oma ehdotus; tarkistettava Kelan käsiteasiantuntijoiden kanssa (versio 0.6)."
-  }, {
-    "@language" : "en",
-    "@value" : "The definition is the ontology’s own proposal; to be reviewed with Kela’s terminology experts (version 0.6)."
   } ],
   "http://www.w3.org/2004/02/skos/core#exactMatch" : [ {
     "@id" : "http://schema.org/endDate"
